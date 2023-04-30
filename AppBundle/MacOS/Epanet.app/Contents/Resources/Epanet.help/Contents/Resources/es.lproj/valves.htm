@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Válvulas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Válvulas" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Válvulas</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="pump_properties.htm">Anterior</a>&nbsp;
+     <a href="valve_types.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="valves.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Las </span><span style="font-weight: bold; color: #010100;">Válvulas</span><span style="color: #010100;"> son líneas que limitan la presión o el caudal en un punto determinado de la red. Los datos principales de una válvula son: los nudos aguas arriba y aguas abajo, el diámetro, la consigna y su estado (forzado o no). Los resultados asociados con una válvula son básicamente el caudal de paso y la pérdida de carga.</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Las válvulas de corte (tipo compuerta) y las válvulas de retención (o antirretorno), cuya acción es abrir o cerrar totalmente el paso del flujo, no se consideran como líneas independientes, sino que deben incorporarse como propiedades de la tubería en la cual se alojan (Ver <a href="pipe_properties.htm" class="topiclink">Propiedades de las Tuberías</a>).</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Los tipos de válvulas contemplados en EPANET son:</span></p><p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#prv" class="topiclink">Válvulas Reductoras de Presión</a> (en inglés PRV)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#psv" class="topiclink">Válvulas Sostenedoras de Presión</a> (en inglés PSV)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#pbv" class="topiclink">Válvulas de Rotura de Carga</a> (en inglés PBV)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#fcv" class="topiclink">Válvulas Limitadoras de Caudal</a> (en inglés FCV)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#tcv" class="topiclink">Válvulas de Estrangulación</a> (en inglés TCV)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#gpv" class="topiclink">Válvulas de Propósito General</a> (en inglés GPV)</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">La Válvula de Propósito General puede ser usada para representar una línea cuya relación caudal - pérdida de carga es suministrada por el usuario, en lugar de usar una fórmula estandarizada.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Cada tipo de válvula tiene una consigna diferente, relacionada con su comportamiento (la presión en el caso de las Reductoras y Sostenedoras, la caída de presión para las de Rotura de Carga, el caudal para las Limitadoras de Caudal, el coeficiente de pérdidas para las de Estrangulación, y la curva de pérdidas para las de Propósito General).</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">La consigna de control de una válvula puede inhibirse especificando en un momento determinado que ésta se encuentra totalmente abierta o totalmente cerrada.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Tanto el estado de una válvula como su consigna pueden modificarse a lo largo de una simulación utilizando las <a href="controls.htm" class="topiclink">Leyes de Control</a> (para restablecer la consigna de una válvula después de haber forzado su estado a abierta o cerrada, especificar dicha consigna a través de una ley de control).</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Debido al modo en que internamente se ha modelado el comportamiento de las diferentes válvulas, hay que cumplir ciertas normas a la hora de añadir las válvulas al esquema de la red:</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">una Válvula Reductora, una Válvula Sostenedora ó una Válvula Limitadora de Caudal no puede conectarse directamente a un embalse o depósito (utilizar una tubería de pequeña longitud para enlazarlos en caso necesario).</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">dos Válvulas Reductoras no pueden compartir el nudo aguas abajo, ni conectarse en serie.</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="color: #010100;">dos Válvulas Sostenedoras no pueden compartir el nudo aguas arriba, ni conectarse en serie.</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="color: #010100;">una Válvula Sostenedora no puede conectarse al nudo aguas abajo de una Válvula Reductora.</span></p><p style="text-indent: -0.2500in; margin: 0 0 0 0.2500in;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: -0.2500in; margin: 0 0 0 0.2500in;"><span style="font-weight: bold; color: #0000ff;">Ver también:</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_properties.htm" class="topiclink">Propiedades de las Válvulas</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

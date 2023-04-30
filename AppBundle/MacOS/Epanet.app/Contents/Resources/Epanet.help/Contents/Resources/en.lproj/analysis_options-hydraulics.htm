@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Analysis Options - Hydraulics</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Analysis Options,Analysis Options Hydraulic Options" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Analysis Options - Hydraulics</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="analysis_options.htm">Previous</a>&nbsp;
+     <a href="analysis_options-quality.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="analysis_options-hydraulics.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;">Hydraulics Options</span><span style="color: #010100;"> determine how the hydraulic behavior of the pipe network should be analyzed. They include:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Flow Units</span></p>
+<p class="p_Normal"><span style="color: #010100;">Units in which nodal demands and link flow rates are expressed. Choosing liters or cubic meters causes all other units to be SI metric, otherwise US customary units apply. Use caution when changing flow units as it might affect all other data supplied to the project. (See <a href="us_units.htm" class="topiclink">Units of Measurement</a>.)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Headloss Formula</span></p>
+<p class="p_Normal"><span style="color: #010100;">Formula used to compute head loss as a function of flow rate in a pipe. Choices are:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm" class="topiclink">Hazen-Williams</a></span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#d-w_formula" class="topiclink">Darcy-Weisbach</a></span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#c-w_formula" class="topiclink">Chezy-Manning</a></span></p><p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">Because each formula measures pipe roughness differently, switching formulas might require that all pipe roughness coefficients be updated.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Specific Gravity</span></p>
+<p><span style="color: #010100;">Ratio of the density of the fluid being modeled to that of water at 4 deg. C (unitless).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Relative Viscosity</span></p>
+<p><span style="color: #010100;">Kinematic viscosity of the fluid being modeled relative to the viscosity of water at 20 deg. C (1.0 centistokes or 0.94 sq ft/day).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Maximum Trials</span></p>
+<p><span style="color: #010100;">Maximum number of trials used to solve the nonlinear equations that govern network hydraulics at a given point in time.A suggested value is 40 or higher.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Accuracy</span></p>
+<p><span style="color: #010100;">Convergence criterion used to signal that a solution has been found to the nonlinear equations that govern network hydraulics. Trials end when the sum of all flow changes divided by the sum of all link flows is less than this number. The suggested value is 0.001.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">If Unbalanced</span></p>
+<p><span style="color: #010100;">Action to take if a hydraulic solution is not found within the maximum number of trials. Choices are </span><span style="font-weight: bold; color: #010100;">STOP</span><span style="color: #010100;"> to stop the simulation at this point or </span><span style="font-weight: bold; color: #010100;">CONTINUE</span><span style="color: #010100;"> to use another 10 trials, with no link status changes allowed, in an attempt to achieve convergence.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Default Pattern</span></p>
+<p><span style="color: #010100;">ID label of a time pattern to be applied to demands at those junctions where no time pattern is specified. If no such time pattern exists then demands will not vary at these locations.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Demand Multiplier</span></p>
+<p><span style="color: #010100;">Multiplier applied to all baseline demands to make total system consumption vary up or down by a fixed amount. E.g., 2.0 doubles all demands, 0.5 halves them, and 1.0 leaves them as is.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Emitter Exponent</span></p>
+<p><span style="color: #010100;">Power to which pressure is raised when computing the flow through an <a href="emitters.htm" class="topiclink">emitter</a> device. The textbook value for nozzles and sprinklers is 0.5. This may not apply to pipe leakage.</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Status Report</span></p>
+<p><span style="color: #010100;">Amount of status information to report after a simulation is made. Choices are</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">NONE</span><span style="color: #010100;"> (no status report)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">YES</span><span style="color: #010100;"> (normal status reporting - lists all changes in link status throughout the simulation and if water quality is analyzed, a final mass balance accounting) </span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">FULL</span><span style="color: #010100;"> (full reporting - normal reporting plus the convergence error from each trial of the hydraulic analysis made in each time period)</span></p><p><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">Full status reporting is only useful for debugging purposes.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Max. Head Error</span></p>
+<p><span style="color: #010100;">Another convergence criterion requiring that the head loss computed by the head loss formula compared to the difference in nodal heads across each link be less than the specified value (in ft or m). A value of 0 indicates that this criterion will not be used.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Max. Flow Change</span></p>
+<p><span style="color: #010100;">A third convergence criterion requiring that the largest absolute flow change between the current and previous solutions be less than the specified value (in flow units). A value of 0 indicates that this criterion will not be used. </span></p>
+<p><a name="demandmodelanchor" class="hmanchor"></a></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;"><a href="demand_models.htm" class="topiclink">Demand Model</a></span></p>
+<p><span style="color: #010100;">Specifies whether a demand driven analysis (</span><span style="font-weight: bold; color: #010100;">DDA</span><span style="color: #010100;">) or a pressure driven analysis (</span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;">) should be made. Under </span><span style="font-weight: bold; color: #010100;">DDA</span><span style="color: #010100;"> full nodal demands are always met even if negative pressures result. </span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;"> assumes that demand varies between 0 and its full value as a power function of nodal pressure. The default demand model is </span><span style="font-weight: bold; color: #010100;">DDA</span><span style="color: #010100;">.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Minimum Pressure</span></p>
+<p><span style="color: #010100;">The pressure below which no demand can be delivered under a pressure driven analysis. It has no effect on a demand driven analysis. Its default value is 0.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Required Pressure</span></p>
+<p><span style="color: #010100;">The pressure required to supply a node&#39;s full demand under a pressure driven analysis. It has no effect on a demand driven analysis. To avoid numerical issues it must be at least 0.1 psi or meters above the Minimum Pressure. Its default value is 0.1.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Pressure Exponent</span></p>
+<p><span style="color: #010100;">The power to which pressure is raised when computing the demand delivered to a node under a pressure driven analysis. It has no effect on a demand driven analysis. Its suggested value is 0.5.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">CHECKFREQ</span></p>
+<p><span style="color: #010100;">This sets the number of solution trials that pass during hydraulic balancing before the status of pumps, check valves, flow control valves and pipes connected to tanks are once again updated. The default value is 2, meaning that status checks are made every other trial. A value equal to the maximum number of trials would mean that status checks are made only after a system has converged. (Whenever a status change occurs the trials must continue since the current solution may not be balanced.) The frequency of status checks on pressure reducing and pressure sustaining valves (PRVs and PSVs) is determined by the DAMPLIMIT option (see below).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">MAXCHECK</span></p>
+<p><span style="color: #010100;">This is the number of solution trials after which periodic status checks on pumps, check valves flow control valves and pipes connected to tanks are discontinued. Instead, a status check is made only after convergence is achieved. The default value is 10, meaning that after 10 trials, instead of checking status every CHECKFREQ trials, status is checked only at convergence.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">DAMPLIMIT</span></p>
+<p><span style="color: #010100;">This is the accuracy value at which solution damping and status checks on PRVs and PSVs should begin. Damping limits all flow changes to 60% of what they would otherwise be as future trials unfold. The default is 0 which indicates that no damping should be used and that status checks on control valves are made at every iteration. Damping might be needed on networks that have trouble converging, in which case a limit of 0.01 is suggested.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Below are some typical values that might be used for the status checking parameters:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:1.0000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold; text-decoration: underline;">CHECKFREQ</span></p>
+</th>
+<th style="vertical-align:top; width:1.0000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold; text-decoration: underline;">MAXCHECK</span></p>
+</th>
+<th style="vertical-align:top; width:1.0000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold; text-decoration: underline;">DAMPLIMIT</span></p>
+</th>
+<th style="vertical-align:top; width:2.5000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Remarks</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">2</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">10</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">0</p>
+</td>
+<td style="vertical-align:top; width:2.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal">Frequent status checking; tends to produce solutions in the least number of iterations.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">10</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">100</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">0.01</p>
+</td>
+<td style="vertical-align:top; width:2.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal">Less frequent status checking; might be needed for networks that have difficulty in converging.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">Max. Trials</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">Max. Trials</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">Convergence Accuracy</p>
+</td>
+<td style="vertical-align:top; width:2.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal">Status checks made only after convergence is achieved; might produce convergence when other settings fail.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

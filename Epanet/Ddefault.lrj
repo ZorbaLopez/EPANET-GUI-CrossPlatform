@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":197707539,"name":"tdefaultsform.caption","sourcebytes":[68,101,102,97,117,108,116,115],"value":"Defaults"},
+{"hash":1339,"name":"tdefaultsform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tdefaultsform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tdefaultsform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"},
+{"hash":43504515,"name":"tdefaultsform.checkdefault.caption","sourcebytes":[83,97,118,101,32,97,115,32,100,101,102,97,117,108,116,115,32,102,111,114,32,97,108,108,32,110,101,119,32,112,114,111,106,101,99,116,115],"value":"Save as defaults for all new projects"},
+{"hash":86493011,"name":"tdefaultsform.tabsheet1.caption","sourcebytes":[73,68,32,76,97,98,101,108,115],"value":"ID Labels"},
+{"hash":114087587,"name":"tdefaultsform.tabsheet2.caption","sourcebytes":[80,114,111,112,101,114,116,105,101,115],"value":"Properties"},
+{"hash":143708179,"name":"tdefaultsform.tabsheet3.caption","sourcebytes":[72,121,100,114,97,117,108,105,99,115],"value":"Hydraulics"}
+]}

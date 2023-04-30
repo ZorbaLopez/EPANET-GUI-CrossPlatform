@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>El Algoritmo de Transporte Lagrangiano</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Algoritmo de Transporte Lagrangiano" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">El Algoritmo de Transporte Lagrangiano</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="wall_reaction-pipe_roughness.htm">Anterior</a>&nbsp;
+     <a href="water_quality_sources.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="parcel_tracking_algorithm.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">EPANET monitoriza los cambios en la concentración de sustancias de una serie de segmentos de agua, según se mueven a través de las tuberías y se mezclan en los nudos, a intervalos de tiempo constantes. Al final de cada intervalo, EPANET lleva a cabo las siguientes acciones:</span></p>
+<p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">1.</span>Se actualiza la calidad del agua en cada segmento, para tener en cuenta cualquier reacción que haya podido ocurrir durante dicho intervalo.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">2.</span>En orden, de aguas arriba a aguas abajo, para cada nudo:</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span>Si el nudo es un nudo de caudal o un depósito, el agua de los primeros segmentos aguas abajo de todas las líneas que fluyen hacia cada nudo se mezcla y se calcula el nuevo valor del parámetro de calidad en el nudo. El volumen que aporta cada segmento será el producto del caudal de la tubería por el intervalo de tiempo. Si este volumen es superior al del segmento, éste se destruye y el segmento que le sigue aporta el volumen restante.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span>Si el nudo es de caudal, su nueva concentración se calcula dividiendo la masa total de sustancia entrante dividida por el volumen total entrante. Si el nudo es un depósito, su concentración se actualiza dependiendo del modelo de mezcla adoptado.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span>La concentración en el nudo se ajusta con las contribuciones de las fuentes externas de sustancia.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">d)</span>Se crean nuevos segmentos en todas las líneas que salen de cada nudo. El volumen del segmento creado será igual al producto del caudal en la tubería por el intervalo de tiempo, y su calidad igual a la calculada para el nudo.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Al objeto de reducir el número de segmentos, el paso 2.d se lleva a cabo únicamente si el nuevo valor de la calidad en el nudo difiere de la del último segmento de las líneas que salen de él en una cantidad superior a la tolerancia establecida por el usuario. Si la diferencia del nuevo valor de la calidad es inferior a dicha tolerancia, entonces el tamaño del último segmento de la línea simplemente se incrementa en el volumen aportado a la tubería en el intervalo de tiempo considerado.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Todo este proceso se repite para cada intervalo de tiempo del modelo de calidad. Al inicio del siguiente intervalo hidráulico, cuando se invierta el flujo en una tubería, los distintos segmentos de que consta en ese momento se reordenan según el nuevo sentido de circulación del agua, además de reordenar los nudos de aguas arriba a aguas abajo. Reordenar los nudos permite conservar la masa de sustancia, incluso en el caso de tuberías muy cortas o líneas de longitud cero (bombas y válvulas). Inicialmente cada tubería consta de un solo segmento, cuya calidad se iguala a la calidad del nudo aguas arriba.</p>
+
+</td></tr></table>
+
+</body>
+</html>

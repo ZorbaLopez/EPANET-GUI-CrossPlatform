@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+   <title>An&aacute;lisis del Decaimiento del Cloro</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="An&aacute;lisis del Decaimiento del Cloro">
+
+   <style type="text/css">
+	a:link { color: #002682 }
+	a:hover { color: #FF0000; }
+	a:visited { color: #D63078 }
+   </style>
+
+<!-- This style sheet goes into compiled HTML HELP -->
+   <style type="text/css" media="screen">
+	#nsr
+	 {
+	 padding: 6px 6px 0px 6px;
+	 border-bottom: none;
+	 background: #649CCC;
+	 vertical-align: top;
+	 z-index: 2;
+	 visibility: visible;
+	 left: 0;
+	 top: 0;
+	 position: absolute;
+	 width: 100%;
+	 }
+	#mainbody
+	 {
+	 left: 0;
+	 top: 0px;
+	 margin: 0;
+	 position: absolute;
+	 padding: 10px;
+	 overflow: auto;
+	 height: 100%;
+	 z-index: 1;
+	 background-repeat: no-repeat;
+	 background-position: bottom right;
+	 background-attachment: fixed;
+	 }
+   </style>
+   <style type="text/css" media="print">
+	#nsr
+	 { visibility: none; }
+	#mainbody
+	 { overflow: visible; }
+   </style>
+   <script type="text/javascript" language="JavaScript" src="nonscroll.js"></script>
+
+
+
+</head>
+<body bgcolor="#FFFFFF" 
+ marginheight="0" marginwidth="0" leftmargin="0" topmargin="0"
+ scroll="no"
+>
+
+
+<div id="nsr">
+<table width="100%" border="0" cellspacing="0" cellpadding="2"
+ bgcolor="#649CCC">
+  <tr valign="top">
+    <td align="left">
+      
+<span style="font-family:Arial,Helvetica; font-size:12pt; color:#000000"><span style="font-family:Arial,Helvetica; font-size:12pt; color:#FFFFFF"><b>An&#225;lisis del Decaimiento del Cloro</b></span><span style="font-family:Arial,Helvetica; font-size:12pt; color:#000000"><b>
+<br>
+</b></span></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="epanet_tutorial.htm"
+        onmouseover="document.images.main.src='button_main_h.gif'" 
+  	onmouseout="document.images.main.src='button_main.gif'">
+        <img name=main src="button_main.gif" border=0 alt="Volver a la Introducción"></a>&nbsp;
+     <a href="analyzing_water_age.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+  	onmouseout="document.images.prev.src='button_prev.gif'"><img name=prev src="button_prev.gif" border=0 alt="Página Previa"></a>&nbsp;
+     
+
+     <a href="other_things_to_explore.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+  	onmouseout="document.images.next.src='button_next.gif'"><img name=next src="button_next.gif" border=0 alt="Página Siguiente"></a>
+     
+     </font>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+<div id="mainbody">
+
+<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">Para concluir, vamos a simular el transporte y decaimiento del cloro a trav&#233;s de la red. Introducir para ello los siguiente cambios en la base de datos:
+<br>
+
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="30"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> 1.</span></td><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">Seleccionar la categor&#237;a <span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>Opciones - Calidad</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> en la p&#225;gina de <i>Datos del Visor</i> y abrir el Editor de Propiedades correspondiente. En el campo <i>Tipo Modelo Calidad</i> introducir la palabra <i>Cloro</i><i>
+&nbsp;<br>
+</i></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><i>
+&nbsp;<br>
+</i></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="30"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><i> </i>2.</span></td><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">Pasar ahora a la categor&#237;a <span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>Opciones - Reacciones</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> desde el mismo <i>Visor</i>. Introducir como <i>Coef. Global Reacc. Medio</i> el valor -1,0. Este dato refleja la velocidad a la cual disminuye la concentraci&#243;n de cloro debido a las reacciones que ocurren en el propio seno del agua. El mismo coeficiente ser&#225; aplicado a todas las tuber&#237;as de la red, si bien se puede editar individualmente para cada tuber&#237;a si fuera necesario.
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="30"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> 3.</span></td><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">Pulsar ahora sobre el embalse y poner su <i>Calidad Inicial</i> a 1 (1 mg/l). Este valor indica la concentraci&#243;n de cloro que entra continuamente a la red. (Restablecer la calidad inicial en el dep&#243;sito al valor 0 si se hubiera cambiado).
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"></span></td><td></td></tr></table><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+Ahora ejecutar de nuevo la simulaci&#243;n. Utilizar la barra de deslizamiento de la p&#225;gina del <i>Esquema</i> <i>del Visor</i> para ver c&#243;mo va cambiando la concentraci&#243;n de cloro a trav&#233;s de la red y a lo largo del tiempo. Observar c&#243;mo para esta red tan simple los nudos 5, 6 y 7 presentan niveles bajos de cloro debido a que se alimentan con agua procedente del dep&#243;sito, la cual pierde all&#237;, durante su estancia, gran parte del cloro con que entr&#243;.
+<br>
+
+<br>
+Crear finalmente un informe de las reacciones habidas durante esta simulaci&#243;n seleccionando <span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>Informes</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><b> </b><span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>&gt;&gt;</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><b> </b><span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>Reacciones</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> desde el men&#250; principal. En &#233;l se muestra cu&#225;nto cloro se pierde por t&#233;rmino medio en las tuber&#237;as, frente al que se pierde en el dep&#243;sito. El t&#233;rmino <i>'Medio</i>' hace referencia a las reacciones que ocurren en el seno del agua, mientras que el t&#233;rmino <i>'Pared'</i> se refiere a las reacciones que ocurren en las paredes de las tuber&#237;as. Este &#250;ltimo valor es cero, dado que no hemos especificado ning&#250;n coeficiente de reacci&#243;n con las paredes en este ejemplo.
+<br>
+
+<br>
+</span></span></span>
+</div>
+
+</body>
+</html>

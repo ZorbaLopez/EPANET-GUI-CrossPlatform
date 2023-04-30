@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Correlación Rugosidad - Reacción en la Pared</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Reacciones que afectan a la Calidad del Agua ,Reacciones que afectan a la Calidad del Agua  Correlación Rugosidad - Reacción en la Pared " />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Correlación Rugosidad - Reacción en la Pared</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="pipe_wall_reaction_rates.htm">Anterior</a>&nbsp;
+     <a href="parcel_tracking_algorithm.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="wall_reaction-pipe_roughness.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Es bien sabido que con el paso del tiempo la rugosidad de las tuberías metálicas tiende a incrementarse debido a la formación de incrustaciones y tubérculos procedentes de la corrosión de las paredes. El incremento de la rugosidad da lugar a una disminución del coeficiente C de Hazen-Williams, o bien un aumento del coeficiente de rugosidad de Darcy-Weisbach, provocando en definitiva una mayor pérdida de carga en la tubería.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Existen algunas evidencias que sugieren que el mismo proceso que hace incrementar la rugosidad de la tubería con el tiempo, tiende a incrementar también la reactividad de sus paredes con algunas especies químicas, en particular con el cloro y otros desinfectantes. EPANET puede hacer depender el coeficiente Kw de cada tubería de su coeficiente de rugosidad. La expresión utilizada para ello depende de la fórmula de pérdidas empleada:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0.0521in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Fórmula de Pérdidas</span></p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Fórmula Coef. Reacc. Pared</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal">Hazen-Williams</p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Kw = F / C</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal">Darcy-Weisbach</p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Kw = -F / log(e/d)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal">Chezy-Manning</p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Kw = F* n</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="color: #010100;">donde:</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;C</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal"><span style="color: #010100;">coeficiente de pérdidas de Hazen-Williams</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;e</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal"><span style="color: #010100;">rugosidad absoluta empleada en la fórmula de Darcy-Weisbach</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;d</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal">diámetro de la tubería</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;n</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal">coeficiente de rugosidad de Manning</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;F</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal">coeficiente de correlación rugosidad-reacción en la pared</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">El coeficiente F debe obtenerse a partir de medidas de campo para cada red en particular, y su significado depende de la ecuación de pérdidas empleada. La ventaja de utilizar esta aproximación es que basta un solo parámetro, F, para hacer variar el coeficiente de reacción en la pared a través de la red de una forma razonable.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

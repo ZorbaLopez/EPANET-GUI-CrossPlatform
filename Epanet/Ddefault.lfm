@@ -1,0 +1,80 @@
+object DefaultsForm: TDefaultsForm
+  Left = 188
+  Height = 335
+  Top = 115
+  Width = 359
+  HelpContext = 163
+  BorderStyle = bsDialog
+  Caption = 'Defaults'
+  ClientHeight = 335
+  ClientWidth = 359
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object BtnOK: TButton
+    Left = 48
+    Height = 25
+    Top = 297
+    Width = 75
+    Caption = 'OK'
+    OnClick = BtnOKClick
+    TabOrder = 1
+  end
+  object BtnCancel: TButton
+    Left = 144
+    Height = 25
+    Top = 297
+    Width = 75
+    Caption = 'Cancel'
+    OnClick = BtnCancelClick
+    TabOrder = 2
+  end
+  object BtnHelp: TButton
+    Left = 240
+    Height = 25
+    Top = 297
+    Width = 75
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 3
+  end
+  object CheckDefault: TCheckBox
+    Left = 10
+    Height = 18
+    Top = 269
+    Width = 230
+    Caption = 'Save as defaults for all new projects'
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    ParentFont = False
+    TabOrder = 0
+  end
+  object TabControl1: TPageControl
+    Left = 10
+    Height = 249
+    Top = 8
+    Width = 337
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 4
+    OnChange = TabControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'ID Labels'
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Properties'
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Hydraulics'
+    end
+  end
+end

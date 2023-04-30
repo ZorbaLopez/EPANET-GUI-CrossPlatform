@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Negative Pressures</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Warnings,Warnings Negative Pressures" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Negative Pressures</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="disconnected_network.htm">Previous</a>&nbsp;
+     <a href="system_unbalanced.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="negative_pressures.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0.0104in 0 0 0;"><span style="color: #010100;">EPANET will issue a warning message when it encounters negative pressures at junctions that have positive demands. This usually indicates that there is some problem with the way the network has been designed or operated. Negative pressures can occur when portions of the network can only receive water through links that have been closed off. In such cases an additional warning message about the network being disconnected is also issued.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Solutions that supply positive demand at negative pressures can be eliminated by utilizing EPANET&#39;s pressure driven analysis (</span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;">) option (see <a href="analysis_options-hydraulics.htm#demandmodelanchor" class="topiclink">Hydraulic Analysis Options - Demand Model</a>). It requires that values be supplied for a pressure below which no demand is delivered and a pressure above which full demand is delivered. These two pressures can be the same value (such as 0) to find the smallest amount of demand reductions needed to insure that no node delivers positive demand at a negative pressure.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

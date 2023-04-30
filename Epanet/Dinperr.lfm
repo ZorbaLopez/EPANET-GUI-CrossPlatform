@@ -1,0 +1,70 @@
+object InpErrForm: TInpErrForm
+  Left = 711
+  Height = 348
+  Top = 246
+  Width = 536
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Import File Error Report'
+  ClientHeight = 348
+  ClientWidth = 536
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 288
+    Top = 0
+    Width = 536
+    Align = alClient
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 60
+    Top = 288
+    Width = 536
+    Align = alBottom
+    ClientHeight = 60
+    ClientWidth = 536
+    TabOrder = 1
+    object Button1: TButton
+      Left = 432
+      Height = 25
+      Top = 16
+      Width = 81
+      Caption = '&OK'
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 342
+      Height = 25
+      Top = 16
+      Width = 81
+      Caption = '&Print'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 212
+      Height = 25
+      Top = 16
+      Width = 121
+      Caption = '&Error Codes'
+      OnClick = Button3Click
+      TabOrder = 2
+    end
+  end
+end

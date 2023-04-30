@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Valves</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Valves" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Valves</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="pump_properties.htm">Previous</a>&nbsp;
+     <a href="valve_types.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="valves.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;">Valves</span><span style="color: #010100;"> are used to control the pressure or flow at a specific point in the network.</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Shutoff (gate) valves and check (non-return) valves, which completely open or close pipes, are not considered as separate valve components but are instead included as a property of the pipe in which they are placed (see <a href="pipe_properties.htm" class="topiclink">Pipe Properties</a>).</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">The different types of valves include:</span></p><p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#prv" class="topiclink">PRV</a> (Pressure Reducing Valve)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#psv" class="topiclink">PSV</a> (Pressure Sustaining Valve)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#pbv" class="topiclink">PBV</a> (Pressure Breaker Valve)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#fcv" class="topiclink">FCV</a> (Flow Control Valve)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#tcv" class="topiclink">TCV</a> (Throttle Control Valve)</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_types.htm#gpv" class="topiclink">GPV</a> (General Purpose Valve)</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">The General Purpose Valve (GPV) can be used to represent a link where the flow - headloss relationship is supplied by the user instead of following one of the standard hydraulic formulas.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Each type of valve has a different type of setting parameter that describes its operating point (pressure for PRVs, PSVs, and PBVs; flow for FCVs; loss coefficient for TCVs, and headloss curve for GPVs).</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Valves can have their control status overridden by specifying they be either completely open or completely closed.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">A valve&#39;s status and its setting can be changed during the simulation by using <a href="controls.htm" class="topiclink">Controls</a>. (To restore a valve&#39;s control status after its status has been overridden to open or closed use a control that specifies a value for the valve setting.)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">Because of the ways in which valves are modeled the following rules apply when adding valves to a network:</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">a PRV, PSV or FCV cannot be directly connected to a reservoir or tank (use a length of pipe to separate the two)</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">PRVs cannot share the same downstream node or be linked in series</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="color: #010100;">two PSVs cannot share the same upstream node or be linked in series</span></p><p style="text-indent: 0; padding-left: 0.2500in; margin: 0.0521in 0 0 0.2500in;"><span style="display:inline-block;width:0.2500in;margin-left:-0.2500in;font-size:10pt;font-family:'Wingdings';font-style:normal;color:#010100;text-decoration:none;">&#167;</span><span style="color: #010100;">a PSV cannot be connected to the downstream node of a PRV.</span></p><p style="text-indent: -0.2500in; margin: 0 0 0 0.2500in;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: -0.2500in; margin: 0 0 0 0.2500in;"><span style="font-weight: bold; color: #0000ff;">See Also:</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="valve_properties.htm" class="topiclink">Valve Properties</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{"version":1,"strings":[
+{"hash":201442562,"name":"tpatternform.caption","sourcebytes":[80,97,116,116,101,114,110,32,69,100,105,116,111,114],"value":"Pattern Editor"},
+{"hash":181300324,"name":"tpatternform.label1.caption","sourcebytes":[80,97,116,116,101,114,110,32,73,68],"value":"Pattern ID"},
+{"hash":156067838,"name":"tpatternform.label2.caption","sourcebytes":[68,101,115,99,114,105,112,116,105,111,110],"value":"Description"},
+{"hash":1339,"name":"tpatternform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tpatternform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tpatternform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"},
+{"hash":184837106,"name":"tpatternform.chart1.axislist[0].title.caption","sourcebytes":[77,117,108,116,105,112,108,105,101,114],"value":"Multiplier"},
+{"hash":91000916,"name":"tpatternform.chart1.axislist[1].title.caption","sourcebytes":[80,101,114,105,111,100],"value":"Period"},
+{"hash":56062302,"name":"tpatternform.btnload.caption","sourcebytes":[76,111,97,100,46,46,46],"value":"Load..."},
+{"hash":160203102,"name":"tpatternform.btnsave.caption","sourcebytes":[83,97,118,101,46,46,46],"value":"Save..."}
+]}

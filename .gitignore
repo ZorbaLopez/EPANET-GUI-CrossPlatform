@@ -1,0 +1,30 @@
+# Compiled pascal units
+[Ll]ib/
+
+# Compiled Dynamic libraries and executables
+*.so
+*.dll
+*.exe
+*.dylib
+/AppBundle/Linux/Epanet
+/AppBundle/Linux/lhelp
+/AppBundle/MacOS/Epanet.app/Contents/MacOS/Epanet
+
+# OS X Finder
+.DS_Store
+
+# Automatic backup files
+[Bb]ackup/
+*.bak
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x86_64-darwin/
+x86_64-linux/
+x86_64-win64/
+
+# References
+/Reference/
+/Icons/
+/Help/

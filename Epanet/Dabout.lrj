@@ -1,0 +1,12 @@
+{"version":1,"strings":[
+{"hash":14503620,"name":"taboutboxform.caption","sourcebytes":[65,98,111,117,116,32,69,80,65,78,69,84],"value":"About EPANET"},
+{"hash":77882020,"name":"taboutboxform.productname.caption","sourcebytes":[69,80,65,78,69,84],"value":"EPANET"},
+{"hash":1900210,"name":"taboutboxform.version.caption","sourcebytes":[86,101,114,115,105,111,110,32,50,46,50],"value":"Version 2.2"},
+{"hash":77882020,"name":"taboutboxform.label3.caption","sourcebytes":[69,80,65,78,69,84],"value":"EPANET"},
+{"hash":108975408,"name":"taboutboxform.build.caption","sourcebytes":[66,117,105,108,100,32,50,46,50,46,48],"value":"Build 2.2.0"},
+{"hash":130070542,"name":"taboutboxform.label1.caption","sourcebytes":[87,97,116,101,114,32,73,110,102,114,97,115,116,114,117,99,116,117,114,101,32,68,105,118,105,115,105,111,110],"value":"Water Infrastructure Division"},
+{"hash":66957253,"name":"taboutboxform.label2.caption","sourcebytes":[67,101,110,116,101,114,32,102,111,114,32,69,110,118,105,114,111,110,109,101,110,116,97,108,32,83,111,108,117,116,105,111,110,115,32,97,110,100,32,69,109,101,114,103,101,110,99,121,32,82,101,115,112,111,110,115,101],"value":"Center for Environmental Solutions and Emergency Response"},
+{"hash":224200025,"name":"taboutboxform.label4.caption","sourcebytes":[85,46,83,46,32,69,110,118,105,114,111,110,109,101,110,116,97,108,32,80,114,111,116,101,99,116,105,111,110,32,65,103,101,110,99,121],"value":"U.S. Environmental Protection Agency"},
+{"hash":31897119,"name":"taboutboxform.label5.caption","sourcebytes":[67,105,110,99,105,110,110,97,116,105,44,32,79,104,105,111],"value":"Cincinnati, Ohio"},
+{"hash":1339,"name":"taboutboxform.button1.caption","sourcebytes":[79,75],"value":"OK"}
+]}

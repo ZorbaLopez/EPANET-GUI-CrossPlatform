@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":304761,"name":"tcopytoform.caption","sourcebytes":[67,111,112,121],"value":"Copy"},
+{"hash":174568943,"name":"tcopytoform.destgroup.caption","sourcebytes":[67,111,112,121,32,84,111],"value":"Copy To"},
+{"hash":174568643,"name":"tcopytoform.formatgroup.caption","sourcebytes":[67,111,112,121,32,65,115],"value":"Copy As"},
+{"hash":1339,"name":"tcopytoform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tcopytoform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tcopytoform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"}
+]}

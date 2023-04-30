@@ -1,0 +1,99 @@
+object FindForm: TFindForm
+  Left = 637
+  Height = 151
+  Top = 235
+  Width = 301
+  HelpContext = 191
+  BorderStyle = bsDialog
+  Caption = 'Map Finder'
+  ClientHeight = 151
+  ClientWidth = 301
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  LCLVersion = '2.2.6.0'
+  object RadioGroup1: TRadioGroup
+    Left = 7
+    Height = 98
+    Top = 7
+    Width = 122
+    AutoFill = True
+    Caption = 'Find'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 69
+    ClientWidth = 112
+    ItemIndex = 0
+    Items.Strings = (
+      'Node'
+      'Link'
+      'Sources'
+    )
+    OnClick = RadioGroup1Click
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 144
+    Height = 50
+    Top = 7
+    Width = 147
+    Caption = 'ID'
+    ClientHeight = 21
+    ClientWidth = 137
+    TabOrder = 1
+    object Edit1: TEdit
+      Left = 1
+      Height = 19
+      Top = 1
+      Width = 135
+      Align = alClient
+      BorderSpacing.Around = 1
+      OnChange = Edit1Change
+      TabOrder = 0
+    end
+  end
+  object Button1: TButton
+    Left = 32
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = '&Find'
+    Default = True
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object GroupBox2: TGroupBox
+    Left = 144
+    Height = 81
+    Top = 64
+    Width = 147
+    Caption = 'Adjacent Links'
+    ClientHeight = 52
+    ClientWidth = 137
+    TabOrder = 3
+    object ListBox1: TListBox
+      Left = 1
+      Height = 50
+      Top = 1
+      Width = 135
+      Align = alClient
+      BorderSpacing.Around = 1
+      Color = clBtnFace
+      ItemHeight = 0
+      OnClick = ListBox1Click
+      TabOrder = 0
+    end
+  end
+end

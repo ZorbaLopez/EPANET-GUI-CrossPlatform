@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tuberías</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Tuberías" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Tuberías</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="tank_mixing_models.htm">Anterior</a>&nbsp;
+     <a href="pipe_properties.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pipes.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Las Tuberías son líneas que transportan el agua de un nudo a otro. EPANET asume que las tuberías están completamente llenas en todo momento, y por consiguiente que el flujo es a presión. La dirección del flujo es siempre del nudo de mayor altura piezométrica (suma de la cota más la presión, o bien energía interna por unidad de peso) al de menor altura piezométrica. Los principales parámetros de una tubería son:</span></p>
+<p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el diámetro</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la longitud</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el coeficiente de rugosidad</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">su estado (abierta, cerrada o con válvula de retención).</span></p><p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">El parámetro de estado permite simular la actuación de las válvulas de corte o las válvulas de retención (válvulas que permiten el paso del flujo en un solo sentido) sin tener que modelar estos elementos explícitamente.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Los datos de una tubería relativos a la calidad del agua son:</span></p>
+<p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el coeficiente de reacción en el medio</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el coeficiente de reacción en la pared.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Los resultados en una tubería son:</span></p>
+<p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el caudal de circulación</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la velocidad del flujo</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la pérdida de carga unitaria</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el factor de fricción para la fórmula de Darcy-Weisbach</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la velocidad media de reacción</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la calidad media del agua.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">La pérdida de carga (o de altura piezométrica) en una tubería debida a la fricción por el paso del agua, puede calcularse utilizando tres fórmulas de pérdidas diferentes:</span></p>
+<p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm" class="topiclink">Fórmula de Hazen-Williams</a></span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#d-w_formula" class="topiclink">Fórmula de Darcy-Weisbach</a></span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#c-w_formula" class="topiclink">Fórmula de Chezy-Manning</a></span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;"><a href="minor_losses.htm" class="topiclink">Las pérdidas menores</a> (también denominadas pérdidas localizadas) pueden interpretarse como debidas al incremento de la turbulencia que se produce en los cambios de dirección, codos, accesorios, etc. EPANET permite asociar a cada tubería un coeficiente de pérdidas menores.</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">Mediante el uso de <a href="controls.htm" class="topiclink">Leyes de Control</a>, las tuberías pueden abrirse o cerrarse en determinados instantes de la simulación o bajo ciertas condiciones específicas, por ejemplo cuando el nivel de un depósito rebasa por encima o por debajo unos ciertos límites, o cuando la presión en un nudo supera o queda por debajo de ciertos umbrales.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #0000ff;">Ver también:</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="pipe_properties.htm" class="topiclink">Propiedades de las Tuberías</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

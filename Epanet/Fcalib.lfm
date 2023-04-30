@@ -1,0 +1,181 @@
+object CalibReportForm: TCalibReportForm
+  Left = 294
+  Height = 486
+  Top = 185
+  Width = 905
+  Caption = 'Calibration Report'
+  ClientHeight = 486
+  ClientWidth = 905
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  Icon.Data = {
+    3E01000000000100010010101000000000002801000016000000280000001000
+    0000200000000100040000000000C00000000000000000000000000000000000
+    000000000000000080000080000000808000800000008000800080800000C0C0
+    C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+    FF0000000000000000000000000000000000000FFFFFFFFFFF00000F00000000
+    0F00000FFFFFFFFFFF00000F0000000FFF00000FFFFFFFFFFF00000F00000000
+    0F00000FFFFFFFFFFF00000F0000000FFF00000FFFFFFFFFFF00000F00000000
+    0F00000FFFFFFFFFFF0000000000000000000000000000000000000000000000
+    0000FFFF0000C0010000C0010000C0010000C0010000C0010000C0010000C001
+    0000C0010000C0010000C0010000C0010000C0010000C0010000FFFF0000FFFF
+    0000
+  }
+  KeyPreview = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  Position = poDefault
+  LCLVersion = '2.2.6.0'
+  Visible = True
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 486
+    Top = 0
+    Width = 905
+    ActivePage = TabSheet3
+    Align = alClient
+    TabIndex = 2
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Statistics'
+      ClientHeight = 458
+      ClientWidth = 897
+      object Memo1: TMemo
+        Left = 0
+        Height = 458
+        Top = 0
+        Width = 897
+        Align = alClient
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Courier New'
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssBoth
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Correlation Plot'
+      ClientHeight = 458
+      ClientWidth = 897
+      object Chart1: TChart
+        Left = 0
+        Height = 458
+        Top = 0
+        Width = 897
+        AllowPanning = False
+        AxisList = <        
+          item
+            Grid.Visible = False
+            Marks.LabelFont.Height = -12
+            Marks.LabelBrush.Style = bsClear
+            Minors = <>
+            Title.LabelFont.Height = -12
+            Title.LabelFont.Orientation = 900
+            Title.Visible = True
+            Title.Caption = 'Computed'
+            Title.LabelBrush.Style = bsClear
+          end        
+          item
+            Grid.Visible = False
+            Alignment = calBottom
+            Marks.LabelFont.Height = -12
+            Marks.LabelBrush.Style = bsClear
+            Minors = <>
+            Title.LabelFont.Height = -12
+            Title.Visible = True
+            Title.Caption = 'Observed'
+            Title.LabelBrush.Style = bsClear
+          end>
+        BackColor = clCream
+        Legend.Font.Height = -11
+        Legend.Visible = True
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Style = [fsBold]
+        Title.Text.Strings = (
+          'Correlation Plot'
+        )
+        Title.Visible = True
+        Align = alClient
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Mean Comparisons'
+      ClientHeight = 458
+      ClientWidth = 897
+      object Chart2: TChart
+        Left = 0
+        Height = 458
+        Top = 0
+        Width = 897
+        AllowPanning = False
+        AxisList = <        
+          item
+            Margin = 2
+            Marks.LabelFont.Height = -12
+            Marks.LabelBrush.Style = bsClear
+            Minors = <>
+            Title.LabelFont.Height = -12
+            Title.LabelFont.Orientation = 900
+            Title.Visible = True
+            Title.LabelBrush.Style = bsClear
+          end        
+          item
+            Grid.Visible = False
+            Alignment = calBottom
+            Marks.LabelFont.Height = -12
+            Marks.Format = '%2:s'
+            Marks.LabelBrush.Style = bsClear
+            Marks.Style = smsLabel
+            Minors = <>
+            Title.LabelFont.Height = -12
+            Title.Visible = True
+            Title.Caption = 'Location'
+            Title.LabelBrush.Style = bsClear
+          end>
+        BackColor = clCream
+        Legend.Alignment = laBottomCenter
+        Legend.ColumnCount = 100
+        Legend.Font.Height = -11
+        Legend.GroupFont.Height = -12
+        Legend.Visible = True
+        MarginsExternal.Left = 12
+        MarginsExternal.Top = 12
+        MarginsExternal.Right = 12
+        MarginsExternal.Bottom = 12
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -13
+        Title.Font.Style = [fsBold]
+        Title.Text.Strings = (
+          'TChart'
+        )
+        Title.Visible = True
+        Align = alClient
+        object Series3: TBarSeries
+          Title = 'Computed'
+          BarBrush.Color = 8421631
+          BarOffsetPercent = -17
+          BarWidthPercent = 34
+          Marks.Visible = False
+        end
+        object Series4: TBarSeries
+          Title = 'Observed'
+          BarBrush.Color = clSkyBlue
+          BarOffsetPercent = 17
+          BarWidthPercent = 34
+          Marks.Visible = False
+          Stacked = False
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Analysis Options - Reactions</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Analysis Options,Analysis Options Reaction Options" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <p><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Analysis Options - Reactions</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="analysis_options-quality.htm">Previous</a>&nbsp;
+     <a href="analysis_options-times.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="analysis_options-reactions.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="font-weight: bold; color: #010100;">Reaction Options</span><span style="color: #010100;"> select the type of water quality reactions that are included in the analysis.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Bulk Reaction Order</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Power to which concentration is raised when computing a bulk flow reaction rate. Use 1 for first-order reactions, 2 for second-order reactions, etc. Use any negative number for Michaelis-Menton kinetics. See <a href="bulk_flow_reaction_rates.htm" class="topiclink">Bulk Flow Reaction Rates</a>.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Wall Reaction Order</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Power to which concentration is raised when computing a pipe wall reaction rate. Choices are </span><span style="font-weight: bold; color: #010100;">FIRST</span><span style="color: #010100;"> (1) for first-order reactions or </span><span style="font-weight: bold; color: #010100;">ZERO </span><span style="color: #010100;">(0)</span><span style="font-weight: bold; color: #010100;"> </span><span style="color: #010100;">for constant rate reactions. See <a href="pipe_wall_reaction_rates.htm" class="topiclink">Pipe Wall Reaction Rates.</a></span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Global Bulk Coefficient</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Default bulk reaction rate coefficient (K</span><span style="font-size: 8pt; color: #010100;">b</span><span style="color: #010100;">) assigned to all pipes. This global coefficient can be overridden by editing this property for specific pipes. Use positive number for growth, negative number for decay, or 0 if no bulk reaction occurs. Units are concentration raised to the (1-n) power divided by days, where n is the reaction order.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Global Wall Coefficient</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Wall reaction rate coefficient (K</span><span style="font-size: 8pt; color: #010100;">w</span><span style="color: #010100;">) assigned to all pipes. Can be overridden by editing this property for specific pipes. Use positive number for growth, negative number for decay, or 0 if no wall reaction occurs. Units are ft/day (US) or m/day (SI) for first-order reactions and &nbsp;mass/sq ft/day (US) or mass/sq m/day (SI) for zero-order reactions.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Limiting Concentration</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Maximum concentration that a substance can grow to or minimum value it can decay to. Bulk reaction rates will be proportional to the difference between the current concentration and this value. Leave blank if not applicable.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Wall Coefficient Correlation</span></p>
+<p><span style="color: #010100;">Factor correlating wall reaction coefficient to pipe roughness. See <a href="wall_reaction-pipe_roughness.htm" class="topiclink">Wall Reaction - Pipe Roughness Correlation</a> for more details. Leave blank if not applicable.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

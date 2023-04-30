@@ -1,0 +1,11 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: pgsetup.noprintermsg
+msgid "There are no installed printers."
+msgstr ""
+
+#: pgsetup.printingmsg
+msgid "Printer is currently printing."
+msgstr ""
+

@@ -1,0 +1,128 @@
+object ControlsForm: TControlsForm
+  Left = 642
+  Height = 292
+  Top = 295
+  Width = 576
+  BorderIcons = [biSystemMenu]
+  Caption = 'Controls Editor'
+  ClientHeight = 292
+  ClientWidth = 576
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Icon.Data = {
+    FE0200000000010001002020100000000000E802000016000000280000002000
+    0000400000000100040000000000800200000000000000000000000000000000
+    0000000000000000800000800000008080008000000080008000808000008080
+    8000C0C0C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+    FF00000000000000000000000000000000000000000000000077777700000000
+    0000000000000000000000070000000000000000000000000000000700000000
+    0000000000000000007770070000000000000000000770700077700700007000
+    0000000000770007007870000000070000000000077080000778770000700070
+    0000000007088807777777770777000700000000008F88877FFFFF0778877007
+    0000000000088888F88888FF08870070000000000000880888877778F0700070
+    0000000777088888880007778F770077777000700008F088007777077F070000
+    00700700008F08880800077778F7700000700708888F0880F08F807078F77777
+    00700708F88F0780F070F07078F7887700700708888F0780F077807088F77777
+    00700700008F0788FF00080888F77000007000000008F0780FFFF0088F770070
+    000000000008F07788000888887700700000000000008F077888888808700070
+    0000000000088FF0077788088887000700000000008F888FF00000F878877007
+    000000000708F8088FFFFF880787007000000000077080000888880000700700
+    000000000077007000888007000070000000000000077700008F800700070000
+    0000000000000000008880070000000000000000000000000000000700000000
+    0000000000000000077777770000000000000000000000000000000000000000
+    0000FFFFFFFFFFFC0FFFFFFC0FFFFFF80FFFFFF80FFFFE180E7FFC00043FF800
+    001FF800000FF800000FFC00001FFE00001FE0000001C0000001800000018000
+    0001800000018000000180000001FC00001FFC00001FFE00001FFC00000FF800
+    000FF800001FF800003FFC180C7FFE380EFFFFF80FFFFFF80FFFFFF80FFFFFFF
+    FFFF
+  }
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 233
+    Top = 0
+    Width = 576
+    Align = alClient
+    Color = clWindow
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    ParentFont = False
+    ScrollBars = ssBoth
+    TabOrder = 0
+    WordWrap = False
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 18
+    Top = 274
+    Width = 576
+    Font.Color = clBtnText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Panels = <    
+      item
+        Text = ' Click Help to review format of Controls statements'
+        Width = 300
+      end>
+    ParentFont = False
+    SimpleText = ' Click Help to review format of Controls statements'
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 41
+    Top = 233
+    Width = 576
+    Align = alBottom
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    ClientHeight = 41
+    ClientWidth = 576
+    TabOrder = 2
+    object Panel2: TPanel
+      Left = 279
+      Height = 41
+      Top = 0
+      Width = 297
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 41
+      ClientWidth = 297
+      TabOrder = 0
+      object BtnOK: TButton
+        Left = 10
+        Height = 25
+        Top = 8
+        Width = 75
+        Caption = 'OK'
+        Default = True
+        ModalResult = 1
+        OnClick = BtnOKClick
+        TabOrder = 0
+      end
+      object BtnCancel: TButton
+        Left = 106
+        Height = 25
+        Top = 8
+        Width = 75
+        Cancel = True
+        Caption = 'Cancel'
+        ModalResult = 2
+        TabOrder = 1
+      end
+      object BtnHelp: TButton
+        Left = 202
+        Height = 25
+        Top = 8
+        Width = 75
+        Caption = '&Help'
+        OnClick = BtnHelpClick
+        TabOrder = 2
+      end
+    end
+  end
+end

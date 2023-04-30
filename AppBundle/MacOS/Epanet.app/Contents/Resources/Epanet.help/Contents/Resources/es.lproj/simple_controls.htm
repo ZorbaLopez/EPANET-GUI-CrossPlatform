@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Leyes de Control Simples</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Leyes de Control,Leyes de Control Leyes de Control Simples,Leyes de Control Simples" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Leyes de Control Simples</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="controls.htm">Anterior</a>&nbsp;
+     <a href="rule-based_controls.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="simple_controls.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Las </span><span style="font-weight: bold; color: #010100;">Leyes de Control Simples</span><span style="color: #010100;"> cambian el estado o la consigna de una línea en base a:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el nivel de agua en un depósito,</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la presión en un nudo,</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el instante de la simulación,</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la hora del día.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Las instrucciones de las leyes de control simples deben responder a alguno de los siguientes formatos:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span class="f_Normal" style="font-style:italic; font-family: 'Courier New';color:#010100;display:inline-block;width:0.2396in;margin-left:-0.2396in">1)</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">LINK</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">IDlínea estado</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">IF NODE</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">IDnudo</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">ABOVE/BELOW</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">valor</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span class="f_Normal" style="font-style:italic; font-family: 'Courier New';color:#010100;display:inline-block;width:0.2396in;margin-left:-0.2396in">2)</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">LINK</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">IDlínea estado</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">AT TIME</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">tiempo</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span class="f_Normal" style="font-style:italic; font-family: 'Courier New';color:#010100;display:inline-block;width:0.2396in;margin-left:-0.2396in">3)</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">LINK</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">IDlínea estado</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">AT CLOCKTIME</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">hora_real</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">AM/PM</span></p><p style="margin: 0.0521in 0 0.0521in 0;"><span style="color: #010100;">donde:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">IDlínea</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">identificativo ID de una línea</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">estado</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold;">OPEN</span> o <span style="font-family: 'Courier New',Courier,monospace; font-weight: bold;">CLOSED</span>, la velocidad de giro de una bomba, o la consigna de una válvula de control</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">IDnudo</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">identificativo ID de un nudo</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">valor</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">la presión en un nudo o el nivel de un depósito</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">tiempo</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">el tiempo de simulación desde el comienzo, expresado en horas, o en horas:minutos</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">hora_real</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">una hora del día, en formato AM (hasta mediodía) ó PM (desde mediodía hasta medianoche)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">A continuación se muestran algunos ejemplos de leyes de control simples:</span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 CLOSED IF NODE 23 ABOVE 5</span></p>
+<p class="p_Normal"><span style="font-style: italic; color: #010100;">(Cerrar la Línea 12 si el nivel en el Depósito 23 excede de 5 m)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 OPEN IF NODE 130 BELOW 20</span></p>
+<p class="p_Normal"><span style="font-style: italic; color: #010100;">(Abrir la Línea 12 si la presión en el Nudo 130 cae por debajo de 20 m)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK PUMP12 1.5 AT TIME 16</span></p>
+<p class="p_Normal"><span style="font-style: italic; color: #010100;">(Fijar la velocidad relativa de la bomba 12 en 1,5 a las 16 horas de la simulación)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 CLOSED AT CLOCKTIME 10 AM</span></p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 OPEN AT CLOCKTIME 8 PM &nbsp;&nbsp;</span></p>
+<p class="p_Normal"><span style="font-style: italic; color: #010100;">(La Línea 12 se cerrará a las 10 AM y se abrirá a las 8 PM repetidamente a lo largo de la simulación)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">No hay límite en cuanto al número de leyes de control simples que pueden imponerse.</span></p>
+<p style="text-indent: -0.4896in; margin: 0 0 0 0.5000in;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">Nota</span><span style="font-weight: bold; color: #010100;">:</span></td><td style="border:none;padding:0"><span style="color: #010100;">Cuando se imponen dos leyes de control basadas en valores de la presión muy próximos, se pueden obtener inestabilidades durante la simulación. Para hacer el sistema más estable, se aconseja imponer dichas condiciones mediante <a href="rule-based_controls.htm" class="topiclink">Leyes de Control basadas en Reglas</a>.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

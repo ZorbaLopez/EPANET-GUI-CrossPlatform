@@ -1,0 +1,102 @@
+object GraphForm: TGraphForm
+  Left = 293
+  Height = 486
+  Top = 187
+  Width = 905
+  Caption = 'GraphForm'
+  ClientHeight = 486
+  ClientWidth = 905
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  Icon.Data = {
+    3E01000000000100010010101000000000002801000016000000280000001000
+    0000200000000100040000000000C00000000000000000000000000000000000
+    000000000000000080000080000000808000800000008000800080800000C0C0
+    C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+    FF00FF8FFF8FFF8FFF8FFF8F8F8F8F8F8F8F8800000000000000FF0FFFFFFFFF
+    FFFFF809FFFFFF4FFFFFFF0F9F99F4F4FFFF8808989898848888FF0FF9FF9FFF
+    4FFFF804FFF4F9FF4FF4FF0F4F4FF9FF4F4F8808484888988488FF0FF4FFFFF9
+    FFFFF80FF4FFFFFF9FFFFF0FFFFFFFFFF9998808888888888888FFFFFFFFFFFF
+    FFFF000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000
+  }
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poDefault
+  LCLVersion = '2.2.6.0'
+  Visible = True
+  object Chart1: TChart
+    Left = 0
+    Height = 486
+    Top = 0
+    Width = 905
+    AxisList = <    
+      item
+        Grid.Color = clSilver
+        Grid.Style = psSolid
+        Intervals.MaxLength = 100
+        Marks.Distance = 2
+        Marks.LabelFont.Height = -11
+        Marks.Format = '%0:.0f'
+        Marks.LabelBrush.Style = bsClear
+        Marks.Style = smsCustom
+        Minors = <>
+        Title.LabelFont.Color = clWindowText
+        Title.LabelFont.Height = -11
+        Title.LabelFont.Orientation = 900
+        Title.Visible = True
+        Title.Caption = 'Y Axis'
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Grid.Color = clSilver
+        Grid.Style = psSolid
+        Intervals.MaxLength = 100
+        Alignment = calBottom
+        Marks.Distance = 2
+        Marks.LabelFont.Height = -11
+        Marks.Format = '%0:.0f'
+        Marks.LabelBrush.Style = bsClear
+        Marks.Style = smsCustom
+        Minors = <>
+        Title.LabelFont.Color = clWindowText
+        Title.LabelFont.Height = -11
+        Title.Visible = True
+        Title.Caption = 'X Axis'
+        Title.LabelBrush.Style = bsClear
+      end>
+    Foot.Alignment = taRightJustify
+    Legend.Alignment = laTopCenter
+    Legend.ColumnCount = 100
+    Legend.Font.Height = -11
+    Legend.GroupFont.Height = -11
+    Legend.Visible = True
+    Margins.Left = 0
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 0
+    MarginsExternal.Left = 12
+    MarginsExternal.Top = 12
+    MarginsExternal.Right = 12
+    MarginsExternal.Bottom = 12
+    Title.Brush.Color = clWindow
+    Title.Brush.Style = bsClear
+    Title.Font.Color = clWindowText
+    Title.Font.Height = -16
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'TChart'
+    )
+    Title.Visible = True
+    OnBeforeCustomDrawBackWall = Chart1BeforeCustomDrawBackWall
+    Align = alClient
+    Color = clWindow
+    OnMouseDown = Chart1MouseDown
+  end
+end

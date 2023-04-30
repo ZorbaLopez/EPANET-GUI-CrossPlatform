@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Junction Properties</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Junctions,Junctions Properties" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Junction Properties</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="junctions.htm">Previous</a>&nbsp;
+     <a href="reservoirs.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="junction_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Junction ID</span></p>
+<p class="p_Normal"><span style="color: #010100;">A unique label used to identify the junction. It can consist of a combination of up to 31 numerals or characters. It cannot be the same as the ID for any other node. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">X-Coordinate</span></p>
+<p class="p_Normal"><span style="color: #010100;">The horizontal location of the junction on the map, measured in the map&#39;s distance units. If left blank the junction will not appear on the network map.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Y-Coordinate</span></p>
+<p class="p_Normal"><span style="color: #010100;">The vertical location of the junction on the map, measured in the map&#39;s distance units. If left blank the junction will not appear on the network map.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Description</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string that describes other significant information about the junction.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Tag</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string (with no spaces) used to assign the junction to a category, such as a pressure zone.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Elevation</span></p>
+<p class="p_Normal"><span style="color: #010100;">The elevation in feet (meters) above some common reference of the junction. This is a required property. Elevation is used only to compute pressure at the junction. It does not affect any other computed quantity.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Base Demand</span><span style="font-size: 3pt;"> </span></p>
+<p class="p_Normal"><span style="color: #010100;">The average or nominal demand for water by the main category of consumer at the junction, as measured in the current flow units. A negative value is used to indicate an external source of flow into the junction. If left blank then demand is assumed to be zero. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Demand Pattern</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID label of the <a href="time_patterns.htm" class="topiclink">time pattern</a> used to characterize time variation in demand for the main category of consumer at the junction. The pattern provides multipliers that are applied to the Base Demand to determine actual demand in a given time period. If left blank then the </span><span style="font-weight: bold; color: #010100;">Default Time </span></p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;">Pattern</span><span style="color: #010100;"> assigned in the <a href="analysis_options-hydraulics.htm" class="topiclink">Hydraulic Options</a> will be used.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Demand Categories</span></p>
+<p class="p_Normal"><span style="color: #010100;">When the ellipsis button is clicked a <a href="demand_editor.htm" class="topiclink">Demand Category Editor</a> is displayed that allows base demands and time patterns to be assigned to other categories of users at the junction.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Emitter Coefficient</span></p>
+<p class="p_Normal"><span style="color: #010100;">Discharge coefficient for emitter (sprinkler or nozzle) placed at junction. Units are flow units at 1 unit of pressure drop (psi or m). Leave blank or set to 0 if no emitter is present. See <a href="emitters.htm" class="topiclink">Emitters</a> for more details.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Initial Quality</span></p>
+<p class="p_Normal"><span style="color: #010100;">Water quality level at the junction at the start of the simulation. Can be left blank if no water quality analysis is being made or if the level is zero.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Source Quality</span></p>
+<p class="p_Normal"><span style="color: #010100;">When the ellipsis button is clicked a <a href="source_quality_editor.htm" class="topiclink">Source Quality Editor</a> appears in which the quality of any water entering the network at this location can be specified.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

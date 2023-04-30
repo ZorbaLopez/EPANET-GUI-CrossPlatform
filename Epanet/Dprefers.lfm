@@ -1,0 +1,228 @@
+object PreferencesForm: TPreferencesForm
+  Left = 806
+  Height = 327
+  Top = 189
+  Width = 275
+  HelpContext = 153
+  BorderStyle = bsDialog
+  Caption = 'Preferences'
+  ClientHeight = 327
+  ClientWidth = 275
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object PageControl1: TPageControl
+    Left = 7
+    Height = 266
+    Top = 8
+    Width = 260
+    TabStop = False
+    ActivePage = TabSheet2
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      HelpContext = 137
+      Caption = 'General'
+      ClientHeight = 236
+      ClientWidth = 254
+      object CheckBlinking: TCheckBox
+        Left = 41
+        Height = 18
+        Top = 19
+        Width = 136
+        Caption = 'Blinking Map Hiliter'
+        TabOrder = 0
+      end
+      object CheckFlyOvers: TCheckBox
+        Left = 41
+        Height = 18
+        Top = 56
+        Width = 146
+        Caption = 'Flyover Map Labeling'
+        TabOrder = 1
+      end
+      object CheckAutoBackup: TCheckBox
+        Left = 41
+        Height = 18
+        Top = 130
+        Width = 152
+        Caption = 'Automatic Backup File'
+        TabOrder = 3
+      end
+      object CheckConfirmDelete: TCheckBox
+        Left = 41
+        Height = 18
+        Top = 93
+        Width = 128
+        Caption = 'Confirm Deletions'
+        TabOrder = 2
+      end
+      object CheckClearFileList: TCheckBox
+        Left = 41
+        Height = 18
+        Top = 168
+        Width = 103
+        Caption = 'Clear File List'
+        TabOrder = 4
+      end
+      object LangVarBox: TComboBox
+        Left = 144
+        Height = 20
+        Top = 209
+        Width = 100
+        ItemHeight = 26
+        Style = csDropDownList
+        TabOrder = 5
+        Text = '0'
+      end
+      object Label5: TLabel
+        Left = 41
+        Height = 15
+        Top = 212
+        Width = 56
+        Caption = 'Language'
+        ParentColor = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      HelpContext = 142
+      Caption = 'Formats'
+      ClientHeight = 236
+      ClientWidth = 254
+      object Label1: TLabel
+        Left = 24
+        Height = 15
+        Top = 19
+        Width = 92
+        Caption = 'Node Parameter'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 176
+        Height = 15
+        Top = 19
+        Width = 52
+        Caption = 'Decimals'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 24
+        Height = 15
+        Top = 85
+        Width = 85
+        Caption = 'Link Parameter'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 176
+        Height = 15
+        Top = 85
+        Width = 52
+        Caption = 'Decimals'
+        ParentColor = False
+      end
+      object NodeVarBox: TComboBox
+        Left = 24
+        Height = 20
+        Top = 37
+        Width = 118
+        ItemHeight = 26
+        OnChange = NodeVarBoxChange
+        Style = csDropDownList
+        TabOrder = 0
+        Text = '0'
+      end
+      object NodeVarSpin: TSpinEdit
+        Left = 176
+        Height = 21
+        Top = 35
+        Width = 54
+        MaxValue = 6
+        OnChange = NodeVarSpinChange
+        TabOrder = 1
+      end
+      object LinkVarBox: TComboBox
+        Left = 24
+        Height = 20
+        Top = 104
+        Width = 118
+        ItemHeight = 26
+        OnChange = LinkVarBoxChange
+        Style = csDropDownList
+        TabOrder = 2
+        Text = '0'
+      end
+      object LinkVarSpin: TSpinEdit
+        Left = 176
+        Height = 21
+        Top = 102
+        Width = 52
+        MaxValue = 6
+        OnChange = LinkVarSpinChange
+        TabOrder = 3
+      end
+      object Panel1: TPanel
+        Left = 14
+        Height = 82
+        Top = 144
+        Width = 224
+        BevelOuter = bvNone
+        ClientHeight = 82
+        ClientWidth = 224
+        Color = clWindow
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 4
+        object Label6: TLabel
+          Left = 0
+          Height = 82
+          Top = 0
+          Width = 224
+          Align = alClient
+          AutoSize = False
+          Caption = 'Label6'
+          Font.Color = clWindowText
+          Font.Height = 12
+          Font.Name = 'Segoe UI'
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+          WordWrap = True
+        end
+      end
+    end
+  end
+  object BtnOK: TButton
+    Left = 10
+    Height = 25
+    Top = 290
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    OnClick = BtnOKClick
+    TabOrder = 1
+  end
+  object BtnCancel: TButton
+    Left = 100
+    Height = 25
+    Top = 290
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    OnClick = BtnCancelClick
+    TabOrder = 2
+  end
+  object BtnHelp: TButton
+    Left = 190
+    Height = 25
+    Top = 290
+    Width = 75
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 3
+  end
+end

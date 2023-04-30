@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tank Properties</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Tanks,Tanks Properties" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Tank Properties</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="tanks.htm">Previous</a>&nbsp;
+     <a href="tank_mixing_models.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="tank_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Tank ID</span></p>
+<p class="p_Normal"><span style="color: #010100;">A unique label used to identify the tank. It can consist of a combination of up to 31 numerals or characters. It cannot be the same as the ID for any other node. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">X-Coordinate</span></p>
+<p class="p_Normal"><span style="color: #010100;">The horizontal location of the tank on the map, measured in the map&#39;s distance units. If left blank the tank will not appear on the network map.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Y-Coordinate</span></p>
+<p class="p_Normal"><span style="color: #010100;">The vertical location of the tank on the map, measured in the map&#39;s distance units. If left blank the tank will not appear on the network map.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Description</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string that describes other significant information about the tank.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Tag</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string (with no spaces) used to assign the tank to a category, such as a pressure zone.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Elevation</span></p>
+<p class="p_Normal"><span style="color: #010100;">The elevation above a common datum in feet (meters) of the bottom shell of the tank. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Initial Level</span></p>
+<p class="p_Normal"><span style="color: #010100;">The height in feet (meters) of the water surface above the bottom elevation of the tank at the start of the simulation. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Minimum Level</span></p>
+<p class="p_Normal"><span style="color: #010100;">The minimum height in feet (meters) of the water surface above the bottom elevation that will be maintained. The tank will not be allowed to drop below this level. This is a required property.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Maximum Level</span></p>
+<p><span style="color: #010100;">The maximum height in feet (meters) of the water surface above the bottom elevation that will be maintained. The tank will not be allowed to rise above this level. This is a required property.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Diameter</span></p>
+<p><span style="color: #010100;">The diameter of the tank in feet (meters). For cylindrical tanks this is the actual diameter. For square or rectangular tanks it can be an equivalent diameter equal to 1.128 times the square root of the cross-sectional area. For tanks whose geometry will be described by a curve (see below) it can be set to any value. This is a required property.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Minimum Volume</span></p>
+<p><span style="color: #010100;">The volume of water in the tank when it is at its minimum level, in cubic feet (cubic meters). This is an optional property, useful mainly for describing the bottom geometry of non-cylindrical tanks where a full volume versus depth curve will not be supplied (see below).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Volume Curve</span></p>
+<p><span style="color: #010100;">The ID label of a curve used to describe the relation between <a href="volume_curve.htm" class="topiclink">tank volume and water level</a>. This property is useful for characterizing irregular-shaped tanks. If left blank then the tank is assumed to be cylindrical.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Can Overflow</span></p>
+<p><span style="color: #010100;">If set to </span><span style="font-weight: bold; color: #010100;">YES</span><span style="color: #010100;"> then any inflow to a full tank becomes overflow (i.e. spillage). Otherwise any links that would normally send flow to the tank are temporarily closed when the tank becomes full.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Mixing Model</span></p>
+<p><span style="color: #010100;">The type of water quality mixing that occurs within the tank. The choices include</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">fully mixed (</span><span style="font-weight: bold; color: #010100;">MIXED</span><span style="color: #010100;">),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">two-compartment mixing (</span><span style="font-weight: bold; color: #010100;">2COMP</span><span style="color: #010100;">),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">first-in-first-out plug flow </span><span style="font-weight: bold; color: #010100;">(FIFO</span><span style="color: #010100;">),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">last-in-first-out plug flow (</span><span style="font-weight: bold; color: #010100;">LIFO</span><span style="color: #010100;">).</span></p><p><span style="color: #010100;">See the <a href="tank_mixing_models.htm" class="topiclink">Mixing Models</a> topic for more information.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Mixing Fraction</span></p>
+<p><span style="color: #010100;">The fraction of the tank&#39;s total volume that comprises the inlet-outlet compartment of the two-compartment (</span><span style="font-weight: bold; color: #010100;">2COMP</span><span style="color: #010100;">) mixing model. Can be left blank if another type of mixing model is employed.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Reaction Coefficient</span></p>
+<p><span style="color: #010100;">The bulk reaction coefficient for chemical reactions in the tank. Use a positive value for growth reactions and a negative value for decay. Time units are 1/days. Leave blank if the Global Bulk reaction coefficient will apply. See <a href="water_quality_reactions.htm" class="topiclink">Water Quality Reactions</a> for more information.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Initial Quality</span></p>
+<p><span style="color: #010100;">Water quality level in the tank at the start of the simulation. Can be left blank if no water quality analysis is being made or if the level is zero.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Source Quality</span></p>
+<p><span style="color: #010100;">Click the ellipsis button to display a  <a href="source_quality_editor.htm" class="topiclink">Source Quality Editor</a> in which the quality of water entering the network from the tank can be specified (regardless of what the actual quality in the tank is).</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

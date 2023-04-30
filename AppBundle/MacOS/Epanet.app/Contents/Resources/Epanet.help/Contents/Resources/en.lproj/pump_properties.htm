@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Pump Properties</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Pumps,Pumps Properties" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Pump Properties</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="pumps.htm">Previous</a>&nbsp;
+     <a href="valves.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pump_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Pump ID</span></p>
+<p class="p_Normal"><span style="color: #010100;">A unique label used to identify the pump. It can consist of a combination of up to 15 numerals or characters. It cannot be the same as the ID for any other link. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Start Node</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID of the node on the suction side of the pump. This is a required property.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">End Node</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID of the node on the discharge side of the pump. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Description</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string that describes other significant information about the pump.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Tag</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string (with no spaces) used to assign the pump to a category, perhaps based on age, size or location.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Pump Curve</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID label of the <a href="pump_curve.htm" class="topiclink">pump curve</a> used to describe the relationship between the head delivered by the pump and the flow through the pump. Leave blank if the pump will be a constant energy pump (see below).</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Power</span></p>
+<p class="p_Normal"><span style="color: #010100;">The power supplied by the pump in horsepower (kw). Assumes that the pump supplies the same amount of energy no matter what the flow is. Leave blank if a pump curve will be used instead. Use when pump curve information is not available. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Speed</span></p>
+<p class="p_Normal"><span style="color: #010100;">The relative speed setting of the pump (unitless). For example, a speed setting of 1.2 implies that the rotational speed of the pump is 20% higher than the normal setting. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Pattern</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID label of a <a href="time_patterns.htm" class="topiclink">time pattern</a> used to control the pump&#39;s operation. The multipliers of the pattern are equivalent to speed settings. A multiplier of zero implies that the pump will be shut off during the corresponding time period. Leave blank if not applicable.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Initial Status</span></p>
+<p class="p_Normal"><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Normal"><span style="color: #010100;">State of the pump (open or closed) at the start of the simulation period.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Efficiency Curve</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID label of the curve that represents the pump&#39;s wire-to-water efficiency (in percent) as a function of flow rate. This information is used only to compute energy usage. Leave blank if not applicable or if the global pump efficiency supplied with the project&#39;s <a href="analysis_options-energy.htm" class="topiclink">Energy Options</a> will be used.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Energy Price</span></p>
+<p class="p_Normal"><span style="color: #010100;">The average or nominal price of energy in monetary units per kw-hr. Used only for computing the cost of energy usage. Leave blank if not applicable or if the global value supplied with the project&#39;s <a href="analysis_options-energy.htm" class="topiclink">Energy Options</a> will be used.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Price Pattern</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID label of the time pattern used to describe the variation in energy price throughout the day. Each multiplier in the pattern is applied to the pump&#39;s Energy Price to determine a time-of-day pricing for the corresponding period. Leave blank if not applicable or if the global pricing pattern specified in the project&#39;s <a href="analysis_options-energy.htm" class="topiclink">Energy Options</a> will be used.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

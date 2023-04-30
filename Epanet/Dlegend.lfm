@@ -1,0 +1,234 @@
+object LegendForm: TLegendForm
+  Left = 645
+  Height = 199
+  Top = 190
+  Width = 338
+  HelpContext = 217
+  BorderStyle = bsDialog
+  Caption = 'Legend Editor'
+  ClientHeight = 199
+  ClientWidth = 338
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Box0: TShape
+    Left = 4
+    Height = 29
+    Top = 6
+    Width = 11
+    OnMouseDown = BoxMouseDown
+  end
+  object Box1: TShape
+    Tag = 1
+    Left = 4
+    Height = 30
+    Top = 34
+    Width = 11
+    OnMouseDown = BoxMouseDown
+  end
+  object Box2: TShape
+    Tag = 2
+    Left = 4
+    Height = 30
+    Top = 63
+    Width = 11
+    OnMouseDown = BoxMouseDown
+  end
+  object Box3: TShape
+    Tag = 3
+    Left = 4
+    Height = 31
+    Top = 92
+    Width = 11
+    OnMouseDown = BoxMouseDown
+  end
+  object Box4: TShape
+    Tag = 4
+    Left = 4
+    Height = 29
+    Top = 122
+    Width = 11
+    OnMouseDown = BoxMouseDown
+  end
+  object Hiliter: TShape
+    Left = 92
+    Height = 13
+    Top = 145
+    Width = 15
+    Brush.Style = bsClear
+    Pen.Style = psDot
+    Shape = stRoundRect
+    Visible = False
+  end
+  object NameLabel: TLabel
+    Left = 22
+    Height = 15
+    Top = 7
+    Width = 64
+    Caption = 'NameLabel'
+    ParentColor = False
+  end
+  object UnitsLabel: TLabel
+    Left = 22
+    Height = 15
+    Top = 141
+    Width = 60
+    Caption = 'UnitsLabel'
+    ParentColor = False
+  end
+  object Bevel1: TBevel
+    Left = 248
+    Height = 185
+    Top = 8
+    Width = 2
+    Shape = bsLeftLine
+  end
+  object Edit1: TEdit
+    Left = 22
+    Height = 21
+    Top = 25
+    Width = 71
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 22
+    Height = 21
+    Top = 54
+    Width = 71
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 22
+    Height = 21
+    Top = 85
+    Width = 71
+    TabOrder = 2
+  end
+  object Edit4: TEdit
+    Left = 22
+    Height = 21
+    Top = 115
+    Width = 71
+    TabOrder = 3
+  end
+  object BtnIntervals: TButton
+    Left = 104
+    Height = 23
+    Top = 25
+    Width = 136
+    Caption = '&Equal Intervals'
+    OnClick = BtnIntervalsClick
+    TabOrder = 4
+  end
+  object BtnColorRamp: TButton
+    Left = 104
+    Height = 23
+    Top = 85
+    Width = 136
+    Caption = 'Color Ramp ...'
+    OnClick = BtnColorRampClick
+    TabOrder = 6
+  end
+  object BtnReverse: TButton
+    Left = 104
+    Height = 23
+    Top = 115
+    Width = 136
+    Caption = '&Reverse Colors'
+    OnClick = BtnReverseClick
+    TabOrder = 7
+  end
+  object Panel1: TPanel
+    Left = 7
+    Height = 24
+    Top = 163
+    Width = 233
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    Caption = 'Click on color you wish to change'
+    Color = clInfoBk
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 10
+  end
+  object BtnOK: TButton
+    Left = 256
+    Height = 25
+    Top = 9
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = BtnOKClick
+    TabOrder = 8
+  end
+  object BtnCancel: TButton
+    Left = 257
+    Height = 25
+    Top = 49
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    OnClick = BtnCancelClick
+    TabOrder = 9
+  end
+  object BtnQuantiles: TButton
+    Left = 104
+    Height = 25
+    Top = 54
+    Width = 136
+    Caption = 'Equal &Quantiles'
+    OnClick = BtnQuantilesClick
+    TabOrder = 5
+  end
+  object BtnHelp: TButton
+    Left = 257
+    Height = 25
+    Top = 89
+    Width = 75
+    Caption = 'Help'
+    OnClick = BtnHelpClick
+    TabOrder = 11
+  end
+  object CheckFramed: TCheckBox
+    Left = 257
+    Height = 18
+    Top = 168
+    Width = 69
+    Caption = 'Framed'
+    OnClick = CheckFramedClick
+    TabOrder = 12
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 278
+    Top = 120
+  end
+end

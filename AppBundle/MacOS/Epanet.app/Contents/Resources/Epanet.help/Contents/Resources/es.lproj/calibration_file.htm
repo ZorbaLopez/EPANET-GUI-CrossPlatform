@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Ficheros de Calibración</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Informe Calibración,Informe Calibración Fichero de Calibración,Ficheros,Ficheros Fichero de Calibración" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Ficheros de Calibración</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="registering_calibration_data.htm">Anterior</a>&nbsp;
+     <a href="viewing_a_project_summary.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="calibration_file.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Un </span><span style="font-weight: bold; color: #010100;">Fichero de Calibración</span><span style="color: #010100;"> es un fichero de texto que contiene los valores medidos de una determinada magnitud en uno o más puntos de la red, a lo largo de un cierto periodo de tiempo. El fichero proporciona una serie de valores observados, los cuales pueden contrastarse con los resultados obtenidos por simulación. Para contrastar diferentes magnitudes (p. ej. presiones, flúor, cloro, caudal, etc) o bien la misma magnitud en distintos escenarios, se deben utilizar ficheros distintos.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Cada línea del fichero debe contener la siguiente información:</span></p>
+<p><span style="font-size: 3pt; color: #010100;"> &nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Campo</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Descripción</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;">Localización</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Identificativo ID del elemento de la red en el cual se ha efectuado la medida</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;">Instante</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Tiempo (en horas) en que se efectuó la medida</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;">Valor</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Resultado de la medida</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">La medida del tiempo debe estar referida a la hora de comienzo de la simulación, con respecto a la cual se desea contrastar el Fichero de Calibración. El instante de tiempo puede introducirse bien como número decimal (p.ej. 27.5) o con el formato horas:minutos (p.ej. 27:30). Para los datos referentes a una simulación en régimen permanente, el valor del tiempo será 0.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Se pueden añadir líneas de comentario, anteponiéndoles un punto y coma (;).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Para una serie de medidas realizadas sobre el mismo punto no es necesario repetir el ID de éste cada vez, pudiendo dejarse la columna correspondiente en blanco, una vez declarado el ID en la primera línea. A continuación se muestra un extracto de un Fichero de Calibración:</span></p>
+<p style="margin: 0 0 0 0.1146in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">;Medidas de flúor como trazador</span></p>
+<p style="margin: 0 0 0 0.1146in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">;Localiz. &nbsp; &nbsp; &nbsp; &nbsp;Instante &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Valor</span></p>
+<p style="margin: 0 0 0 0.1146in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">;--------------------------</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">N1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.5</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="width:0.2500in;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'Courier New',Courier,monospace; color: #010100;">6.4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="width:0.2500in;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'Courier New',Courier,monospace; color: #010100;">12.7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.9</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">N2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.72</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="width:0.2500in;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'Courier New',Courier,monospace; color: #010100;">5.6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.77</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

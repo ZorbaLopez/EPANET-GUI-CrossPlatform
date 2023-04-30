@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Wall Reaction - Pipe Roughness Correlation</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Water Quality Reactions,Water Quality Reactions Wall Reaction - Pipe Roughness" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Wall Reaction - Pipe Roughness Correlation</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="pipe_wall_reaction_rates.htm">Previous</a>&nbsp;
+     <a href="parcel_tracking_algorithm.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="wall_reaction-pipe_roughness.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">It is well known that as metal pipes age their roughness tends to increase due to encrustation and tuburculation of corrosion products on the pipe walls. This increase in roughness produces a lower Hazen-Williams C-factor or a higher Darcy-Weisbach roughness coefficient, resulting in greater frictional head loss in flow through the pipe.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">There is some evidence to suggest that the same processes that increase a pipe&#39;s roughness with age also tend to increase the reactivity of its wall with some chemical species, particularly chlorine and other disinfectants. EPANET can make each pipe&#39;s wall reaction coefficient (Kw) be a function of the coefficient used to describe its roughness. A different function applies depending on the formula used to compute head loss through the pipe:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0.0521in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Head Loss Formula</span></p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Wall Reaction Formula</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal">Hazen-Williams</p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Kw = F / C</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal">Darcy-Weisbach</p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Kw = -F / log(e/d)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.5521in; padding:0.0208in; border:none"><p class="p_Normal">Chezy-Manning</p>
+</td>
+<td style="vertical-align:top; width:1.7604in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Kw = F* n</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="color: #010100;">where</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;C</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal"><span style="color: #010100;">Hazen-Williams C-factor</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;e</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal"><span style="color: #010100;">Darcy-Weisbach roughness</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;d</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal">pipe diameter</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;n</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal">Manning roughness coefficient</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.3333in; padding:0; border:none"><p class="p_Normal"> &nbsp;F</p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:2.6667in; padding:0; border:none"><p class="p_Normal">wall reaction - pipe roughness coefficient</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">The coefficient F must be developed from site-specific field measurements and will have a different meaning depending on which head loss equation is used. The advantage of using this approach is that it requires only a single parameter, F, to allow wall reaction coefficients to vary throughout the network in a physically meaningful way.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

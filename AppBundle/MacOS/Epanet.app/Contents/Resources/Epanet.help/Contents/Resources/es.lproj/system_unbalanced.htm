@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sistema No Equilibrado</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Advertencias,Advertencias Sistema No Equilibrado" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Sistema No Equilibrado</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="negative_pressures.htm">Anterior</a>&nbsp;
+     <a href="unsolveable_equations.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="system_unbalanced.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">La condición de Sistema No Equilibrado ocurre cuando EPANET no puede converger a la solución, dentro del número máximo de iteraciones permitido, para algún instante de la simulación. Ello puede deberse al continuo cambio de estado de elementos como bombas, válvulas o tuberías con válvula de retención, durante el transcurso de las iteraciones. Por ejemplo, los límites de presión que controlan el estado de una bomba pueden estar demasiado próximos, o la curva de una bomba puede ser demasiado plana, provocando continuos arranques y paros.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Para eliminar la condición de sistema no equilibrado se puede intentar incrementar el número de iteraciones permitidas, disminuir la precisión de convergencia, o bien modificar convenientemente los parámetros Frecuencia de Chequeo, Máximo Iterac. con Chequeo y Límite de Relajación. Todos estos parámetros figuran entre las <a href="analysis_options-hydraulics.htm" class="topiclink">Opciones Hidráulicas</a>. Si la condición de no equilibrio persiste, entonces otra de las opciones hidráulicas, denominada </span><span style="font-weight: bold; color: #010100;">Caso de No Equilibrio</span><span style="color: #010100;">, ofrece dos formas de proceder. Una es terminar el análisis al encontrarse esta condición, y la otra es realizar todavía 10 iteraciones más, pero manteniendo inmutable el estado de todas las líneas en su estado actual. Si con ello se consigue la convergencia, se emitirá un mensaje de advertencia informando sobre la posibilidad de que el sistema sea inestable. Si aun así no se consigue la convergencia, entonces se emitirá el mensaje de "Sistema no equilibrado". En cualquier caso el análisis continuará con el periodo siguiente.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Si el análisis para un periodo determinado finaliza con el sistema de ecuaciones no equilibrado, el usuario debe ser consciente de que los resultados del mismo no son fiables. Dependiendo de las circunstancias que concurran, por ejemplo si los errores afectan a los caudales que entran o salen de los depósitos, la fiabilidad de los resultados puede afectar también a todos los periodos subsiguientes.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

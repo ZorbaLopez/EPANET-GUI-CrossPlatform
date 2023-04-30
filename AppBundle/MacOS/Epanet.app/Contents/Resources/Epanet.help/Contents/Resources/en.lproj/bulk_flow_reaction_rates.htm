@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bulk Flow Reaction Rates</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bulk Reaction Rates,Water Quality Reactions,Water Quality Reactions Bulk Flow Reactions" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Bulk Flow Reaction Rates</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="water_quality_reactions.htm">Previous</a>&nbsp;
+     <a href="kinetic_models-simple_first_or.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="bulk_flow_reaction_rates.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Bulk flow reactions are reactions that occur in the main flow stream of a pipe or in a storage tank, unaffected by any processes that might involve the pipe wall. EPANET models these reactions using n-th order kinetics, where the instantaneous rate of reaction (R in mass/volume/time) is assumed to be concentration-dependent according to</span></p>
+<p class="p_Normal"><img alt="_bm60" style="margin:0;width:0.7083in;height:0.2500in;border:none" src="_bm60.gif"/></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">where </span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="color: #010100;"> = a bulk rate coefficient, </span><span style="font-style: italic; color: #010100;">C</span><span style="color: #010100;"> = reactant concentration (mass/volume), and </span><span style="font-style: italic; color: #010100;">n</span><span style="color: #010100;"> = a reaction order. </span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="color: #010100;"> has units of concentration raised to the (1-n) power divided by time. It is positive for growth reactions and negative for decay reactions.</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">EPANET can also consider reactions where a limiting concentration exists on the ultimate growth or loss of the substance. In this case the rate expression for a growth reaction becomes</span></p>
+<p class="p_Normal"><img alt="_bm61" style="margin:0;width:1.5313in;height:0.2604in;border:none" src="_bm61.gif"/></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">where </span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="color: #010100;"> = the limiting concentration. (For decay reactions (</span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> - C</span><span style="color: #010100;">) is replaced by (</span><span style="font-style: italic; color: #010100;">C - C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="color: #010100;">).)</span></p>
+<p class="p_Normal"><span style="color: #010100;">Thus there are three parameters (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-size: 15pt; font-style: italic; color: #010100;">, </span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-size: 15pt; color: #010100;">, </span><span style="color: #010100;">and </span><span style="font-style: italic; color: #010100;">n</span><span style="color: #010100;">) that are used to characterize bulk reaction rates. General values can be selected for these parameters that lead to several well-known kinetic models. These include:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;"><a href="kinetic_models-simple_first_or.htm" class="topiclink">Simple First-Order Decay</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> &lt; 0, C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> = 0, n = 1</span><span style="color: #010100;">)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="kinetic_models_first-order_sat.htm" class="topiclink">First-Order Saturation Growth</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> &gt; 0, C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> &gt; 0, n = 1</span><span style="color: #010100;">)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="kinetic_models-two-component.htm" class="topiclink">Two-Component, Second-Order Decay</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> &lt; 0, C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> </span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&ne;</span><span style="font-style: italic; color: #010100;"> 0, n = 2</span><span style="color: #010100;">)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="kinetic_models-michaelis-mento.htm" class="topiclink">Michaelis-Menton Kinetics</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> </span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&ne;</span><span style="font-style: italic; color: #010100;"> 0</span><span style="color: #010100;">, </span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> &gt; 0, n &lt; 0</span><span style="color: #010100;">) </span></p>
+</td></tr></table>
+
+</body>
+</html>

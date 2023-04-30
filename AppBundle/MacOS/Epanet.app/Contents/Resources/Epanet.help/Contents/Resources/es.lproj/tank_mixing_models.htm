@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Modelos de Mezcla en los Depósitos</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Depósitos,Modelos Mezcla en Depósitos" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Modelos de Mezcla en los Depósitos</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="tank_properties.htm">Anterior</a>&nbsp;
+     <a href="pipes.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="tank_mixing_models.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">EPANET puede utilizar cuatro modelos diferentes para simular el proceso de mezcla que ocurre en los depósitos. Cada depósito de la red puede asociarse con un modelo diferente.</span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0;"><table style="width:75%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:middle; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm47" style="margin:0;width:1.4479in;height:1.5208in;border:none" src="_bm47_zoom74.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Mezcla Completa</span></p>
+<p class="p_Normal"><span style="color: #010100;">El modelo de Mezcla Completa asume que toda el agua que entra al depósito se mezcla total e instantáneamente con el agua ya almacenada. Es el modelo de mezcla más sencillo que puede formularse, no requiere ningún parámetro extra, y la práctica demuestra que se ajusta bastante bien a un gran número de depósitos de regulación.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm48" style="margin:0;width:1.4375in;height:1.5104in;border:none" src="_bm48_zoom73.gif"/></p>
+</td>
+<td style="vertical-align:middle; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Mezcla en Dos Compartimentos</span></p>
+<p class="p_Normal"><span style="color: #010100;">El modelo de Dos Compartimentos divide el volumen de almacenamiento del depósito en dos compartimentos, en cada uno de los cuales se admite la mezcla completa. Se supone además que las tuberías de entrada y salida del depósito se encuentran conectadas al primer compartimento. El agua nueva que entra al depósito se mezcla con el agua contenida en el primer compartimento. Si éste está lleno, el exceso de agua pasa al segundo compartimento, donde se mezcla totalmente con el agua almacenada en él. Cuando el agua abandona el depósito, sale del primer compartimento, y si estuviera lleno, recibe una cantidad equivalente de agua del segundo compartimento. El primer compartimento pretende simular una zona de 'cortocircuito' entre el flujo que entra y el flujo que sale, mientras que el segundo compartimento representa una zona muerta. El usuario debe proporcionar en este modelo un parámetro adicional, la fracción del volumen total del depósito que corresponde al primer compartimento.</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm49" style="margin:0;width:1.4792in;height:1.3021in;border:none" src="_bm49_zoom66.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Flujo en Pistón tipo FIFO</span></p>
+<p class="p_Normal"><span style="color: #010100;">El modelo de flujo en pistón tipo FIFO (First Input is First Output ó El primero en entrar es el primero en salir) supone que no hay mezcla alguna del agua mientras permanece en el depósito. Los diferentes volúmenes de agua, aun siendo contiguos, viajan de forma separada por el interior del depósito, de forma que el primer volumen en entrar será el primero en salir. Desde un punto de vista físico, este modelo resulta apropiado para simular depósitos con pantallas en su interior, y que operan con flujos continuos de entrada y salida. No se necesita ningún parámetro adicional para caracterizar este modelo de mezcla.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm50" style="margin:0;width:1.4583in;height:1.4479in;border:none" src="_bm50_zoom71.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Flujo en Pistón tipo LIFO</span></p>
+<p class="p_Normal"><span style="color: #010100;">El modelo de flujo en pistón tipo LIFO (Last Input is First Output ó El último en entrar es el primero en salir) también asume que no hay mezcla de agua entre los diferentes volúmenes que entran al depósito. Sin embargo, a diferencia del modelo anterior, los distintos volúmenes se van apilando uno sobre otro, a medida que el agua entra o sale del depósito por el fondo. Este tipo de modelo es aplicable a torres de agua altas y estrechas, con una tubería única de entrada y salida en el fondo, y con una cantidad de movimiento del flujo entrante reducida. Como en el caso anterior, tampoco se requiere ningún parámetro adicional.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

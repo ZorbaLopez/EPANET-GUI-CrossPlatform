@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Importación Parcial de una Red</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Archivos,Importar Archivos,Importar,Importar Importar Red Parcial" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Importación Parcial de una Red</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="exporting_a_scenario.htm">Anterior</a>&nbsp;
+     <a href="importing_a_network_map.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="importing_a_partial_network.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">EPANET tiene la posibilidad de importar el trazado de las tuberías de una red desde un simple fichero de texto. La descripción de la red en este caso consta simplemente de los identificativos ID de los nudos, junto a sus coordenadas, y los identificativos ID de las líneas, junto a los ID de sus nudos extremos correspondientes (también se admiten vértices para definir el trazado de las líneas). Mediante este procedimiento se simplifica la utilización de programas de CAD o SIG para digitalizar el trazado de la red, y transferir a continuación estos datos a EPANET.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">El formato del fichero de texto utilizado para describir el trazado de una red es el que sigue, donde los textos entre corchetes (< >) hacen referencia al tipo de información que debe figurar en esa línea del fichero:</span></p>
+<p><span style="font-size: 3pt; color: #010100;">  </span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">[TITLE]</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">&lt;descripción opcional del fichero&gt;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">[JUNCTIONS]</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">&lt;Identificativo ID de cada nudo&gt;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">[PIPES]</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">&lt;Identificativo ID de cada tubería, seguido por los identificativos ID de sus nudos extremos&gt;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">[COORDINATES]</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">&lt;Identificativo ID de un nudo y sus coordenadas X e Y&gt;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">[VERTICES]</span></p>
+<p class="p_Normal"><span style="color: #010100;">&lt;Identificativo ID de una tubería y coordenadas X e Y de cada vértice intermedio para trazados no rectilíneos&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Obsérvese que sólo serán representados los nudos y tuberías de la red. Otros elementos, tales como depósitos y bombas, pueden importarse como nudos o tuberías respectivamente y reconvertirse posteriormente, o bien pueden ser añadidos más tarde. El usuario debe encargarse de transferir la información procedente de un sistema CAD o SIG a un fichero de texto con el formato indicado.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Además de esta representación parcial de la red, se pueden escribir todas las especificaciones completas de la red en un fichero de texto, utilizando el mismo formato que emplea EPANET cuando exporta un proyecto a un fichero de texto (ver <a href="exporting_to_text_file.htm" class="topiclink">Exportación a un Fichero de Texto</a>). En este caso, el fichero contendrá también las propiedades de nudos y líneas, tales como cotas, demandas, diámetros, rugosidades, etc.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

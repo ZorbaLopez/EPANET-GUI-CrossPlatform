@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Emisores</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Emisores,Simulación Hidráulica,Emisores Simulación Hidráulica" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Emisores</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="demand_models.htm">Anterior</a>&nbsp;
+     <a href="head_loss_formulas.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="emitters.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Los</span> <span style="font-weight: bold; color: #010100;">Emisores</span><span style="color: #010100;"> son dispositivos asociados a los nudos de caudal que permiten modelar el flujo de salida a través de una tobera u orificio descargando a la atmósfera. El caudal de salida por un emisor varía en función de la presión disponible en el nudo elevada a alguna potencia. La constante de proporcionalidad se denomina el "coeficiente de descarga". En el caso de las toberas y rociadores el exponente de  presión adopta el valor 0,5 mientras que el coeficiente de descarga viene proporcionado por el fabricante,  y representa el caudal que sale por el emisor, en l/s (gpm), para una caída de presión en el mismo de 1 m (1 psi).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Los emisores se emplean para simular el caudal que sale a través de un rociador en una red de extinción de incendios, o a través de un hidrante en un sistema de riego a presión. También pueden emplearse para simular una fuga en una tubería conectada al nudo (en este caso el coeficiente de descarga y el exponente de la presión en la fuga deben estimarse) o para calcular el caudal de incendios en un nudo (esto es, el caudal extra que puede suministrarse para una presión residual mínima). Para esto último basta imponer un valor elevado al coeficiente de descarga (p. ej. 100 veces el caudal máximo esperado) y modificar la cota del nudo agregándole el valor de la presión mínima requerida, en m (pies). EPANET interpreta los emisores como una propiedad del nudo, y no como un componente independiente.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Cuando se especifica un emisor y una demanda normal en un nudo, el valor que presenta EPANET en los resultados de salida incluye a ambos, la demanda normal y el caudal que atraviesa el emisor.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

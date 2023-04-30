@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":5815449,"name":"tqueryform.caption","sourcebytes":[81,117,101,114,121],"value":"Query"},
+{"hash":48,"name":"tqueryform.combobox1.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"tqueryform.combobox2.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"tqueryform.combobox3.text","sourcebytes":[48],"value":"0"},
+{"hash":95130628,"name":"tqueryform.button1.caption","sourcebytes":[83,117,98,109,105,116],"value":"Submit"}
+]}

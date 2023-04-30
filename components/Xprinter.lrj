@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":126668695,"name":"tpreviewform.caption","sourcebytes":[80,114,101,118,105,101,119],"value":"Preview"},
+{"hash":154105748,"name":"tpreviewform.shwgrdbtn.caption","sourcebytes":[83,104,111,119,32,38,71,114,105,100],"value":"Show &Grid"},
+{"hash":48989912,"name":"tpreviewform.pagewidthbtn.caption","sourcebytes":[80,97,103,101,32,38,87,105,100,116,104],"value":"Page &Width"},
+{"hash":48744981,"name":"tpreviewform.fullpagebtn.caption","sourcebytes":[38,70,117,108,108,32,80,97,103,101],"value":"&Full Page"},
+{"hash":5548190,"name":"tpreviewform.printbtn.caption","sourcebytes":[38,80,114,105,110,116,32,46,46,46],"value":"&Print ..."},
+{"hash":44709525,"name":"tpreviewform.closebtn.caption","sourcebytes":[38,67,108,111,115,101],"value":"&Close"},
+{"hash":226500517,"name":"tpreviewform.prevpagebtn.caption","sourcebytes":[80,114,101,38,118,32,80,97,103,101],"value":"Pre&v Page"},
+{"hash":258462485,"name":"tpreviewform.nextpagebtn.caption","sourcebytes":[38,78,101,120,116,32,80,97,103,101],"value":"&Next Page"}
+]}

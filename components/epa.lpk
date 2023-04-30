@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="Epa"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <Optimizations>
+          <OptimizationLevel Value="3"/>
+        </Optimizations>
+      </CodeGeneration>
+    </CompilerOptions>
+    <Version Major="5"/>
+    <Files Count="7">
+      <Item1>
+        <Filename Value="NumEdit.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="NumEdit"/>
+      </Item1>
+      <Item2>
+        <Filename Value="OpenDlg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="OpenDlg"/>
+      </Item2>
+      <Item3>
+        <Filename Value="PgSetup.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="PgSetup"/>
+      </Item3>
+      <Item4>
+        <Filename Value="PSForm.pas"/>
+        <UnitName Value="PSForm"/>
+      </Item4>
+      <Item5>
+        <Filename Value="VirtList.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="VirtList"/>
+      </Item5>
+      <Item6>
+        <Filename Value="XPForm.pas"/>
+        <UnitName Value="XPForm"/>
+      </Item6>
+      <Item7>
+        <Filename Value="Xprinter.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="Xprinter"/>
+      </Item7>
+    </Files>
+    <CompatibilityMode Value="True"/>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="languages"/>
+      <EnableI18NForLFM Value="True"/>
+    </i18n>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="TAChartWMF"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="Printer4Lazarus"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

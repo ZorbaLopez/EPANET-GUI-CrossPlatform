@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tank Mixing Models</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Tanks,Tanks Mixing Models" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Tank Mixing Models</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="tank_properties.htm">Previous</a>&nbsp;
+     <a href="pipes.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="tank_mixing_models.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">EPANET can use four different types of models to characterize mixing within storage tanks. Different models can be used with different tanks within a network.</span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0;"><table style="width:75%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:middle; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm47" style="margin:0;width:1.4479in;height:1.5208in;border:none" src="_bm47_zoom74.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Complete Mixing</span></p>
+<p class="p_Normal"><span style="color: #010100;">This mixing &nbsp;model assumes that all water that enters a tank is instantaneously and completely mixed with the water already in the tank. It is the simplest form of mixing behavior to assume, requires no extra parameters to describe it, and seems to apply quite well to a large number of facilities that operate in fill-and-draw fashion.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm48" style="margin:0;width:1.4375in;height:1.5104in;border:none" src="_bm48_zoom73.gif"/></p>
+</td>
+<td style="vertical-align:middle; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Two-Compartment Mixing</span></p>
+<p class="p_Normal"><span style="color: #010100;">This mixing model divides the available storage volume in a tank into two compartments, both of which are assumed to be completely mixed. The inlet/outlet pipes of the tank are assumed to be located in the first compartment. New water that enters the tank mixes with the water in the first compartment. If this compartment is full, then it sends its overflow to the second compartment where it completely mixes with the water already stored there. When water leaves the tank, it exits from the first compartment, which if full, receives an equivalent amount of water from the second compartment to make up the difference. The first compartment is capable of simulating short circuiting between inflow and outflow while the second compartment can represent dead zones. The user must supply a single parameter which is the fraction of the total tank volume devoted to the first compartment.</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm49" style="margin:0;width:1.4792in;height:1.3021in;border:none" src="_bm49_zoom66.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">First In - First Out (FIFO) Plug Flow Mixing</span></p>
+<p class="p_Normal"><span style="color: #010100;">This mixing model assumes that there is no mixing of water at all during its residence time in a tank. Water parcels move through the tank in a segregated fashion where the first parcel to enter is also the first to leave. Physically speaking, this model is most appropriate for baffled tanks that operate with simultaneous inflow and outflow. There are no additional parameters needed to describe this mixing model.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.6354in; padding:0; border:none"><p class="p_Normal"><img alt="_bm50" style="margin:0;width:1.4583in;height:1.4479in;border:none" src="_bm50_zoom71.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.3333in; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Last In - Last Out (LIFO) Plug Flow</span></p>
+<p class="p_Normal"><span style="color: #010100;">This mixing model assumes that there is no mixing between parcels of water that enter a tank. However in contrast to FIFO Plug Flow, the water parcels stack up one on top of another, where water enters and leaves the tank on the bottom. Physically speaking this type of model might apply to a tall, narrow standpipe with an inlet/outlet pipe at the bottom and a low momentum inflow. It requires no additional parameters be provided.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

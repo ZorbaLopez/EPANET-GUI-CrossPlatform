@@ -1,0 +1,138 @@
+object EnergyForm: TEnergyForm
+  Left = 292
+  Height = 487
+  Top = 185
+  Width = 906
+  Caption = 'Energy Report'
+  ClientHeight = 487
+  ClientWidth = 906
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  Icon.Data = {
+    3E01000000000100010010101000000000002801000016000000280000001000
+    0000200000000100040000000000C00000000000000000000000000000000000
+    000000000000000080000080000000808000800000008000800080800000C0C0
+    C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+    FF0000000000000000000000000000000000000FFFFFFFFFFF00000F00000000
+    0F00000FFFFFFFFFFF00000F0000000FFF00000FFFFFFFFFFF00000F00000000
+    0F00000FFFFFFFFFFF00000F0000000FFF00000FFFFFFFFFFF00000F00000000
+    0F00000FFFFFFFFFFF0000000000000000000000000000000000000000000000
+    0000FFFF0000C0010000C0010000C0010000C0010000C0010000C0010000C001
+    0000C0010000C0010000C0010000C0010000C0010000C0010000FFFF0000FFFF
+    0000
+  }
+  KeyPreview = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poDefault
+  LCLVersion = '2.2.6.0'
+  Visible = True
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 487
+    Top = 0
+    Width = 906
+    TabStop = False
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Table'
+      ClientHeight = 459
+      ClientWidth = 898
+      object StringGrid1: TStringGrid
+        Left = 0
+        Height = 459
+        Top = 0
+        Width = 898
+        Align = alClient
+        FixedCols = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goThumbTracking]
+        TabOrder = 0
+        OnDrawCell = StringGrid1DrawCell
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Chart'
+      ClientHeight = 459
+      ClientWidth = 898
+      object RadioGroup1: TRadioGroup
+        Left = 0
+        Height = 459
+        Top = 0
+        Width = 129
+        Align = alLeft
+        AutoFill = True
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 439
+        ClientWidth = 125
+        Items.Strings = (
+          'Utilization'
+          'Efficiency'
+          'Kw-hr/Mgal'
+          'Average Kw'
+          'Peak Kw'
+          'Cost/day'
+        )
+        OnClick = RadioGroup1Click
+        TabOrder = 0
+      end
+      object Chart1: TChart
+        Left = 129
+        Height = 459
+        Top = 0
+        Width = 769
+        AllowPanning = False
+        AxisList = <        
+          item
+            Intervals.MaxLength = 100
+            AxisPen.Visible = True
+            Marks.LabelFont.Height = -11
+            Marks.LabelBrush.Style = bsClear
+            Minors = <>
+            Title.LabelFont.Orientation = 900
+            Title.LabelBrush.Style = bsClear
+          end        
+          item
+            Grid.Visible = False
+            Alignment = calBottom
+            AxisPen.Visible = True
+            Marks.LabelFont.Height = -11
+            Marks.Format = '%2:s'
+            Marks.LabelBrush.Style = bsClear
+            Marks.Style = smsLabel
+            Minors = <>
+            Title.LabelBrush.Style = bsClear
+          end>
+        Frame.Visible = False
+        MarginsExternal.Bottom = 24
+        Title.Font.Height = -13
+        Title.Font.Style = [fsBold]
+        Title.Text.Strings = (
+          'TChart'
+        )
+        Title.Visible = True
+        Align = alClient
+        Color = clBtnHighlight
+        OnMouseDown = Chart1MouseDown
+        object Series1: TBarSeries
+          BarBrush.Color = 14334375
+          BarWidthPercent = 33
+          Marks.Visible = False
+        end
+      end
+    end
+  end
+end

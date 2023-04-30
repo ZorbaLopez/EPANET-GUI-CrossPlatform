@@ -1,0 +1,88 @@
+object CalibOptionsForm: TCalibOptionsForm
+  Left = 597
+  Height = 210
+  Top = 255
+  Width = 282
+  HelpContext = 306
+  BorderStyle = bsDialog
+  Caption = 'Calibration Report Options'
+  ClientHeight = 210
+  ClientWidth = 282
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object BtnOK: TButton
+    Left = 200
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object BtnCancel: TButton
+    Left = 200
+    Height = 25
+    Top = 56
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object BtnHelp: TButton
+    Left = 200
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 4
+  end
+  object GBVariable: TGroupBox
+    Left = 8
+    Height = 49
+    Top = 8
+    Width = 137
+    Caption = 'Calibrate Against'
+    ClientHeight = 20
+    ClientWidth = 127
+    TabOrder = 0
+    object VariablesList: TComboBox
+      Left = 0
+      Height = 20
+      Top = 0
+      Width = 128
+      ItemHeight = 26
+      OnChange = VariablesListChange
+      Style = csDropDownList
+      TabOrder = 0
+      Text = '0'
+    end
+  end
+  object GBLocations: TGroupBox
+    Left = 8
+    Height = 129
+    Top = 72
+    Width = 153
+    Caption = 'Measured at Nodes'
+    ClientHeight = 100
+    ClientWidth = 143
+    TabOrder = 1
+    object LocationsList: TCheckListBox
+      Left = 0
+      Height = 100
+      Top = 0
+      Width = 143
+      Align = alClient
+      ItemHeight = 0
+      TabOrder = 0
+    end
+  end
+end

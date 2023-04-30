@@ -1,0 +1,224 @@
+object MapForm1: TMapForm1
+  Left = 0
+  Height = 329
+  Top = 0
+  Width = 407
+  ClientHeight = 329
+  ClientWidth = 407
+  Color = clBtnFace
+  DockSite = True
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnDblClick = FormDblClick
+  OnEnter = FormActivate
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnMouseWheel = FormMouseWheel
+  OnResize = FormResize
+  ParentBackground = False
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 507
+  DesignTop = 388
+  object NodeLegendPanel: TPanel
+    Cursor = crArrow
+    Left = 4
+    Height = 180
+    Top = 50
+    Width = 110
+    BevelOuter = bvNone
+    ClientHeight = 180
+    ClientWidth = 110
+    TabOrder = 0
+    UseDockManager = False
+    Visible = False
+    OnEnter = FormActivate
+    OnPaint = LegendPanelPaint
+    object NodeLegendBox: TPaintBox
+      Left = 0
+      Height = 180
+      Top = 0
+      Width = 110
+      Align = alClient
+      OnDblClick = NodeLegendBoxDblClick
+      OnMouseDown = DragLegend
+      OnMouseMove = MoveLegend
+      OnMouseUp = LegendMouseUp
+      OnPaint = NodeLegendBoxPaint
+    end
+  end
+  object LinkLegendPanel: TPanel
+    Cursor = crArrow
+    Left = 130
+    Height = 180
+    Top = 50
+    Width = 110
+    BevelOuter = bvNone
+    ClientHeight = 180
+    ClientWidth = 110
+    TabOrder = 1
+    UseDockManager = False
+    Visible = False
+    OnEnter = FormActivate
+    OnPaint = LegendPanelPaint
+    object LinkLegendBox: TPaintBox
+      Left = 0
+      Height = 180
+      Top = 0
+      Width = 110
+      Align = alClient
+      OnDblClick = LinkLegendBoxDblClick
+      OnMouseDown = DragLegend
+      OnMouseMove = MoveLegend
+      OnMouseUp = LegendMouseUp
+      OnPaint = LinkLegendBoxPaint
+    end
+  end
+  object HintPanel: TPanel
+    Left = 256
+    Height = 33
+    Top = 48
+    Width = 57
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 31
+    ClientWidth = 55
+    Color = clInfoBk
+    FullRepaint = False
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 2
+    object HintLabel: TLabel
+      Left = 0
+      Height = 31
+      Top = 0
+      Width = 55
+      Align = alClient
+      Caption = 'HintLabel'
+      ParentColor = False
+    end
+  end
+  object TimeLegendPanel: TPanel
+    Cursor = crArrow
+    Left = 16
+    Height = 25
+    Top = 8
+    Width = 129
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    Caption = 'TimeLegendPanel'
+    Color = clBlack
+    Font.Color = clLime
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    Visible = False
+    OnDblClick = TimeLegendPanelDblClick
+    OnEnter = FormActivate
+    OnMouseDown = DragLegend
+    OnMouseMove = MoveLegend
+    OnMouseUp = LegendMouseUp
+  end
+  object PopupMenu1: TPopupMenu
+    AutoPopup = False
+    OnPopup = PopupMenu1Popup
+    Left = 266
+    Top = 187
+    object PopupCopy: TMenuItem
+      Caption = 'Copy'
+      OnClick = PopupCopyClick
+    end
+    object PopupPaste: TMenuItem
+      Caption = 'Paste'
+      OnClick = PopupPasteClick
+    end
+    object PopupDelete: TMenuItem
+      Caption = 'Delete'
+      OnClick = PopupDeleteClick
+    end
+    object PopupReverse: TMenuItem
+      Caption = 'Reverse'
+      OnClick = PopupReverseClick
+    end
+    object N4: TMenuItem
+      Caption = '-'
+    end
+    object PopupVertices: TMenuItem
+      Caption = 'Vertices'
+      OnClick = PopupVerticesClick
+    end
+    object PopupProperties: TMenuItem
+      Caption = 'Properties'
+      OnClick = PopupPropertiesClick
+    end
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 340
+    Top = 187
+  end
+  object PopupMenu2: TPopupMenu
+    OnPopup = PopupMenu2Popup
+    Left = 256
+    Top = 232
+    object PopupNodeLegend: TMenuItem
+      Caption = 'Node Legend'
+      OnClick = PopupNodeLegendClick
+    end
+    object PopupLinkLegend: TMenuItem
+      Caption = 'Link Legend'
+      OnClick = PopupLinkLegendClick
+    end
+    object PopupTimeLegend: TMenuItem
+      Caption = 'Time Legend'
+      OnClick = PopupTimeLegendClick
+    end
+    object PopupBackdrop: TMenuItem
+      Caption = 'Backdrop'
+      Enabled = False
+      OnClick = PopupBackdropClick
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object PopupOptions: TMenuItem
+      Caption = 'Options'
+      OnClick = PopupOptionsClick
+    end
+  end
+  object PopupMenu3: TPopupMenu
+    OnPopup = PopupMenu3Popup
+    Left = 256
+    Top = 280
+    object PopupAddVertex: TMenuItem
+      Caption = 'Add Vertex'
+      OnClick = PopupAddVertexClick
+    end
+    object PopupDeleteVertex: TMenuItem
+      Caption = 'Delete Vertex'
+      OnClick = PopupDeleteVertexClick
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object PopupQuitEditing: TMenuItem
+      Caption = 'Quit Editing'
+      OnClick = PopupQuitEditingClick
+    end
+  end
+  object Timer2: TTimer
+    Interval = 500
+    OnTimer = Timer2Timer
+    Left = 336
+    Top = 232
+  end
+end

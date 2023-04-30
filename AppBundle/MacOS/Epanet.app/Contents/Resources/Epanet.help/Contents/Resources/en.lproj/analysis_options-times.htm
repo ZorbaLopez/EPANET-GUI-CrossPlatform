@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Analysis Options - Times</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Analysis Options,Analysis Options Time Options" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Analysis Options - Times</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="analysis_options-reactions.htm">Previous</a>&nbsp;
+     <a href="analysis_options-energy.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="analysis_options-times.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;">Times Options</span><span style="color: #010100;"> set values for the various time steps used in an extended period simulation. (Times can be entered as decimal hours or in hours:minutes notation).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Total Duration</span></p>
+<p class="p_Normal"><span style="color: #010100;">Total length of a simulation. Use 0 to run a single period (snapshot) hydraulic analysis.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Hydraulic Time Step</span></p>
+<p class="p_Normal"><span style="color: #010100;">Time interval between recomputation of system hydraulics. Normal default is 1 hour.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Quality Time Step</span></p>
+<p class="p_Normal"><span style="color: #010100;">Time interval between routing of water quality constituent. Normal default is 5 minutes (0:05 hours).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Pattern Time Step</span></p>
+<p class="p_Normal"><span style="color: #010100;">Time interval used with all time patterns. Normal default is 1 hour.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Pattern Start Time</span></p>
+<p class="p_Normal"><span style="color: #010100;">Hours into all time patterns at which the simulation begins (e.g., a value of 2 means that the simulation begins with all time patterns starting at their second hour). Normal default is 0.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Reporting Time Step</span></p>
+<p class="p_Normal"><span style="color: #010100;">Time interval between times at which computed results are reported. Normal default is 1 hour.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Report Start Time</span></p>
+<p class="p_Normal"><span style="color: #010100;">Hours into simulation at which computed results begin to be reported. Normal default is 0.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Starting Time of Day</span></p>
+<p class="p_Normal"><span style="color: #010100;">Clock time &nbsp;(e.g., 7:30 am, 10:00 pm) at which simulation begins. Default is 12:00 am (midnight).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Statistic</span></p>
+<p class="p_Normal"><span style="color: #010100;">Type of statistical processing used to summarize the results of an extended period simulation. Choices are:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">NONE</span><span style="color: #010100;"> (results reported at each reporting time step)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">AVERAGE</span><span style="color: #010100;"> (time-averaged results reported)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">MINIMUM</span><span style="color: #010100;"> (minimum value results reported)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">MAXIMUM</span><span style="color: #010100;"> (maximum value results reported)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">RANGE</span><span style="color: #010100;"> (difference between maximum and minimum results reported)</span></p><p><span style="color: #010100;">Statistical processing is applied to all node and link results obtained between the Report Start Time and the Total Duration.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">Note</span><span style="font-weight: bold; color: #010100;">:</span></td><td style="border:none;padding:0"><span style="color: #010100;">To run a single-period hydraulic analysis (also called a snapshot analysis) enter 0 for Total Duration. In this case entries for all of the other time options, with the exception of Starting Time of Day, are not used. Water quality analyses always require that a non-zero Total Duration be specified.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

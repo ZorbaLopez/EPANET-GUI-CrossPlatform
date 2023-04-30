@@ -1,0 +1,15 @@
+{"version":1,"strings":[
+{"hash":203445348,"name":"tgroupeditform.caption","sourcebytes":[71,114,111,117,112,32,69,100,105,116],"value":"Group Edit"},
+{"hash":516264,"name":"tgroupeditform.editlabel.caption","sourcebytes":[119,105,116,104],"value":"with"},
+{"hash":224684140,"name":"tgroupeditform.label1.caption","sourcebytes":[70,111,114,32,97,108,108],"value":"For all"},
+{"hash":171434113,"name":"tgroupeditform.label2.caption","sourcebytes":[119,105,116,104,105,110,32,116,104,101,32,111,117,116,108,105,110,101,100,32,97,114,101,97],"value":"within the outlined area"},
+{"hash":1339,"name":"tgroupeditform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tgroupeditform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tgroupeditform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"},
+{"hash":516264,"name":"tgroupeditform.filtercheck.caption","sourcebytes":[119,105,116,104],"value":"with"},
+{"hash":48,"name":"tgroupeditform.editobjects.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"tgroupeditform.filterproperty.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"tgroupeditform.editaction.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"tgroupeditform.editproperty.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"tgroupeditform.filterrelationlist.text","sourcebytes":[48],"value":"0"}
+]}

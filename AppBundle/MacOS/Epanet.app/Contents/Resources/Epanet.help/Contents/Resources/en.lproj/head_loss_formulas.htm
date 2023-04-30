@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Head Loss Formulas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Head Loss Formulas,Hydraulic Analysis,Hydraulic Analysis Head Loss Formulas,Pipes,Pipes Head Loss Formulas" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Head Loss Formulas</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="emitters.htm">Previous</a>&nbsp;
+     <a href="minor_losses.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="head_loss_formulas.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">EPANET&#39;s <a href="analysis_options-hydraulics.htm" class="topiclink">Hydraulic Analysis Options</a> offer a choice of three different formulas for computing head loss across a pipe as a function of flow rate. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #0000ff; text-decoration: underline;">Hazen-Williams Formula</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_bm51" style="margin:0;width:1.3229in;height:0.4479in;border:none" src="_bm51.gif"/></p>
+<p style="margin: 0.0521in 0 0.0521in 0;"><span style="color: #010100;">where:</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">H</span><span style="font-size: 7pt; font-family: 'Small Fonts'; font-style: italic; color: #010100;">L &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">head loss in feet</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">Q</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;"> </span><span style="color: #010100;">flow in cfs</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pipe length in feet</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">d</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pipe diameter in feet</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">C</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;">r</span><span style="color: #010100;">oughness coefficient </span></p>
+<p class="p_Normal"><span style="color: #010100;">(Hazen-Williams C-factor)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a name="d-w_formula" class="hmanchor"></a></p>
+<p class="p_Normal"><span style="font-weight: bold; color: #0000ff; text-decoration: underline;">Darcy-Weisbach Formula</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_bm52" style="margin:0;width:0.9479in;height:0.4688in;border:none" src="_bm52.gif"/><span style="font-size: 3pt; color: #0000ff;"> </span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">where:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0.0521in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">H</span><span style="font-size: 7pt; font-style: italic; vertical-align: sub;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">head loss (Length)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">g</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">acceleration of gravity &nbsp;(Length/Time/Time)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pipe length (Length)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">d</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pipe diameter (Length)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">v</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">flow velocity (Length/Time)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">f</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">friction factor (unitless)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="color: #010100;">The friction factor is a function of (</span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&epsilon;</span><span style="color: #010100;">/</span><span style="font-style: italic; color: #010100;">d</span><span style="color: #010100;">) and the Reynolds number, where </span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&epsilon;</span><span style="color: #010100;"> is a roughness coefficient with units of length. The above formula can be used with any consistent set of units.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a name="c-w_formula" class="hmanchor"></a></p>
+<p class="p_Normal"><span style="font-weight: bold; color: #0000ff; text-decoration: underline;">Chezy-Manning Formula</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_bm53" style="margin:0;width:1.2396in;height:0.4479in;border:none" src="_bm53.gif"/></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">where</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0.0521in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">H</span><span style="font-size: 7pt; font-style: italic; vertical-align: sub;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">head loss in feet</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">Q</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">flow in cfs</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pipe length in feet</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">d</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pipe diameter in feet</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">n</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Manning roughness coefficient</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

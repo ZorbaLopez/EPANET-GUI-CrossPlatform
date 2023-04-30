@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: psform.msg_badmargins
+msgid "Page margins are too large for paper size."
+msgstr "Márgenes excesivos para el tamaño del papel."
+
+#: psform.txt_height
+#, object-pascal-format
+msgid "Height: %.1f "
+msgstr "Alto: %.1f "
+
+#: psform.txt_landscape
+msgid "Landscape"
+msgstr "Horizontal"
+
+#: psform.txt_margins_in
+msgid "Margins (inches)"
+msgstr "Márgenes (pulgadas)"
+
+#: psform.txt_margins_mm
+msgid "Margins (mm)"
+msgstr "Márgenes (mm)"
+
+#: psform.txt_pg_lc
+msgid "Lower Center"
+msgstr "Abajo Centro"
+
+#: psform.txt_pg_ll
+msgid "Lower Left"
+msgstr "Abajo Izquierda"
+
+#: psform.txt_pg_lr
+msgid "Lower Right"
+msgstr "Abajo Derecha"
+
+#: psform.txt_pg_none
+msgid "None"
+msgstr "Ninguno"
+
+#: psform.txt_pg_uc
+msgid "Upper Center"
+msgstr "Arriba Centro"
+
+#: psform.txt_pg_ul
+msgid "Upper Left"
+msgstr "Arriba Izquierda"
+
+#: psform.txt_pg_ur
+msgid "Upper Right"
+msgstr "Arriba Derecha"
+
+#: psform.txt_portrait
+msgid "Portrait"
+msgstr "Vertical"
+
+#: psform.txt_width
+#, object-pascal-format
+msgid "Width: %.1f "
+msgstr "Ancho: %.1f "
+

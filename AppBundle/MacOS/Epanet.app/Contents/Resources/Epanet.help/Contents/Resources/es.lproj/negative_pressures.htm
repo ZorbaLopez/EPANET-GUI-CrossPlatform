@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Presiones Negativas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Advertencias,Advertencias Presiones Negativas" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Presiones Negativas</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="disconnected_network.htm">Anterior</a>&nbsp;
+     <a href="system_unbalanced.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="negative_pressures.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0.0104in 0 0 0;"><span style="color: #010100;">EPANET emitirá un mensaje de advertencia cuando aparezcan presiones negativas en algún nudo con demanda positiva. Ello es un indicativo de que existe algún problema en el diseño de la red o en su modo de operación. Las presiones negativas suelen presentarse cuando la alimentación de algún sector de la red queda estrangulada por el cierre de una línea. En tal caso se emitirá un mensaje adicional indicando el sector que se queda aislado.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Se pueden evitar soluciones que den como resultado demandas positivas a presiones negativas usando el Cálculo Motivado por la Presión (</span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;">) como opción (ver <a href="analysis_options-hydraulics.htm#demandmodelanchor" class="topiclink">Opciones Hidráulicas - Modelo de Demanda</a>). Se necesita suministrar valores para la presión por debajo de la cual no se suministra demanda, y la presión por encima de la cual se suministra la demanda total. Estas dos presiones pueden adoptar el mismo valor (por ejemplo 0) para encontrar la demanda reducida en los nudos de caudal afectados a la cual ninguno de ellos suministra demanda a presiones negativas.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

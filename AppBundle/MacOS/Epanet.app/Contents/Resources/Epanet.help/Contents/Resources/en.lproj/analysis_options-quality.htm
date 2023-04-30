@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Analysis Options - Quality</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Analysis Options,Analysis Options Quality Options" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Analysis Options - Quality</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="analysis_options-hydraulics.htm">Previous</a>&nbsp;
+     <a href="analysis_options-reactions.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="analysis_options-quality.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;">Quality Options</span><span style="color: #010100;"> select the type of water quality analysis to conduct and control how the calculations are carried out. They include the following:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Parameter</span></p>
+<p class="p_Normal"><span style="color: #010100;">Type of water quality parameter being modeled. Choices include:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">None</span><span style="color: #010100;"> (no quality analysis),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Chemical</span><span style="color: #010100;"> (compute chemical concentration),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Age</span><span style="color: #010100;"> (compute water age),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Trace</span><span style="color: #010100;"> (trace flow from a specific node).</span></p><p><span style="color: #010100;">In lieu of </span><span style="font-weight: bold; color: #010100;">Chemical</span><span style="color: #010100;">, you can &nbsp;enter the actual name of the chemical being modeled (e.g., </span><span style="font-weight: bold; color: #010100;">Chlorine</span><span style="color: #010100;">).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Mass Units</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">Mass units used to express concentration. Choices are </span><span style="font-weight: bold; color: #010100;">mg/L</span><span style="color: #010100;"> or </span><span style="font-weight: bold; color: #010100;">ug/L</span><span style="color: #010100;">. Units for Age and Trace analyses are fixed at hours and percent, respectively</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Relative Diffusivity</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">Molecular diffusivity of the chemical being modeled relative to that of chlorine at 20 deg. C (0.00112 sq ft/day). Use 2 if the chemical diffuses twice as fast as chlorine, 0.5 if half as fast, etc. Only used when modeling mass transfer for pipe wall reactions. Set to zero to ignore mass transfer effects</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Trace Node</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">ID label of the node whose flow is being traced. Applies only to source tracing</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Quality Tolerance</span></p>
+<p><span style="color: #010100;">Smallest change in quality that will cause a new parcel of water to be created in a pipe. A typical setting might be 0.01 for chemicals measured in mg/L as well as water age and source tracing. </span></p>
+<p style="text-indent: -0.4896in; margin: 0 0 0 0.5000in;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">Note</span><span style="font-weight: bold; color: #010100;">:</span></td><td style="border:none;padding:0"><span style="color: #010100;">The Quality Tolerance determines when the quality of one parcel of water is essentially the same as another parcel. For chemical analysis this might be the detection limit of the procedure used to measure the chemical, adjusted by a suitable factor of safety. Using too large a value for this tolerance might affect simulation accuracy. Using too small a value will affect computational efficiency.</span></td></tr></table></div><p class="p_Normal"><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: -0.2396in; margin: 0 0 0 0.2500in;"><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+object TableForm: TTableForm
+  Left = 293
+  Height = 489
+  Top = 185
+  Width = 905
+  Caption = 'TableForm'
+  ClientHeight = 489
+  ClientWidth = 905
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  Icon.Data = {
+    3E01000000000100010010101000000000002801000016000000280000001000
+    0000200000000100040000000000C00000000000000000000000000000000000
+    000000000000000080000080000000808000800000008000800080800000C0C0
+    C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+    FF000000000000000000044444444444444404FFFFFFFFFFFFF404F000F000F0
+    00F404FFFFFFFFFFFFF404F000F000F000F404FFFFFFFFFFFFF404F000F000F0
+    00F404FFFFFFFFFFFFF404F000F000F000F404FFFFFFFFFFFFF4044444444444
+    444404F444F444F444F404444444444444440000000000000000000000000000
+    0000FFFF00008000000080000000800000008000000080000000800000008000
+    0000800000008000000080000000800000008000000080000000FFFF0000FFFF
+    0000
+  }
+  KeyPreview = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poDefault
+  LCLVersion = '2.2.6.0'
+  Visible = True
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 6
+    Top = 448
+    Width = 905
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object ListBox1: TListBox
+    Left = 0
+    Height = 35
+    Top = 454
+    Width = 905
+    Align = alBottom
+    ItemHeight = 0
+    OnExit = ListBox1Exit
+    TabOrder = 0
+  end
+  object Grid1: TDrawGrid
+    Left = 0
+    Height = 448
+    Top = 0
+    Width = 905
+    Align = alClient
+    DefaultColWidth = 72
+    ExtendedSelect = False
+    FixedColor = clBtnShadow
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    GridLineColor = clWindowFrame
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goThumbTracking]
+    ParentFont = False
+    TabOrder = 1
+    OnDrawCell = Grid1DrawCell
+    OnMouseDown = Grid1MouseDown
+    OnMouseUp = Grid1MouseUp
+  end
+end

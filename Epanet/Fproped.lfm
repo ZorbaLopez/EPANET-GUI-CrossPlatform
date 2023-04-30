@@ -1,0 +1,20 @@
+object PropEditForm1: TPropEditForm1
+  Left = 0
+  Height = 331
+  Top = 0
+  Width = 200
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  Color = clWindow
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnEnter = FormEnter
+  OnExit = FormDeactivate
+  ParentBackground = False
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 429
+  DesignTop = 103
+end

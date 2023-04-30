@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Fórmula de Pérdidas de Carga</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Fórmula de Pérdidas ,Simulación Hidráulica,Fórmula de Pérdidas  Simulación Hidráulica,Tuberías,Tuberías Fórmula de Pérdidas " />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Fórmula de Pérdidas de Carga</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="emitters.htm">Anterior</a>&nbsp;
+     <a href="minor_losses.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="head_loss_formulas.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Las <a href="analysis_options-hydraulics.htm" class="topiclink">Opciones Hidráulicas</a> de EPANET ofrecen tres posibles fórmulas de pérdidas de carga para calcular la pérdida de altura en las tuberías en función del caudal. Debido a que cada fórmula contempla la rugosidad de las tuberías de forma diferente, el cambio de fórmula puede requerir la actualización de todos los coeficientes de rugosidad de las tuberías.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #0000ff; text-decoration: underline;">Fórmula de Hazen-Williams</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_bm51" style="margin:0;width:1.3229in;height:0.4479in;border:none" src="_bm51.gif"/></p>
+<p style="margin: 0.0521in 0 0.0521in 0;"><span style="color: #010100;">where:</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">H</span><span style="font-size: 7pt; font-family: 'Small Fonts'; font-style: italic; color: #010100;">L &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pérdida de carga, en pies (ft)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">Q</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;"> </span><span style="color: #010100;">caudal, en pies cúbicos por segundo (cfs)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">longitud de la tubería, en pies (ft)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">d</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">diámetro de la tubería, en pies (ft)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.4688in; padding:0.0208in; border:none"><p><span style="font-style: italic; color: #010100;">C</span></p>
+</td>
+<td style="vertical-align:top; width:0.2708in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:1.7917in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">coeficiente de rugosidad</span></p>
+<p class="p_Normal"><span style="color: #010100;">(factor "C" de Hazen-Williams)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a name="d-w_formula" class="hmanchor"></a></p>
+<p class="p_Normal"><span style="font-weight: bold; color: #0000ff; text-decoration: underline;">Fórmula de Darcy-Weisbach</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_bm52" style="margin:0;width:0.9479in;height:0.4688in;border:none" src="_bm52.gif"/><span style="font-size: 3pt; color: #0000ff;"> </span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">where:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0.0521in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">H</span><span style="font-size: 7pt; font-style: italic; vertical-align: sub;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pérdida de carga (Longitud)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">g</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">aceleración de la gravedad &nbsp;(Longitud/Tiempo/Tiempo)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">longitud de la tubería (Longitud)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">d</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">diámetro de la tubería (Longitud)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">v</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">velocidad del flujo (Longitud/Tiempo)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5313in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">f</span></p>
+</td>
+<td style="vertical-align:top; width:0.2083in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0833in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">factor de fricción (adimensional)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="color: #010100;">El factor de fricción es función de (</span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&epsilon;</span><span style="color: #010100;">/</span><span style="font-style: italic; color: #010100;">d</span><span style="color: #010100;">) y del número de Reynolds, donde </span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&epsilon;</span><span style="color: #010100;"> es el coeficiente de rugosidad absoluta, expresado en unidades de longitud. La fórmula de Darcy-Weisbach es la más correcta, se debe usar con un conjunto consistente de unidades, y es aplicable a todo tipo de líquidos y regímenes.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a name="c-w_formula" class="hmanchor"></a></p>
+<p class="p_Normal"><span style="font-weight: bold; color: #0000ff; text-decoration: underline;">Fórmula de Chezy-Manning</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_bm53" style="margin:0;width:1.2396in;height:0.4479in;border:none" src="_bm53.gif"/></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">where</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0.0521in 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">H</span><span style="font-size: 7pt; font-style: italic; vertical-align: sub;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">pérdida de carga, en pies (ft)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">Q</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">caudal, en pies cúbicos por segundo (cfs)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">L</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">longitud de la tubería, en pies (ft)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">d</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">diámetro de la tubería, en pies (ft)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.5417in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">n</span></p>
+</td>
+<td style="vertical-align:top; width:0.3229in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; width:3.0625in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">coeficiente de rugosidad de Manning</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

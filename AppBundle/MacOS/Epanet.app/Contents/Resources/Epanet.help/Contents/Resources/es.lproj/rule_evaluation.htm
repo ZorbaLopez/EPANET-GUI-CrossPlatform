@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Evaluación de las Reglas de una Ley de Control</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Leyes de Control basadas en Reglas,RuleLeyes de Control basadas en Reglas Evaluación de las Reglas de una Ley de Control" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Evaluación de las Reglas de una Ley de Control</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="rule_examples.htm">Anterior</a>&nbsp;
+     <a href="adding_an_object.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="rule_evaluation.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Las </span><span style="font-weight: bold; color: #010100;"><a href="rule-based_controls.htm" class="topiclink">Leyes de Control basadas en Reglas</a></span><span style="color: #010100;"> se aplican cada vez que se calcula un nuevo estado inicial de la red (partiendo del instante 0). Durante el transcurso de la simulación, la posible activación de las leyes de control basadas en reglas se determina del siguiente modo:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">1.</span></td><td style="border:none;padding:0"><span style="color: #010100;">Comenzando en el instante actual, las distinta reglas se analizan paso a paso, avanzado con un intervalo de tiempo fijo, cuyo valor por defecto es 1/10 del intervalo de cálculo hidráulico (por ejemplo, si el intervalo de cálculo hidráulico es de 1 hora, entonces las reglas se evalúan cada 6 minutos).</span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">2.</span></td><td style="border:none;padding:0"><span style="color: #010100;">En base a este intervalo de tiempo, se actualizan la hora de simulación y los niveles de agua en los depósitos (tomando como referencia los últimos caudales calculados, entrantes o salientes). </span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">3.</span></td><td style="border:none;padding:0"><span style="color: #010100;">Si en un momento dado se cumple alguna de las reglas, las actuaciones derivadas se añaden a una lista. Si la actuación propuesta entra en conflicto con otra actuación de la lista sobre la misma línea, prevalece aquella que tiene una prioridad más alta, siendo la otra eliminada. Si las prioridades son equivalentes, entonces prevalece la actuación que estaba ya en la lista.</span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">4.</span></td><td style="border:none;padding:0"><span style="color: #010100;">Después de haber evaluado todas las reglas, si la lista no está vacía se ejecutan todas las actuaciones almacenadas en ella. Si como consecuencia de dichas actuaciones cambia el estado de una o más líneas, se procede a obtener una nueva solución y el proceso de simulación continúa.</span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">5.</span></td><td style="border:none;padding:0"><span style="color: #010100;">Se borra la lista de actuaciones, y se pasa a evaluar las reglas en el siguiente instante, a no ser que se haya alcanzado el próximo intervalo hidráulico.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

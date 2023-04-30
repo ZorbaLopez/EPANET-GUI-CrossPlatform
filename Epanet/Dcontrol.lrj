@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":17048658,"name":"tcontrolsform.caption","sourcebytes":[67,111,110,116,114,111,108,115,32,69,100,105,116,111,114],"value":"Controls Editor"},
+{"hash":266002931,"name":"tcontrolsform.statusbar1.panels[0].text","sourcebytes":[32,67,108,105,99,107,32,72,101,108,112,32,116,111,32,114,101,118,105,101,119,32,102,111,114,109,97,116,32,111,102,32,67,111,110,116,114,111,108,115,32,115,116,97,116,101,109,101,110,116,115],"value":" Click Help to review format of Controls statements"},
+{"hash":266002931,"name":"tcontrolsform.statusbar1.simpletext","sourcebytes":[32,67,108,105,99,107,32,72,101,108,112,32,116,111,32,114,101,118,105,101,119,32,102,111,114,109,97,116,32,111,102,32,67,111,110,116,114,111,108,115,32,115,116,97,116,101,109,101,110,116,115],"value":" Click Help to review format of Controls statements"},
+{"hash":1339,"name":"tcontrolsform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tcontrolsform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tcontrolsform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"}
+]}

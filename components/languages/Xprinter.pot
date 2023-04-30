@@ -1,0 +1,17 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: xprinter.txt_pg_no
+#, object-pascal-format
+msgid "Page %d of %d"
+msgstr ""
+
+#: xprinter.txt_pr_abort
+msgid "Printing aborted"
+msgstr ""
+
+#: xprinter.txt_pr_page
+#, object-pascal-format
+msgid "Printing page %d of %d"
+msgstr ""
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Demand Models</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Demands,Demands Demand Models,Hydraulic Analysis,Hydraulic Analysis Demand Models" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Demand Models</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="hydraulic_analysis.htm">Previous</a>&nbsp;
+     <a href="emitters.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="demand_models.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">EPANET&#39;s hydraulic analysis allows for two different ways of modeling water demands (i.e., consumption) at network junction nodes. Demand Driven Analysis (<span style="font-weight: bold;">DDA</span>) requires that demands at each point in time are fixed values that must be delivered no matter what nodal pressures and link flows are produced by a hydraulic solution. This has been the classical approach used to model demands, but it can result in situations where required demands are satisfied at nodes with negative pressures - a physical impossibility.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">An alternative approach, known as Pressure Driven Analysis <span style="font-weight: bold;">(PDA</span>), allows the actual demand delivered at a node to depend on the node&#39;s pressure. <span style="color: #010100;">Below some minimum pressure demand is zero, above some service pressure the full required demand is supplied and in between demand varies as a power law function of pressure. Using PDA is one way to avoid having positive demands at nodes with negative pressures.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">EPANET&#39;s <a href="analysis_options-hydraulics.htm" class="topiclink">Hydraulic Analysis Options</a> are used to select a choice of demand model and to supply the parameters used by </span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;">.</span></p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

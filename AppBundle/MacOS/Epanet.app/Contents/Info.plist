@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>English</string>
+  <key>CFBundleExecutable</key>
+  <string>Epanet</string>
+  <key>CFBundleLocalizations</key>
+	<array>
+			<string>en</string>
+			<string>es</string>
+	</array>
+  <key>CFBundleName</key>
+  <string>EPANET 2.2</string>
+  <key>CFBundleDisplayName</key>
+  <string>EPANET 2.2</string>
+  <key>CFBundleIdentifier</key>
+  <string>com.company.epanet</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleSignature</key>
+  <string>epan</string>
+  <key>CFBundleShortVersionString</key>
+  <string>0.1</string>
+  <key>CFBundleIconFile</key>
+  <string>Epanet2w</string>
+  <key>CFBundleIconName</key>
+  <string>Epanet2w</string>
+  <key>CFBundleVersion</key>
+  <string>2.2</string>
+  <key>CSResourcesFileMapped</key>
+  <true/>
+  <key>CFBundleDocumentTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleTypeRole</key>
+      <string>Viewer</string>
+      <key>CFBundleTypeExtensions</key>
+      <array>
+        <string>net</string>
+        <string>inp</string>
+      </array>
+      <key>CFBundleTypeOSTypes</key>
+      <array>
+        <string>fold</string>
+        <string>disk</string>
+        <string>****</string>
+      </array>
+    </dict>
+  </array>
+  <key>NSHighResolutionCapable</key>
+  <true/>
+  <key>CFBundleHelpBookFolder</key>
+  <string>Epanet.help</string>
+  <key>CFBundleHelpBookName</key>
+  <string>Epanet Help</string>
+  <key>CFBundleHelpBookIdentifier</key>
+  <string>com.company.epanet.help</string>
+</dict>
+</plist>

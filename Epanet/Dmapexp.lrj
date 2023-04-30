@@ -1,0 +1,11 @@
+{"version":1,"strings":[
+{"hash":80375476,"name":"tmapexportform.caption","sourcebytes":[77,97,112,32,69,120,112,111,114,116],"value":"Map Export"},
+{"hash":217369018,"name":"tmapexportform.groupbox1.caption","sourcebytes":[69,120,112,111,114,116,32,77,97,112,32,84,111,58],"value":"Export Map To:"},
+{"hash":83777193,"name":"tmapexportform.radiobutton1.caption","sourcebytes":[84,101,120,116,32,70,105,108,101,32,40,46,109,97,112,41],"value":"Text File (.map)"},
+{"hash":96139897,"name":"tmapexportform.radiobutton2.caption","sourcebytes":[69,110,104,97,110,99,101,100,32,77,101,116,97,102,105,108,101,32,40,46,101,109,102,41],"value":"Enhanced Metafile (.emf)"},
+{"hash":92673129,"name":"tmapexportform.radiobutton3.caption","sourcebytes":[68,114,97,119,105,110,103,32,69,120,99,104,97,110,103,101,32,70,105,108,101,32,40,46,100,120,102,41],"value":"Drawing Exchange File (.dxf)"},
+{"hash":21588954,"name":"tmapexportform.radiogroup1.caption","sourcebytes":[68,114,97,119,32,74,117,110,99,116,105,111,110,115,32,65,115,58],"value":"Draw Junctions As:"},
+{"hash":1339,"name":"tmapexportform.button1.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tmapexportform.button2.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tmapexportform.button3.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"}
+]}

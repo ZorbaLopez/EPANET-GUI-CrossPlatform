@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":149425075,"name":"tcaliboptionsform.caption","sourcebytes":[67,97,108,105,98,114,97,116,105,111,110,32,82,101,112,111,114,116,32,79,112,116,105,111,110,115],"value":"Calibration Report Options"},
+{"hash":1339,"name":"tcaliboptionsform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tcaliboptionsform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tcaliboptionsform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"},
+{"hash":236380180,"name":"tcaliboptionsform.gbvariable.caption","sourcebytes":[67,97,108,105,98,114,97,116,101,32,65,103,97,105,110,115,116],"value":"Calibrate Against"},
+{"hash":48,"name":"tcaliboptionsform.variableslist.text","sourcebytes":[48],"value":"0"},
+{"hash":179143907,"name":"tcaliboptionsform.gblocations.caption","sourcebytes":[77,101,97,115,117,114,101,100,32,97,116,32,78,111,100,101,115],"value":"Measured at Nodes"}
+]}

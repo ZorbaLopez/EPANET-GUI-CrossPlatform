@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":95360963,"name":"tsimulationform.caption","sourcebytes":[82,117,110,32,83,116,97,116,117,115],"value":"Run Status"},
+{"hash":1339,"name":"tsimulationform.okbtn.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tsimulationform.cancelbtn.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"}
+]}

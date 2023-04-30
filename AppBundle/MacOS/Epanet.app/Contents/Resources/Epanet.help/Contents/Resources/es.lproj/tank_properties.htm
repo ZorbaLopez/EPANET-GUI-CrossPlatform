@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Propiedades de los Depósitos</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Depósitos,Propiedades de Depósitos" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Propiedades de los Depósitos</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="tanks.htm">Anterior</a>&nbsp;
+     <a href="tank_mixing_models.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="tank_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">ID Depósito</span></p>
+<p class="p_Normal"><span style="color: #010100;">Etiqueta que identifica unívocamente a cada depósito. Puede contener hasta 31 caracteres numéricos o alfanuméricos. No puede coincidir con el ID de ningún otro nudo. Esta propiedad es obligatoria.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Coordenada X</span></p>
+<p class="p_Normal"><span style="color: #010100;">Posición horizontal del depósito en el esquema, medida en las unidades del mismo. Si se deja en blanco, el depósito no será representado en el esquema.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Coordenada Y</span></p>
+<p class="p_Normal"><span style="color: #010100;">Posición vertical del depósito en el esquema, medida en las unidades del mismo. Si se deja en blanco, el depósito no será representado en el esquema.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Descripción</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional que describe alguna información relevante del depósito.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Etiqueta</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional (sin espacios) utilizada para clasificar el depósito dentro de una categoría (p. ej. una zona de presión).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Cota de Solera</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cota en metros (pies) de la solera (fondo) del depósito, respecto a un nivel de referencia común. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Nivel Inicial</span></p>
+<p class="p_Normal"><span style="color: #010100;">Nivel del agua en el depósito respecto a la solera, en metros (pies), al comienzo de la simulación. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Nivel Mínimo</span></p>
+<p class="p_Normal"><span style="color: #010100;">Nivel mínimo del agua respecto a la solera a mantener en el depósito, en metros (pies). Durante la simulación no se permitirá que el agua descienda por debajo de dicho nivel. Es una propiedad requerida.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Nivel Máximo</span></p>
+<p><span style="color: #010100;">Nivel máximo del agua en el depósito respecto a la solera, en metros (pies). Durante la simulación no se permitirá que el agua supere dicho nivel. Es una propiedad requerida</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Diámetro</span></p>
+<p><span style="color: #010100;">Diámetro del depósito, en metros (pies). Para depósitos cilíndricos será el diámetro real. Para depósitos cuadrados o rectangulares, el diámetro equivalente es igual a 1,128 veces la raíz cuadrada de la sección transversal. Para depósitos aforados mediante una Curva de Cubicación, el valor de este parámetro es irrelevante. En cualquier caso, es una propiedad requerida.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Volumen Mínimo</span></p>
+<p><span style="color: #010100;">Es el volumen de agua almacenado en el depósito cuando está a su nivel mínimo, expresado en metros cúbicos (pies cúbicos). Es una propiedad opcional para tener en cuenta el agua almacenada en el fondo del depósito a efectos del modelo de calidad, en el caso de no disponer de una Curva de Cubicación (ver más adelante). Suele coincidir con el denominado volumen de reserva.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Curva de Cubicación</span></p>
+<p><span style="color: #010100;">Identificativo ID de la curva de cubicación que relaciona el <a href="volume_curve.htm" class="topiclink">volumen de agua almacenado con el nivel en el depósito</a>. Si no se proporciona ningún valor se asume que el depósito es cilíndrico.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Puede Rebosar</span></p>
+<p><span style="color: #010100;">Si se selecciona </span><span style="font-weight: bold; color: #010100;">SI</span><span style="color: #010100;"> cualquier exceso de caudal entrante se vierte al medio. En caso contrario, cualquier linea que normalmente suministraría caudal al depósito se cierra temporalmente cuando el depósito alcanza su nivel máximo.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Modelo de Mezcla</span></p>
+<p><span style="color: #010100;">Identifica el modelo de mezcla aplicable en el depósito, a efectos del modelo de calidad. Puede ser:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">mezcla homogénea (</span><span style="font-weight: bold; color: #010100;">Completa</span><span style="color: #010100;">),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">mezcla en dos compartimentos (</span><span style="font-weight: bold; color: #010100;">2Compart</span><span style="color: #010100;">),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">flujo en pistón: el primer volumen que entra es el primero que sale (</span><span style="font-weight: bold; color: #010100;">PistónFIFO</span><span style="color: #010100;">),</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">flujo en pistón: el último volumen que entra es el primero que sale (</span><span style="font-weight: bold; color: #010100;">PistónLIFO</span><span style="color: #010100;">).</span></p><p><span style="color: #010100;">Para más información, ver <a href="tank_mixing_models.htm" class="topiclink">Modelos de Mezcla en los Depósitos</a>.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Fracción de Mezcla</span></p>
+<p><span style="color: #010100;">Fracción del volumen total del depósito correspondiente al compartimento que engloba a las tuberías de entrada y salida, en un modelo de mezcla de dos compartimentos (</span><span style="font-weight: bold; color: #010100;">2Compart</span><span style="color: #010100;">). Se puede dejar en blanco para otros modelos de mezcla.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Coeficiente de Reacción</span></p>
+<p><span style="color: #010100;">Coeficiente de reacción en el seno del agua del depósito, para las sustancias reactivas, expresado en 1/día. El coeficiente será positivo para las reacciones en las que la cantidad de sustancia crece con el tiempo, y negativo en las que decrece. Si se deja en blanco se aplicará el coeficiente de reacción global en el medio, declarado para todo el proyecto en el diálogo Opciones de Reacciones. Para más información, ver <a href="water_quality_reactions.htm" class="topiclink">Reacciones que afectan a la Calidad del Agua</a>.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Calidad Inicial</span></p>
+<p><span style="color: #010100;">Valor del parámetro de calidad del agua en el nudo, al comienzo de la simulación. Puede dejarse en blanco si no se va a realizar un modelo de calidad o si el valor de la calidad inicial es cero.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; text-decoration: underline;">Intensidad de la Fuente</span></p>
+<p><span style="color: #010100;">Determina la calidad del agua que entra en la red por este punto. Pulsar el botón con puntos suspensivos (o presionar la tecla Intro) para abrir el <a href="source_quality_editor.htm" class="topiclink">Editor de Fuentes de Sustancias Químicas</a>.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

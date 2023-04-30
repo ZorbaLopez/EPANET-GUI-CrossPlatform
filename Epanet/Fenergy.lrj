@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":163641444,"name":"tenergyform.caption","sourcebytes":[69,110,101,114,103,121,32,82,101,112,111,114,116],"value":"Energy Report"},
+{"hash":5929253,"name":"tenergyform.tabsheet1.caption","sourcebytes":[84,97,98,108,101],"value":"Table"},
+{"hash":4843668,"name":"tenergyform.tabsheet2.caption","sourcebytes":[67,104,97,114,116],"value":"Chart"}
+]}

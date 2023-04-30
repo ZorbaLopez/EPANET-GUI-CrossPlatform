@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Rule Format</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Rule-Based Controls,Rule-Based Controls Rule Format" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Rule Format</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="rule-based_controls.htm">Previous</a>&nbsp;
+     <a href="rule_condition_clauses.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="rule_format.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;"><a href="rule-based_controls.htm" class="topiclink">Rule-based Controls</a></span><span style="color: #010100;"> are statements of the form:</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">RULE</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> </span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100;">ruleID</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">IF</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> &nbsp;condition_1</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">AND</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> condition_2</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">OR</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> &nbsp;condition_3</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">AND</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> condition_4</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">etc.</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">THEN</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> action_1</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">AND</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> &nbsp;action_2</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">etc.</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">ELSE</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> action_3</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">AND</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> &nbsp;action_4</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">etc.</span></p>
+<p style="margin: 0.0521in 0 0 0.0938in;"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">PRIORITY</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;"> </span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100;">priority</span></p>
+<p style="margin: 0.0521in 0 0.0521in 0;"><span style="color: #010100;">where</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.8750in; padding:0.0104in; border:none"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100;">ruleID</span></p>
+</td>
+<td style="vertical-align:top; width:0.3021in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;"> &nbsp;= </span></p>
+</td>
+<td style="vertical-align:top; width:2.6563in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;">an ID label assigned to the rule</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8750in; padding:0.0104in; border:none"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">conditon_n</span></p>
+</td>
+<td style="vertical-align:top; width:0.3021in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;"> &nbsp;= </span></p>
+</td>
+<td style="vertical-align:top; width:2.6563in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;">a condition clause</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8750in; padding:0.0104in; border:none"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">action_n</span></p>
+</td>
+<td style="vertical-align:top; width:0.3021in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;"> &nbsp;= </span></p>
+</td>
+<td style="vertical-align:top; width:2.6563in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;">an action clause</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8750in; padding:0.0104in; border:none"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100;">priority</span></p>
+</td>
+<td style="vertical-align:top; width:0.3021in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;"> &nbsp;= </span></p>
+</td>
+<td style="vertical-align:top; width:2.6563in; padding:0.0104in; border:none"><p class="p_Normal"><span style="color: #010100;">a priority value (e.g., a number from 1 to 5)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">The following conventions apply to rule statements:</span><span style="font-size: 2pt; color: #010100;"> </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">1.</span></td><td style="border:none;padding:0"><span style="color: #010100;">Only the </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">RULE</span><span style="color: #010100;">, </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">IF</span><span style="color: #010100;"> and </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">THEN</span><span style="color: #010100;"> portions of a rule are required; the other portions are optional.</span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">2.</span></td><td style="border:none;padding:0"><span style="color: #010100;">Any number and combination of </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">AND</span><span style="color: #010100;"> and </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">OR</span><span style="color: #010100;"> clauses can be used in a rule.</span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">3.</span></td><td style="border:none;padding:0"><span style="color: #010100;">When mixing </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">AND</span><span style="color: #010100;"> and </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">OR</span><span style="color: #010100;"> clauses, the </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">OR</span><span style="color: #010100;"> operator has higher precedence than </span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100;">AND</span><span style="color: #010100;">, i.e.,</span></td></tr></table></div><p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">IF A or B and C</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;"> is equivalent to</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">IF (A or B) and C.</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;">If the interpretation was meant to be </span><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">IF A or (B and C)</span><span style="color: #010100;">then this can be expressed using two rules as in</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">Rule 1: IF A THEN ...</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">Rule 2: IF B and C THEN ...</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">4.</span></td><td style="border:none;padding:0"><span style="color: #010100;">The </span><span style="font-weight: bold; color: #010100;">PRIORITY</span><span style="color: #010100;"> value is used to determine which rule applies when two or more rules require that conflicting actions be taken on a link. The higher the value the higher the priority. A rule without a priority value always has a lower priority than one with a value. For two rules with the same priority value, the rule that appears first is given the higher priority.</span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">5.</span></td><td style="border:none;padding:0"><span style="color: #010100;">There is no limit on the number of rule statements that can be added to a project.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

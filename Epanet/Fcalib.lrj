@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":161389828,"name":"tcalibreportform.caption","sourcebytes":[67,97,108,105,98,114,97,116,105,111,110,32,82,101,112,111,114,116],"value":"Calibration Report"},
+{"hash":185533731,"name":"tcalibreportform.tabsheet1.caption","sourcebytes":[83,116,97,116,105,115,116,105,99,115],"value":"Statistics"},
+{"hash":247684884,"name":"tcalibreportform.tabsheet2.caption","sourcebytes":[67,111,114,114,101,108,97,116,105,111,110,32,80,108,111,116],"value":"Correlation Plot"},
+{"hash":105369108,"name":"tcalibreportform.chart1.axislist[0].title.caption","sourcebytes":[67,111,109,112,117,116,101,100],"value":"Computed"},
+{"hash":161257956,"name":"tcalibreportform.chart1.axislist[1].title.caption","sourcebytes":[79,98,115,101,114,118,101,100],"value":"Observed"},
+{"hash":148765619,"name":"tcalibreportform.tabsheet3.caption","sourcebytes":[77,101,97,110,32,67,111,109,112,97,114,105,115,111,110,115],"value":"Mean Comparisons"},
+{"hash":93891438,"name":"tcalibreportform.chart2.axislist[1].title.caption","sourcebytes":[76,111,99,97,116,105,111,110],"value":"Location"}
+]}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Modelos de Demanda</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Demandas, Demandas Modelos de Demanda, Simulación Hidráulica, Modelos de Demanda Simulación Hidráulica" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Modelos de Demanda</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="hydraulic_analysis.htm">Anterior</a>&nbsp;
+     <a href="emitters.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="demand_models.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Las capacidades hidráulicas de EPANET permiten 2 maneras de modelar la demanda de agua (p.ej. consumos residenciales) en los nudos de caudal. El Cálculo Motivado por la Demanda (Demand Driven Analysis o <span style="font-weight: bold;">DDA</span>) requiere que las demandas en cada instante adopten valores fijos que se deben suministrar, con independencia del las presiones en los nudos y los caudales en las líneas resultantes del cálculo hidráulico. Esta ha sido el enfoque clásico para modelar las demandas, pero pueden darse situaciones donde las demandas en los nudos se cumplen con presiones negativas; una situación físicamente imposible.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Un enfoque alternativo, conocido como Cálculo Motivado por la Presión (Pressure Driven Analysis o <span style="font-weight: bold;">PDA</span>), permite que la demanda dependa de la presión en cada nudo. Por debajo de una presión mínima la demanda es nula, por encima de una presión de servicio (máxima) la demanda corresponde con la definida, y entre medias la demanda varía según una ley exponencial de la presión en el nudo de caudal. Usar el PDA es una manera de evitar demandas positivas en nudos de caudal con presiones negativas.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">El modelo de demanda y los parámetros usados por el </span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;"> se introducen en las <a href="analysis_options-hydraulics.htm" class="topiclink">Opciones Hidráulicas</a> de EPANET.</span></p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

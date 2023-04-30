@@ -1,0 +1,22 @@
+{"version":1,"strings":[
+{"hash":194882958,"name":"ttableoptionsform.caption","sourcebytes":[84,97,98,108,101,32,83,101,108,101,99,116,105,111,110],"value":"Table Selection"},
+{"hash":376933,"name":"ttableoptionsform.tabletypepage.caption","sourcebytes":[84,121,112,101],"value":"Type"},
+{"hash":15046570,"name":"ttableoptionsform.label1.caption","sourcebytes":[83,101,108,101,99,116,32,116,104,101,32,116,121,112,101,32,111,102,32,116,97,98,108,101,32,116,111,32,99,114,101,97,116,101,58],"value":"Select the type of table to create:"},
+{"hash":197249668,"name":"ttableoptionsform.netnodesbtn.caption","sourcebytes":[78,101,116,119,111,114,107,32,110,111,100,101,115,32,97,116],"value":"Network nodes at"},
+{"hash":37735700,"name":"ttableoptionsform.netlinksbtn.caption","sourcebytes":[78,101,116,119,111,114,107,32,108,105,110,107,115,32,97,116],"value":"Network links at"},
+{"hash":244219749,"name":"ttableoptionsform.nodeseriesbtn.caption","sourcebytes":[84,105,109,101,32,115,101,114,105,101,115,32,102,111,114,32,110,111,100,101],"value":"Time series for node"},
+{"hash":48,"name":"ttableoptionsform.timeperiodbox.text","sourcebytes":[48],"value":"0"},
+{"hash":244188811,"name":"ttableoptionsform.linkseriesbtn.caption","sourcebytes":[84,105,109,101,32,115,101,114,105,101,115,32,102,111,114,32,108,105,110,107],"value":"Time series for link"},
+{"hash":174310419,"name":"ttableoptionsform.columnspage.caption","sourcebytes":[67,111,108,117,109,110,115],"value":"Columns"},
+{"hash":208889882,"name":"ttableoptionsform.label2.caption","sourcebytes":[83,101,108,101,99,116,32,119,104,105,99,104,32,99,111,108,117,109,110,115,32,116,111,32,105,110,99,108,117,100,101,32,105,110,32,116,104,101,32,116,97,98,108,101,58],"value":"Select which columns to include in the table:"},
+{"hash":162217209,"name":"ttableoptionsform.sortedcheckbox.caption","sourcebytes":[83,111,114,116,101,100,32,98,121],"value":"Sorted by"},
+{"hash":218344659,"name":"ttableoptionsform.filterspage.caption","sourcebytes":[70,105,108,116,101,114,115],"value":"Filters"},
+{"hash":248614234,"name":"ttableoptionsform.label3.caption","sourcebytes":[68,101,102,105,110,101,32,99,111,110,100,105,116,105,111,110,115,32,102,111,114,32,115,101,108,101,99,116,105,110,103,32,116,97,98,108,101,32,101,110,116,114,105,101,115,58],"value":"Define conditions for selecting table entries:"},
+{"hash":48,"name":"ttableoptionsform.filtervariablebox.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"ttableoptionsform.filterrelationbox.text","sourcebytes":[48],"value":"0"},
+{"hash":18340,"name":"ttableoptionsform.filteraddbtn.caption","sourcebytes":[65,100,100],"value":"Add"},
+{"hash":78392485,"name":"ttableoptionsform.filterdelbtn.caption","sourcebytes":[68,101,108,101,116,101],"value":"Delete"},
+{"hash":77089212,"name":"ttableoptionsform.cancelbtn.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":1339,"name":"ttableoptionsform.okbtn.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":2812976,"name":"ttableoptionsform.helpbtn.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"}
+]}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Simple Controls</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Controls,Controls Simple Controls,Simple Controls" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Simple Controls</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="controls.htm">Previous</a>&nbsp;
+     <a href="rule-based_controls.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="simple_controls.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;">Simple Controls</span><span style="color: #010100;"> change the status or setting of a link based on</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">the water level in a tank,</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">the pressure at a junction,</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">the time into the simulation,</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">or the time of day.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">They are text statements using one of the following three formats:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span class="f_Normal" style="font-style:italic; font-family: 'Courier New';color:#010100;display:inline-block;width:0.2396in;margin-left:-0.2396in">1)</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">LINK</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">linkID</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">status</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">IF NODE</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">nodeID</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">ABOVE/BELOW</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">value</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span class="f_Normal" style="font-style:italic; font-family: 'Courier New';color:#010100;display:inline-block;width:0.2396in;margin-left:-0.2396in">2)</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">LINK</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">linkID status</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">AT TIME</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">time</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span class="f_Normal" style="font-style:italic; font-family: 'Courier New';color:#010100;display:inline-block;width:0.2396in;margin-left:-0.2396in">3)</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">LINK</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">linkID status</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">AT CLOCKTIME</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-style: italic; color: #010100; background-color: #e6e6e6;">clocktime</span><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">&nbsp;</span><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #010100; background-color: #e6e6e6;">AM/PM</span></p><p style="margin: 0.0521in 0 0.0521in 0;"><span style="color: #010100;">where</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">linkID</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">link ID label</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">status</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; font-weight: bold;">OPEN</span> or <span style="font-family: 'Courier New',Courier,monospace; font-weight: bold;">CLOSED</span>, a pump speed setting, or a control valve setting</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">nodeID</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">node ID label</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">value</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">pressure for a junction or water level for a tank</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">time</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">time since the start of the simulation in decimal hours or hours:minutes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.8021in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic;">clocktime</span></p>
+</td>
+<td style="vertical-align:top; width:0.1979in; padding:0.0208in; border:none"><p class="p_Normal">=</p>
+</td>
+<td style="vertical-align:top; padding:0.0208in; border:none"><p class="p_Normal">24-hour clock time</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Some examples of simple controls are:</span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 CLOSED IF NODE 23 ABOVE 20</span></p>
+<p class="p_Normal"><span style="font-style: italic; color: #010100;">(Link 12 will be closed when the level in Tank 23 exceeds 20 ft.)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 OPEN IF NODE 130 BELOW 30</span></p>
+<p class="p_Normal"><span style="color: #010100;">(</span><span style="font-style: italic; color: #010100;">Link 12 will be opened if the pressure at Node 130 drops below 30 psi)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK PUMP02 1.5 AT TIME 16</span></p>
+<p class="p_Normal"><span style="color: #010100;">(</span><span style="font-style: italic; color: #010100;">The relative speed of pump PUMP02 is set to 1.5 at 16 hours into the simulation)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 CLOSED AT CLOCKTIME 10 AM</span></p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">LINK 12 OPEN AT CLOCKTIME 8 PM &nbsp;&nbsp;</span></p>
+<p class="p_Normal"><span style="font-style: italic; color: #010100;">(Link 12 is repeatedly closed at 10 am and opened at 8 pm throughout the simulation)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">There is no limit on the number of simple control statements that can be used.</span></p>
+<p style="text-indent: -0.4896in; margin: 0 0 0 0.5000in;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">Note</span><span style="font-weight: bold; color: #010100;">:</span></td><td style="border:none;padding:0"><span style="color: #010100;">Using a pair of pressure controls to open and close a link can cause the system to become unstable if the pressure settings are too close to one another. In this case using a pair of <a href="rule-based_controls.htm" class="topiclink">Rule-Based controls</a> might provide more stability.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

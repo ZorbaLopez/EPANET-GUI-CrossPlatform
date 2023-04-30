@@ -1,0 +1,18 @@
+{"version":1,"strings":[
+{"hash":93468604,"name":"tmapform1.hintlabel.caption","sourcebytes":[72,105,110,116,76,97,98,101,108],"value":"HintLabel"},
+{"hash":120889980,"name":"tmapform1.timelegendpanel.caption","sourcebytes":[84,105,109,101,76,101,103,101,110,100,80,97,110,101,108],"value":"TimeLegendPanel"},
+{"hash":304761,"name":"tmapform1.popupcopy.caption","sourcebytes":[67,111,112,121],"value":"Copy"},
+{"hash":5671589,"name":"tmapform1.popuppaste.caption","sourcebytes":[80,97,115,116,101],"value":"Paste"},
+{"hash":78392485,"name":"tmapform1.popupdelete.caption","sourcebytes":[68,101,108,101,116,101],"value":"Delete"},
+{"hash":147638725,"name":"tmapform1.popupreverse.caption","sourcebytes":[82,101,118,101,114,115,101],"value":"Reverse"},
+{"hash":211483651,"name":"tmapform1.popupvertices.caption","sourcebytes":[86,101,114,116,105,99,101,115],"value":"Vertices"},
+{"hash":114087587,"name":"tmapform1.popupproperties.caption","sourcebytes":[80,114,111,112,101,114,116,105,101,115],"value":"Properties"},
+{"hash":92176948,"name":"tmapform1.popupnodelegend.caption","sourcebytes":[78,111,100,101,32,76,101,103,101,110,100],"value":"Node Legend"},
+{"hash":91807892,"name":"tmapform1.popuplinklegend.caption","sourcebytes":[76,105,110,107,32,76,101,103,101,110,100],"value":"Link Legend"},
+{"hash":91281716,"name":"tmapform1.popuptimelegend.caption","sourcebytes":[84,105,109,101,32,76,101,103,101,110,100],"value":"Time Legend"},
+{"hash":128040416,"name":"tmapform1.popupbackdrop.caption","sourcebytes":[66,97,99,107,100,114,111,112],"value":"Backdrop"},
+{"hash":108725763,"name":"tmapform1.popupoptions.caption","sourcebytes":[79,112,116,105,111,110,115],"value":"Options"},
+{"hash":97050792,"name":"tmapform1.popupaddvertex.caption","sourcebytes":[65,100,100,32,86,101,114,116,101,120],"value":"Add Vertex"},
+{"hash":252596472,"name":"tmapform1.popupdeletevertex.caption","sourcebytes":[68,101,108,101,116,101,32,86,101,114,116,101,120],"value":"Delete Vertex"},
+{"hash":238856711,"name":"tmapform1.popupquitediting.caption","sourcebytes":[81,117,105,116,32,69,100,105,116,105,110,103],"value":"Quit Editing"}
+]}

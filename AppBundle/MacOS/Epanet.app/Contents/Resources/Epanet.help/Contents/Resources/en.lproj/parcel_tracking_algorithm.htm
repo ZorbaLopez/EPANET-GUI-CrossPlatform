@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Parcel Tracking Algorithm</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Parcel Tracking Algorithm" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Parcel Tracking Algorithm</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="wall_reaction-pipe_roughness.htm">Previous</a>&nbsp;
+     <a href="water_quality_sources.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="parcel_tracking_algorithm.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">EPANET tracks the change in water quality of discrete parcels of water as they move along pipes and mix together at junctions between fixed-length time steps. The following actions occur within each such time step:</span></p>
+<p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">1.</span>The water quality in each parcel is updated to reflect any reaction that may have occurred over the time step.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">2.</span>For each node in topological order (from upstream to downstream):</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">a)</span>If the node is a junction or tank, the water from the leading parcels of the links with flow into it, if not zero, is blended together to compute a new water quality value. The volume contributed from each parcel equals the product of its link’s flow rate and the time step. If this volume exceeds that of the parcel, then the parcel is destroyed and the next one in line behind it begins to contribute its volume.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">b)</span>If the node is a junction its new quality is computed as its total mass inflow divided by its total inflow volume. If it is a tank, its quality is updated depending on the method used to model mixing in the tank.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">c)</span>The node’s concentration is adjusted by any contributions made by external water quality sources.</p><p style="text-indent: 0; padding-left: 0.2083in; margin: 0.0521in 0 0 0.2500in;"><span class="f_Normal" style="display:inline-block;width:0.2083in;margin-left:-0.2083in">d)</span>A new parcel is created in each link with flow out of the node. Its volume equals the product of the pipe flow and the time step and its quality equals the new quality value computed for the node.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To cut down on the number of segments, Step 2.d is only carried out if the new node quality differs by a user-specified tolerance from that of the last parcel in the outflow link. If the difference in quality is below the tolerance, then the size of the current last parcel in the link is simply increased by the volume flowing into the link over the time step and the parcel&#39;s new quality is a volume-weighted average of the node and parcel&#39;s current quality.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This process is then repeated for the next water-quality time step. At the start of the next hydraulic time step any link experiencing a flow reversal has the order of its parcels reversed and if any flow reversal occurs the network’s nodes are re-sorted topologically, from upstream to downstream. Sorting the nodes topologically allows the method to conserve mass, even when very short pipes or zero-length pumps and valves are encountered. Initially each pipe in the network consists of a single segment whose quality equals the initial quality assigned to the upstream node.</p>
+
+</td></tr></table>
+
+</body>
+</html>

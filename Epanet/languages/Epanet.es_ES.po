@@ -1,0 +1,5251 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Zorba Lopez Rivera\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: resourcestrings.file_err1a
+msgid "Calibration file "
+msgstr "Fichero de Calibración "
+
+#: resourcestrings.file_err2a
+msgid "Could not access calibration file "
+msgstr "No se pudo acceder al fichero de calibración "
+
+#: resourcestrings.file_err2b
+msgid "Check that file is not in use by another program."
+msgstr "Comprueba que otro programa no está usando el fichero."
+
+#: resourcestrings.file_err3a
+msgid "Could not open file "
+msgstr "No se pudo abrir el fichero "
+
+#: resourcestrings.file_err4a
+msgid "Could not read file "
+msgstr "No se pudo guardar el fichero "
+
+#: resourcestrings.file_err4b
+msgid "File is probably not a valid EPANET project or input file."
+msgstr "Probablemente no es un fichero de proyecto de EPANET o un fichero de entrada válido."
+
+#: resourcestrings.file_err5
+msgid "Data could not be saved to file."
+msgstr "No se pudo guardar los datos en el fichero."
+
+#: resourcestrings.fmt18
+#, object-pascal-format
+msgid "  Page 1                                          %22s"
+msgstr "  Página 1                                        %22s"
+
+#: resourcestrings.fmt71
+msgid "Energy Usage:"
+msgstr "Consumo y Coste Energético:"
+
+#: resourcestrings.fmt72
+msgid "                  Usage   Avg.     Kw-hr      Avg.      Peak      Cost"
+msgstr "                Porcent. Rendim.    kWh   Pot.Media  Pot.Punta   Coste"
+
+#: resourcestrings.fmt73
+#, object-pascal-format
+msgid "Pump             Factor Effic.     %s        Kw        Kw      /day"
+msgstr "Bomba           Utiliz.  Medio      %s       kW        kW        /día"
+
+#: resourcestrings.fmt74
+#, object-pascal-format
+msgid "%45s Demand Charge: %9.2f"
+msgstr "%42s Término Potencia: %9.2f"
+
+#: resourcestrings.fmt75
+#, object-pascal-format
+msgid "%45s Total Cost:    %9.2f"
+msgstr "%42s Coste Total:      %9.2f"
+
+#: resourcestrings.fmt82
+#, object-pascal-format
+msgid "  Page %-4d %60s"
+msgstr "  Página %-4d %58s"
+
+#: resourcestrings.fmt_eqn
+#, object-pascal-format
+msgid " Head = %f%-.4g(Flow)^%f"
+msgstr " Altura = %f%-.4g(Caudal)^%f"
+
+#: resourcestrings.fmt_inflow
+#, object-pascal-format
+msgid "Inflow Rate = %.0f"
+msgstr "Caudal de Inyección = %.0f"
+
+#: resourcestrings.fmt_left_axis
+#, object-pascal-format
+msgid "Avg. = %.2f"
+msgstr "Media = %.2f"
+
+#: resourcestrings.fmt_link_exists
+#, object-pascal-format
+msgid "Link %s already exists."
+msgstr "Línea %s ya existe."
+
+#: resourcestrings.fmt_node_exists
+#, object-pascal-format
+msgid "Node %s already exists."
+msgstr "Nudo %s ya existe."
+
+#: resourcestrings.msg_1
+msgid "Unable to load more than "
+msgstr "No es posible cargar más de "
+
+#: resourcestrings.msg_2
+msgid " lines into Status Report."
+msgstr " líneas en el Informe de Estado."
+
+#: resourcestrings.msg_already_have
+msgid "You already have a "
+msgstr "Ya tienes un/a "
+
+#: resourcestrings.msg_badmargins
+msgid "Page margins are too large for paper size."
+msgstr "Márgenes excesivos para el tamaño del papel."
+
+#: resourcestrings.msg_bad_curve
+msgid "Illegal pump curve. Continue editing?"
+msgstr "La Curva de Bomba no es válida ¿Quieres seguir editando?"
+
+#: resourcestrings.msg_confirm_delete
+msgid "Are you sure that you want to delete all objects in the selected region?"
+msgstr "¿Está seguro de que quiere borrar todos los objetos de la región seleccionada?"
+
+#: resourcestrings.msg_filter_limit
+msgid "Maximum number of filters has been reached."
+msgstr "Se alcanzó el máximo número de filtros."
+
+#: resourcestrings.msg_find_backdrop
+msgid ". Do you want to search for it?"
+msgstr ". ¿Quieres buscarlo?"
+
+#: resourcestrings.msg_illegal_map_limits
+msgid "Illegal map limits."
+msgstr "Limites del esquema no válidos."
+
+#: resourcestrings.msg_importing_data
+msgid "Importing network data..."
+msgstr "Importando datos de la red..."
+
+#: resourcestrings.msg_invalid_file
+msgid " is not a valid EPANET data file."
+msgstr " no es un fichero de proyecto de EPANET válido."
+
+#: resourcestrings.msg_lang_restart
+msgid "Language will be updated next time you open EPANET"
+msgstr "El idioma se actualizará la próxima vez que abras EPANET"
+
+#: resourcestrings.msg_map_file
+msgid "Map file "
+msgstr "Fichero de Esquema de la Red "
+
+#: resourcestrings.msg_not_epanet_file
+msgid "Not an EPANET file."
+msgstr "No es un fichero de proyecto de EPANET."
+
+#: resourcestrings.msg_no_calib_data
+msgid "No calibration data has been registered for this project."
+msgstr "No se han registrado datos de calibración para el presente proyecto."
+
+#: resourcestrings.msg_no_directory
+msgid " - directory does not exist."
+msgstr " - directory does not exist."
+
+#: resourcestrings.msg_no_find_backdrop
+msgid "Could not find backdrop file "
+msgstr "No se encontró el fichero del Mapa de Fondo "
+
+#: resourcestrings.msg_no_input_file
+msgid "Input file no longer exists."
+msgstr "El fichero de datos ya no existe."
+
+#: resourcestrings.msg_no_intervals
+msgid "No intervals specified."
+msgstr "No se especificaron intervalos."
+
+#: resourcestrings.msg_no_link
+msgid "There is no Link "
+msgstr "No hay ninguna Línea "
+
+#: resourcestrings.msg_no_map_file
+msgid "Could not read map file "
+msgstr "No puedo leer el fichero del esquema "
+
+#: resourcestrings.msg_no_node
+msgid "There is no Node "
+msgstr "No hay ningún Nudo "
+
+#: resourcestrings.msg_no_pumps
+msgid "Cannot generate an Energy Report. Network contains no pumps."
+msgstr "No puedo generar el Informe Energético. La red no contiene bombas."
+
+#: resourcestrings.msg_no_read_backdrop
+msgid "Could not read backdrop file "
+msgstr "No se pudo cargar el Mapa de Fondo "
+
+#: resourcestrings.msg_no_write
+msgid "Could not write full report to file "
+msgstr "No se pudo guardar el Informe Completo en el fichero "
+
+#: resourcestrings.msg_out_of_order
+msgid " values are not in ascending order."
+msgstr " no tiene valores en orden ascendente."
+
+#: resourcestrings.msg_range_too_small
+msgid "Range too small."
+msgstr "Rango demasiado pequeño."
+
+#: resourcestrings.msg_reading_input
+msgid "Reading input file..."
+msgstr "Leyendo el fichero de datos..."
+
+#: resourcestrings.msg_reading_map_file
+msgid "Reading map file..."
+msgstr "Leyendo el fichero de Esquema de la Red..."
+
+#: resourcestrings.msg_readonly
+msgid ""
+" is read-only.\n"
+"Use File >> Save As command to save it under a different name."
+msgstr ""
+" es sólo lectura.\n"
+"Usa el comando Archivo >> Guardar como... para guardarlo con otro nombre."
+
+#: resourcestrings.msg_read_err
+msgid "Invalid file format."
+msgstr "Formato de fichero no válido."
+
+#: resourcestrings.msg_report_size1
+msgid "This full report will use over "
+msgstr "Este Informe Completo utilizará alrededor de  "
+
+#: resourcestrings.msg_report_size2
+msgid " Mbytes of disk space. Do you wish to proceed?"
+msgstr " Mbytes de espacio en disco ¿Quieres continuar?"
+
+#: resourcestrings.msg_select_number_of
+msgid "Select number of decimal places to "
+msgstr "Seleccionar el número de decimales a "
+
+#: resourcestrings.msg_too_few_nodes
+msgid "Too few nodes to contour."
+msgstr "Demasiados pocos nudos para generar Isolíneas."
+
+#: resourcestrings.msg_when_displaying
+msgid "use when displaying computed results"
+msgstr "utilizar en la presentación de resultados"
+
+#: resourcestrings.msg_writing_report
+msgid "Writing full report..."
+msgstr "Escribiendo el Informe Completo..."
+
+#: resourcestrings.noprintermsg
+msgid "There are no installed printers."
+msgstr "No hay impresoras instaladas."
+
+#: resourcestrings.printingmsg
+msgid "Printer is currently printing."
+msgstr "La impresora está ocupada."
+
+#: resourcestrings.txt_2comp
+msgid "2Comp"
+msgstr "2Compart"
+
+#: resourcestrings.txt_action_adverb_by
+msgid "by"
+msgstr "por"
+
+#: resourcestrings.txt_action_adverb_to
+msgid "to"
+msgstr "en"
+
+#: resourcestrings.txt_action_adverb_with
+msgctxt "resourcestrings.txt_action_adverb_with"
+msgid "with"
+msgstr "con"
+
+#: resourcestrings.txt_action_items_add
+msgctxt "resourcestrings.txt_action_items_add"
+msgid "Add"
+msgstr "Incrementar"
+
+#: resourcestrings.txt_action_items_multiply
+msgid "Multiply"
+msgstr "Multiplicar"
+
+#: resourcestrings.txt_action_items_replace
+msgid "Replace"
+msgstr "Sustituir"
+
+#: resourcestrings.txt_active
+msgid "Active"
+msgstr "Activa"
+
+#: resourcestrings.txt_adj_links
+msgctxt "resourcestrings.txt_adj_links"
+msgid "Adjacent Links"
+msgstr "Líneas adyacentes"
+
+#: resourcestrings.txt_adj_nodes
+msgid "Adjacent Nodes"
+msgstr "Nudos Adyacentes"
+
+#: resourcestrings.txt_afd
+msgid "AFD"
+msgstr "AFD"
+
+#: resourcestrings.txt_age
+msgid "Age"
+msgstr "T.Residencia"
+
+#: resourcestrings.txt_at
+msgid " at "
+msgstr " a las "
+
+#: resourcestrings.txt_at_line
+msgid " at line "
+msgstr " en la línea "
+
+#: resourcestrings.txt_at_nodes
+msgid "Measured at Nodes:"
+msgstr "Nudos de Medida:"
+
+#: resourcestrings.txt_autolength
+msgid "Auto-Length "
+msgstr "Longitud-Auto "
+
+#: resourcestrings.txt_autolength_off
+msgid "Off"
+msgstr "No"
+
+#: resourcestrings.txt_autolength_on
+msgid "On"
+msgstr "Sí"
+
+#: resourcestrings.txt_average
+msgid "Average"
+msgstr "Media"
+
+#: resourcestrings.txt_avg_kwh
+msgid "Average kW"
+msgstr "kW Medios"
+
+#: resourcestrings.txt_avg_rates
+msgid "Average Reaction Rates (kg/day)"
+msgstr "Velocidades Medias de Reacción (kg/día)"
+
+#: resourcestrings.txt_axis_title
+msgid "Time (Time Period = "
+msgstr "Período (1 Período = "
+
+#: resourcestrings.txt_bad_connection
+msgid "Node cannot be connected to itself."
+msgstr "Nudo no se puede conectar a si mismo."
+
+#: resourcestrings.txt_bad_curve
+msgid " Illegal pump curve."
+msgstr " La Curva de Bomba no es válida."
+
+#: resourcestrings.txt_bitmap
+msgid "Bitmap"
+msgstr "Mapa de Bits"
+
+#: resourcestrings.txt_blue
+msgid "Blue"
+msgstr "Azul"
+
+#: resourcestrings.txt_bulk
+msgid "Bulk"
+msgstr "Medio"
+
+#: resourcestrings.txt_calplot_title
+msgid "Comparison of Mean Values for "
+msgstr "Comparación de Valores Medios para "
+
+#: resourcestrings.txt_cal_title
+msgid " Calibration Statistics for "
+msgstr " Estadística de Calibración para "
+
+#: resourcestrings.txt_caption1
+msgctxt "resourcestrings.txt_caption1"
+msgid "Table Selection"
+msgstr "Selección de la Tabla"
+
+#: resourcestrings.txt_caption2
+msgid "Table Options"
+msgstr "Opciones de la Tabla"
+
+#: resourcestrings.txt_cfs
+msgid "CFS"
+msgstr "CFS"
+
+#: resourcestrings.txt_checking
+msgid "Checking network data..."
+msgstr "Comprobando los datos de la red..."
+
+#: resourcestrings.txt_chemical
+msgid "Chemical"
+msgstr "Sustancia"
+
+#: resourcestrings.txt_clipboard
+msgid "Clipboard"
+msgstr "Portapapeles"
+
+#: resourcestrings.txt_closed
+msgctxt "resourcestrings.txt_closed"
+msgid "Closed"
+msgstr "Cerrada"
+
+#: resourcestrings.txt_cmd
+msgid "CMD"
+msgstr "M3D"
+
+#: resourcestrings.txt_cmh
+msgid "CMH"
+msgstr "M3H"
+
+#: resourcestrings.txt_coll_labels_basedemand
+msgid "Base Demand"
+msgstr "Demanda Base"
+
+#: resourcestrings.txt_coll_labels_category
+msgid "Category"
+msgstr "Tipo Demanda"
+
+#: resourcestrings.txt_coll_labels_timepattern
+msgctxt "resourcestrings.txt_coll_labels_timepattern"
+msgid "Time Pattern"
+msgstr "Modulación"
+
+#: resourcestrings.txt_compiling
+msgid "Compiling network data..."
+msgstr "Recopilando los datos de la red..."
+
+#: resourcestrings.txt_computed
+msgctxt "resourcestrings.txt_computed"
+msgid "Computed"
+msgstr "Calculado"
+
+#: resourcestrings.txt_concentration
+msgid "Concentration"
+msgstr "Concentración"
+
+#: resourcestrings.txt_consumed
+msgid "Consumed"
+msgstr "Consumido"
+
+#: resourcestrings.txt_continue
+msgid "Continue"
+msgstr "Continuar"
+
+#: resourcestrings.txt_continued
+msgid " (continued)"
+msgstr " (continued)"
+
+#: resourcestrings.txt_contour_plot
+msgid "Contour Plot - "
+msgstr "Mapa de Isolíneas - "
+
+#: resourcestrings.txt_control
+msgid "Control"
+msgstr "Controle"
+
+#: resourcestrings.txt_controls
+msgctxt "resourcestrings.txt_controls"
+msgid "Controls"
+msgstr "Leyes de Control"
+
+#: resourcestrings.txt_controls_editor
+msgid "Simple Controls Editor"
+msgstr "Editor de Leyes de Control Simples"
+
+#: resourcestrings.txt_copy
+msgid "Copy "
+msgstr "Copiar "
+
+#: resourcestrings.txt_corplot_title
+msgid "Correlation Plot for "
+msgstr "Gráfico de Correlación para "
+
+#: resourcestrings.txt_correlation
+msgid "  Correlation Between Means: "
+msgstr "  Correlación entre Valores Medios: "
+
+#: resourcestrings.txt_cost
+msgid "Cost"
+msgstr "Coste"
+
+#: resourcestrings.txt_cost_day
+msgid "Cost/day"
+msgstr "Coste/día"
+
+#: resourcestrings.txt_cubic
+msgid " (cubic "
+msgstr " (cubic "
+
+#: resourcestrings.txt_curve
+msgid "Curve"
+msgstr "Curva"
+
+#: resourcestrings.txt_curves
+msgid "Curves"
+msgstr "Curvas"
+
+#: resourcestrings.txt_curve_filter
+msgid "Curve files (*.CRV)|*.CRV;*.crv;*.[Cc][Rr][Vv]|All files|*.*"
+msgstr "Ficheros de Curvas (*.CRV)|*.CRV;*.crv;*.[Cc][Rr][Vv]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_curve_header
+msgid "EPANET Curve Data"
+msgstr "EPANET Curve Data"
+
+#: resourcestrings.txt_cur_eff
+msgid "EFFICIENCY"
+msgstr "RENDIMIENTO"
+
+#: resourcestrings.txt_cur_efficiency
+msgid " Efficiency"
+msgstr " Rendimiento"
+
+#: resourcestrings.txt_cur_flow
+msgid " Flow"
+msgstr " Caudal"
+
+#: resourcestrings.txt_cur_head
+msgid " Head"
+msgstr " Altura"
+
+#: resourcestrings.txt_cur_headl
+msgid "HEADLOSS"
+msgstr "PERD.CARGA"
+
+#: resourcestrings.txt_cur_headloss
+msgid " Headloss"
+msgstr " Pérdidas"
+
+#: resourcestrings.txt_cur_height
+msgid " Height"
+msgstr " Nivel"
+
+#: resourcestrings.txt_cur_percent
+msgid " (%)"
+msgstr " (%)"
+
+#: resourcestrings.txt_cur_pump
+msgid "PUMP"
+msgstr "BOMBA"
+
+#: resourcestrings.txt_cur_volum
+msgid "VOLUME"
+msgstr "CUBICACIÓN"
+
+#: resourcestrings.txt_cur_volume
+msgid " Volume"
+msgstr " Volumen"
+
+#: resourcestrings.txt_cv
+msgid "CV"
+msgstr "V.Retención"
+
+#: resourcestrings.txt_c_m
+msgid "C-M"
+msgstr "C-M"
+
+#: resourcestrings.txt_datatext
+msgid "Data (Text)"
+msgstr "Datos (Texto)"
+
+#: resourcestrings.txt_day
+msgid "Day "
+msgstr "Día "
+
+#: resourcestrings.txt_ddegree
+msgid "Degrees"
+msgstr "Grados"
+
+#: resourcestrings.txt_def_value
+msgid "Default Value"
+msgstr "Valor por Defecto"
+
+#: resourcestrings.txt_delete_object
+msgid "Delete selected object?"
+msgstr "¿Borrar el objeto seleccionado?"
+
+#: resourcestrings.txt_demand
+msgid "Demand"
+msgstr "Demanda"
+
+#: resourcestrings.txt_demand_charge
+msgctxt "resourcestrings.txt_demand_charge"
+msgid "Demand Charge"
+msgstr "Término de potencia"
+
+#: resourcestrings.txt_demand_editor
+msgid "Demands for Junction "
+msgstr "Demandas en el Nudo de Caudal "
+
+#: resourcestrings.txt_dfeet
+msgid "Feet"
+msgstr "Pies"
+
+#: resourcestrings.txt_diameter
+msgid "Diameter"
+msgstr "Diametro"
+
+#: resourcestrings.txt_distance
+msgid "Distance"
+msgstr "Distancia"
+
+#: resourcestrings.txt_distribution
+msgid "Distribution of "
+msgstr "Distribución de "
+
+#: resourcestrings.txt_dmeter
+msgid "Meters"
+msgstr "Metros"
+
+#: resourcestrings.txt_dnone
+msgctxt "resourcestrings.txt_dnone"
+msgid "None"
+msgstr "Ninguna"
+
+#: resourcestrings.txt_does_not_exist
+msgid " does not exist."
+msgstr " no existe."
+
+#: resourcestrings.txt_dxf_fillc
+msgid "Filled circles"
+msgstr "Círculos Rellenos"
+
+#: resourcestrings.txt_dxf_fills
+msgid "Filled squares"
+msgstr "Cuadrados Rellenos"
+
+#: resourcestrings.txt_dxf_openc
+msgid "Open circles"
+msgstr "Círculos sin Rellenar"
+
+#: resourcestrings.txt_d_w
+msgid "D-W"
+msgstr "D-W"
+
+#: resourcestrings.txt_efficiency
+msgid "Efficiency"
+msgstr "Rendimiento"
+
+#: resourcestrings.txt_end
+msgid "End"
+msgstr "Final"
+
+#: resourcestrings.txt_energy
+msgid "Energy"
+msgstr "Energía"
+
+#: resourcestrings.txt_english
+msgid "English"
+msgstr "Inglés"
+
+#: resourcestrings.txt_error
+msgid "Error "
+msgstr "Error "
+
+#: resourcestrings.txt_error_report
+msgid "Error Report for File "
+msgstr "Informe de Errores para el Fichero "
+
+#: resourcestrings.txt_fancy
+msgid "Fancy"
+msgstr "Elegante"
+
+#: resourcestrings.txt_fcv
+msgid "FCV"
+msgstr "LimitCaudal"
+
+#: resourcestrings.txt_feet
+msgid " (feet)"
+msgstr " (pies)"
+
+#: resourcestrings.txt_fifo
+msgid "FIFO"
+msgstr "PistónFIFO"
+
+#: resourcestrings.txt_file
+msgid "File"
+msgstr "Fichero"
+
+#: resourcestrings.txt_file_filter
+msgid "Data files (*.DAT)|*.DAT;*.dat;*.[Dd][Aa][Tt]|All files|*.*"
+msgstr "Ficheros de Datos (*.DAT)|*.DAT;*.dat;*.[Dd][Aa][Tt]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_filled
+msgid "Filled"
+msgstr "Rellena"
+
+#: resourcestrings.txt_fillstyle_bdiag
+msgid "Back Diagonal"
+msgstr "Diagonal Atrás"
+
+#: resourcestrings.txt_fillstyle_clear
+msgid "Clear"
+msgstr "Ninguno"
+
+#: resourcestrings.txt_fillstyle_cross
+msgctxt "resourcestrings.txt_fillstyle_cross"
+msgid "Cross"
+msgstr "Cruzado"
+
+#: resourcestrings.txt_fillstyle_dcros
+msgctxt "resourcestrings.txt_fillstyle_dcros"
+msgid "Diagonal Cross"
+msgstr "Cruzado Diagonal"
+
+#: resourcestrings.txt_fillstyle_fdiag
+msgid "Forward Diagonal"
+msgstr "Diagonal Adelante"
+
+#: resourcestrings.txt_fillstyle_horiz
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: resourcestrings.txt_fillstyle_solid
+msgctxt "resourcestrings.txt_fillstyle_solid"
+msgid "Solid"
+msgstr "Sólido"
+
+#: resourcestrings.txt_fillstyle_verti
+msgid "Vertical"
+msgstr "Vertical"
+
+#: resourcestrings.txt_filter_above
+msgid "Above"
+msgstr "Mayor que"
+
+#: resourcestrings.txt_filter_below
+msgid "Below"
+msgstr "Menor que"
+
+#: resourcestrings.txt_filter_bmp
+msgid "Bitmap files (*.BMP)|*.BMP;*.bmp;*.[Bb][Mm][Pp]|All files|*.*"
+msgstr "Ficheros Bitmap (*.BMP)|*.BMP;*.bmp;*.[Bb][Mm][Pp]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_filter_dxf
+msgid "DXF files (*.DXF)|*.DXF;*.dxf;*.[Dd][Xx][Ff]|All files|*.*"
+msgstr "Ficheros DXF (*.DXF)|*.DXF;*.dxf;*.[Dd][Xx][Ff]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_filter_emf
+msgid "EMF files (*.EMF)|*.EMF;*.emf;*.[Ee][Mm][Ff]|All files|*.*"
+msgstr "Ficheros EMF (*.EMF)|*.EMF;*.emf;*.[Ee][Mm][Ff]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_filter_equal
+msgid "Equal To"
+msgstr "Igual a"
+
+#: resourcestrings.txt_filter_svg
+msgid "SVG files (*.SVG)|*.SVG;*.svg;*.[Ss][Vv][Gg]|All files|*.*"
+msgstr "Ficheros SVG (*.SVG)|*.SVG;*.svg;*.[Ss][Vv][Gg]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_filter_txt
+msgid "Text files (*.TXT)|*.TXT;*.txt;*.[Tt][Xx][Tt]|All files|*.*"
+msgstr "Ficheros de Texto (*.TXT)|*.TXT;*.txt;*.[Tt][Xx][Tt]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_first
+msgid "First"
+msgstr "Uno"
+
+#: resourcestrings.txt_flow
+msgctxt "resourcestrings.txt_flow"
+msgid "Flow"
+msgstr "Caudal"
+
+#: resourcestrings.txt_flowpacedboos
+msgid "Flow Paced Booster"
+msgstr "Reinyección Incremental"
+
+#: resourcestrings.txt_flowunits
+msgid " Flow Units              "
+msgstr " Unidades de Caudal      "
+
+#: resourcestrings.txt_for_link
+msgid "for Link "
+msgstr "en la Línea "
+
+#: resourcestrings.txt_for_node
+msgid "for Node "
+msgstr "en el Nudo "
+
+#: resourcestrings.txt_for_selected_links
+msgid "for Selected Links"
+msgstr "en las Líneas seleccionadas"
+
+#: resourcestrings.txt_for_selected_nodes
+msgid "for Selected Nodes"
+msgstr "en los Nudos seleccionados"
+
+#: resourcestrings.txt_frequency
+msgid "Frequency"
+msgstr "Frecuencia"
+
+#: resourcestrings.txt_frequency_plot
+msgid " Frequency Plot - "
+msgstr " Curva de Distribución - "
+
+#: resourcestrings.txt_full
+msgid "Full"
+msgstr "Completo"
+
+#: resourcestrings.txt_gcontour_plot
+msgctxt "resourcestrings.txt_gcontour_plot"
+msgid "Contour Plot"
+msgstr "Mapa Isolíneas"
+
+#: resourcestrings.txt_gfrequency_plot
+msgid "Frequency Plot"
+msgstr "Curva Distribución"
+
+#: resourcestrings.txt_gpm
+msgctxt "resourcestrings.txt_gpm"
+msgid "GPM"
+msgstr "GPM"
+
+#: resourcestrings.txt_gprofile_plot
+msgid "Profile Plot"
+msgstr "Perfil Longitudinal"
+
+#: resourcestrings.txt_gpv
+msgid "GPV"
+msgstr "PropósGral"
+
+#: resourcestrings.txt_gray
+msgid "Gray"
+msgstr "Gris"
+
+#: resourcestrings.txt_green
+msgid "Green"
+msgstr "Verde"
+
+#: resourcestrings.txt_gsystem_flow
+msgid "System Flow"
+msgstr "Balance Caudales"
+
+#: resourcestrings.txt_gtime_series
+msgid "Time Series"
+msgstr "Curva Evolución"
+
+#: resourcestrings.txt_g_links
+msgctxt "resourcestrings.txt_g_links"
+msgid "Links"
+msgstr "Líneas"
+
+#: resourcestrings.txt_g_nodes
+msgctxt "resourcestrings.txt_g_nodes"
+msgid "Nodes"
+msgstr "Nudos"
+
+#: resourcestrings.txt_head
+msgctxt "resourcestrings.txt_head"
+msgid "Head"
+msgstr "Altura"
+
+#: resourcestrings.txt_heading1
+msgid "                Num    Observed    Computed    Mean     RMS"
+msgstr "                Núm   Observado   Calculado   Error    Desv"
+
+#: resourcestrings.txt_heading2
+msgid "  Location      Obs        Mean        Mean   Error   Error"
+msgstr " Pto Medida     Obs       Media       Media   Medio   Típic"
+
+#: resourcestrings.txt_heading3
+msgid "  ---------------------------------------------------------"
+msgstr "  ---------------------------------------------------------"
+
+#: resourcestrings.txt_headloss
+msgid "Headloss"
+msgstr "Pérdida de Carga"
+
+#: resourcestrings.txt_headlossformula
+msgid " Headloss Formula        "
+msgstr " Fórmula de Pérdidas     "
+
+#: resourcestrings.txt_height
+#, object-pascal-format
+msgid "Height: %.1f "
+msgstr "Alto: %.1f "
+
+#: resourcestrings.txt_hide
+msgid "&Hide"
+msgstr "&Ocultar"
+
+#: resourcestrings.txt_hours
+msgid "Hrs"
+msgstr "Horas"
+
+#: resourcestrings.txt_hrs
+msgid " hrs)"
+msgstr " h)"
+
+#: resourcestrings.txt_hydraulics
+msgctxt "resourcestrings.txt_hydraulics"
+msgid "Hydraulics"
+msgstr "Hidráulicas"
+
+#: resourcestrings.txt_h_w
+msgid "H-W"
+msgstr "H-W"
+
+#: resourcestrings.txt_id
+msgctxt "resourcestrings.txt_id"
+msgid "ID"
+msgstr "ID"
+
+#: resourcestrings.txt_id_increment
+msgid "ID Increment"
+msgstr "Incremento ID"
+
+#: resourcestrings.txt_id_prefix
+msgid "ID Prefix"
+msgstr "Prefijo ID"
+
+#: resourcestrings.txt_imgd
+msgid "IMGD"
+msgstr "IMGD"
+
+#: resourcestrings.txt_input_file
+msgid "Input File: "
+msgstr "Fichero de Red: "
+
+#: resourcestrings.txt_inp_time
+msgid "Hrs:Min"
+msgstr "Hrs:Min"
+
+#: resourcestrings.txt_in_links
+msgid "Measured in Links:"
+msgstr "Líneas de Medida:"
+
+#: resourcestrings.txt_items_found
+msgid " items found"
+msgstr " elem. encontrados"
+
+#: resourcestrings.txt_items_with
+msgid " items with"
+msgstr " elementos con"
+
+#: resourcestrings.txt_junction
+msgid "Junction"
+msgstr "Nudo Caudal"
+
+#: resourcestrings.txt_junctions
+msgid "Junctions"
+msgstr "Nudos de Caudal"
+
+#: resourcestrings.txt_kw
+msgid "kW"
+msgstr "kW"
+
+#: resourcestrings.txt_kwh_mgal
+msgid "kW-hr/Mgal"
+msgstr "kW·h/Mgal"
+
+#: resourcestrings.txt_kw_hr
+msgid "kW-hr"
+msgstr "kW-h"
+
+#: resourcestrings.txt_label
+msgctxt "resourcestrings.txt_label"
+msgid "Label"
+msgstr "Rótulo"
+
+#: resourcestrings.txt_labels
+msgctxt "resourcestrings.txt_labels"
+msgid "Labels"
+msgstr "Rótulos"
+
+#: resourcestrings.txt_labelstyle_labl
+msgctxt "resourcestrings.txt_labelstyle_labl"
+msgid "Label"
+msgstr "Texto"
+
+#: resourcestrings.txt_labelstyle_lbpc
+msgid "Label & %"
+msgstr "Texto y %"
+
+#: resourcestrings.txt_labelstyle_lbto
+msgid "Label & % Total"
+msgstr "Texto y % Total"
+
+#: resourcestrings.txt_labelstyle_lbvl
+msgid "Label & Value"
+msgstr "Texto y Valor"
+
+#: resourcestrings.txt_labelstyle_legd
+msgctxt "resourcestrings.txt_labelstyle_legd"
+msgid "Legend"
+msgstr "Leyenda"
+
+#: resourcestrings.txt_labelstyle_none
+msgctxt "resourcestrings.txt_labelstyle_none"
+msgid "None"
+msgstr "Ninguno"
+
+#: resourcestrings.txt_labelstyle_perc
+msgctxt "resourcestrings.txt_labelstyle_perc"
+msgid "Percent"
+msgstr "Porcentaje"
+
+#: resourcestrings.txt_labelstyle_ptot
+msgid "% Total"
+msgstr "% del Total"
+
+#: resourcestrings.txt_labelstyle_valu
+msgctxt "resourcestrings.txt_labelstyle_valu"
+msgid "Value"
+msgstr "Valor"
+
+#: resourcestrings.txt_labelstyle_xval
+msgid "X Value"
+msgstr "Valor X"
+
+#: resourcestrings.txt_label_editor
+msgid "Label Editor"
+msgstr "Editor de Rótulos"
+
+#: resourcestrings.txt_landscape
+msgid "Landscape"
+msgstr "Horizontal"
+
+#: resourcestrings.txt_legendpos_bc
+msgid "Bottom Center"
+msgstr "Abajo Centrada"
+
+#: resourcestrings.txt_legendpos_bl
+msgid "Bottom Left"
+msgstr "Abajo Izquierda"
+
+#: resourcestrings.txt_legendpos_br
+msgid "Bottom Right"
+msgstr "Abajo Derecha"
+
+#: resourcestrings.txt_legendpos_cl
+msgid "Center Left"
+msgstr "Centro Izquierda"
+
+#: resourcestrings.txt_legendpos_cr
+msgid "Center Right"
+msgstr "Centro Derecha"
+
+#: resourcestrings.txt_legendpos_tc
+msgid "Top Center"
+msgstr "Arriba Centrada"
+
+#: resourcestrings.txt_legendpos_tl
+msgid "Top Left"
+msgstr "Arriba Izquierda"
+
+#: resourcestrings.txt_legendpos_tr
+msgid "Top Right"
+msgstr "Arriba Derecha"
+
+#: resourcestrings.txt_length
+msgid "Length"
+msgstr "Longitud"
+
+#: resourcestrings.txt_lifo
+msgid "LIFO"
+msgstr "PistónLIFO"
+
+#: resourcestrings.txt_linestyle_dash
+msgid "Dash"
+msgstr "Trazo"
+
+#: resourcestrings.txt_linestyle_dashdot
+msgid "DashDot"
+msgstr "TrazoPunto"
+
+#: resourcestrings.txt_linestyle_dashdotdot
+msgid "DashDotDot"
+msgstr "TrazoPuntoPunto"
+
+#: resourcestrings.txt_linestyle_dot
+msgid "Dot"
+msgstr "Punto"
+
+#: resourcestrings.txt_linestyle_solid
+msgctxt "resourcestrings.txt_linestyle_solid"
+msgid "Solid"
+msgstr "Sólida"
+
+#: resourcestrings.txt_link
+msgid "Link"
+msgstr "Línea"
+
+#: resourcestrings.txt_links
+msgid "Network Links"
+msgstr "Líneas de la Red"
+
+#: resourcestrings.txt_links_to_graph
+msgid "Links to Graph"
+msgstr "Líneas a Representar"
+
+#: resourcestrings.txt_links_with
+msgid "Find Links with"
+msgstr "Buscar Líneas con"
+
+#: resourcestrings.txt_link_id
+msgid " Link ID"
+msgstr " ID Línea"
+
+#: resourcestrings.txt_link_info
+msgid "Link - Node Table:"
+msgstr "Tabla de Líneas y Nudos:"
+
+#: resourcestrings.txt_link_not_on_map
+msgid "Link exists but is not on the map."
+msgstr "La Línea existe pero no en el Esquema de la Red."
+
+#: resourcestrings.txt_link_results
+msgid "Link Results"
+msgstr "Resultados en las Líneas"
+
+#: resourcestrings.txt_link_series
+msgid "Time Series Table - Link "
+msgstr "Evolución Temporal - Línea "
+
+#: resourcestrings.txt_lpm
+msgid "LPM"
+msgstr "LPM"
+
+#: resourcestrings.txt_lps
+msgid "LPS"
+msgstr "LPS"
+
+#: resourcestrings.txt_magenta
+msgid "Magenta"
+msgstr "Fucsia"
+
+#: resourcestrings.txt_main_caption
+msgid "EPANET 2.2"
+msgstr "EPANET 2.2"
+
+#: resourcestrings.txt_map
+msgid "Netwotk Map"
+msgstr "Esquema de la Red"
+
+#: resourcestrings.txt_mapopt_arrows
+msgid "  Flow Arrows"
+msgstr "  Flechas"
+
+#: resourcestrings.txt_mapopt_background
+msgid "  Background"
+msgstr "  Fondo"
+
+#: resourcestrings.txt_mapopt_labels
+msgid "  Labels"
+msgstr "  Rótulos"
+
+#: resourcestrings.txt_mapopt_links
+msgid "  Links"
+msgstr "  Líneas"
+
+#: resourcestrings.txt_mapopt_nodes
+msgid "  Nodes"
+msgstr "  Nudos"
+
+#: resourcestrings.txt_mapopt_notation
+msgid "  Notation"
+msgstr "  Etiquetas"
+
+#: resourcestrings.txt_mapopt_symbols
+msgid "  Symbols"
+msgstr "  Símbolos"
+
+#: resourcestrings.txt_map_filter
+msgid "Map files (*.MAP)|*.MAP;*.map;*.[Mm][Aa][Pp]|All files|*.*"
+msgstr "Ficheros de Esquema (*.MAP)|*.MAP;*.map;*.[Mm][Aa][Pp]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_map_node
+msgid "Node "
+msgstr "Nudo "
+
+#: resourcestrings.txt_margins_in
+msgid "Margins (inches)"
+msgstr "Márgenes (pulgadas)"
+
+#: resourcestrings.txt_margins_mm
+msgid "Margins (mm)"
+msgstr "Márgenes (mm)"
+
+#: resourcestrings.txt_markstyle_circ
+msgid "Circle"
+msgstr "Círculo"
+
+#: resourcestrings.txt_markstyle_cros
+msgctxt "resourcestrings.txt_markstyle_cros"
+msgid "Cross"
+msgstr "Cruz"
+
+#: resourcestrings.txt_markstyle_dcros
+msgctxt "resourcestrings.txt_markstyle_dcros"
+msgid "Diagonal Cross"
+msgstr "Cruz Diagonal"
+
+#: resourcestrings.txt_markstyle_diam
+msgid "Diamond"
+msgstr "Rombo"
+
+#: resourcestrings.txt_markstyle_dtria
+msgid "Down Triangle"
+msgstr "Triángulo Abajo"
+
+#: resourcestrings.txt_markstyle_fbrac
+msgid "Left Bracket"
+msgstr "Corchete Izquierda"
+
+#: resourcestrings.txt_markstyle_fstar
+msgid "Full Star"
+msgstr "Estrella Sólida"
+
+#: resourcestrings.txt_markstyle_ftria
+msgid "Left Triangle"
+msgstr "Triángulo Izquierda"
+
+#: resourcestrings.txt_markstyle_hbar
+msgid "Horizontal Bar"
+msgstr "Barra Horizontal"
+
+#: resourcestrings.txt_markstyle_hbrac
+msgid "High Bracket"
+msgstr "Corchete Alto"
+
+#: resourcestrings.txt_markstyle_hexa
+msgid "Hexagon"
+msgstr "Hexágono"
+
+#: resourcestrings.txt_markstyle_lbrac
+msgid "Low Bracket"
+msgstr "Corchete Bajo"
+
+#: resourcestrings.txt_markstyle_none
+msgctxt "resourcestrings.txt_markstyle_none"
+msgid "None"
+msgstr "Ninguno"
+
+#: resourcestrings.txt_markstyle_poin
+msgid "Point"
+msgstr "Punto"
+
+#: resourcestrings.txt_markstyle_rbrac
+msgid "Right Bracket"
+msgstr "Corchete Derecha"
+
+#: resourcestrings.txt_markstyle_rect
+msgid "Rectangle"
+msgstr "Rectángulo"
+
+#: resourcestrings.txt_markstyle_rtria
+msgid "Right Triangle"
+msgstr "Triángulo Derecha"
+
+#: resourcestrings.txt_markstyle_star
+msgid "Star"
+msgstr "Estrella"
+
+#: resourcestrings.txt_markstyle_tria
+msgid "Triangle"
+msgstr "Triángulo"
+
+#: resourcestrings.txt_markstyle_vbar
+msgid "Vertical Bar"
+msgstr "Barra Vertical"
+
+#: resourcestrings.txt_massbooster
+msgid "Mass Booster"
+msgstr "Caudal másico"
+
+#: resourcestrings.txt_maximum
+msgctxt "resourcestrings.txt_maximum"
+msgid "Maximum"
+msgstr "Máximo"
+
+#: resourcestrings.txt_metafile
+msgid "Metafile"
+msgstr "Metafichero"
+
+#: resourcestrings.txt_meters
+msgid " (meters)"
+msgstr " (metros)"
+
+#: resourcestrings.txt_mgd
+msgid "MGD"
+msgstr "MGD"
+
+#: resourcestrings.txt_mgl
+msgid "mg/L"
+msgstr "mg/L"
+
+#: resourcestrings.txt_minimum
+msgctxt "resourcestrings.txt_minimum"
+msgid "Minimum"
+msgstr "Mínimo"
+
+#: resourcestrings.txt_mixed
+msgid "Mixed"
+msgstr "Completa"
+
+#: resourcestrings.txt_mld
+msgid "MLD"
+msgstr "MLD"
+
+#: resourcestrings.txt_more_errors
+msgid " more errors found in file."
+msgstr " más errores encontrados en el fichero."
+
+#: resourcestrings.txt_multiplier
+msgctxt "resourcestrings.txt_multiplier"
+msgid "Multiplier"
+msgstr "Multiplicador"
+
+#: resourcestrings.txt_named
+msgid " named "
+msgstr " llamado "
+
+#: resourcestrings.txt_name_of_file
+msgid "Name of Calibration File"
+msgstr "Nombre de Fichero de Calibración"
+
+#: resourcestrings.txt_network
+msgid "Network"
+msgstr "Red"
+
+#: resourcestrings.txt_network_filter
+msgid "Input files (*.INP)|*.INP;*.inp;*.[Ii][Nn][Pp]|All files|*.*"
+msgstr "Ficheros Input (*.INP)|*.INP;*.inp;*.[Ii][Nn][Pp]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_network_links
+msgid "Network Table - Links"
+msgstr "Estado de la Red - Líneas"
+
+#: resourcestrings.txt_network_nodes
+msgid "Network Table - Nodes"
+msgstr "Estado de la Red - Nudos"
+
+#: resourcestrings.txt_no
+msgid "No"
+msgstr "No"
+
+#: resourcestrings.txt_node
+msgid "Node"
+msgstr "Nudo"
+
+#: resourcestrings.txt_nodes
+msgid "Network Nodes"
+msgstr "Nudos de la Red"
+
+#: resourcestrings.txt_nodes_to_graph
+msgid "Nodes to Graph"
+msgstr "Nudos a Representar"
+
+#: resourcestrings.txt_nodes_with
+msgid "Find Nodes with"
+msgstr "Buscar Nudos con"
+
+#: resourcestrings.txt_node_elevation
+msgid "Node Elevation"
+msgstr "Cota Nudo"
+
+#: resourcestrings.txt_node_id
+msgid " Node ID"
+msgstr " ID Nudo"
+
+#: resourcestrings.txt_node_not_on_map
+msgid "Node exists but is not on the map."
+msgstr "El Nudo existe pero no en el Esquema de la Red."
+
+#: resourcestrings.txt_node_results
+msgid "Node Results"
+msgstr "Resultados en los Nudos"
+
+#: resourcestrings.txt_node_series
+msgid "Time Series Table - Node "
+msgstr "Evolución Temporal - Nudo "
+
+#: resourcestrings.txt_none
+msgctxt "resourcestrings.txt_none"
+msgid "None"
+msgstr "Ninguno"
+
+#: resourcestrings.txt_notes
+msgid "NOTES:"
+msgstr "NOTES:"
+
+#: resourcestrings.txt_not_a_number
+msgid " is not a valid number."
+msgstr " no es un número válido."
+
+#: resourcestrings.txt_noview
+msgid "No View"
+msgstr "No Mostrar"
+
+#: resourcestrings.txt_no_data
+msgid " *** No observed data during simulation period. ***"
+msgstr " *** No hay valores observados en el periodo de simulación. ***"
+
+#: resourcestrings.txt_no_items
+msgid "No items to graph"
+msgstr "No hay elementos para representar"
+
+#: resourcestrings.txt_no_junctions
+msgid " Number of Junctions     "
+msgstr " Nº de Nudos de Caudal   "
+
+#: resourcestrings.txt_no_link
+msgid "There is no link named "
+msgstr "No existe la línea con ID "
+
+#: resourcestrings.txt_no_link_selected
+msgid "Must select a link object from Browser"
+msgstr "Hay que seleccionar un objeto tipo Línea en el Visor"
+
+#: resourcestrings.txt_no_node
+msgid "There is no node named "
+msgstr "No existe el nudo con ID "
+
+#: resourcestrings.txt_no_node_selected
+msgid "Must select a node object from Browser"
+msgstr "Hay que seleccionar un objeto tipo Nudo en el Visor"
+
+#: resourcestrings.txt_no_pipes
+msgid " Number of Pipes         "
+msgstr " Nº de Tuberías          "
+
+#: resourcestrings.txt_no_pumps
+msgid " Number of Pumps         "
+msgstr " Nº de Bombas            "
+
+#: resourcestrings.txt_no_reaction
+msgid "No reactions occurred"
+msgstr "No hubo reacciones"
+
+#: resourcestrings.txt_no_reservoirs
+msgid " Number of Reservoirs    "
+msgstr " Nº de Embalses          "
+
+#: resourcestrings.txt_no_results
+msgid "No results available to graph"
+msgstr "No resultados a representar"
+
+#: resourcestrings.txt_no_source_nodes
+msgid "There are no WQ source nodes."
+msgstr "No hay nudos de entrada de sustancias químicas"
+
+#: resourcestrings.txt_no_such_object
+msgid "There is no such object on the map"
+msgstr "No existe ese objeto en el esquema"
+
+#: resourcestrings.txt_no_tanks
+msgid " Number of Tanks         "
+msgstr " Nº de Depósitos         "
+
+#: resourcestrings.txt_no_valves
+msgid " Number of Valves        "
+msgstr " Nº de Válvulas          "
+
+#: resourcestrings.txt_no_variable
+msgid "No parameter was selected"
+msgstr "No se seleccionó ninguna magnitud"
+
+#: resourcestrings.txt_object
+msgid "Object"
+msgstr "Objeto"
+
+#: resourcestrings.txt_observed
+msgctxt "resourcestrings.txt_observed"
+msgid "Observed"
+msgstr "Observado"
+
+#: resourcestrings.txt_open
+msgctxt "resourcestrings.txt_open"
+msgid "Open"
+msgstr "Abierta"
+
+#: resourcestrings.txt_open_curve_title
+msgid "Open a Curve"
+msgstr "Abrir una Curva"
+
+#: resourcestrings.txt_open_map_title
+msgid "Open a Map"
+msgstr "Abrir un Esquema de Red"
+
+#: resourcestrings.txt_open_network_title
+msgid "Open a Network"
+msgstr "Abrir una Red"
+
+#: resourcestrings.txt_open_pattern_title
+msgid "Open a Pattern"
+msgstr "Abrir una Modulación"
+
+#: resourcestrings.txt_open_profile_title
+msgid "Open Profile"
+msgstr "Abrir un Perfil Longitudinal"
+
+#: resourcestrings.txt_open_project_filter
+msgid "Network files (*.NET)|*.NET;*.net;*.[Nn][Ee][Tt]|Input file (*.INP)|*.INP;*.inp;*.[Ii][Nn][Pp]|Backup files (*.BAK)|*.BAK;*.bak;*.[Bb][Aa][Kk]|All files|*.*"
+msgstr "Ficheros de Red (*.NET)|*.NET;*.net;*.[Nn][Ee][Tt]|Ficheros Input (*.INP)|*.INP;*.inp;*.[Ii][Nn][Pp]|Ficheros de seguridad (*.BAK)|*.BAK;*.bak;*.[Bb][Aa][Kk]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_open_project_title
+msgid "Open a Project"
+msgstr "Abrir un Proyecto"
+
+#: resourcestrings.txt_open_scenario_title
+msgid "Open a Scenario"
+msgstr "Abrir un Escenario"
+
+#: resourcestrings.txt_option
+msgid "Option"
+msgstr "Opción"
+
+#: resourcestrings.txt_options
+msgctxt "resourcestrings.txt_options"
+msgid "Options"
+msgstr "Opciones"
+
+#: resourcestrings.txt_options_editor
+msgid " Options"
+msgstr " Opciones"
+
+#: resourcestrings.txt_op_accuracy
+msgid "Accuracy"
+msgstr "Precisión"
+
+#: resourcestrings.txt_op_bulkorder
+msgid "Bulk Reaction Order"
+msgstr "Orden Reacción en el Medio"
+
+#: resourcestrings.txt_op_checkfreq
+msgid "CHECKFREQ"
+msgstr "Frecuencia de Chequeo"
+
+#: resourcestrings.txt_op_clockstart
+msgid "Clock Start Time"
+msgstr "Hora Real de Inicio"
+
+#: resourcestrings.txt_op_damplimit
+msgid "DAMPLIMIT"
+msgstr "Límite de Relajación"
+
+#: resourcestrings.txt_op_defpattern
+msgid "Default Pattern"
+msgstr "Modulación por Defecto"
+
+#: resourcestrings.txt_op_demandcharge
+msgctxt "resourcestrings.txt_op_demandcharge"
+msgid "Demand Charge"
+msgstr "Coste de la Potencia Máxima"
+
+#: resourcestrings.txt_op_demandmodel
+msgid "Demand Model"
+msgstr "Modelo de Demanda"
+
+#: resourcestrings.txt_op_demandmult
+msgid "Demand Multiplier"
+msgstr "Factor de Demanda"
+
+#: resourcestrings.txt_op_diffusiv
+msgid "Relative Diffusivity"
+msgstr "Coef. Difusión Relativo"
+
+#: resourcestrings.txt_op_duration
+msgid "Total Duration"
+msgstr "Duración Total"
+
+#: resourcestrings.txt_op_emittexp
+msgid "Emitter Exponent"
+msgstr "Exponente Emisores"
+
+#: resourcestrings.txt_op_enerprice
+msgid "Energy Price/kWh"
+msgstr "Precio Energía (por kWh)"
+
+#: resourcestrings.txt_op_flowchange
+msgid "Max. Flow Change"
+msgstr "Max. Variación Caudal"
+
+#: resourcestrings.txt_op_flowunits
+msgid "Flow Units"
+msgstr "Unidades de Caudal"
+
+#: resourcestrings.txt_op_globalbulk
+msgid "Global Bulk Coeff."
+msgstr "Coef. Global Reacc. Medio"
+
+#: resourcestrings.txt_op_globalwall
+msgid "Global Wall Coeff."
+msgstr "Coef. Global Reacc. Pared"
+
+#: resourcestrings.txt_op_headerror
+msgid "Max. Head Error"
+msgstr "Máx. Error Altura"
+
+#: resourcestrings.txt_op_hlformula
+msgid "Headloss Formula"
+msgstr "Fórmula de Pérdidas"
+
+#: resourcestrings.txt_op_hstep
+msgid "Hydraulic Time Step"
+msgstr "Intervalo Cálculo Hidráulico"
+
+#: resourcestrings.txt_op_limitconc
+msgid "Limiting Concentration"
+msgstr "Concentración Límite"
+
+#: resourcestrings.txt_op_massunit
+msgid "Mass Units"
+msgstr "Unidades de Masa"
+
+#: resourcestrings.txt_op_maxcheck
+msgid "MAXCHECK"
+msgstr "Máximas Iter. con Chequeo"
+
+#: resourcestrings.txt_op_maxtrials
+msgid "Maximum Trials"
+msgstr "Iteraciones Máximas"
+
+#: resourcestrings.txt_op_parameter
+msgctxt "resourcestrings.txt_op_parameter"
+msgid "Parameter"
+msgstr "Tipo Modelo Calidad"
+
+#: resourcestrings.txt_op_patstart
+msgid "Pattern Start Time"
+msgstr "Hora Inicio Modulaciones"
+
+#: resourcestrings.txt_op_peff
+msgid "Pump Efficiency (%)"
+msgstr "Rendimiento Bombas (%)"
+
+#: resourcestrings.txt_op_pressexp
+msgid "Pressure Exponent"
+msgstr "Exponente Presiones"
+
+#: resourcestrings.txt_op_pressmin
+msgid "Minimum Pressure"
+msgstr "Presión Mínima"
+
+#: resourcestrings.txt_op_pressreq
+msgid "Required Pressure"
+msgstr "Presión Requerida"
+
+#: resourcestrings.txt_op_pstep
+msgid "Pattern Time Step"
+msgstr "Intervalo Modulaciones"
+
+#: resourcestrings.txt_op_qstep
+msgid "Quality Time Step"
+msgstr "Intervalo Cálculo Calidad"
+
+#: resourcestrings.txt_op_repstart
+msgid "Report Start Time"
+msgstr "Hora Inicio Resultados"
+
+#: resourcestrings.txt_op_rstep
+msgid "Reporting Time Step"
+msgstr "Intervalo Resultados"
+
+#: resourcestrings.txt_op_spgravity
+msgid "Specific Gravity"
+msgstr "Peso Específico Relat."
+
+#: resourcestrings.txt_op_stat
+msgid "Statistic"
+msgstr "Estadística"
+
+#: resourcestrings.txt_op_statusrep
+msgctxt "resourcestrings.txt_op_statusrep"
+msgid "Status Report"
+msgstr "Informe de Estado"
+
+#: resourcestrings.txt_op_tolq
+msgid "Quality Tolerance"
+msgstr "Tolerancia Parámetro Calidad"
+
+#: resourcestrings.txt_op_tracenode
+msgid "Trace Node"
+msgstr "Nudo Procedencia"
+
+#: resourcestrings.txt_op_unbalanced
+msgid "If Unbalanced"
+msgstr "Caso de No Equilibrio"
+
+#: resourcestrings.txt_op_viscosity
+msgid "Relative Viscosity"
+msgstr "Viscosidad Relativa"
+
+#: resourcestrings.txt_op_wallcorrel
+msgid "Wall Coeff. Correlation"
+msgstr "Coef. Correlación de Pared"
+
+#: resourcestrings.txt_op_wallorder
+msgid "Wall Reaction Order"
+msgstr "Orden Reacción en la Pared"
+
+#: resourcestrings.txt_orange
+msgid "Orange"
+msgstr "Naranja"
+
+#: resourcestrings.txt_page
+msgid "Page "
+msgstr "Página "
+
+#: resourcestrings.txt_parameter
+msgctxt "resourcestrings.txt_parameter"
+msgid "Parameter"
+msgstr "Parámetro"
+
+#: resourcestrings.txt_pattern
+msgid "Pattern"
+msgstr "Modulación"
+
+#: resourcestrings.txt_patterns
+msgctxt "resourcestrings.txt_patterns"
+msgid "Patterns"
+msgstr "Modulaciones"
+
+#: resourcestrings.txt_pattern_filter
+msgid "Pattern files (*.PAT)|*.PAT;*.pat;*.[Pp][Aa][Tt]|All files|*.*"
+msgstr "Ficheros de Modulación (*.PAT)|*.PAT;*.pat;*.[Pp][Aa][Tt]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_pattern_header
+msgid "EPANET Pattern Data"
+msgstr "EPANET Pattern Data"
+
+#: resourcestrings.txt_pbv
+msgid "PBV"
+msgstr "RoturaCarga"
+
+#: resourcestrings.txt_pclosed
+msgctxt "resourcestrings.txt_pclosed"
+msgid "Closed"
+msgstr "Parada"
+
+#: resourcestrings.txt_peak
+msgid "Peak"
+msgstr "Punta"
+
+#: resourcestrings.txt_peak_kwh
+msgid "Peak kW"
+msgstr "kW Punta"
+
+#: resourcestrings.txt_percent
+msgctxt "resourcestrings.txt_percent"
+msgid "Percent"
+msgstr "Porcentaje"
+
+#: resourcestrings.txt_percent_less
+msgid "Percent Less Than"
+msgstr "Porcentaje Inferior a"
+
+#: resourcestrings.txt_percent_lless
+msgid "Percent of Links Less Than"
+msgstr "Porcentaje de Líneas Inferior a"
+
+#: resourcestrings.txt_percent_nless
+msgid "Percent of Nodes Less Than"
+msgstr "Porcentaje de Nudos Inferior a"
+
+#: resourcestrings.txt_perday
+msgid "/day"
+msgstr "/día"
+
+#: resourcestrings.txt_period
+msgctxt "resourcestrings.txt_period"
+msgid "Period"
+msgstr "Intervalo"
+
+#: resourcestrings.txt_perm3
+msgid "/m3"
+msgstr "/m3"
+
+#: resourcestrings.txt_permgal
+msgid "/Mgal"
+msgstr "/Mgal"
+
+#: resourcestrings.txt_pg_lc
+msgid "Lower Center"
+msgstr "Abajo Centro"
+
+#: resourcestrings.txt_pg_ll
+msgctxt "resourcestrings.txt_pg_ll"
+msgid "Lower Left"
+msgstr "Abajo Izquierda"
+
+#: resourcestrings.txt_pg_lr
+msgid "Lower Right"
+msgstr "Abajo Derecha"
+
+#: resourcestrings.txt_pg_no
+#, object-pascal-format
+msgctxt "resourcestrings.txt_pg_no"
+msgid "Page %d of %d"
+msgstr "Página %d de %d"
+
+#: resourcestrings.txt_pg_none
+msgctxt "resourcestrings.txt_pg_none"
+msgid "None"
+msgstr "Ninguno"
+
+#: resourcestrings.txt_pg_uc
+msgid "Upper Center"
+msgstr "Arriba Centro"
+
+#: resourcestrings.txt_pg_ul
+msgid "Upper Left"
+msgstr "Arriba Izquierda"
+
+#: resourcestrings.txt_pg_ur
+msgctxt "resourcestrings.txt_pg_ur"
+msgid "Upper Right"
+msgstr "Arriba Derecha"
+
+#: resourcestrings.txt_pipe
+msgid "Pipe"
+msgstr "Tubería"
+
+#: resourcestrings.txt_pipes
+msgid "Pipes"
+msgstr "Tuberías"
+
+#: resourcestrings.txt_pipe_diameter
+msgid "Pipe Diameter"
+msgstr "Diámetro Tubería"
+
+#: resourcestrings.txt_pipe_length
+msgid "Pipe Length"
+msgstr "Longitud Tubería"
+
+#: resourcestrings.txt_pipe_roughness
+msgctxt "resourcestrings.txt_pipe_roughness"
+msgid "Pipe Roughness"
+msgstr "Rugosidad Tuberías"
+
+#: resourcestrings.txt_popen
+msgctxt "resourcestrings.txt_popen"
+msgid "Open"
+msgstr "Marcha"
+
+#: resourcestrings.txt_portrait
+msgid "Portrait"
+msgstr "Vertical"
+
+#: resourcestrings.txt_preview
+msgctxt "resourcestrings.txt_preview"
+msgid "Preview"
+msgstr "Vista Previa"
+
+#: resourcestrings.txt_produced
+msgid "Produced"
+msgstr "Producido"
+
+#: resourcestrings.txt_profile
+msgid "Profile of "
+msgstr "Perfil de "
+
+#: resourcestrings.txt_profile_filter
+msgid "Profile files (*.PRO)|*.PRO;*.pro;*.[Pp][Rr][Oo]|All files|*.*"
+msgstr "Ficheros de Perfil (*.PRO)|*.PRO;*.pro;*.[Pp][Rr][Oo]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_profile_for
+msgid "Profile for "
+msgstr "Perfil para "
+
+#: resourcestrings.txt_profile_id
+msgid "Profile identifier:"
+msgstr "Identificador del Perfil:"
+
+#: resourcestrings.txt_profile_plot
+msgid " Profile Plot - "
+msgstr " Perfil Longitudinal - "
+
+#: resourcestrings.txt_property
+msgid "Property"
+msgstr "Propiedad"
+
+#: resourcestrings.txt_prv
+msgid "PRV"
+msgstr "Reductora"
+
+#: resourcestrings.txt_pr_abort
+msgctxt "resourcestrings.txt_pr_abort"
+msgid "Printing aborted"
+msgstr "Impresión cancelada"
+
+#: resourcestrings.txt_pr_actuald
+msgid "Actual Demand"
+msgstr "Demanda Actual"
+
+#: resourcestrings.txt_pr_anchornode
+msgid "Anchor Node"
+msgstr "Nudo de Anclaje"
+
+#: resourcestrings.txt_pr_bulkcoef
+msgid "Bulk Coeff."
+msgstr "Coef. Reacción en el Medio"
+
+#: resourcestrings.txt_pr_canover
+msgid "Can Overflow"
+msgstr "Puede Rebosar"
+
+#: resourcestrings.txt_pr_demandcat
+msgid "Demand Categories"
+msgstr "Tipos de Demanda"
+
+#: resourcestrings.txt_pr_demandpat
+msgid "Demand Pattern"
+msgstr "Modulación Demanda"
+
+#: resourcestrings.txt_pr_descr
+msgctxt "resourcestrings.txt_pr_descr"
+msgid "Description"
+msgstr "Descripción"
+
+#: resourcestrings.txt_pr_dia
+msgid "*Diameter"
+msgstr "*Diámetro"
+
+#: resourcestrings.txt_pr_effcur
+msgid "Effic. Curve"
+msgstr "Curva Rendimiento"
+
+#: resourcestrings.txt_pr_elev
+msgid "Elevation"
+msgstr "Altura Superf. Libre"
+
+#: resourcestrings.txt_pr_emittcoef
+msgid "Emitter Coeff."
+msgstr "Coeficiente del Emisor"
+
+#: resourcestrings.txt_pr_enerprice
+msgid "Energy Price"
+msgstr "Precio Energía"
+
+#: resourcestrings.txt_pr_fixstatus
+msgid "Fixed Status"
+msgstr "Estado Forzado"
+
+#: resourcestrings.txt_pr_font
+msgid "Font"
+msgstr "Fuente"
+
+#: resourcestrings.txt_pr_frictfact
+msgid "Friction Factor"
+msgstr "Factor Fricción"
+
+#: resourcestrings.txt_pr_headpat
+msgid "Head Pattern"
+msgstr "Modulación Altura"
+
+#: resourcestrings.txt_pr_initq
+msgctxt "resourcestrings.txt_pr_initq"
+msgid "Initial Quality"
+msgstr "Calidad Inicial"
+
+#: resourcestrings.txt_pr_initstatus
+msgid "Initial Status"
+msgstr "Estado Inicial"
+
+#: resourcestrings.txt_pr_juncid
+msgid "*Junction ID"
+msgstr "*ID Nudo de Caudal"
+
+#: resourcestrings.txt_pr_length
+msgid "*Length"
+msgstr "*Longitud"
+
+#: resourcestrings.txt_pr_levini
+msgid "*Initial Level"
+msgstr "*Nivel Inicial"
+
+#: resourcestrings.txt_pr_levmax
+msgid "*Maximum Level"
+msgstr "*Nivel Máximo"
+
+#: resourcestrings.txt_pr_levmin
+msgid "*Minimum Level"
+msgstr "*Nivel Mínimo"
+
+#: resourcestrings.txt_pr_losscoef
+msgid "Loss Coeff."
+msgstr "Coef. Pérdidas Menores"
+
+#: resourcestrings.txt_pr_meterid
+msgid "Meter ID"
+msgstr "ID Elemento"
+
+#: resourcestrings.txt_pr_metertype
+msgid "Meter Type"
+msgstr "Tipo de Objeto"
+
+#: resourcestrings.txt_pr_mixfra
+msgid "Mixing Fraction"
+msgstr "Fracción de Mezcla"
+
+#: resourcestrings.txt_pr_mixmod
+msgid "Mixing Model"
+msgstr "Modelo de Mezcla"
+
+#: resourcestrings.txt_pr_netinflow
+msgid "Net Inflow"
+msgstr "Caudal Neto Entrante"
+
+#: resourcestrings.txt_pr_nodeend
+msgid "*End Node"
+msgstr "*Nudo Final"
+
+#: resourcestrings.txt_pr_nodestart
+msgid "*Start Node"
+msgstr "*Nudo Inicial"
+
+#: resourcestrings.txt_pr_page
+#, object-pascal-format
+msgctxt "resourcestrings.txt_pr_page"
+msgid "Printing page %d of %d"
+msgstr "Imprimiendo página %d de %d"
+
+#: resourcestrings.txt_pr_pipeid
+msgid "*Pipe ID"
+msgstr "*ID Tubería"
+
+#: resourcestrings.txt_pr_power
+msgid "Power"
+msgstr "Potencia"
+
+#: resourcestrings.txt_pr_pressure
+msgid "Pressure"
+msgstr "Presión"
+
+#: resourcestrings.txt_pr_pricepat
+msgid "Price Pattern"
+msgstr "Modulación Precio"
+
+#: resourcestrings.txt_pr_pumpcur
+msgid "Pump Curve"
+msgstr "Curva Característica"
+
+#: resourcestrings.txt_pr_pumpid
+msgid "*Pump ID"
+msgstr "*ID Bomba"
+
+#: resourcestrings.txt_pr_reactc
+msgid "Reaction Coeff."
+msgstr "Coef. Reacción"
+
+#: resourcestrings.txt_pr_reactrate
+msgid "Reaction Rate"
+msgstr "Velocidad de Reacción"
+
+#: resourcestrings.txt_pr_resvid
+msgid "*Reservoir ID"
+msgstr "*ID Embalse"
+
+#: resourcestrings.txt_pr_roughness
+msgid "*Roughness"
+msgstr "*Rugosidad"
+
+#: resourcestrings.txt_pr_slab
+msgctxt "resourcestrings.txt_pr_slab"
+msgid "*Elevation"
+msgstr "*Cota de Solera"
+
+#: resourcestrings.txt_pr_sourceq
+msgctxt "resourcestrings.txt_pr_sourceq"
+msgid "Source Quality"
+msgstr "Fuente de Sustancia"
+
+#: resourcestrings.txt_pr_speed
+msgid "Speed"
+msgstr "Velocidad Relativa"
+
+#: resourcestrings.txt_pr_status
+msgid "Status"
+msgstr "Estado"
+
+#: resourcestrings.txt_pr_tag
+msgid "Tag"
+msgstr "Etiqueta"
+
+#: resourcestrings.txt_pr_tankid
+msgid "*Tank ID"
+msgstr "*ID Depósito"
+
+#: resourcestrings.txt_pr_text
+msgid "Text"
+msgstr "Texto"
+
+#: resourcestrings.txt_pr_thead
+msgid "Total Head"
+msgstr "Altura Total"
+
+#: resourcestrings.txt_pr_unithl
+msgid "Unit Headloss"
+msgstr "Pérdida Unitaria"
+
+#: resourcestrings.txt_pr_valveid
+msgid "*Valve ID"
+msgstr "*ID Válvula"
+
+#: resourcestrings.txt_pr_velocity
+msgid "Velocity"
+msgstr "Velocidad"
+
+#: resourcestrings.txt_pr_volcur
+msgid "Volume Curve"
+msgstr "Curva de Cubicación"
+
+#: resourcestrings.txt_pr_volmin
+msgid "Minimum Volume"
+msgstr "Volumen Mínimo"
+
+#: resourcestrings.txt_pr_wallcoef
+msgid "Wall Coeff."
+msgstr "Coef. Reacción en la Pared"
+
+#: resourcestrings.txt_pr_x
+msgid "X-Coordinate"
+msgstr "Coordenada X"
+
+#: resourcestrings.txt_pr_y
+msgid "Y-Coordinate"
+msgstr "Coordenada Y"
+
+#: resourcestrings.txt_pr__elev
+msgctxt "resourcestrings.txt_pr__elev"
+msgid "*Elevation"
+msgstr "*Cota"
+
+#: resourcestrings.txt_pr__setting
+msgid "*Setting"
+msgstr "Consigna"
+
+#: resourcestrings.txt_pr__thead
+msgid "*Total Head"
+msgstr "*Altura Total"
+
+#: resourcestrings.txt_pr__type
+msgid "*Type"
+msgstr "*Tipo de Válvula"
+
+#: resourcestrings.txt_psv
+msgid "PSV"
+msgstr "Sostenedora"
+
+#: resourcestrings.txt_pump
+msgid "Pump"
+msgstr "Bomba"
+
+#: resourcestrings.txt_pumps
+msgid "Pumps"
+msgstr "Bombas"
+
+#: resourcestrings.txt_purple
+msgid "Purple"
+msgstr "Violeta"
+
+#: resourcestrings.txt_quality
+msgid "Quality"
+msgstr "Calidad"
+
+#: resourcestrings.txt_qualityparameter
+msgid " Quality Parameter       "
+msgstr " Parámetro de Calidad    "
+
+#: resourcestrings.txt_rainbow
+msgid "Rainbow"
+msgstr "ArcoIris"
+
+#: resourcestrings.txt_range
+msgid "Range"
+msgstr "Rango"
+
+#: resourcestrings.txt_reactions
+msgid "Reactions"
+msgstr "Reacciones"
+
+#: resourcestrings.txt_react_report
+msgid "Reaction Report"
+msgstr "Informe de Reacciones"
+
+#: resourcestrings.txt_red
+msgid "Red"
+msgstr "Rojo"
+
+#: resourcestrings.txt_reordering
+msgid "Re-ordering network nodes..."
+msgstr "Reordenando los nudos de la red..."
+
+#: resourcestrings.txt_replace_all
+msgid "Replace all references to Pattern "
+msgstr "¿Reemplazar todas la referencias a la Modulación "
+
+#: resourcestrings.txt_replace_with
+msgid " with "
+msgstr " por "
+
+#: resourcestrings.txt_report
+msgid "Calibration Report - "
+msgstr "Informe de Calibración - "
+
+#: resourcestrings.txt_report_filter
+msgid "Report files (*.RPT)|*.RPT;*.rpt;*.[Rr][Pp][Tt]|All files|*.*"
+msgstr "Ficheros de Informe (*.RPT)|*.RPT;*.rpt;*.[Rr][Pp][Tt]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_reservoir
+msgid "Reservoir"
+msgstr "Embalse"
+
+#: resourcestrings.txt_reservoirs
+msgid "Reservoirs"
+msgstr "Embalses"
+
+#: resourcestrings.txt_restore_juncs
+msgid "Restoring display of junctions on the map."
+msgstr "Restaurando la muestra de nudos de caudal en el esquema."
+
+#: resourcestrings.txt_restore_labels
+msgid "Restoring display of labels on the map."
+msgstr "Restaurando la muestra de rótulos en el esquema."
+
+#: resourcestrings.txt_roughness
+msgid "Roughness"
+msgstr "Rugosidad"
+
+#: resourcestrings.txt_rulebased
+msgid "Rule-Based"
+msgstr "Reglas"
+
+#: resourcestrings.txt_rules_editor
+msgid "Rule-Based Controls Editor"
+msgstr "Editor de Leyes de Control basadas en Reglas"
+
+#: resourcestrings.txt_rule_controls
+msgid "Rule-Based Controls"
+msgstr "Leyes de Control basadas en Reglas"
+
+#: resourcestrings.txt_save_as
+msgid "Save As"
+msgstr "Guardar Como"
+
+#: resourcestrings.txt_save_changes
+msgid "Save changes made to current project?"
+msgstr "¿Guardar los cambios del Proyecto actual?"
+
+#: resourcestrings.txt_save_curve_title
+msgid "Save Curve As"
+msgstr "Guardar Curva Como"
+
+#: resourcestrings.txt_save_map_title
+msgid "Save Map As"
+msgstr "Guardar Esquema Como"
+
+#: resourcestrings.txt_save_network_title
+msgid "Save Network As"
+msgstr "Guardar Red Como"
+
+#: resourcestrings.txt_save_pattern_title
+msgid "Save Pattern As"
+msgstr "Guardar Modulación Como"
+
+#: resourcestrings.txt_save_profile
+msgid "Save Profile"
+msgstr "Guardar Perfil"
+
+#: resourcestrings.txt_save_profile_title
+msgid "Save Profile As"
+msgstr "Guardar Perfil Como"
+
+#: resourcestrings.txt_save_project_filter
+msgid "Network files (*.NET)|*.NET;*.net;*.[Nn][Ee][Tt]|All files|*.*"
+msgstr "Ficheros de Red (*.NET)|*.NET;*.net;*.[Nn][Ee][Tt]|All files|*.*"
+
+#: resourcestrings.txt_save_project_title
+msgid "Save Project As"
+msgstr "Guardar Proyecto Como"
+
+#: resourcestrings.txt_save_scenario_title
+msgid "Save Scenario As"
+msgstr "Guardar Escenario Como"
+
+#: resourcestrings.txt_saving_hyd
+msgid "Saving hydraulics at hour"
+msgstr "Guardando los resultados hidráulicos a la hora"
+
+#: resourcestrings.txt_scenario_filter
+msgid "Scenario files (*.SCN)|*.SCN;*.scn;*.[Ss][Cc][Nn]|All files|*.*"
+msgstr "Ficheros de Escenario (*.SCN)|*.SCN;*.scn;*.[Ss][Cc][Nn]|Todos los ficheros|*.*"
+
+#: resourcestrings.txt_select_file
+msgid "Select a Calibration File"
+msgstr "Seleccionar un Fichero de Calibración"
+
+#: resourcestrings.txt_series
+msgctxt "resourcestrings.txt_series"
+msgid "Series"
+msgstr "Serie"
+
+#: resourcestrings.txt_setpointboos
+msgid "Set Point Booster"
+msgstr "Reinyección a Punto Fijo"
+
+#: resourcestrings.txt_setting
+msgid "Setting"
+msgstr "Consigna"
+
+#: resourcestrings.txt_show
+msgctxt "resourcestrings.txt_show"
+msgid "&Show"
+msgstr "&Mostrar"
+
+#: resourcestrings.txt_simple
+msgid "Simple"
+msgstr "Simple"
+
+#: resourcestrings.txt_simple_controls
+msgid "Simple Controls"
+msgstr "Leyes de Control Simples"
+
+#: resourcestrings.txt_single_period
+msgid "Single Period"
+msgstr "Estacionario"
+
+#: resourcestrings.txt_solving_hyd
+msgid "Solving hydraulics at hour"
+msgstr "Calculando la respuesta hidráulica a la hora"
+
+#: resourcestrings.txt_solving_wq
+msgid "Solving quality at hour"
+msgstr "Calculando la respuesta de calidad a la hora"
+
+#: resourcestrings.txt_sorted_by
+msgid "Sorted by "
+msgstr "Ordenar por "
+
+#: resourcestrings.txt_sources
+msgid "Sources"
+msgstr "Fuente"
+
+#: resourcestrings.txt_source_editor
+msgid "Source Editor for Node "
+msgstr "Editor de Fuente de Sustancia en el Nudo "
+
+#: resourcestrings.txt_source_nodes
+msgid "Source Nodes"
+msgstr "Nudos Fuente"
+
+#: resourcestrings.txt_spanish
+msgid "Spanish"
+msgstr "Español"
+
+#: resourcestrings.txt_stackstyle_fsta
+msgid "Stacked 100%"
+msgstr "Columna 100%"
+
+#: resourcestrings.txt_stackstyle_none
+msgctxt "resourcestrings.txt_stackstyle_none"
+msgid "None"
+msgstr "Ninguno"
+
+#: resourcestrings.txt_stackstyle_side
+msgid "Side"
+msgstr "Lateral"
+
+#: resourcestrings.txt_stackstyle_stac
+msgid "Stacked"
+msgstr "Columna"
+
+#: resourcestrings.txt_start
+msgid "Start"
+msgstr "Inicial"
+
+#: resourcestrings.txt_statistic
+msgid " Statistic"
+msgstr " Estadística"
+
+#: resourcestrings.txt_status_cancelled
+msgid "Run cancelled by user."
+msgstr "Simulación cancelada por el usuario."
+
+#: resourcestrings.txt_status_error
+msgid "Run was unsuccessful. See Status Report for reasons."
+msgstr "Simulación fallida. Ver los motivos en el Informe de Estado."
+
+#: resourcestrings.txt_status_failed
+msgid "Run was unsuccessful due to system error."
+msgstr "Simulación fallida debido a un error del sistema."
+
+#: resourcestrings.txt_status_none
+msgid "Unable to run simulator."
+msgstr "No se puede ejecutar el simulador."
+
+#: resourcestrings.txt_status_report
+msgctxt "resourcestrings.txt_status_report"
+msgid "Status Report"
+msgstr "Informe de Estado"
+
+#: resourcestrings.txt_status_runing
+msgid "Running EPANET simulator..."
+msgstr "Ejecutando el simulador de EPANET..."
+
+#: resourcestrings.txt_status_shutdown
+msgid "Simulator performed an illegal operation and was shut down."
+msgstr "El simulador realizó una operación ilegal y se cerró."
+
+#: resourcestrings.txt_status_success
+msgid "Run was successful."
+msgstr "Simulación válida."
+
+#: resourcestrings.txt_status_warning
+msgid "Warning messages were generated. See Status Report for details."
+msgstr "Hay mensajes de advertencia. Ver detalles en el Informe de Estado."
+
+#: resourcestrings.txt_status_wrongversion
+msgid "Run was unsuccessful. Wrong version of simulator."
+msgstr "Simulación fallida. Versión de simulador errónea."
+
+#: resourcestrings.txt_stop
+msgctxt "resourcestrings.txt_stop"
+msgid "Stop"
+msgstr "Parar"
+
+#: resourcestrings.txt_svg
+msgid "SVG"
+msgstr "SVG"
+
+#: resourcestrings.txt_svg_descr
+msgid "Scalable Vector (.svg)"
+msgstr "Fichero SVG (.svg)"
+
+#: resourcestrings.txt_system_flow
+msgid " System Flow Balance"
+msgstr " Balance de Caudales en el Sistema"
+
+#: resourcestrings.txt_table_hours
+msgid " Hours"
+msgstr " Horas"
+
+#: resourcestrings.txt_table_junc
+msgid "Junc "
+msgstr "Nudo "
+
+#: resourcestrings.txt_table_pipe
+msgid "Pipe "
+msgstr "Tubería "
+
+#: resourcestrings.txt_table_pump
+msgid "Pump "
+msgstr "Bomba "
+
+#: resourcestrings.txt_table_resvr
+msgid "Resvr "
+msgstr "Embalse "
+
+#: resourcestrings.txt_table_tank
+msgid "Tank "
+msgstr "Depósito "
+
+#: resourcestrings.txt_table_time
+msgid " Time"
+msgstr " Instante"
+
+#: resourcestrings.txt_table_valve
+msgid "Valve "
+msgstr "Valvula "
+
+#: resourcestrings.txt_tab_hydraulics
+msgctxt "resourcestrings.txt_tab_hydraulics"
+msgid "Hydraulics"
+msgstr "Opc. Hidráulicas"
+
+#: resourcestrings.txt_tab_labels
+msgctxt "resourcestrings.txt_tab_labels"
+msgid "ID Labels"
+msgstr "Identificativos ID"
+
+#: resourcestrings.txt_tab_properties
+msgctxt "resourcestrings.txt_tab_properties"
+msgid "Properties"
+msgstr "Propiedades"
+
+#: resourcestrings.txt_tank
+msgid "Tank"
+msgstr "Depósito"
+
+#: resourcestrings.txt_tanks
+msgid "Tanks"
+msgstr "Depósitos"
+
+#: resourcestrings.txt_tank_diameter
+msgid "Tank Diameter"
+msgstr "Diámetro Depósitos"
+
+#: resourcestrings.txt_tank_height
+msgid "Tank Height"
+msgstr "Nivel Máx. Depósitos"
+
+#: resourcestrings.txt_tcv
+msgid "TCV"
+msgstr "Estrangulación"
+
+#: resourcestrings.txt_time
+msgctxt "resourcestrings.txt_time"
+msgid "Time"
+msgstr "Instante"
+
+#: resourcestrings.txt_times
+msgid "Times"
+msgstr "Tiempo"
+
+#: resourcestrings.txt_time_hrs
+msgid "Time (hours)"
+msgstr "Tiempo (horas)"
+
+#: resourcestrings.txt_time_period
+msgctxt "resourcestrings.txt_time_period"
+msgid "Time Period"
+msgstr "Período"
+
+#: resourcestrings.txt_time_series_plot
+msgid " Time Series Plot - "
+msgstr " Gráfica de Evolución - "
+
+#: resourcestrings.txt_title
+msgid "TITLE:"
+msgstr "TITLE:"
+
+#: resourcestrings.txt_too_many_items
+msgid "Too many items to graph"
+msgstr "Demasiados objetos a representar"
+
+#: resourcestrings.txt_total_cost
+msgid "Total Cost"
+msgstr "Coste Total"
+
+#: resourcestrings.txt_trace
+msgid "Trace"
+msgstr "Proced."
+
+#: resourcestrings.txt_ugl
+msgid "ug/L"
+msgstr "ug/L"
+
+#: resourcestrings.txt_utilization
+msgid "Utilization"
+msgstr "Uso"
+
+#: resourcestrings.txt_value
+msgctxt "resourcestrings.txt_value"
+msgid "Value"
+msgstr "Valor"
+
+#: resourcestrings.txt_valve
+msgid "Valve"
+msgstr "Válvula"
+
+#: resourcestrings.txt_valves
+msgid "Valves"
+msgstr "Válvulas"
+
+#: resourcestrings.txt_wall
+msgid "Wall"
+msgstr "Pared"
+
+#: resourcestrings.txt_warning
+msgid "  WARNING:"
+msgstr "  WARNING:"
+
+#: resourcestrings.txt_were_updated
+msgid "s were updated."
+msgstr "s fueron actualizados."
+
+#: resourcestrings.txt_width
+#, object-pascal-format
+msgid "Width: %.1f "
+msgstr "Ancho: %.1f "
+
+#: resourcestrings.txt_xvalues
+msgid "X-Values"
+msgstr "X-Values"
+
+#: resourcestrings.txt_yellow
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: resourcestrings.txt_yes
+msgid "Yes"
+msgstr "Sí"
+
+#: resourcestrings.txt_yvalues
+msgid "Y-Values"
+msgstr "Y-Values"
+
+#: resourcestrings.txt_zero
+msgid "Zero"
+msgstr "Cero"
+
+#: resourcestrings.txt__pump
+msgid " Pump"
+msgstr " Bomba"
+
+#: taboutboxform.build.caption
+msgid "Build 2.2.0"
+msgstr "Build 2.2.0"
+
+#: taboutboxform.button1.caption
+msgctxt "taboutboxform.button1.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: taboutboxform.caption
+msgid "About EPANET"
+msgstr "Acerca de ... EPANET"
+
+#: taboutboxform.label1.caption
+msgid "Water Infrastructure Division"
+msgstr "Water Infrastructure Division"
+
+#: taboutboxform.label2.caption
+msgid "Center for Environmental Solutions and Emergency Response"
+msgstr "Center for Environmental Solutions and Emergency Response"
+
+#: taboutboxform.label3.caption
+msgctxt "taboutboxform.label3.caption"
+msgid "EPANET"
+msgstr "EPANET"
+
+#: taboutboxform.label4.caption
+msgid "U.S. Environmental Protection Agency"
+msgstr "U.S. Environmental Protection Agency"
+
+#: taboutboxform.label5.caption
+msgid "Cincinnati, Ohio"
+msgstr "Cincinnati, Ohio"
+
+#: taboutboxform.productname.caption
+msgctxt "taboutboxform.productname.caption"
+msgid "EPANET"
+msgstr "EPANET"
+
+#: taboutboxform.version.caption
+msgid "Version 2.2"
+msgstr "Versión 2.2"
+
+#: tbrowserform1.btnadd.hint
+msgctxt "tbrowserform1.btnadd.hint"
+msgid "Add"
+msgstr "Añadir"
+
+#: tbrowserform1.btndelete.hint
+msgctxt "tbrowserform1.btndelete.hint"
+msgid "Delete"
+msgstr "Borrar"
+
+#: tbrowserform1.btnedit.hint
+msgctxt "tbrowserform1.btnedit.hint"
+msgid "Edit"
+msgstr "Editar"
+
+#: tbrowserform1.label2.caption
+msgctxt "tbrowserform1.label2.caption"
+msgid "Nodes"
+msgstr "Nudos"
+
+#: tbrowserform1.label3.caption
+msgctxt "tbrowserform1.label3.caption"
+msgid "Links"
+msgstr "Líneas"
+
+#: tbrowserform1.linkviewbox.hint
+msgctxt "tbrowserform1.linkviewbox.hint"
+msgid "Link View"
+msgstr "Propiedades de Líneas"
+
+#: tbrowserform1.linkviewbox.text
+#, fuzzy
+msgctxt "tbrowserform1.linkviewbox.text"
+msgid "0"
+msgstr "0"
+
+#: tbrowserform1.nodeviewbox.hint
+msgctxt "tbrowserform1.nodeviewbox.hint"
+msgid "Node View"
+msgstr "Propiedades de Nudos"
+
+#: tbrowserform1.nodeviewbox.text
+#, fuzzy
+msgctxt "tbrowserform1.nodeviewbox.text"
+msgid "0"
+msgstr "0"
+
+#: tbrowserform1.objectlistbox.text
+#, fuzzy
+msgctxt "tbrowserform1.objectlistbox.text"
+msgid "0"
+msgstr "0"
+
+#: tbrowserform1.tabsheet1.caption
+msgctxt "tbrowserform1.tabsheet1.caption"
+msgid "Data"
+msgstr "Datos"
+
+#: tbrowserform1.tabsheet2.caption
+msgctxt "tbrowserform1.tabsheet2.caption"
+msgid "Map"
+msgstr "Esquema"
+
+#: tbrowserform1.timelabel.caption
+msgctxt "tbrowserform1.timelabel.caption"
+msgid "Time"
+msgstr "Instante"
+
+#: tbrowserform1.timelistbox.hint
+msgctxt "tbrowserform1.timelistbox.hint"
+msgid "Time"
+msgstr "Instante"
+
+#: tbrowserform1.timelistbox.text
+#, fuzzy
+msgctxt "tbrowserform1.timelistbox.text"
+msgid "0"
+msgstr "0"
+
+#: tbrowserform1.vcrbackbtn.hint
+msgctxt "tbrowserform1.vcrbackbtn.hint"
+msgid "Back"
+msgstr "Retroceso"
+
+#: tbrowserform1.vcrfwdbtn.hint
+msgctxt "tbrowserform1.vcrfwdbtn.hint"
+msgid "Forward"
+msgstr "Avance"
+
+#: tbrowserform1.vcrpausebtn.hint
+msgctxt "tbrowserform1.vcrpausebtn.hint"
+msgid "Stop"
+msgstr "Parar"
+
+#: tbrowserform1.vcrrewindbtn.hint
+msgctxt "tbrowserform1.vcrrewindbtn.hint"
+msgid "Rewind"
+msgstr "Inicio"
+
+#: tbrowserform1.vcrspeedbar.hint
+msgctxt "tbrowserform1.vcrspeedbar.hint"
+msgid "Animation Speed"
+msgstr "Velocidad de Animación"
+
+#: tcalibdataform.btnbrowse.caption
+msgid "&Browse"
+msgstr "&Examinar"
+
+#: tcalibdataform.btncancel.caption
+msgctxt "tcalibdataform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tcalibdataform.btnedit.caption
+msgctxt "tcalibdataform.btnedit.caption"
+msgid "&Edit"
+msgstr "E&ditar"
+
+#: tcalibdataform.btnhelp.caption
+msgctxt "tcalibdataform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tcalibdataform.btnok.caption
+msgctxt "tcalibdataform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tcalibdataform.caption
+msgid "Calibration Data"
+msgstr "Datos de Calibración"
+
+#: tcaliboptionsform.btncancel.caption
+msgctxt "tcaliboptionsform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tcaliboptionsform.btnhelp.caption
+msgctxt "tcaliboptionsform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tcaliboptionsform.btnok.caption
+msgctxt "tcaliboptionsform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tcaliboptionsform.caption
+msgid "Calibration Report Options"
+msgstr "Opciones del Informe de Calibración"
+
+#: tcaliboptionsform.gblocations.caption
+msgid "Measured at Nodes"
+msgstr "Nudos de Medida"
+
+#: tcaliboptionsform.gbvariable.caption
+msgid "Calibrate Against"
+msgstr "Calibrar respecto a"
+
+#: tcaliboptionsform.variableslist.text
+msgctxt "tcaliboptionsform.variableslist.text"
+msgid "0"
+msgstr "0"
+
+#: tcalibreportform.caption
+msgid "Calibration Report"
+msgstr "Informe de Calibración"
+
+#: tcalibreportform.chart1.axislist[0].title.caption
+msgctxt "tcalibreportform.chart1.axislist[0].title.caption"
+msgid "Computed"
+msgstr "Calculado"
+
+#: tcalibreportform.chart1.axislist[1].title.caption
+msgctxt "tcalibreportform.chart1.axislist[1].title.caption"
+msgid "Observed"
+msgstr "Observado"
+
+#: tcalibreportform.chart2.axislist[1].title.caption
+msgid "Location"
+msgstr "Puntos de Medida"
+
+#: tcalibreportform.tabsheet1.caption
+msgctxt "tcalibreportform.tabsheet1.caption"
+msgid "Statistics"
+msgstr "Estadísticas"
+
+#: tcalibreportform.tabsheet2.caption
+msgid "Correlation Plot"
+msgstr "Gráfico de Correlación"
+
+#: tcalibreportform.tabsheet3.caption
+msgid "Mean Comparisons"
+msgstr "Comparación Valores Medios"
+
+#: tchartoptionsdlg.areafillstylebox.text
+msgctxt "tchartoptionsdlg.areafillstylebox.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.areaoptionssheet.caption
+msgctxt "tchartoptionsdlg.areaoptionssheet.caption"
+msgid "Patterns"
+msgstr "Rellenos"
+
+#: tchartoptionsdlg.cancelbtn.caption
+msgctxt "tchartoptionsdlg.cancelbtn.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tchartoptionsdlg.caption
+msgid "Graph Options"
+msgstr "Opciones de la Gráfica"
+
+#: tchartoptionsdlg.defaultbox.caption
+msgid "Make these the default options "
+msgstr "Guardar como opciones por defecto "
+
+#: tchartoptionsdlg.generalpage.caption
+msgctxt "tchartoptionsdlg.generalpage.caption"
+msgid "General"
+msgstr "Generales"
+
+#: tchartoptionsdlg.graphtitlefontlabel.caption
+msgctxt "tchartoptionsdlg.graphtitlefontlabel.caption"
+msgid "Change Font..."
+msgstr "Cambiar Fuente..."
+
+#: tchartoptionsdlg.helpbtn.caption
+msgctxt "tchartoptionsdlg.helpbtn.caption"
+msgid "Help"
+msgstr "Ayuda"
+
+#: tchartoptionsdlg.label1.caption
+msgid "Panel Color"
+msgstr "Color del Marco"
+
+#: tchartoptionsdlg.label10.caption
+msgctxt "tchartoptionsdlg.label10.caption"
+msgid "Axis Title"
+msgstr "Título del Eje"
+
+#: tchartoptionsdlg.label11.caption
+msgctxt "tchartoptionsdlg.label11.caption"
+msgid "Axis Title"
+msgstr "Título del Eje"
+
+#: tchartoptionsdlg.label18.caption
+msgid "Position"
+msgstr "Posición"
+
+#: tchartoptionsdlg.label19.caption
+msgctxt "tchartoptionsdlg.label19.caption"
+msgid "Color"
+msgstr "Color"
+
+#: tchartoptionsdlg.label2.caption
+msgid "Background Color"
+msgstr "Color del Fondo"
+
+#: tchartoptionsdlg.label21.caption
+msgctxt "tchartoptionsdlg.label21.caption"
+msgid "Series"
+msgstr "Serie de Datos"
+
+#: tchartoptionsdlg.label22.caption
+msgid "Legend Title"
+msgstr "Título en Leyenda"
+
+#: tchartoptionsdlg.label23.caption
+msgctxt "tchartoptionsdlg.label23.caption"
+msgid "Style"
+msgstr "Estilo"
+
+#: tchartoptionsdlg.label24.caption
+msgctxt "tchartoptionsdlg.label24.caption"
+msgid "Color"
+msgstr "Color"
+
+#: tchartoptionsdlg.label25.caption
+msgctxt "tchartoptionsdlg.label25.caption"
+msgid "Size"
+msgstr "Grosor"
+
+#: tchartoptionsdlg.label26.caption
+msgctxt "tchartoptionsdlg.label26.caption"
+msgid "Style"
+msgstr "Estilo"
+
+#: tchartoptionsdlg.label27.caption
+msgctxt "tchartoptionsdlg.label27.caption"
+msgid "Color"
+msgstr "Color"
+
+#: tchartoptionsdlg.label28.caption
+msgctxt "tchartoptionsdlg.label28.caption"
+msgid "Size"
+msgstr "Tamaño"
+
+#: tchartoptionsdlg.label29.caption
+msgctxt "tchartoptionsdlg.label29.caption"
+msgid "Style"
+msgstr "Estilo"
+
+#: tchartoptionsdlg.label3.caption
+msgid "Symbol Width (% of Label Width)"
+msgstr "Ancho de Símbolo (% del Rótulo)"
+
+#: tchartoptionsdlg.label30.caption
+msgctxt "tchartoptionsdlg.label30.caption"
+msgid "Color"
+msgstr "Color"
+
+#: tchartoptionsdlg.label31.caption
+msgid "Stacking"
+msgstr "Apilado"
+
+#: tchartoptionsdlg.label32.caption
+msgid "Rotation Angle"
+msgstr "Angulo Rotación"
+
+#: tchartoptionsdlg.label33.caption
+msgctxt "tchartoptionsdlg.label33.caption"
+msgid "Style"
+msgstr "Estilo"
+
+#: tchartoptionsdlg.label34.caption
+msgctxt "tchartoptionsdlg.label34.caption"
+msgid "Color"
+msgstr "Color"
+
+#: tchartoptionsdlg.label4.caption
+msgid "3D Effect Percent"
+msgstr "Porcentaje Efecto 3D"
+
+#: tchartoptionsdlg.label5.caption
+msgid "Main Title"
+msgstr "Título Principal"
+
+#: tchartoptionsdlg.label6.caption
+msgctxt "tchartoptionsdlg.label6.caption"
+msgid "Minimum"
+msgstr "Mínimo"
+
+#: tchartoptionsdlg.label7.caption
+msgctxt "tchartoptionsdlg.label7.caption"
+msgid "Maximum"
+msgstr "Máximo"
+
+#: tchartoptionsdlg.label9.caption
+msgctxt "tchartoptionsdlg.label9.caption"
+msgid "Increment"
+msgstr "Incremento"
+
+#: tchartoptionsdlg.labelsarrowsbox.caption
+msgid "Show Arrows"
+msgstr "Ver Conexiones"
+
+#: tchartoptionsdlg.labelsoptionssheet.caption
+msgctxt "tchartoptionsdlg.labelsoptionssheet.caption"
+msgid "Labels"
+msgstr "Rótulos"
+
+#: tchartoptionsdlg.labelsstylebox.text
+msgctxt "tchartoptionsdlg.labelsstylebox.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.labelstransparentbox.caption
+msgctxt "tchartoptionsdlg.labelstransparentbox.caption"
+msgid "Transparent"
+msgstr "Transparente"
+
+#: tchartoptionsdlg.labelsvisiblebox.caption
+msgctxt "tchartoptionsdlg.labelsvisiblebox.caption"
+msgid "Visible"
+msgstr "Visible"
+
+#: tchartoptionsdlg.legendcheckbox.caption
+msgid "Check Boxes"
+msgstr "Casillas Chequeo"
+
+#: tchartoptionsdlg.legendfontlabel.caption
+msgctxt "tchartoptionsdlg.legendfontlabel.caption"
+msgid "Change Font..."
+msgstr "Cambiar Fuente..."
+
+#: tchartoptionsdlg.legendframebox.caption
+msgctxt "tchartoptionsdlg.legendframebox.caption"
+msgid "Framed"
+msgstr "Marco"
+
+#: tchartoptionsdlg.legendpage.caption
+msgctxt "tchartoptionsdlg.legendpage.caption"
+msgid "Legend"
+msgstr "Leyenda"
+
+#: tchartoptionsdlg.legendposbox.text
+msgctxt "tchartoptionsdlg.legendposbox.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.legendshadowbox.caption
+msgid "Shadowed"
+msgstr "Sombreado"
+
+#: tchartoptionsdlg.legendtransparentbox.caption
+msgctxt "tchartoptionsdlg.legendtransparentbox.caption"
+msgid "Transparent"
+msgstr "Transparente"
+
+#: tchartoptionsdlg.legendvisiblebox.caption
+msgctxt "tchartoptionsdlg.legendvisiblebox.caption"
+msgid "Visible"
+msgstr "Visible"
+
+#: tchartoptionsdlg.legendwidthedit.text
+msgid "5"
+msgstr "5"
+
+#: tchartoptionsdlg.lineoptionssheet.caption
+msgid "Lines"
+msgstr "Líneas"
+
+#: tchartoptionsdlg.linesizeedit.text
+msgctxt "tchartoptionsdlg.linesizeedit.text"
+msgid "1"
+msgstr "1"
+
+#: tchartoptionsdlg.linestylebox.text
+msgctxt "tchartoptionsdlg.linestylebox.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.linevisiblebox.caption
+msgctxt "tchartoptionsdlg.linevisiblebox.caption"
+msgid "Visible"
+msgstr "Visible"
+
+#: tchartoptionsdlg.markoptionssheet.caption
+msgid "Markers"
+msgstr "Marcas"
+
+#: tchartoptionsdlg.marksizeedit.text
+msgctxt "tchartoptionsdlg.marksizeedit.text"
+msgid "1"
+msgstr "1"
+
+#: tchartoptionsdlg.markstylebox.text
+msgctxt "tchartoptionsdlg.markstylebox.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.markvisiblebox.caption
+msgctxt "tchartoptionsdlg.markvisiblebox.caption"
+msgid "Visible"
+msgstr "Visible"
+
+#: tchartoptionsdlg.okbtn.caption
+msgctxt "tchartoptionsdlg.okbtn.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tchartoptionsdlg.pct3dedit.text
+msgid "15"
+msgstr "15"
+
+#: tchartoptionsdlg.piecircledbox.caption
+msgid "Circular"
+msgstr "Circular"
+
+#: tchartoptionsdlg.pieoptionssheet.caption
+msgid "Pie Options"
+msgstr "Opciones Tarta"
+
+#: tchartoptionsdlg.piepatternbox.caption
+msgid "Use Patterns"
+msgstr "Fondo Rallado"
+
+#: tchartoptionsdlg.pierotateedit.text
+msgctxt "tchartoptionsdlg.pierotateedit.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.seriescombobox.text
+msgctxt "tchartoptionsdlg.seriescombobox.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.stackstylebox.text
+msgctxt "tchartoptionsdlg.stackstylebox.text"
+msgid "0"
+msgstr "0"
+
+#: tchartoptionsdlg.stylespage.caption
+msgctxt "tchartoptionsdlg.stylespage.caption"
+msgid "Series"
+msgstr "Series de Datos"
+
+#: tchartoptionsdlg.view3dbox.caption
+msgid "View in 3-D"
+msgstr "Vista en 3D"
+
+#: tchartoptionsdlg.xautoscale.caption
+msgctxt "tchartoptionsdlg.xautoscale.caption"
+msgid "Auto-Scale"
+msgstr "Auto Escalado"
+
+#: tchartoptionsdlg.xaxisfontlabel.caption
+msgctxt "tchartoptionsdlg.xaxisfontlabel.caption"
+msgid "Change Font..."
+msgstr "Cambiar Fuente..."
+
+#: tchartoptionsdlg.xaxispage.caption
+msgid "Horizontal Axis"
+msgstr "Eje Horizontal"
+
+#: tchartoptionsdlg.xdatamaxlabel.caption
+msgid "XDataMaxLabel"
+msgstr "XDataMaxLabel"
+
+#: tchartoptionsdlg.xdataminlabel.caption
+msgid "XDataMinLabel"
+msgstr "XDataMinLabel"
+
+#: tchartoptionsdlg.xgrid.caption
+msgctxt "tchartoptionsdlg.xgrid.caption"
+msgid "Grid Lines"
+msgstr "Rejilla"
+
+#: tchartoptionsdlg.xincrementlabel.caption
+msgctxt "tchartoptionsdlg.xincrementlabel.caption"
+msgid "Increment"
+msgstr "Incremento"
+
+#: tchartoptionsdlg.xmaxlabel.caption
+msgctxt "tchartoptionsdlg.xmaxlabel.caption"
+msgid "Maximum"
+msgstr "Máximo"
+
+#: tchartoptionsdlg.xminlabel.caption
+msgctxt "tchartoptionsdlg.xminlabel.caption"
+msgid "Minimum"
+msgstr "Mínimo"
+
+#: tchartoptionsdlg.yautoscale.caption
+msgctxt "tchartoptionsdlg.yautoscale.caption"
+msgid "Auto-Scale"
+msgstr "Auto Escalado"
+
+#: tchartoptionsdlg.yaxisfontlabel.caption
+msgctxt "tchartoptionsdlg.yaxisfontlabel.caption"
+msgid "Change Font..."
+msgstr "Cambiar Fuente..."
+
+#: tchartoptionsdlg.yaxispage.caption
+msgid "Vertical Axis"
+msgstr "Eje Vertical"
+
+#: tchartoptionsdlg.ydatamaxlabel.caption
+msgid "YDataMaxLabel"
+msgstr "YDataMaxLabel"
+
+#: tchartoptionsdlg.ydataminlabel.caption
+msgid "YDataMinLabel"
+msgstr "YDataMinLabel"
+
+#: tchartoptionsdlg.ygrid.caption
+msgctxt "tchartoptionsdlg.ygrid.caption"
+msgid "Grid Lines"
+msgstr "Rejilla"
+
+#: tcolorrampform.button1.caption
+msgctxt "tcolorrampform.button1.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tcolorrampform.button2.caption
+msgctxt "tcolorrampform.button2.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tcolorrampform.caption
+msgid "Color Ramp Selector"
+msgstr "Rampas de Colores"
+
+#: tcolorrampform.combobox1.text
+msgctxt "tcolorrampform.combobox1.text"
+msgid "0"
+msgstr "0"
+
+#: tcontourform.caption
+msgctxt "tcontourform.caption"
+msgid "Contour Plot"
+msgstr "Mapa Isolíneas"
+
+#: tcontouroptionsform.btncancel.caption
+msgctxt "tcontouroptionsform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tcontouroptionsform.btnhelp.caption
+msgctxt "tcontouroptionsform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tcontouroptionsform.btnok.caption
+msgctxt "tcontouroptionsform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tcontouroptionsform.caption
+msgid "Contour Plot Options"
+msgstr "Opciones del Mapa de Isolíneas"
+
+#: tcontouroptionsform.contourgroup.caption
+msgid "Contour Lines"
+msgstr "Isolíneas"
+
+#: tcontouroptionsform.defaultbox.caption
+msgid "Default"
+msgstr "Por Defecto"
+
+#: tcontouroptionsform.label1.caption
+msgid "Foreground"
+msgstr "Líneas"
+
+#: tcontouroptionsform.label2.caption
+msgid "Background"
+msgstr "Fondo"
+
+#: tcontouroptionsform.label3.caption
+msgctxt "tcontouroptionsform.label3.caption"
+msgid "Link Size"
+msgstr "Grosor Líneas"
+
+#: tcontouroptionsform.label4.caption
+msgid "Thickness"
+msgstr "Grosor"
+
+#: tcontouroptionsform.label5.caption
+msgid "Lines per Level"
+msgstr "Líneas por Nivel"
+
+#: tcontouroptionsform.legendgroup.caption
+msgctxt "tcontouroptionsform.legendgroup.caption"
+msgid "Legend"
+msgstr "Leyenda"
+
+#: tcontouroptionsform.lgnddisplay.caption
+msgid "Display Legend"
+msgstr "Mostrar Leyenda"
+
+#: tcontouroptionsform.lgndmodify.caption
+msgid "Modify Legend..."
+msgstr "Modificar Leyenda..."
+
+#: tcontouroptionsform.networkgroup.caption
+msgid "Network Backdrop"
+msgstr "Esquema Base"
+
+#: tcontouroptionsform.stylefilled.caption
+msgid "Filled Contours"
+msgstr "Curvas Sombreadas"
+
+#: tcontouroptionsform.stylegroup.caption
+msgctxt "tcontouroptionsform.stylegroup.caption"
+msgid "Style"
+msgstr "Estilo"
+
+#: tcontouroptionsform.stylelines.caption
+msgid "Line Contours"
+msgstr "Curvas Simples"
+
+#: tcontrolsform.btncancel.caption
+msgctxt "tcontrolsform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tcontrolsform.btnhelp.caption
+msgctxt "tcontrolsform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tcontrolsform.btnok.caption
+msgctxt "tcontrolsform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tcontrolsform.caption
+msgid "Controls Editor"
+msgstr "Editor de Leyes de Control"
+
+#: tcontrolsform.statusbar1.panels[0].text
+msgctxt "tcontrolsform.statusbar1.panels[0].text"
+msgid " Click Help to review format of Controls statements"
+msgstr " Pulsar el botón de Ayuda para revisar los formatos de las Leyes de Control"
+
+#: tcontrolsform.statusbar1.simpletext
+msgctxt "tcontrolsform.statusbar1.simpletext"
+msgid " Click Help to review format of Controls statements"
+msgstr " Pulsar el botón de Ayuda para revisar los formatos de las Leyes de Control"
+
+#: tcopytoform.btncancel.caption
+msgctxt "tcopytoform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tcopytoform.btnhelp.caption
+msgctxt "tcopytoform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tcopytoform.btnok.caption
+msgctxt "tcopytoform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tcopytoform.caption
+msgctxt "tcopytoform.caption"
+msgid "Copy"
+msgstr "Copiar"
+
+#: tcopytoform.destgroup.caption
+msgid "Copy To"
+msgstr "Copiar a"
+
+#: tcopytoform.formatgroup.caption
+msgid "Copy As"
+msgstr "Copiar como"
+
+#: tcurveform.btncancel.caption
+msgctxt "tcurveform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tcurveform.btnhelp.caption
+msgctxt "tcurveform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tcurveform.btnload.caption
+msgctxt "tcurveform.btnload.caption"
+msgid "Load..."
+msgstr "Cargar..."
+
+#: tcurveform.btnok.caption
+msgctxt "tcurveform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tcurveform.btnsave.caption
+msgctxt "tcurveform.btnsave.caption"
+msgid "Save..."
+msgstr "Guardar..."
+
+#: tcurveform.caption
+msgid "Curve Editor"
+msgstr "Editor de Curvas"
+
+#: tcurveform.chart1.axislist[0].title.caption
+msgctxt "tcurveform.chart1.axislist[0].title.caption"
+msgid "Head"
+msgstr "Altura"
+
+#: tcurveform.chart1.axislist[1].title.caption
+msgctxt "tcurveform.chart1.axislist[1].title.caption"
+msgid "Flow"
+msgstr "Caudal"
+
+#: tcurveform.curvetype.text
+msgctxt "tcurveform.curvetype.text"
+msgid "0"
+msgstr "0"
+
+#: tcurveform.eqnlabel.caption
+msgid "Equation"
+msgstr "Ecuación"
+
+#: tcurveform.label1.caption
+msgid "Curve ID"
+msgstr "ID Curva"
+
+#: tcurveform.label2.caption
+msgid "Curve Type"
+msgstr "Tipo de Curva"
+
+#: tcurveform.label3.caption
+msgctxt "tcurveform.label3.caption"
+msgid "Description"
+msgstr "Descripción"
+
+#: tdataexportform.button1.caption
+msgctxt "tdataexportform.button1.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tdataexportform.button2.caption
+msgctxt "tdataexportform.button2.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tdataexportform.button3.caption
+msgctxt "tdataexportform.button3.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tdataexportform.caption
+msgid "Export Scenario"
+msgstr "Exportar Escenario"
+
+#: tdataexportform.controlscheckbox.caption
+msgctxt "tdataexportform.controlscheckbox.caption"
+msgid "Controls"
+msgstr "Leyes de Control"
+
+#: tdataexportform.demandscheckbox.caption
+msgid "Nodal Demands"
+msgstr "Demandas en Nudos"
+
+#: tdataexportform.diameterscheckbox.caption
+msgid "Pipe Diameters"
+msgstr "Diámetros de Tuberías"
+
+#: tdataexportform.groupbox1.caption
+msgid "Data to Export"
+msgstr "Datos a Exportar"
+
+#: tdataexportform.groupbox2.caption
+msgctxt "tdataexportform.groupbox2.caption"
+msgid "Notes"
+msgstr "Notas"
+
+#: tdataexportform.qualitycheckbox.caption
+msgctxt "tdataexportform.qualitycheckbox.caption"
+msgid "Initial Quality"
+msgstr "Calidad Inicial"
+
+#: tdataexportform.reactionscheckbox.caption
+msgid "Reaction Coefficients"
+msgstr "Coeficientes de Reacción"
+
+#: tdataexportform.roughnesscheckbox.caption
+msgctxt "tdataexportform.roughnesscheckbox.caption"
+msgid "Pipe Roughness"
+msgstr "Rugosidad de Tuberías"
+
+#: tdefaultsform.btncancel.caption
+msgctxt "tdefaultsform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tdefaultsform.btnhelp.caption
+msgctxt "tdefaultsform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tdefaultsform.btnok.caption
+msgctxt "tdefaultsform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tdefaultsform.caption
+msgid "Defaults"
+msgstr "Valores por Defecto"
+
+#: tdefaultsform.checkdefault.caption
+msgid "Save as defaults for all new projects"
+msgstr "Valores por Defecto para futuros proyectos"
+
+#: tdefaultsform.tabsheet1.caption
+msgctxt "tdefaultsform.tabsheet1.caption"
+msgid "ID Labels"
+msgstr "Identificativos ID"
+
+#: tdefaultsform.tabsheet2.caption
+msgctxt "tdefaultsform.tabsheet2.caption"
+msgid "Properties"
+msgstr "Propiedades"
+
+#: tdefaultsform.tabsheet3.caption
+msgctxt "tdefaultsform.tabsheet3.caption"
+msgid "Hydraulics"
+msgstr "Hidráulicas"
+
+#: tdemandsform.button1.caption
+msgctxt "tdemandsform.button1.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tdemandsform.button2.caption
+msgctxt "tdemandsform.button2.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tdemandsform.button3.caption
+msgctxt "tdemandsform.button3.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tdemandsform.caption
+msgid "Demands Form"
+msgstr "Demands Form"
+
+#: tenergyform.caption
+msgid "Energy Report"
+msgstr "Informe de Energía"
+
+#: tenergyform.tabsheet1.caption
+msgctxt "tenergyform.tabsheet1.caption"
+msgid "Table"
+msgstr "Tabla"
+
+#: tenergyform.tabsheet2.caption
+msgid "Chart"
+msgstr "Gráficos"
+
+#: tfindform.button1.caption
+msgid "&Find"
+msgstr "&Buscar"
+
+#: tfindform.caption
+msgid "Map Finder"
+msgstr "Buscador en Esquema"
+
+#: tfindform.groupbox1.caption
+msgctxt "tfindform.groupbox1.caption"
+msgid "ID"
+msgstr "ID"
+
+#: tfindform.groupbox2.caption
+msgctxt "tfindform.groupbox2.caption"
+msgid "Adjacent Links"
+msgstr "Líneas adyacentes"
+
+#: tfindform.radiogroup1.caption
+msgctxt "tfindform.radiogroup1.caption"
+msgid "Find"
+msgstr "Buscar"
+
+#: tgraphform.caption
+msgid "GraphForm"
+msgstr "GraphForm"
+
+#: tgraphform.chart1.axislist[0].title.caption
+msgid "Y Axis"
+msgstr "Y Axis"
+
+#: tgraphform.chart1.axislist[1].title.caption
+msgid "X Axis"
+msgstr "X Axis"
+
+#: tgraphselectform.btnadd.caption
+msgctxt "tgraphselectform.btnadd.caption"
+msgid "Add"
+msgstr "Añadir"
+
+#: tgraphselectform.btncancel.caption
+msgctxt "tgraphselectform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tgraphselectform.btndelete.caption
+msgctxt "tgraphselectform.btndelete.caption"
+msgid "Delete"
+msgstr "Borrar"
+
+#: tgraphselectform.btnhelp.caption
+msgctxt "tgraphselectform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tgraphselectform.btnload.caption
+msgctxt "tgraphselectform.btnload.caption"
+msgid "Load..."
+msgstr "Cargar..."
+
+#: tgraphselectform.btnmovedown.caption
+msgid "Move Down"
+msgstr "Bajar"
+
+#: tgraphselectform.btnmoveup.caption
+msgid "Move Up"
+msgstr "Subir"
+
+#: tgraphselectform.btnok.caption
+msgctxt "tgraphselectform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tgraphselectform.btnsave.caption
+msgctxt "tgraphselectform.btnsave.caption"
+msgid "Save..."
+msgstr "Guardar..."
+
+#: tgraphselectform.caption
+msgid "Graph Selection"
+msgstr "Selección de Gráfico"
+
+#: tgraphselectform.cbtimeperiod.text
+msgctxt "tgraphselectform.cbtimeperiod.text"
+msgid "0"
+msgstr "0"
+
+#: tgraphselectform.cbvariable.text
+msgctxt "tgraphselectform.cbvariable.text"
+msgid "0"
+msgstr "0"
+
+#: tgraphselectform.gbitems.caption
+msgid "Items to Graph"
+msgstr "Objetos a Representar"
+
+#: tgraphselectform.gbtimeperiod.caption
+msgctxt "tgraphselectform.gbtimeperiod.caption"
+msgid "Time Period"
+msgstr "Instante"
+
+#: tgraphselectform.gbvariable.caption
+msgctxt "tgraphselectform.gbvariable.caption"
+msgid "Parameter"
+msgstr "Magnitud"
+
+#: tgraphselectform.rggraphtype.caption
+msgid "Graph Type"
+msgstr "Tipo de Gráfico"
+
+#: tgraphselectform.rgobjecttype.caption
+msgid "Object Type"
+msgstr "Tipo de Objeto"
+
+#: tgroupeditform.btncancel.caption
+msgctxt "tgroupeditform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tgroupeditform.btnhelp.caption
+msgctxt "tgroupeditform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tgroupeditform.btnok.caption
+msgctxt "tgroupeditform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tgroupeditform.caption
+msgid "Group Edit"
+msgstr "Editor de Grupos de Objetos"
+
+#: tgroupeditform.editaction.text
+msgctxt "tgroupeditform.editaction.text"
+msgid "0"
+msgstr "0"
+
+#: tgroupeditform.editlabel.caption
+msgctxt "tgroupeditform.editlabel.caption"
+msgid "with"
+msgstr "por"
+
+#: tgroupeditform.editobjects.text
+msgctxt "tgroupeditform.editobjects.text"
+msgid "0"
+msgstr "0"
+
+#: tgroupeditform.editproperty.text
+msgctxt "tgroupeditform.editproperty.text"
+msgid "0"
+msgstr "0"
+
+#: tgroupeditform.filtercheck.caption
+msgctxt "tgroupeditform.filtercheck.caption"
+msgid "with"
+msgstr "con"
+
+#: tgroupeditform.filterproperty.text
+msgctxt "tgroupeditform.filterproperty.text"
+msgid "0"
+msgstr "0"
+
+#: tgroupeditform.filterrelationlist.text
+msgctxt "tgroupeditform.filterrelationlist.text"
+msgid "0"
+msgstr "0"
+
+#: tgroupeditform.label1.caption
+msgid "For all"
+msgstr "Para todos los"
+
+#: tgroupeditform.label2.caption
+msgid "within the outlined area"
+msgstr "dentro de la región señalada"
+
+#: tinperrform.button1.caption
+msgid "&OK"
+msgstr "&Aceptar"
+
+#: tinperrform.button2.caption
+msgctxt "tinperrform.button2.caption"
+msgid "&Print"
+msgstr "&Imprimir"
+
+#: tinperrform.button3.caption
+msgid "&Error Codes"
+msgstr "&Códigos de Error"
+
+#: tinperrform.caption
+msgid "Import File Error Report"
+msgstr "Importar fichero de Informe de Errores"
+
+#: tlegendform.btncancel.caption
+msgctxt "tlegendform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tlegendform.btncolorramp.caption
+msgid "Color Ramp ..."
+msgstr "Rampa de Color ..."
+
+#: tlegendform.btnhelp.caption
+msgctxt "tlegendform.btnhelp.caption"
+msgid "Help"
+msgstr "Ayuda"
+
+#: tlegendform.btnintervals.caption
+msgid "&Equal Intervals"
+msgstr "&Intervalos Iguales"
+
+#: tlegendform.btnok.caption
+msgctxt "tlegendform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tlegendform.btnquantiles.caption
+msgid "Equal &Quantiles"
+msgstr "&Percentiles Iguales"
+
+#: tlegendform.btnreverse.caption
+msgid "&Reverse Colors"
+msgstr "In&vertir Colores"
+
+#: tlegendform.caption
+msgid "Legend Editor"
+msgstr "Editor de Leyendas"
+
+#: tlegendform.checkframed.caption
+msgctxt "tlegendform.checkframed.caption"
+msgid "Framed"
+msgstr "Marco"
+
+#: tlegendform.namelabel.caption
+msgid "NameLabel"
+msgstr "NameLabel"
+
+#: tlegendform.panel1.caption
+msgid "Click on color you wish to change"
+msgstr "Pulsar sobre el color a cambiar"
+
+#: tlegendform.unitslabel.caption
+msgid "UnitsLabel"
+msgstr "UnitsLabel"
+
+#: tmainform.browsercaption.caption
+msgctxt "tmainform.browsercaption.caption"
+msgid "Browser"
+msgstr "Visor"
+
+#: tmainform.caption
+msgid "EPANET 2"
+msgstr "EPANET 2"
+
+#: tmainform.mapcaption.caption
+msgctxt "tmainform.mapcaption.caption"
+msgid "Network Map"
+msgstr "Esquema de la Red"
+
+#: tmainform.maptoolbar.caption
+msgid "MapToolBar"
+msgstr "MapToolBar"
+
+#: tmainform.mnuabout.caption
+msgid "&About..."
+msgstr "&Acerca de..."
+
+#: tmainform.mnuanalysisoptions.caption
+msgid "Analysis &Options..."
+msgstr "&Opciones de Cálculo..."
+
+#: tmainform.mnuarrange.caption
+msgid "&Arrange"
+msgstr "&Organizar"
+
+#: tmainform.mnubackdrop.caption
+msgid "&Backdrop"
+msgstr "&Mapa de Fondo"
+
+#: tmainform.mnubackdropalign.caption
+msgid "&Align"
+msgstr "&Alinear"
+
+#: tmainform.mnubackdropload.caption
+msgid "&Load..."
+msgstr "&Cargar..."
+
+#: tmainform.mnubackdropshow.caption
+msgctxt "tmainform.mnubackdropshow.caption"
+msgid "&Show"
+msgstr "&Mostrar"
+
+#: tmainform.mnubackdropunload.caption
+msgid "&Unload"
+msgstr "&Descargar"
+
+#: tmainform.mnucloseall.caption
+msgid "&Close All"
+msgstr "&Cerrar Todo"
+
+#: tmainform.mnucopy.caption
+msgid "&Copy To..."
+msgstr "&Copiar a..."
+
+#: tmainform.mnudimensions.caption
+msgid "&Dimensions..."
+msgstr "&Dimensiones..."
+
+#: tmainform.mnuedit.caption
+msgctxt "tmainform.mnuedit.caption"
+msgid "&Edit"
+msgstr "&Edición"
+
+#: tmainform.mnuexit.caption
+msgid "E&xit"
+msgstr "&Salir"
+
+#: tmainform.mnuexport.caption
+msgid "&Export"
+msgstr "&Exportar"
+
+#: tmainform.mnuexportmap.caption
+msgctxt "tmainform.mnuexportmap.caption"
+msgid "&Map..."
+msgstr "&Esquema..."
+
+#: tmainform.mnuexportnetwork.caption
+msgctxt "tmainform.mnuexportnetwork.caption"
+msgid "&Network..."
+msgstr "&Red..."
+
+#: tmainform.mnuexportscenario.caption
+msgctxt "tmainform.mnuexportscenario.caption"
+msgid "&Scenario..."
+msgstr "&Escenario..."
+
+#: tmainform.mnufile.caption
+msgid "&File"
+msgstr "&Archivo"
+
+#: tmainform.mnufind.caption
+msgid "&Find..."
+msgstr "&Buscar..."
+
+#: tmainform.mnufullextent.caption
+msgid "Full &Extent"
+msgstr "&Encuadrar"
+
+#: tmainform.mnugraph.caption
+msgid "&Graph..."
+msgstr "&Gráficos..."
+
+#: tmainform.mnugroupedit.caption
+msgid "Group &Edit..."
+msgstr "&Editar Grupo..."
+
+#: tmainform.mnuhelp.caption
+msgctxt "tmainform.mnuhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tmainform.mnuhelptopics.caption
+msgid "&Help Topics"
+msgstr "&Temas de Ayuda"
+
+#: tmainform.mnuhelptutorial.caption
+msgid "&Tutorial"
+msgstr "&Tutorial"
+
+#: tmainform.mnuhelpunits.caption
+msgid "&Units"
+msgstr "&Unidades"
+
+#: tmainform.mnuimport.caption
+msgid "&Import"
+msgstr "&Importar"
+
+#: tmainform.mnuimportmap.caption
+msgctxt "tmainform.mnuimportmap.caption"
+msgid "&Map..."
+msgstr "&Esquema..."
+
+#: tmainform.mnuimportnetwork.caption
+msgctxt "tmainform.mnuimportnetwork.caption"
+msgid "&Network..."
+msgstr "&Red..."
+
+#: tmainform.mnuimportscenario.caption
+msgctxt "tmainform.mnuimportscenario.caption"
+msgid "&Scenario..."
+msgstr "&Escenario..."
+
+#: tmainform.mnulegends.caption
+msgid "&Legends"
+msgstr "&Leyendas"
+
+#: tmainform.mnulinklegend.caption
+msgctxt "tmainform.mnulinklegend.caption"
+msgid "&Link"
+msgstr "&Líneas"
+
+#: tmainform.mnumaptoolbar.caption
+msgid "&Map"
+msgstr "&Esquema"
+
+#: tmainform.mnumodifylegend.caption
+msgid "&Modify"
+msgstr "&Modificar"
+
+#: tmainform.mnumodifylinklegend.caption
+msgctxt "tmainform.mnumodifylinklegend.caption"
+msgid "&Link"
+msgstr "&Líneas"
+
+#: tmainform.mnumodifynodelegend.caption
+msgctxt "tmainform.mnumodifynodelegend.caption"
+msgid "&Node"
+msgstr "&Nudos"
+
+#: tmainform.mnunew.caption
+msgid "&New"
+msgstr "&Nuevo"
+
+#: tmainform.mnunodelegend.caption
+msgctxt "tmainform.mnunodelegend.caption"
+msgid "&Node"
+msgstr "&Nudos"
+
+#: tmainform.mnuopen.caption
+msgid "&Open..."
+msgstr "&Abrir..."
+
+#: tmainform.mnuovmap.caption
+msgid "Over&view Map"
+msgstr "&Vista General"
+
+#: tmainform.mnupagesetup.caption
+msgid "Pa&ge Setup..."
+msgstr "Preparar Pá&gina..."
+
+#: tmainform.mnupan.caption
+msgid "&Pan"
+msgstr "&Desplazar"
+
+#: tmainform.mnupreferences.caption
+msgid "Pr&eferences..."
+msgstr "Pr&eferencias..."
+
+#: tmainform.mnuprint.caption
+msgctxt "tmainform.mnuprint.caption"
+msgid "&Print"
+msgstr "&Imprimir"
+
+#: tmainform.mnuprintpreview.caption
+msgid "Print Pre&view"
+msgstr "Vista Pre&via"
+
+#: tmainform.mnuproject.caption
+msgid "&Project"
+msgstr "&Proyecto"
+
+#: tmainform.mnuprojectcalibdata.caption
+msgid "&Calibration Data..."
+msgstr "&Datos Calibración..."
+
+#: tmainform.mnuprojectdefaults.caption
+msgid "&Defaults..."
+msgstr "&Valores por Defecto..."
+
+#: tmainform.mnuprojectdescription.caption
+msgid "&Summary..."
+msgstr "&Resumen..."
+
+#: tmainform.mnuprojectrunanalysis.caption
+msgid "&Run Analysis"
+msgstr "&Calcular"
+
+#: tmainform.mnuquery.caption
+msgid "&Query..."
+msgstr "&Consultar.."
+
+#: tmainform.mnureport.caption
+msgid "&Report"
+msgstr "&Informes"
+
+#: tmainform.mnureportcalibration.caption
+msgid "&Calibration"
+msgstr "&Calibración"
+
+#: tmainform.mnureportenergy.caption
+msgid "&Energy"
+msgstr "&Energía"
+
+#: tmainform.mnureportfull.caption
+msgid "&Full..."
+msgstr "&Completo..."
+
+#: tmainform.mnureportoptions.caption
+msgctxt "tmainform.mnureportoptions.caption"
+msgid "&Options..."
+msgstr "&Opciones..."
+
+#: tmainform.mnureportreaction.caption
+msgid "&Reaction"
+msgstr "&Reacciones"
+
+#: tmainform.mnureportstatus.caption
+msgid "&Status"
+msgstr "&Estado"
+
+#: tmainform.mnusave.caption
+msgid "&Save"
+msgstr "&Guardar"
+
+#: tmainform.mnusaveas.caption
+msgid "Save &As..."
+msgstr "Guardar &Como..."
+
+#: tmainform.mnuselectall.caption
+msgid "Select &All"
+msgstr "Seleccionar &Todo"
+
+#: tmainform.mnuselectobject.caption
+msgid "&Select Object"
+msgstr "&Seleccionar Objeto"
+
+#: tmainform.mnuselectregion.caption
+msgid "Select &Region"
+msgstr "Seleccionar &Región"
+
+#: tmainform.mnuselectvertex.caption
+msgid "Select &Vertex"
+msgstr "Seleccionar &Vértice"
+
+#: tmainform.mnustdtoolbar.caption
+msgid "&Standard"
+msgstr "&Estándar"
+
+#: tmainform.mnutable.caption
+msgid "&Table..."
+msgstr "&Tablas..."
+
+#: tmainform.mnutimelegend.caption
+msgid "&Time"
+msgstr "&Hora del Día"
+
+#: tmainform.mnutoolbars.caption
+msgid "&Toolbars"
+msgstr "&Barras de Herramientas"
+
+#: tmainform.mnuview.caption
+msgid "&View"
+msgstr "&Ver"
+
+#: tmainform.mnuviewoptions.caption
+msgctxt "tmainform.mnuviewoptions.caption"
+msgid "&Options..."
+msgstr "&Opciones del Esquema..."
+
+#: tmainform.mnuwindow.caption
+msgid "&Window"
+msgstr "Ve&ntana"
+
+#: tmainform.mnuzoomin.caption
+msgid "Zoom &In"
+msgstr "A&cercar"
+
+#: tmainform.mnuzoomout.caption
+msgid "Zoom &Out"
+msgstr "A&lejar"
+
+#: tmainform.openpicturedialog.title
+msgid "Open a Backdrop Map"
+msgstr "Abrir un Mapa de Fondo"
+
+#: tmainform.popupautolength.caption
+msgid "Auto-Length On"
+msgstr "Longitud-Auto Sí"
+
+#: tmainform.propeditheader.caption
+msgctxt "tmainform.propeditheader.caption"
+msgid "Property Editor"
+msgstr "Editor de Propiedades"
+
+#: tmainform.statusbarpanel1.caption
+msgctxt "tmainform.statusbarpanel1.caption"
+msgid "GPM"
+msgstr "GPM"
+
+#: tmainform.statusbarpanel2.caption
+msgid "100%"
+msgstr "100%"
+
+#: tmainform.statusbarpanel4.caption
+msgid "  X, Y:"
+msgstr "  X, Y:"
+
+#: tmainform.statusbarpanel5.caption
+msgid "Auto-Length: Off"
+msgstr "Longitud-Auto: No"
+
+#: tmainform.stdtoolbar.caption
+msgid "StdToolBar"
+msgstr "StdToolBar"
+
+#: tmainform.tbcopy.caption
+msgid "TBCopy"
+msgstr "TBCopy"
+
+#: tmainform.tbcopy.hint
+msgctxt "tmainform.tbcopy.hint"
+msgid "Copy"
+msgstr "Copiar"
+
+#: tmainform.tbdelete.caption
+msgid "TBDelete"
+msgstr "TBDelete"
+
+#: tmainform.tbdelete.hint
+msgctxt "tmainform.tbdelete.hint"
+msgid "Delete"
+msgstr "Borrar"
+
+#: tmainform.tbfind.caption
+msgid "TBFind"
+msgstr "TBFind"
+
+#: tmainform.tbfind.hint
+msgctxt "tmainform.tbfind.hint"
+msgid "Find"
+msgstr "Buscar"
+
+#: tmainform.tbgraph.caption
+msgid "TBGraph"
+msgstr "TBGraph"
+
+#: tmainform.tbgraph.hint
+msgid "Graph"
+msgstr "Gráficos"
+
+#: tmainform.tbnew.caption
+msgid "TBNew"
+msgstr "TBNew"
+
+#: tmainform.tbnew.hint
+msgid "New"
+msgstr "Nuevo"
+
+#: tmainform.tbopen.caption
+msgid "TBOpen"
+msgstr "TBOpen"
+
+#: tmainform.tbopen.hint
+msgctxt "tmainform.tbopen.hint"
+msgid "Open"
+msgstr "Abrir"
+
+#: tmainform.tboptions.caption
+msgid "TBOptions"
+msgstr "TBOptions"
+
+#: tmainform.tboptions.hint
+msgctxt "tmainform.tboptions.hint"
+msgid "Options"
+msgstr "Opciones"
+
+#: tmainform.tbprint.caption
+msgid "TBPrint"
+msgstr "TBPrint"
+
+#: tmainform.tbprint.hint
+msgid "Print"
+msgstr "Imprimir"
+
+#: tmainform.tbquery.caption
+msgid "TBQuery"
+msgstr "TBQuery"
+
+#: tmainform.tbquery.hint
+msgctxt "tmainform.tbquery.hint"
+msgid "Query"
+msgstr "Consultar"
+
+#: tmainform.tbrun.caption
+msgid "TBRun"
+msgstr "TBRun"
+
+#: tmainform.tbrun.hint
+msgid "Run"
+msgstr "Calcular"
+
+#: tmainform.tbsave.caption
+msgid "TBSave"
+msgstr "TBSave"
+
+#: tmainform.tbsave.hint
+msgid "Save"
+msgstr "Guardar"
+
+#: tmainform.tbsep1.caption
+msgid "TBSep1"
+msgstr "TBSep1"
+
+#: tmainform.tbsep2.caption
+msgid "TBSep2"
+msgstr "TBSep2"
+
+#: tmainform.tbsep3.caption
+msgid "TBSep3"
+msgstr "TBSep3"
+
+#: tmainform.tbsep4.caption
+msgid "TBSep4"
+msgstr "TBSep4"
+
+#: tmainform.tbtable.caption
+msgid "TBTable"
+msgstr "TBTable"
+
+#: tmainform.tbtable.hint
+msgctxt "tmainform.tbtable.hint"
+msgid "Table"
+msgstr "Tablas"
+
+#: tmainform.toolbutton1.caption
+msgid "ToolButton1"
+msgstr "ToolButton1"
+
+#: tmainform.toolbutton1.hint
+msgid "Select Object"
+msgstr "Seleccionar Objeto"
+
+#: tmainform.toolbutton10.caption
+msgid "ToolButton10"
+msgstr "ToolButton10"
+
+#: tmainform.toolbutton10.hint
+msgid "Add Pump"
+msgstr "Añadir Bomba"
+
+#: tmainform.toolbutton11.caption
+msgid "ToolButton11"
+msgstr "ToolButton11"
+
+#: tmainform.toolbutton11.hint
+msgid "Add Valve"
+msgstr "Añadir Válvula"
+
+#: tmainform.toolbutton12.caption
+msgid "ToolButton12"
+msgstr "ToolButton12"
+
+#: tmainform.toolbutton12.hint
+msgid "Add Label"
+msgstr "Añadir Rótulo"
+
+#: tmainform.toolbutton13.caption
+msgid "ToolButton13"
+msgstr "ToolButton13"
+
+#: tmainform.toolbutton13.hint
+msgid "Full Extent"
+msgstr "Encuadrar"
+
+#: tmainform.toolbutton14.caption
+msgid "ToolButton14"
+msgstr "ToolButton14"
+
+#: tmainform.toolbutton14.hint
+msgid "Select Vertex"
+msgstr "Seleccionar Vértice"
+
+#: tmainform.toolbutton2.caption
+msgid "ToolButton2"
+msgstr "ToolButton2"
+
+#: tmainform.toolbutton2.hint
+msgid "Select Region"
+msgstr "Seleccionar Región"
+
+#: tmainform.toolbutton3.caption
+msgid "ToolButton3"
+msgstr "ToolButton3"
+
+#: tmainform.toolbutton3.hint
+msgid "Pan"
+msgstr "Desplazar"
+
+#: tmainform.toolbutton4.caption
+msgid "ToolButton4"
+msgstr "ToolButton4"
+
+#: tmainform.toolbutton4.hint
+msgid "Zoom In"
+msgstr "Acercar"
+
+#: tmainform.toolbutton5.caption
+msgid "ToolButton5"
+msgstr "ToolButton5"
+
+#: tmainform.toolbutton5.hint
+msgid "Zoom Out"
+msgstr "Alejar"
+
+#: tmainform.toolbutton6.caption
+msgid "ToolButton6"
+msgstr "ToolButton6"
+
+#: tmainform.toolbutton6.hint
+msgid "Add Junction"
+msgstr "Añadir Nudo de Caudal"
+
+#: tmainform.toolbutton7.caption
+msgid "ToolButton7"
+msgstr "ToolButton7"
+
+#: tmainform.toolbutton7.hint
+msgid "Add Reservoir"
+msgstr "Añadir Embalse"
+
+#: tmainform.toolbutton8.caption
+msgid "ToolButton8"
+msgstr "ToolButton8"
+
+#: tmainform.toolbutton8.hint
+msgid "Add Tank"
+msgstr "Añadir Depósito"
+
+#: tmainform.toolbutton9.caption
+msgid "ToolButton9"
+msgstr "ToolButton9"
+
+#: tmainform.toolbutton9.hint
+msgid "Add Pipe"
+msgstr "Añadir Tubería"
+
+#: tmapdimensionsform.btnauto.caption
+msgid "Auto-Size"
+msgstr "Ajuste Automático"
+
+#: tmapdimensionsform.btncancel.caption
+msgctxt "tmapdimensionsform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tmapdimensionsform.btnhelp.caption
+msgctxt "tmapdimensionsform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tmapdimensionsform.btnok.caption
+msgctxt "tmapdimensionsform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tmapdimensionsform.caption
+msgid "Map Dimensions"
+msgstr "Dimensiones del Esquema"
+
+#: tmapdimensionsform.groupbox1.caption
+msgctxt "tmapdimensionsform.groupbox1.caption"
+msgid "Lower Left"
+msgstr "Vértice Inferior Izquierdo"
+
+#: tmapdimensionsform.groupbox2.caption
+msgctxt "tmapdimensionsform.groupbox2.caption"
+msgid "Upper Right"
+msgstr "Vértice Superior Derecho"
+
+#: tmapdimensionsform.label1.caption
+msgctxt "tmapdimensionsform.label1.caption"
+msgid "X-coordinate:"
+msgstr "Coordenada X:"
+
+#: tmapdimensionsform.label2.caption
+msgctxt "tmapdimensionsform.label2.caption"
+msgid "Y-coordinate:"
+msgstr "Coordenada Y:"
+
+#: tmapdimensionsform.label3.caption
+msgctxt "tmapdimensionsform.label3.caption"
+msgid "X-coordinate:"
+msgstr "Coordenada X:"
+
+#: tmapdimensionsform.label4.caption
+msgctxt "tmapdimensionsform.label4.caption"
+msgid "Y-coordinate:"
+msgstr "Coordenada Y:"
+
+#: tmapdimensionsform.mapunits.caption
+msgid "Map Units"
+msgstr "Unidades del Esquema"
+
+#: tmapexportform.button1.caption
+msgctxt "tmapexportform.button1.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tmapexportform.button2.caption
+msgctxt "tmapexportform.button2.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tmapexportform.button3.caption
+msgctxt "tmapexportform.button3.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tmapexportform.caption
+msgid "Map Export"
+msgstr "Exportar Esquema"
+
+#: tmapexportform.groupbox1.caption
+msgid "Export Map To:"
+msgstr "Exportar Esquema como:"
+
+#: tmapexportform.radiobutton1.caption
+msgid "Text File (.map)"
+msgstr "Fichero de Texto (.map)"
+
+#: tmapexportform.radiobutton2.caption
+msgid "Enhanced Metafile (.emf)"
+msgstr "Fichero Metafile Mejorado (.emf)"
+
+#: tmapexportform.radiobutton3.caption
+msgid "Drawing Exchange File (.dxf)"
+msgstr "Fichero Intercambio Dibujos (.dxf)"
+
+#: tmapexportform.radiogroup1.caption
+msgid "Draw Junctions As:"
+msgstr "Dibujar Nudos como:"
+
+#: tmapform1.hintlabel.caption
+msgctxt "tmapform1.hintlabel.caption"
+msgid "HintLabel"
+msgstr "HintLabel"
+
+#: tmapform1.popupaddvertex.caption
+msgctxt "tmapform1.popupaddvertex.caption"
+msgid "Add Vertex"
+msgstr "Añadir Vértice"
+
+#: tmapform1.popupbackdrop.caption
+msgctxt "tmapform1.popupbackdrop.caption"
+msgid "Backdrop"
+msgstr "Mapa de Fondo"
+
+#: tmapform1.popupcopy.caption
+msgctxt "tmapform1.popupcopy.caption"
+msgid "Copy"
+msgstr "Copiar"
+
+#: tmapform1.popupdelete.caption
+msgctxt "tmapform1.popupdelete.caption"
+msgid "Delete"
+msgstr "Borrar"
+
+#: tmapform1.popupdeletevertex.caption
+msgctxt "tmapform1.popupdeletevertex.caption"
+msgid "Delete Vertex"
+msgstr "Borrar Vértice"
+
+#: tmapform1.popuplinklegend.caption
+msgctxt "tmapform1.popuplinklegend.caption"
+msgid "Link Legend"
+msgstr "Leyenda de Líneas"
+
+#: tmapform1.popupnodelegend.caption
+msgctxt "tmapform1.popupnodelegend.caption"
+msgid "Node Legend"
+msgstr "Leyenda de Nudos"
+
+#: tmapform1.popupoptions.caption
+msgctxt "tmapform1.popupoptions.caption"
+msgid "Options"
+msgstr "Opciones"
+
+#: tmapform1.popuppaste.caption
+msgctxt "tmapform1.popuppaste.caption"
+msgid "Paste"
+msgstr "Pegar"
+
+#: tmapform1.popupproperties.caption
+msgctxt "tmapform1.popupproperties.caption"
+msgid "Properties"
+msgstr "Propiedades"
+
+#: tmapform1.popupquitediting.caption
+msgctxt "tmapform1.popupquitediting.caption"
+msgid "Quit Editing"
+msgstr "Terminar Edición"
+
+#: tmapform1.popupreverse.caption
+msgctxt "tmapform1.popupreverse.caption"
+msgid "Reverse"
+msgstr "Invertir"
+
+#: tmapform1.popuptimelegend.caption
+msgctxt "tmapform1.popuptimelegend.caption"
+msgid "Time Legend"
+msgstr "Hora del Día"
+
+#: tmapform1.popupvertices.caption
+msgctxt "tmapform1.popupvertices.caption"
+msgid "Vertices"
+msgstr "Vértices"
+
+#: tmapform1.timelegendpanel.caption
+msgctxt "tmapform1.timelegendpanel.caption"
+msgid "TimeLegendPanel"
+msgstr "TimeLegendPanel"
+
+#: tmapoptionsform.btncancel.caption
+msgctxt "tmapoptionsform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tmapoptionsform.btnhelp.caption
+msgctxt "tmapoptionsform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tmapoptionsform.btnok.caption
+msgctxt "tmapoptionsform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tmapoptionsform.caption
+msgid "Map Options"
+msgstr "Opciones del Esquema"
+
+#: tmapoptionsform.emittersymbols.caption
+msgid "Display Emitters"
+msgstr "Mostrar Emisores"
+
+#: tmapoptionsform.groupbox2.caption
+msgid "Node Size"
+msgstr "Tamaño del Nudo"
+
+#: tmapoptionsform.groupbox3.caption
+msgctxt "tmapoptionsform.groupbox3.caption"
+msgid "Link Size"
+msgstr "Grosor de Línea"
+
+#: tmapoptionsform.juncsymbols.caption
+msgid "Display Junctions"
+msgstr "Mostrar Nudos de Caudal"
+
+#: tmapoptionsform.label1.caption
+msgid "Font Size"
+msgstr "Tamaño Fuente"
+
+#: tmapoptionsform.label3.caption
+msgctxt "tmapoptionsform.label3.caption"
+msgid "At zoom of"
+msgstr "Escala Mínima"
+
+#: tmapoptionsform.label4.caption
+msgctxt "tmapoptionsform.label4.caption"
+msgid "At zoom of"
+msgstr "Escala Mínima"
+
+#: tmapoptionsform.label5.caption
+msgid "Background color:"
+msgstr "Color de Fondo:"
+
+#: tmapoptionsform.label6.caption
+msgctxt "tmapoptionsform.label6.caption"
+msgid "At zoom of"
+msgstr "Escala Mínima"
+
+#: tmapoptionsform.label7.caption
+msgctxt "tmapoptionsform.label7.caption"
+msgid "At zoom of"
+msgstr "Escala Mínima"
+
+#: tmapoptionsform.label8.caption
+msgid "Arrow Size"
+msgstr "Tamaño Flecha"
+
+#: tmapoptionsform.labelstransparent.caption
+msgctxt "tmapoptionsform.labelstransparent.caption"
+msgid "Use Transparent Text"
+msgstr "Usar Texto Transparente"
+
+#: tmapoptionsform.linkarrows.caption
+msgid "Arrow Style"
+msgstr "Estilo Flecha"
+
+#: tmapoptionsform.linkborder.caption
+msgctxt "tmapoptionsform.linkborder.caption"
+msgid "Display Border"
+msgstr "Mostrar Borde"
+
+#: tmapoptionsform.linkids.caption
+msgid "Display Link IDs"
+msgstr "Mostrar IDs Líneas"
+
+#: tmapoptionsform.linksbysize.caption
+msgctxt "tmapoptionsform.linksbysize.caption"
+msgid "Proportional to Value"
+msgstr "Proporcional al Valor"
+
+#: tmapoptionsform.linkvalues.caption
+msgid "Display Link Values"
+msgstr "Mostrar Valores Líneas"
+
+#: tmapoptionsform.maplabels.caption
+msgid "Display Map Labels"
+msgstr "Mostrar Rótulos"
+
+#: tmapoptionsform.nodeborder.caption
+msgctxt "tmapoptionsform.nodeborder.caption"
+msgid "Display Border"
+msgstr "Mostrar Borde"
+
+#: tmapoptionsform.nodeids.caption
+msgid "Display Node IDs"
+msgstr "Mostrar IDs Nudos"
+
+#: tmapoptionsform.nodesbysize.caption
+msgctxt "tmapoptionsform.nodesbysize.caption"
+msgid "Proportional to Value"
+msgstr "Proporcional al Valor"
+
+#: tmapoptionsform.nodevalues.caption
+msgid "Display Node Values"
+msgstr "Mostrar Valores Nudos"
+
+#: tmapoptionsform.notationtransparent.caption
+msgctxt "tmapoptionsform.notationtransparent.caption"
+msgid "Use Transparent Text"
+msgstr "Usar Texto Transparente"
+
+#: tmapoptionsform.pumpsymbols.caption
+msgid "Display Pumps"
+msgstr "Mostrar Bombas"
+
+#: tmapoptionsform.sourcesymbols.caption
+msgid "Display Sources"
+msgstr "Mostrar Fuentes de Químicos"
+
+#: tmapoptionsform.tanksymbols.caption
+msgid "Display Tanks"
+msgstr "Mostrar Depósitos"
+
+#: tmapoptionsform.valvesymbols.caption
+msgid "Display Valves"
+msgstr "Mostrar Válvulas"
+
+#: tovmapform.caption
+msgid "Overview Map"
+msgstr "Vista General"
+
+#: tpagesetupform.btncancel.caption
+msgctxt "tpagesetupform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tpagesetupform.btnok.caption
+msgctxt "tpagesetupform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tpagesetupform.caption
+msgid "Page Setup"
+msgstr "Preparar Página"
+
+#: tpagesetupform.cbpagenumbers.text
+msgctxt "tpagesetupform.cbpagenumbers.text"
+msgid "None"
+msgstr "Ninguna"
+
+#: tpagesetupform.checkfooterenabled.caption
+msgctxt "tpagesetupform.checkfooterenabled.caption"
+msgid "Enabled"
+msgstr "Activar"
+
+#: tpagesetupform.checkheaderenabled.caption
+msgctxt "tpagesetupform.checkheaderenabled.caption"
+msgid "Enabled"
+msgstr "Activar"
+
+#: tpagesetupform.groupbox1.caption
+msgid "Header"
+msgstr "Encabezado"
+
+#: tpagesetupform.groupbox2.caption
+msgid "Footer"
+msgstr "Pie"
+
+#: tpagesetupform.heightlabel.caption
+msgid "Height:"
+msgstr "Alto:"
+
+#: tpagesetupform.label1.caption
+msgctxt "tpagesetupform.label1.caption"
+msgid "Left"
+msgstr "Izquierdo"
+
+#: tpagesetupform.label2.caption
+msgid "Top"
+msgstr "Superior"
+
+#: tpagesetupform.label3.caption
+msgctxt "tpagesetupform.label3.caption"
+msgid "Right"
+msgstr "Derecho"
+
+#: tpagesetupform.label4.caption
+msgid "Bottom"
+msgstr "Inferior"
+
+#: tpagesetupform.label5.caption
+msgctxt "tpagesetupform.label5.caption"
+msgid "Align:"
+msgstr "Alinear:"
+
+#: tpagesetupform.label6.caption
+msgctxt "tpagesetupform.label6.caption"
+msgid "Align:"
+msgstr "Alinear:"
+
+#: tpagesetupform.label7.caption
+msgid "Page Numbers"
+msgstr "Números de Página"
+
+#: tpagesetupform.marginsbox.caption
+msgctxt "tpagesetupform.marginsbox.caption"
+msgid "Margins"
+msgstr "Márgenes"
+
+#: tpagesetupform.orientbox.caption
+msgid "Orientation"
+msgstr "Orientación"
+
+#: tpagesetupform.printersetup.caption
+msgid "Printer..."
+msgstr "Impresora..."
+
+#: tpagesetupform.rbfootercenter.caption
+msgctxt "tpagesetupform.rbfootercenter.caption"
+msgid "Center"
+msgstr "Centro"
+
+#: tpagesetupform.rbfooterleft.caption
+msgctxt "tpagesetupform.rbfooterleft.caption"
+msgid "Left"
+msgstr "Izquierda"
+
+#: tpagesetupform.rbfooterright.caption
+msgctxt "tpagesetupform.rbfooterright.caption"
+msgid "Right"
+msgstr "Derecha"
+
+#: tpagesetupform.rbheadercenter.caption
+msgctxt "tpagesetupform.rbheadercenter.caption"
+msgid "Center"
+msgstr "Centro"
+
+#: tpagesetupform.rbheaderleft.caption
+msgctxt "tpagesetupform.rbheaderleft.caption"
+msgid "Left"
+msgstr "Izquierda"
+
+#: tpagesetupform.rbheaderright.caption
+msgctxt "tpagesetupform.rbheaderright.caption"
+msgid "Right"
+msgstr "Derecha"
+
+#: tpagesetupform.sizebox.caption
+msgid "Paper Size"
+msgstr "Tamaño de Papel"
+
+#: tpagesetupform.tabsheet1.caption
+msgctxt "tpagesetupform.tabsheet1.caption"
+msgid "Margins"
+msgstr "Márgenes"
+
+#: tpagesetupform.tabsheet2.caption
+msgid "Headers/Footers"
+msgstr "Encabezado/Pie"
+
+#: tpagesetupform.widthlabel.caption
+msgid "Width:"
+msgstr "Ancho:"
+
+#: tpatternform.btncancel.caption
+msgctxt "tpatternform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tpatternform.btnhelp.caption
+msgctxt "tpatternform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tpatternform.btnload.caption
+msgctxt "tpatternform.btnload.caption"
+msgid "Load..."
+msgstr "Cargar..."
+
+#: tpatternform.btnok.caption
+msgctxt "tpatternform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tpatternform.btnsave.caption
+msgctxt "tpatternform.btnsave.caption"
+msgid "Save..."
+msgstr "Guardar..."
+
+#: tpatternform.caption
+msgid "Pattern Editor"
+msgstr "Editor de Modulaciones"
+
+#: tpatternform.chart1.axislist[0].title.caption
+msgctxt "tpatternform.chart1.axislist[0].title.caption"
+msgid "Multiplier"
+msgstr "Multiplicador"
+
+#: tpatternform.chart1.axislist[1].title.caption
+msgctxt "tpatternform.chart1.axislist[1].title.caption"
+msgid "Period"
+msgstr "Período"
+
+#: tpatternform.label1.caption
+msgid "Pattern ID"
+msgstr "ID Modulación"
+
+#: tpatternform.label2.caption
+msgctxt "tpatternform.label2.caption"
+msgid "Description"
+msgstr "Descripción"
+
+#: tpreferencesform.btncancel.caption
+msgctxt "tpreferencesform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tpreferencesform.btnhelp.caption
+msgctxt "tpreferencesform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tpreferencesform.btnok.caption
+msgctxt "tpreferencesform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tpreferencesform.caption
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: tpreferencesform.checkautobackup.caption
+msgid "Automatic Backup File"
+msgstr "Auto-Copia Seguridad"
+
+#: tpreferencesform.checkblinking.caption
+msgid "Blinking Map Hiliter"
+msgstr "Parpadeo Selección Esquema"
+
+#: tpreferencesform.checkclearfilelist.caption
+msgid "Clear File List"
+msgstr "Borrar Lista de Ficheros"
+
+#: tpreferencesform.checkconfirmdelete.caption
+msgid "Confirm Deletions"
+msgstr "Confirmar Borrado"
+
+#: tpreferencesform.checkflyovers.caption
+msgid "Flyover Map Labeling"
+msgstr "Etiquetas Flotantes"
+
+#: tpreferencesform.label1.caption
+msgid "Node Parameter"
+msgstr "Magnitud de Nudo"
+
+#: tpreferencesform.label2.caption
+msgctxt "tpreferencesform.label2.caption"
+msgid "Decimals"
+msgstr "Decimales"
+
+#: tpreferencesform.label3.caption
+msgid "Link Parameter"
+msgstr "Magnitud de Línea"
+
+#: tpreferencesform.label4.caption
+msgctxt "tpreferencesform.label4.caption"
+msgid "Decimals"
+msgstr "Decimales"
+
+#: tpreferencesform.label5.caption
+msgid "Language"
+msgstr "Idioma"
+
+#: tpreferencesform.label6.caption
+msgid "Label6"
+msgstr "Label6"
+
+#: tpreferencesform.langvarbox.text
+msgctxt "tpreferencesform.langvarbox.text"
+msgid "0"
+msgstr "LangVarBox"
+
+#: tpreferencesform.linkvarbox.text
+msgctxt "tpreferencesform.linkvarbox.text"
+msgid "0"
+msgstr "0"
+
+#: tpreferencesform.nodevarbox.text
+msgctxt "tpreferencesform.nodevarbox.text"
+msgid "0"
+msgstr "0"
+
+#: tpreferencesform.tabsheet1.caption
+msgctxt "tpreferencesform.tabsheet1.caption"
+msgid "General"
+msgstr "General"
+
+#: tpreferencesform.tabsheet2.caption
+msgid "Formats"
+msgstr "Formatos"
+
+#: tpreviewform.caption
+msgctxt "tpreviewform.caption"
+msgid "Preview"
+msgstr "Vista Previa"
+
+#: tpreviewform.closebtn.caption
+msgid "&Close"
+msgstr "&Cerrar"
+
+#: tpreviewform.fullpagebtn.caption
+msgid "&Full Page"
+msgstr "Pág. Com&p."
+
+#: tpreviewform.nextpagebtn.caption
+msgid "&Next Page"
+msgstr "Pág. &Sig."
+
+#: tpreviewform.pagewidthbtn.caption
+msgid "Page &Width"
+msgstr "Anc&ho Pág."
+
+#: tpreviewform.prevpagebtn.caption
+msgid "Pre&v Page"
+msgstr "Pág. &Ant."
+
+#: tpreviewform.printbtn.caption
+msgid "&Print ..."
+msgstr "&Imprimir"
+
+#: tpreviewform.shwgrdbtn.caption
+msgid "Show &Grid"
+msgstr "Ver &Rejilla"
+
+#: tprogressform.button1.caption
+msgctxt "tprogressform.button1.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tprogressform.caption
+msgid "Printing"
+msgstr "Imprimiendo"
+
+#: tpropeditform.caption
+msgctxt "tpropeditform.caption"
+msgid "Property Editor"
+msgstr "Editor de Propiedades"
+
+#: tqueryform.button1.caption
+msgid "Submit"
+msgstr "Enviar"
+
+#: tqueryform.caption
+msgctxt "tqueryform.caption"
+msgid "Query"
+msgstr "Consulta"
+
+#: tqueryform.combobox1.text
+msgctxt "tqueryform.combobox1.text"
+msgid "0"
+msgstr "0"
+
+#: tqueryform.combobox2.text
+msgctxt "tqueryform.combobox2.text"
+msgid "0"
+msgstr "0"
+
+#: tqueryform.combobox3.text
+msgctxt "tqueryform.combobox3.text"
+msgid "0"
+msgstr "0"
+
+#: tsimulationform.cancelbtn.caption
+msgctxt "tsimulationform.cancelbtn.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tsimulationform.caption
+msgid "Run Status"
+msgstr "Estado de la Simulación"
+
+#: tsimulationform.okbtn.caption
+msgctxt "tsimulationform.okbtn.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tsourceform.btncancel.caption
+msgctxt "tsourceform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tsourceform.btnhelp.caption
+msgctxt "tsourceform.btnhelp.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: tsourceform.btnok.caption
+msgctxt "tsourceform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tsourceform.caption
+msgid "Water Quality Source Editor"
+msgstr "Editor de Fuente de Sustancia"
+
+#: tsourceform.label1.caption
+msgctxt "tsourceform.label1.caption"
+msgid "Source Quality"
+msgstr "Fuente de Sustancia"
+
+#: tsourceform.label2.caption
+msgctxt "tsourceform.label2.caption"
+msgid "Time Pattern"
+msgstr "Modulación"
+
+#: tsourceform.radiogroup1.caption
+msgid "Source Type"
+msgstr "Tipo de Fuente"
+
+#: tstatusform.caption
+msgid "StatusForm"
+msgstr "StatusForm"
+
+#: tsummaryform.btncancel.caption
+msgctxt "tsummaryform.btncancel.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: tsummaryform.btnok.caption
+msgctxt "tsummaryform.btnok.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: tsummaryform.caption
+msgid "Project Summary"
+msgstr "Resumen del Proyecto"
+
+#: tsummaryform.checkheader.caption
+msgid "Use as header for printing"
+msgstr "Usar como cabecera para salidas impresas"
+
+#: tsummaryform.groupbox1.caption
+msgid "Title"
+msgstr "Título"
+
+#: tsummaryform.groupbox2.caption
+msgctxt "tsummaryform.groupbox2.caption"
+msgid "Notes"
+msgstr "Notas"
+
+#: tsummaryform.groupbox3.caption
+msgctxt "tsummaryform.groupbox3.caption"
+msgid "Statistics"
+msgstr "Estadísticas"
+
+#: ttableform.caption
+msgid "TableForm"
+msgstr "TableForm"
+
+#: ttableoptionsform.cancelbtn.caption
+msgctxt "ttableoptionsform.cancelbtn.caption"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ttableoptionsform.caption
+msgctxt "ttableoptionsform.caption"
+msgid "Table Selection"
+msgstr "Selección de la Tabla"
+
+#: ttableoptionsform.columnspage.caption
+msgid "Columns"
+msgstr "Columnas"
+
+#: ttableoptionsform.filteraddbtn.caption
+msgctxt "ttableoptionsform.filteraddbtn.caption"
+msgid "Add"
+msgstr "Añadir"
+
+#: ttableoptionsform.filterdelbtn.caption
+msgctxt "ttableoptionsform.filterdelbtn.caption"
+msgid "Delete"
+msgstr "Borrar"
+
+#: ttableoptionsform.filterrelationbox.text
+msgctxt "ttableoptionsform.filterrelationbox.text"
+msgid "0"
+msgstr "0"
+
+#: ttableoptionsform.filterspage.caption
+msgid "Filters"
+msgstr "Filtros"
+
+#: ttableoptionsform.filtervariablebox.text
+msgctxt "ttableoptionsform.filtervariablebox.text"
+msgid "0"
+msgstr "0"
+
+#: ttableoptionsform.helpbtn.caption
+msgctxt "ttableoptionsform.helpbtn.caption"
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: ttableoptionsform.label1.caption
+msgid "Select the type of table to create:"
+msgstr "Seleccionar el tipo de tabla a crear:"
+
+#: ttableoptionsform.label2.caption
+msgid "Select which columns to include in the table:"
+msgstr "Seleccionar las columnas a incluir en la tabla:"
+
+#: ttableoptionsform.label3.caption
+msgid "Define conditions for selecting table entries:"
+msgstr "Fijar condiciones para elegir los elementos a mostrar:"
+
+#: ttableoptionsform.linkseriesbtn.caption
+msgid "Time series for link"
+msgstr "Evolución en la línea"
+
+#: ttableoptionsform.netlinksbtn.caption
+msgid "Network links at"
+msgstr "Líneas de la red a las"
+
+#: ttableoptionsform.netnodesbtn.caption
+msgid "Network nodes at"
+msgstr "Nudos de la red a las"
+
+#: ttableoptionsform.nodeseriesbtn.caption
+msgid "Time series for node"
+msgstr "Evolución en el nudo"
+
+#: ttableoptionsform.okbtn.caption
+msgctxt "ttableoptionsform.okbtn.caption"
+msgid "OK"
+msgstr "Aceptar"
+
+#: ttableoptionsform.sortedcheckbox.caption
+msgid "Sorted by"
+msgstr "Ordenar por"
+
+#: ttableoptionsform.tabletypepage.caption
+msgid "Type"
+msgstr "Tipo"
+
+#: ttableoptionsform.timeperiodbox.text
+msgctxt "ttableoptionsform.timeperiodbox.text"
+msgid "0"
+msgstr "0"
+
+#: xprinter.txt_pg_no
+#, object-pascal-format
+msgctxt "xprinter.txt_pg_no"
+msgid "Page %d of %d"
+msgstr "Página %d de %d"
+
+#: xprinter.txt_pr_abort
+msgctxt "xprinter.txt_pr_abort"
+msgid "Printing aborted"
+msgstr "Impresión cancelada"
+
+#: xprinter.txt_pr_page
+#, object-pascal-format
+msgctxt "xprinter.txt_pr_page"
+msgid "Printing page %d of %d"
+msgstr "Imprimiendo página %d de %d"

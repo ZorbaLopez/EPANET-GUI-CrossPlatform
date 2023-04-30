@@ -1,0 +1,87 @@
+object QueryForm: TQueryForm
+  Left = 911
+  Height = 147
+  Top = 160
+  Width = 190
+  HelpContext = 205
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsDialog
+  Caption = 'Query'
+  ClientHeight = 147
+  ClientWidth = 190
+  Color = clBtnFace
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  LCLVersion = '2.2.6.0'
+  object ComboBox1: TComboBox
+    Left = 8
+    Height = 20
+    Top = 8
+    Width = 176
+    ItemHeight = 26
+    OnChange = ComboBox1Change
+    Style = csDropDownList
+    TabOrder = 0
+    Text = '0'
+  end
+  object ComboBox2: TComboBox
+    Left = 8
+    Height = 20
+    Top = 32
+    Width = 176
+    ItemHeight = 26
+    Style = csDropDownList
+    TabOrder = 1
+    Text = '0'
+  end
+  object ComboBox3: TComboBox
+    Left = 8
+    Height = 20
+    Top = 56
+    Width = 176
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    ItemHeight = 26
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 2
+    Text = '0'
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 21
+    Top = 88
+    Width = 96
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 111
+    Height = 21
+    Top = 88
+    Width = 73
+    Caption = 'Submit'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object Panel1: TPanel
+    Left = 8
+    Height = 21
+    Top = 120
+    Width = 176
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 5
+  end
+end

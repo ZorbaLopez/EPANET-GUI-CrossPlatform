@@ -1,0 +1,130 @@
+object PreviewForm: TPreviewForm
+  Left = 563
+  Height = 17
+  Top = 319
+  Width = 178
+  Caption = 'Preview'
+  ClientHeight = 17
+  ClientWidth = 178
+  Color = clBtnFace
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Arial'
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poDesktopCenter
+  LCLVersion = '2.2.4.0'
+  WindowState = wsMaximized
+  object Panel1: TPanel
+    Left = 0
+    Height = 33
+    Top = 0
+    Width = 178
+    Align = alTop
+    ClientHeight = 33
+    ClientWidth = 178
+    TabOrder = 0
+    object ShwGrdBtn: TSpeedButton
+      Left = 408
+      Height = 25
+      Top = 4
+      Width = 73
+      AllowAllUp = True
+      Caption = 'Show &Grid'
+      GroupIndex = 1
+      OnClick = ShwGrdBtnClick
+    end
+    object PageWidthBtn: TSpeedButton
+      Left = 248
+      Height = 25
+      Top = 4
+      Width = 73
+      Caption = 'Page &Width'
+      GroupIndex = 2
+      OnClick = PageWidthBtnClick
+    end
+    object FullPageBtn: TSpeedButton
+      Left = 328
+      Height = 25
+      Top = 4
+      Width = 73
+      Caption = '&Full Page'
+      GroupIndex = 2
+      OnClick = FullPageBtnClick
+    end
+    object PrintBtn: TButton
+      Left = 8
+      Height = 25
+      Top = 4
+      Width = 73
+      Caption = '&Print ...'
+      OnClick = PrintBtnClick
+      TabOrder = 1
+    end
+    object CloseBtn: TButton
+      Left = 488
+      Height = 25
+      Top = 4
+      Width = 73
+      Cancel = True
+      Caption = '&Close'
+      ModalResult = 2
+      TabOrder = 0
+    end
+    object PrevPageBtn: TButton
+      Left = 88
+      Height = 25
+      Top = 4
+      Width = 73
+      Caption = 'Pre&v Page'
+      OnClick = PrevPageBtnClick
+      TabOrder = 2
+    end
+    object NextPageBtn: TButton
+      Left = 168
+      Height = 25
+      Top = 4
+      Width = 73
+      Caption = '&Next Page'
+      OnClick = NextPageBtnClick
+      TabOrder = 3
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 24
+    Top = -7
+    Width = 178
+    Align = alBottom
+    Alignment = taLeftJustify
+    TabOrder = 1
+  end
+  object ScrollBox: TScrollBox
+    Left = 0
+    Height = 0
+    Top = 17
+    Width = 178
+    HorzScrollBar.Increment = 16
+    HorzScrollBar.Page = 178
+    VertScrollBar.Increment = 16
+    VertScrollBar.Page = 1
+    Align = alClient
+    BorderStyle = bsNone
+    ClientHeight = 0
+    ClientWidth = 178
+    Color = clBtnShadow
+    ParentColor = False
+    TabOrder = 2
+    object PaintBox1: TPaintBox
+      Cursor = crCross
+      Left = 120
+      Height = 309
+      Top = 40
+      Width = 365
+      Color = clWhite
+      ParentColor = False
+      OnMouseDown = PaintBox1MouseDown
+      OnPaint = PaintBox1Paint
+    end
+  end
+end

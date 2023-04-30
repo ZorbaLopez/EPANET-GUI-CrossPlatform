@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Ejemplos de Leyes de Control basadas en Reglas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Leyes de Control basadas en Reglas,Ejemplos de Leyes de Control basadas en Reglas" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Ejemplos de Leyes de Control basadas en Reglas</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="rule_action_clauses.htm">Anterior</a>&nbsp;
+     <a href="rule_evaluation.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="rule_examples.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">A continuación se muestran un par de ejemplos de <a href="rule-based_controls.htm" class="topiclink">Leyes de Control basadas en Reglas.</a></span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Ejemplo 1:</span></p>
+<p class="p_Normal"><span style="color: #010100;">Este conjunto de reglas permiten parar una bomba y abrir un by-pass cuando el nivel en un depósito excede de un determinado valor, y efectuar las operaciones contrarias cuando el nivel del depósito esté por debajo de otro valor.</span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">RULE 1</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">IF &nbsp; TANK &nbsp; 1 LEVEL ABOVE 19.1</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">THEN PUMP 335 STATUS IS CLOSED</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">AND &nbsp;PIPE 330 STATUS IS OPEN &nbsp;</span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">RULE 2</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">IF &nbsp; TANK &nbsp; 1 LEVEL BELOW 17.1</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">THEN PUMP 335 STATUS IS OPEN &nbsp;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">AND &nbsp;PIPE 330 STATUS IS CLOSED</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Ejemplo 2:</span></p>
+<p class="p_Normal"><span style="color: #010100;">Este conjunto de reglas permite modificar el nivel del depósito al cual debe arrancar la bomba, en función de la hora del día.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">RULE 3</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">IF &nbsp; SYSTEM CLOCKTIME &gt;= 8 AM</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">AND &nbsp;SYSTEM CLOCKTIME &lt; 6 PM&nbsp;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">AND &nbsp;TANK 1 LEVEL BELOW 12 &nbsp;&nbsp;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">THEN PUMP 335 STATUS IS OPEN&nbsp;</span></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">RULE 4</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">IF &nbsp; SYSTEM CLOCKTIME &gt;= 6 PM</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">OR &nbsp; SYSTEM CLOCKTIME &lt; 8 AM&nbsp;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">AND &nbsp;TANK 1 LEVEL BELOW 14 &nbsp;&nbsp;</span></p>
+<p><span style="font-family: 'Courier New',Courier,monospace; color: #010100; background-color: #e6e6e6;">THEN PUMP 335 STATUS IS OPEN&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{"version":1,"strings":[
+{"hash":87100643,"name":"tcontouroptionsform.caption","sourcebytes":[67,111,110,116,111,117,114,32,80,108,111,116,32,79,112,116,105,111,110,115],"value":"Contour Plot Options"},
+{"hash":1339,"name":"tcontouroptionsform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tcontouroptionsform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tcontouroptionsform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"},
+{"hash":86760516,"name":"tcontouroptionsform.legendgroup.caption","sourcebytes":[76,101,103,101,110,100],"value":"Legend"},
+{"hash":93124676,"name":"tcontouroptionsform.lgnddisplay.caption","sourcebytes":[68,105,115,112,108,97,121,32,76,101,103,101,110,100],"value":"Display Legend"},
+{"hash":41584670,"name":"tcontouroptionsform.lgndmodify.caption","sourcebytes":[77,111,100,105,102,121,32,76,101,103,101,110,100,46,46,46],"value":"Modify Legend..."},
+{"hash":5947429,"name":"tcontouroptionsform.stylegroup.caption","sourcebytes":[83,116,121,108,101],"value":"Style"},
+{"hash":124929331,"name":"tcontouroptionsform.stylefilled.caption","sourcebytes":[70,105,108,108,101,100,32,67,111,110,116,111,117,114,115],"value":"Filled Contours"},
+{"hash":123672643,"name":"tcontouroptionsform.stylelines.caption","sourcebytes":[76,105,110,101,32,67,111,110,116,111,117,114,115],"value":"Line Contours"},
+{"hash":168567120,"name":"tcontouroptionsform.networkgroup.caption","sourcebytes":[78,101,116,119,111,114,107,32,66,97,99,107,100,114,111,112],"value":"Network Backdrop"},
+{"hash":200130244,"name":"tcontouroptionsform.label1.caption","sourcebytes":[70,111,114,101,103,114,111,117,110,100],"value":"Foreground"},
+{"hash":32370148,"name":"tcontouroptionsform.label2.caption","sourcebytes":[66,97,99,107,103,114,111,117,110,100],"value":"Background"},
+{"hash":81122309,"name":"tcontouroptionsform.label3.caption","sourcebytes":[76,105,110,107,32,83,105,122,101],"value":"Link Size"},
+{"hash":238506563,"name":"tcontouroptionsform.contourgroup.caption","sourcebytes":[67,111,110,116,111,117,114,32,76,105,110,101,115],"value":"Contour Lines"},
+{"hash":262280771,"name":"tcontouroptionsform.label4.caption","sourcebytes":[84,104,105,99,107,110,101,115,115],"value":"Thickness"},
+{"hash":9955708,"name":"tcontouroptionsform.label5.caption","sourcebytes":[76,105,110,101,115,32,112,101,114,32,76,101,118,101,108],"value":"Lines per Level"},
+{"hash":180128884,"name":"tcontouroptionsform.defaultbox.caption","sourcebytes":[68,101,102,97,117,108,116],"value":"Default"}
+]}

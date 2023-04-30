@@ -1,0 +1,234 @@
+object TableOptionsForm: TTableOptionsForm
+  Left = 918
+  Height = 295
+  Top = 217
+  Width = 322
+  HelpContext = 263
+  BorderStyle = bsDialog
+  Caption = 'Table Selection'
+  ClientHeight = 295
+  ClientWidth = 322
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 234
+    Top = 8
+    Width = 305
+    TabStop = False
+    ActivePage = TableTypePage
+    TabIndex = 0
+    TabOrder = 0
+    object TableTypePage: TTabSheet
+      HelpContext = 264
+      Caption = 'Type'
+      ClientHeight = 204
+      ClientWidth = 299
+      object Bevel1: TBevel
+        Left = 8
+        Height = 9
+        Top = 96
+        Width = 281
+        Shape = bsBottomLine
+      end
+      object Label1: TLabel
+        Left = 8
+        Height = 15
+        Top = 16
+        Width = 189
+        Caption = 'Select the type of table to create:'
+        ParentColor = False
+      end
+      object NetNodesBtn: TRadioButton
+        Left = 12
+        Height = 18
+        Top = 42
+        Width = 126
+        Caption = 'Network nodes at'
+        OnClick = NetNodesBtnClick
+        TabOrder = 0
+      end
+      object NetLinksBtn: TRadioButton
+        Left = 12
+        Height = 18
+        Top = 67
+        Width = 117
+        Caption = 'Network links at'
+        OnClick = NetNodesBtnClick
+        TabOrder = 1
+      end
+      object NodeSeriesBtn: TRadioButton
+        Left = 12
+        Height = 18
+        Top = 123
+        Width = 142
+        Caption = 'Time series for node'
+        OnClick = NetNodesBtnClick
+        TabOrder = 2
+      end
+      object TimePeriodBox: TComboBox
+        Left = 189
+        Height = 20
+        Top = 54
+        Width = 100
+        ItemHeight = 26
+        Style = csDropDownList
+        TabOrder = 4
+        Text = '0'
+      end
+      object LinkSeriesBtn: TRadioButton
+        Left = 12
+        Height = 18
+        Top = 147
+        Width = 133
+        Caption = 'Time series for link'
+        OnClick = NetNodesBtnClick
+        TabOrder = 3
+      end
+      object ObjectIDBox: TEdit
+        Left = 200
+        Height = 21
+        Top = 136
+        Width = 89
+        TabOrder = 5
+      end
+    end
+    object ColumnsPage: TTabSheet
+      HelpContext = 265
+      Caption = 'Columns'
+      ClientHeight = 204
+      ClientWidth = 299
+      object Label2: TLabel
+        Left = 24
+        Height = 15
+        Top = 16
+        Width = 252
+        Caption = 'Select which columns to include in the table:'
+        ParentColor = False
+      end
+      object ColumnsListBox: TCheckListBox
+        Left = 78
+        Height = 123
+        Top = 42
+        Width = 178
+        ItemHeight = 0
+        OnClick = ColumnsListBoxClick
+        OnClickCheck = ColumnsListBoxClickCheck
+        TabOrder = 0
+      end
+      object SortedCheckBox: TCheckBox
+        Left = 78
+        Height = 18
+        Top = 177
+        Width = 81
+        Caption = 'Sorted by'
+        OnClick = SortedCheckBoxClick
+        TabOrder = 1
+      end
+    end
+    object FiltersPage: TTabSheet
+      HelpContext = 266
+      Caption = 'Filters'
+      ClientHeight = 204
+      ClientWidth = 299
+      object Label3: TLabel
+        Left = 13
+        Height = 31
+        Top = 8
+        Width = 267
+        AutoSize = False
+        Caption = 'Define conditions for selecting table entries:'
+        ParentColor = False
+        WordWrap = True
+      end
+      object FilterVariableBox: TComboBox
+        Left = 13
+        Height = 20
+        Top = 42
+        Width = 98
+        ItemHeight = 26
+        Style = csDropDownList
+        TabOrder = 0
+        Text = '0'
+      end
+      object FilterRelationBox: TComboBox
+        Left = 117
+        Height = 20
+        Top = 42
+        Width = 85
+        ItemHeight = 26
+        Style = csDropDownList
+        TabOrder = 1
+        Text = '0'
+      end
+      object FilterValueBox: TEdit
+        Left = 208
+        Height = 21
+        Top = 42
+        Width = 72
+        TabOrder = 2
+      end
+      object FiltersListBox: TListBox
+        Left = 13
+        Height = 93
+        Top = 68
+        Width = 267
+        ItemHeight = 0
+        TabOrder = 3
+      end
+      object FilterAddBtn: TButton
+        Left = 50
+        Height = 23
+        Top = 169
+        Width = 77
+        Caption = 'Add'
+        OnClick = FilterAddBtnClick
+        TabOrder = 4
+      end
+      object FilterDelBtn: TButton
+        Left = 167
+        Height = 23
+        Top = 169
+        Width = 77
+        Caption = 'Delete'
+        OnClick = FilterDelBtnClick
+        TabOrder = 5
+      end
+    end
+  end
+  object CancelBtn: TButton
+    Left = 124
+    Height = 25
+    Top = 256
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object OKBtn: TButton
+    Left = 34
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    OnClick = OKBtnClick
+    TabOrder = 1
+  end
+  object HelpBtn: TButton
+    Left = 214
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = '&Help'
+    OnClick = HelpBtnClick
+    TabOrder = 3
+  end
+end

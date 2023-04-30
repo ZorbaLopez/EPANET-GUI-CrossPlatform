@@ -1,0 +1,31 @@
+object LabelForm: TLabelForm
+  Left = 343
+  Height = 24
+  Top = 149
+  Width = 112
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 24
+  ClientWidth = 112
+  Color = clWindow
+  Font.Color = clBlack
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Edit1: TEdit
+    Left = 1
+    Height = 20
+    Top = 2
+    Width = 107
+    AutoSize = False
+    Color = clBtnFace
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    OnKeyPress = Edit1KeyPress
+    ParentFont = False
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":168619234,"name":"tcolorrampform.caption","sourcebytes":[67,111,108,111,114,32,82,97,109,112,32,83,101,108,101,99,116,111,114],"value":"Color Ramp Selector"},
+{"hash":48,"name":"tcolorrampform.combobox1.text","sourcebytes":[48],"value":"0"},
+{"hash":1339,"name":"tcolorrampform.button1.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tcolorrampform.button2.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"}
+]}

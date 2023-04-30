@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Calibration File</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Calibration Report,Calibration Report Calibration File,Files,Files Calibration File" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Calibration File</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="registering_calibration_data.htm">Previous</a>&nbsp;
+     <a href="viewing_a_project_summary.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="calibration_file.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">A </span><span style="font-weight: bold; color: #010100;">Calibration File</span><span style="color: #010100;"> is a text file containing measured data for a particular quantity taken over a particular period of time within a distribution system. The file provides observed data that can be compared to the results of a network simulation. Separate files should be created for different parameters (e.g., pressure, fluoride, chlorine, flow, etc.) and different sampling studies. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">Each line of the file contains the following items:</span></p>
+<p><span style="font-size: 3pt; color: #010100;"> &nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Item</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;">Location ID</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">ID label (as used in the network model) of the location where the measurement was made</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;">Time</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Time (in hours) when the measurement was made</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9688in; padding:0.0208in; border:none"><p class="p_Normal"><span style="font-style: italic; color: #010100;">Value</span></p>
+</td>
+<td style="vertical-align:top; width:2.9583in; padding:0.0208in; border:none"><p class="p_Normal"><span style="color: #010100;">Result of the measurement</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">The measurement time is with respect to time zero of the simulation to which the Calibration File will be applied. It can entered as either a decimal number (e.g., 27.5) or in hours:minutes format (e.g., 27:30). For data taken to be used in a single period analysis all time values can be 0.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Comments can be added to the file by placing a semicolon (;) before them.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">For a series of measurements made at the same location the Location ID does not have to be repeated as shown below:</span></p>
+<p style="margin: 0 0 0 0.1146in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">;Fluoride Tracer Measurements</span></p>
+<p style="margin: 0 0 0 0.1146in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">;Location &nbsp; &nbsp; &nbsp; &nbsp;Time &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Value</span></p>
+<p style="margin: 0 0 0 0.1146in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">;--------------------------</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">N1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.5</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="width:0.2500in;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'Courier New',Courier,monospace; color: #010100;">6.4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="width:0.2500in;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'Courier New',Courier,monospace; color: #010100;">12.7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.9</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-family: 'Courier New',Courier,monospace; color: #010100;">N2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.72</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="width:0.2500in;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'Courier New',Courier,monospace; color: #010100;">5.6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.77</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

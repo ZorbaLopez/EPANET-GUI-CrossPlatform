@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Red Desconectada</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Advertencias,Advertencias Red Desconectada" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Red Desconectada</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="pump_problems.htm">Anterior</a>&nbsp;
+     <a href="negative_pressures.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="disconnected_network.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">EPANET diagnostica que una red está desconectada si existe algún nudo con demanda, al cual no es posible suministrarle agua. Esto ocurrirá cuando no exista ningún trayecto libre entre dicho nudo y un embalse, depósito o nudo con caudal negativo. Si el problema es causado por el cierre de alguna línea, EPANET realizará no obstante los cálculos pertinentes (obteniendo probablemente presiones negativas muy altas en los nudos aislados) e intentará identificar la línea causante del problema, la cual será reportada en el <a href="status_report.htm" class="topiclink">Informe de Estado</a>. Si el problema es la falta de alguna línea para realizar la conexión, entonces EPANET no podrá resolver las ecuaciones de equilibrio para determinar los caudales y presiones, y devolverá el mensaje de Error 110 al realizar la simulación. Durante una simulación en periodo extendido es posible que algún nudo quede desconectado como consecuencia del cambio de estado de algún elemento.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

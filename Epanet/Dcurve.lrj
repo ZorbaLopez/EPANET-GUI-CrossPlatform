@@ -1,0 +1,15 @@
+{"version":1,"strings":[
+{"hash":1546002,"name":"tcurveform.caption","sourcebytes":[67,117,114,118,101,32,69,100,105,116,111,114],"value":"Curve Editor"},
+{"hash":211578996,"name":"tcurveform.label1.caption","sourcebytes":[67,117,114,118,101,32,73,68],"value":"Curve ID"},
+{"hash":156067838,"name":"tcurveform.label3.caption","sourcebytes":[68,101,115,99,114,105,112,116,105,111,110],"value":"Description"},
+{"hash":208743669,"name":"tcurveform.label2.caption","sourcebytes":[67,117,114,118,101,32,84,121,112,101],"value":"Curve Type"},
+{"hash":146320542,"name":"tcurveform.eqnlabel.caption","sourcebytes":[69,113,117,97,116,105,111,110],"value":"Equation"},
+{"hash":322420,"name":"tcurveform.chart1.axislist[0].title.caption","sourcebytes":[72,101,97,100],"value":"Head"},
+{"hash":316263,"name":"tcurveform.chart1.axislist[1].title.caption","sourcebytes":[70,108,111,119],"value":"Flow"},
+{"hash":1339,"name":"tcurveform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tcurveform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tcurveform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"},
+{"hash":48,"name":"tcurveform.curvetype.text","sourcebytes":[48],"value":"0"},
+{"hash":56062302,"name":"tcurveform.btnload.caption","sourcebytes":[76,111,97,100,46,46,46],"value":"Load..."},
+{"hash":160203102,"name":"tcurveform.btnsave.caption","sourcebytes":[83,97,118,101,46,46,46],"value":"Save..."}
+]}

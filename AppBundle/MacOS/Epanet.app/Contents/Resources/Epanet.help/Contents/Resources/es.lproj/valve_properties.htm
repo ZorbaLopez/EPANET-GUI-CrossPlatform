@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Propiedades de las Válvulas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Válvulas,Propiedades de Válvulas" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Propiedades de las Válvulas</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="valve_types.htm">Anterior</a>&nbsp;
+     <a href="map_labels.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="valve_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">ID Válvula</span></p>
+<p class="p_Normal"><span style="color: #010100;">Etiqueta que identifica unívocamente a cada válvula. Puede contener hasta 31 caracteres numéricos o alfanuméricos. No puede coincidir con el ID de ninguna otra línea. Esta propiedad es obligatoria.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Nudo Inicial</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID del nudo aguas arriba de la válvula, por el cual entra el flujo (las Válvulas Reductoras de Presión y las Sostenedoras permiten el flujo en una sola dirección). Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Nudo Final</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID del nudo aguas abajo de la válvula, por el cual sale el flujo. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Descripción</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional que describe alguna información relevante de la válvula.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Etiqueta</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional (sin espacios), utilizada para clasificar la válvula dentro de una categoría (p. ej. por tipo o por localización).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Diámetro</span></p>
+<p class="p_Normal"><span style="color: #010100;">Diámetro de la válvula, en mm (pulgadas). Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Tipo de Válvula</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo del tipo de válvula (Reductora, Sostenedora, Rotura de Carga, Limitadora de Caudal, Estrangulación, ó Propósito General). Ver el apartado <a href="valves.htm" class="topiclink">Tipos de Válvulas</a> para obtener una descripción de los distintos tipos de válvulas. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Consigna</span></p>
+<p class="p_Normal"><span style="color: #010100;">Es un parámetro requerido que indica las condiciones de operación de la válvula.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-style: italic; color: #010100; text-decoration: underline;">Tipo de Válvula</span><span style="color: #010100;">  &nbsp; &nbsp; </span><span style="font-style: italic; color: #010100; text-decoration: underline;">Consigna</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">Reductora&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Presión (m ó psi)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">Sostenedora&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Presión (m ó psi)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">Rotura Carga&nbsp; &nbsp; &nbsp; &nbsp; Caída de Presión (m ó psi)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">Limit. Caudal&nbsp; &nbsp; &nbsp; &nbsp; Caudal (unidades de caudal)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">Estrangulación&nbsp; &nbsp; &nbsp;Coef. Pérdidas (adimensional)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">Propós. Gral&nbsp; &nbsp; &nbsp; &nbsp; Identificativo ID de la curva de pérdidas</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Coef. Pérdidas</span></p>
+<p class="p_Normal"><span style="color: #010100;">Coeficiente adimensional de pérdidas menores, cuando la válvula está completamente abierta. Si se deja en blanco se tomará como 0.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Estado Forzado</span></p>
+<p class="p_Normal"><span style="color: #010100;">Estado forzado de la válvula al comienzo de la simulación. Si se especifica Abierta ó Cerrada, la consigna establecida para la válvula será ignorada y la válvula se comportará como una línea abierta o cerrada, según el caso. Si se especifica Ninguno, entonces el estado de la válvula vendrá determinado por la propia simulación.</span></p>
+<p style="text-indent: -0.4896in; margin: 0 0 0 0.5000in;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">NOTA</span><span style="color: #010100;">:</span></td><td style="border:none;padding:0"><span style="color: #010100;">El estado forzado de una válvula y su consigna pueden variarse a lo largo de una simulación mediante el uso de <a href="controls.htm" class="topiclink">Leyes de Control</a>. Si el estado forzado de una válvula es Abierta o Cerrada, puede activarse de nuevo utilizando una ley de control para asignarle una nueva consigna.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

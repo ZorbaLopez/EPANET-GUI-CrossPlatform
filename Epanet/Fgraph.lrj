@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":141334541,"name":"tgraphform.caption","sourcebytes":[71,114,97,112,104,70,111,114,109],"value":"GraphForm"},
+{"hash":95719171,"name":"tgraphform.chart1.axislist[0].title.caption","sourcebytes":[89,32,65,120,105,115],"value":"Y Axis"},
+{"hash":94670595,"name":"tgraphform.chart1.axislist[1].title.caption","sourcebytes":[88,32,65,120,105,115],"value":"X Axis"}
+]}

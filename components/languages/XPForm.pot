@@ -1,0 +1,11 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tprogressform.button1.caption
+msgctxt "tprogressform.button1.caption"
+msgid "Cancel"
+msgstr ""
+
+#: tprogressform.caption
+msgid "Printing"
+msgstr ""

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Propiedades de las Tuberías</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Tuberías,Propiedades de Tuberías" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Propiedades de las Tuberías</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="pipes.htm">Anterior</a>&nbsp;
+     <a href="pumps.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pipe_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">ID Tubería</span></p>
+<p class="p_Normal"><span style="color: #010100;">Etiqueta que identifica unívocamente a cada tubería. Puede contener hasta 31 caracteres numéricos o alfanuméricos. No puede coincidir con el ID de ninguna otra línea. Esta propiedad es obligatoria.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Nudo Inicial</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID del nudo en que comienza la tubería. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Nudo Final</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID del nudo en que termina la tubería. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Descripción</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional que describe alguna información relevante de la tubería.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Etiqueta</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional (sin espacios) utilizada para clasificar la tubería dentro de una categoría (p. ej. por edad o por material).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Longitud</span></p>
+<p class="p_Normal"><span style="color: #010100;">Longitud real de la tubería, en metros (pies). Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Diámetro</span></p>
+<p class="p_Normal"><span style="color: #010100;">Diámetro de la tubería, en mm (pulgadas). Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Rugosidad</span></p>
+<p class="p_Normal"><span style="color: #010100;">The <a href="roughness_coefficient.htm" class="topiclink">Coeficiente de rugosidad</a> de la tubería. Es adimensional para la fórmula de Hazen-Williams o de Chezy-Manning, y tiene unidades de mm (milipiés) para la fórmula de Darcy-Weisbach. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Coef. Pérd. Menores</span></p>
+<p class="p_Normal"><span style="color: #010100;">El <a href="minor_losses.htm" class="topiclink">coeficiente de pérdidas menores</a> adimensional asociado con los codos, singularidades, accesorios, etc. Si se deja en blanco se tomará como 0.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Estado Inicial</span></p>
+<p class="p_Normal"><span style="color: #010100;">Especifica si la tubería se encuentra inicialmente Abierta, Cerrada o contiene una Válvula de Retención. En este último caso, la dirección permitida del flujo será del Nudo Inicial al Nudo Final.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Coef. Reacción en el Medio</span></p>
+<p class="p_Normal"><span style="color: #010100;">Coeficiente de reacción en el medio para la tubería. Sus unidades son 1/día, para reacciones de primer orden. Un valor positivo indica crecimiento de la sustancia y un valor negativo decrecimiento. Si se deja en blanco, se aplicará el valor del Coeficiente Global de Reacción en el Medio declarado en el diálogo <a href="analysis_options-reactions.htm" class="topiclink">Opciones de Reacciones</a>. Para más información, ver <a href="bulk_flow_reaction_rates.htm" class="topiclink">Velocidad de Reacción en el Seno del Agua</a>.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Coef. Reacción en la Pared</span></p>
+<p class="p_Normal"><span style="color: #010100;">Coeficiente de reacción en la pared de la tubería. Sus unidades son masa/m3/día (masa/ft3/día) para reacciones de orden 0 y m/día (ft/día) para reacciones de orden 1. Un valor positivo indica crecimiento y un valor negativo decrecimiento. Si se deja en blanco, se aplicará el valor del Coeficiente Global de Reacción en la Pared declarado en el diálogo <a href="analysis_options-reactions.htm" class="topiclink">Opciones de Reacciones</a>. Para más información, ver <a href="pipe_wall_reaction_rates.htm" class="topiclink">Velocidad de Reacción en las Paredes de las Tuberías</a>.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

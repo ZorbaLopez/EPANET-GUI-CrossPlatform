@@ -1,0 +1,230 @@
+object GraphSelectForm: TGraphSelectForm
+  Left = 746
+  Height = 335
+  Top = 223
+  Width = 425
+  HelpContext = 287
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Graph Selection'
+  ClientHeight = 335
+  ClientWidth = 425
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDragDrop = LBItemsDragDrop
+  OnDragOver = LBItemsDragOver
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Bevel1: TBevel
+    Left = 8
+    Height = 273
+    Top = 8
+    Width = 168
+  end
+  object Bevel2: TBevel
+    Left = 184
+    Height = 273
+    Top = 8
+    Width = 233
+  end
+  object BtnOK: TButton
+    Left = 146
+    Height = 25
+    Top = 297
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    OnClick = BtnOKClick
+    TabOrder = 11
+  end
+  object BtnCancel: TButton
+    Left = 236
+    Height = 25
+    Top = 297
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    OnClick = BtnCancelClick
+    TabOrder = 12
+  end
+  object BtnHelp: TButton
+    Left = 326
+    Height = 25
+    Top = 297
+    Width = 75
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 13
+  end
+  object RGGraphType: TRadioGroup
+    Left = 15
+    Height = 146
+    Top = 15
+    Width = 153
+    AutoFill = True
+    Caption = 'Graph Type'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 117
+    ClientWidth = 143
+    Items.Strings = (
+      'Time Series'
+      'Profile Plot'
+      'Contour Plot'
+      'Frequency Plot'
+      'System Flow'
+    )
+    OnClick = RGGraphTypeClick
+    TabOrder = 0
+  end
+  object RGObjectType: TRadioGroup
+    Left = 192
+    Height = 74
+    Top = 15
+    Width = 129
+    AutoFill = True
+    Caption = 'Object Type'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 45
+    ClientWidth = 119
+    Items.Strings = (
+      'Nodes'
+      'Links'
+    )
+    OnClick = RGObjectTypeClick
+    TabOrder = 3
+  end
+  object BtnAdd: TButton
+    Left = 328
+    Height = 24
+    Top = 120
+    Width = 83
+    Caption = 'Add'
+    OnClick = BtnAddClick
+    TabOrder = 7
+  end
+  object BtnDelete: TButton
+    Left = 328
+    Height = 23
+    Top = 158
+    Width = 83
+    Caption = 'Delete'
+    OnClick = BtnDeleteClick
+    TabOrder = 8
+  end
+  object BtnMoveUp: TButton
+    Left = 328
+    Height = 23
+    Top = 195
+    Width = 83
+    Caption = 'Move Up'
+    OnClick = BtnMoveUpClick
+    TabOrder = 9
+  end
+  object BtnMoveDown: TButton
+    Left = 328
+    Height = 24
+    Top = 233
+    Width = 83
+    Caption = 'Move Down'
+    OnClick = BtnMoveDownClick
+    TabOrder = 10
+  end
+  object BtnLoad: TButton
+    Left = 326
+    Height = 23
+    Top = 23
+    Width = 83
+    Caption = 'Load...'
+    OnClick = BtnLoadClick
+    TabOrder = 5
+    Visible = False
+  end
+  object BtnSave: TButton
+    Left = 326
+    Height = 22
+    Top = 53
+    Width = 83
+    Caption = 'Save...'
+    OnClick = BtnSaveClick
+    TabOrder = 6
+    Visible = False
+  end
+  object GBVariable: TGroupBox
+    Left = 16
+    Height = 49
+    Top = 168
+    Width = 152
+    Caption = 'Parameter'
+    ClientHeight = 20
+    ClientWidth = 142
+    TabOrder = 1
+    object CBVariable: TComboBox
+      Left = 0
+      Height = 20
+      Top = 0
+      Width = 144
+      ItemHeight = 26
+      Style = csDropDownList
+      TabOrder = 0
+      Text = '0'
+    end
+  end
+  object GBTimePeriod: TGroupBox
+    Left = 16
+    Height = 49
+    Top = 224
+    Width = 152
+    Caption = 'Time Period'
+    ClientHeight = 20
+    ClientWidth = 142
+    TabOrder = 2
+    object CBTimePeriod: TComboBox
+      Left = 0
+      Height = 20
+      Top = 0
+      Width = 144
+      ItemHeight = 26
+      Style = csDropDownList
+      TabOrder = 0
+      Text = '0'
+    end
+  end
+  object GBItems: TGroupBox
+    Left = 192
+    Height = 169
+    Top = 104
+    Width = 129
+    Caption = 'Items to Graph'
+    ClientHeight = 140
+    ClientWidth = 119
+    TabOrder = 4
+    object LBItems: TListBox
+      Left = 0
+      Height = 140
+      Top = 0
+      Width = 119
+      Align = alClient
+      ItemHeight = 0
+      OnDragDrop = LBItemsDragDrop
+      OnDragOver = LBItemsDragOver
+      TabOrder = 0
+    end
+  end
+end

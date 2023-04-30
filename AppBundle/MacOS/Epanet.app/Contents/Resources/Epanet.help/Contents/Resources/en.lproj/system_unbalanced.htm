@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>System Unbalanced</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Warnings,Warnings System Unbalanced" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">System Unbalanced</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="negative_pressures.htm">Previous</a>&nbsp;
+     <a href="unsolveable_equations.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="system_unbalanced.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">A System Unbalanced condition can occur when EPANET cannot converge to a hydraulic solution in some time period within its allowed maximum number of trials. This situation can occur when valves, pumps, or pipelines keep switching their status from one trial to the next as the search for a hydraulic solution proceeds. For example, the pressure limits that control the status of a pump may be set too close together. Or a pump&#39;s head curve might be too flat causing it keep shutting on and off.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">To eliminate the unbalanced condition one can try to increase the allowed maximum number of trials and change the CHECKFREQ and MAXCHECK settings. These parameters are set with the project&#39;s <a href="analysis_options-hydraulics.htm" class="topiclink">Hydraulic Options</a>. If the unbalanced condition persists, then another hydraulic option, labeled </span><span style="font-weight: bold; color: #010100;">If Unbalanced</span><span style="color: #010100;">, offers two ways to handle it. One is to terminate the entire analysis once the condition is encountered. The other is to continue seeking a hydraulic solution for another 10 trials with the status of all links frozen to their current values. If convergence is achieved then a warning message is issued about the system possibly being unstable. If convergence is not achieved then a System Unbalanced warning message is issued. In either case, the analysis will proceed to the next time period.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">If an analysis in a given time period ends with the system unbalanced then the user should recognize that the hydraulic results produced for this time period are inaccurate. Depending on circumstances, such as errors in flows into or out of storage tanks, this might affect the accuracy of results in all future periods as well.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

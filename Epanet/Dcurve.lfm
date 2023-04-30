@@ -1,0 +1,257 @@
+object CurveForm: TCurveForm
+  Left = 434
+  Height = 343
+  Top = 218
+  Width = 475
+  BorderStyle = bsDialog
+  Caption = 'Curve Editor'
+  ClientHeight = 343
+  ClientWidth = 475
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Bevel1: TBevel
+    Left = 0
+    Height = 8
+    Top = 292
+    Width = 475
+    Shape = bsTopLine
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 7
+    Width = 49
+    Caption = 'Curve ID'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 123
+    Height = 15
+    Top = 7
+    Width = 65
+    Caption = 'Description'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 53
+    Width = 64
+    Caption = 'Curve Type'
+    ParentColor = False
+  end
+  object EqnLabel: TLabel
+    Left = 123
+    Height = 15
+    Top = 53
+    Width = 50
+    Caption = 'Equation'
+    ParentColor = False
+  end
+  object CurveID: TEdit
+    Left = 8
+    Height = 21
+    Top = 23
+    Width = 103
+    Color = clWindow
+    MaxLength = 15
+    OnChange = CurveIDChange
+    OnKeyPress = CurveIDKeyPress
+    TabOrder = 0
+  end
+  object Comment: TEdit
+    Left = 120
+    Height = 21
+    Top = 23
+    Width = 349
+    Color = clWindow
+    OnChange = CurveIDChange
+    TabOrder = 1
+  end
+  object CurveGrid: TStringGrid
+    Left = 7
+    Height = 172
+    Top = 106
+    Width = 143
+    AutoAdvance = aaRightDown
+    AutoEdit = False
+    ColCount = 2
+    DefaultColWidth = 24
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goAlwaysShowEditor]
+    RowCount = 100
+    TabOrder = 3
+    TitleStyle = tsStandard
+    OnClick = CurveGridClick
+    OnEnter = CurveGridClick
+    OnKeyPress = CurveGridKeyPress
+    OnSetEditText = CurveGridSetEditText
+  end
+  object Chart1: TChart
+    Left = 163
+    Height = 172
+    Top = 106
+    Width = 306
+    AllowPanning = False
+    AllowZoom = False
+    AntialiasingMode = amOn
+    AxisList = <    
+      item
+        Grid.Visible = False
+        AxisPen.Visible = True
+        LabelSize = 8
+        Margin = 2
+        Marks.Distance = 0
+        Marks.LabelFont.Color = clWindowText
+        Marks.LabelFont.Height = -11
+        Marks.Format = '%0:.0f'
+        Marks.Frame.Color = clWindow
+        Marks.LabelBrush.Color = clWindow
+        Marks.LabelBrush.Style = bsClear
+        Marks.Style = smsCustom
+        Minors = <>
+        Title.Distance = 28
+        Title.LabelFont.Color = clWindowText
+        Title.LabelFont.Height = -11
+        Title.LabelFont.Orientation = 900
+        Title.Visible = True
+        Title.Caption = 'Head'
+        Title.LabelBrush.Color = clWindow
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Grid.Visible = False
+        Intervals.MaxLength = 100
+        Alignment = calBottom
+        AxisPen.Visible = True
+        LabelSize = 8
+        Margin = 2
+        Marks.Distance = 0
+        Marks.LabelFont.Color = clWindowText
+        Marks.LabelFont.Height = -11
+        Marks.Format = '%0:.0f'
+        Marks.Frame.Color = clWindow
+        Marks.LabelBrush.Color = clWindow
+        Marks.LabelBrush.Style = bsClear
+        Marks.OverlapPolicy = opHideNeighbour
+        Marks.Style = smsCustom
+        Minors = <>
+        Title.Distance = 12
+        Title.LabelFont.Color = clWindowText
+        Title.LabelFont.Height = -11
+        Title.Visible = True
+        Title.Caption = 'Flow'
+        Title.LabelBrush.Color = clWindow
+        Title.LabelBrush.Style = bsClear
+      end>
+    Extent.UseXMin = True
+    Frame.Visible = False
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Title.Font.Height = -12
+    Title.Text.Strings = (
+      ''
+    )
+    Color = clWindow
+    object Series1: TLineSeries
+      LinePen.Color = clRed
+      Marks.Margins.Left = 0
+      Marks.Margins.Bottom = 0
+      Marks.Visible = False
+      Marks.Format = '%0:.1g'
+      Marks.Style = smsCustom
+      Pointer.Brush.Color = clLime
+    end
+    object Series2: TLineSeries
+      LinePen.Color = clGreen
+      LineType = ltNone
+      Marks.Visible = False
+      Marks.Format = '%0:.1g'
+      Marks.LabelBrush.Color = clLime
+      Marks.LinkPen.Color = clLime
+      Marks.Style = smsCustom
+      Pointer.Brush.Color = clLime
+      Pointer.Pen.Color = clLime
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+  end
+  object BtnOK: TButton
+    Left = 212
+    Height = 25
+    Top = 306
+    Width = 75
+    Caption = 'OK'
+    OnClick = BtnOKClick
+    TabOrder = 4
+  end
+  object BtnCancel: TButton
+    Left = 302
+    Height = 25
+    Top = 306
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 5
+  end
+  object BtnHelp: TButton
+    Left = 392
+    Height = 25
+    Top = 306
+    Width = 75
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 6
+  end
+  object CurveType: TComboBox
+    Left = 8
+    Height = 20
+    Top = 69
+    Width = 103
+    Color = clWindow
+    ItemHeight = 26
+    OnChange = CurveIDChange
+    OnClick = CurveTypeClick
+    Style = csDropDownList
+    TabOrder = 2
+    Text = '0'
+  end
+  object CurveEqn: TPanel
+    Left = 120
+    Height = 22
+    Top = 69
+    Width = 349
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 8
+  end
+  object BtnLoad: TButton
+    Left = 4
+    Height = 25
+    Top = 306
+    Width = 75
+    Caption = 'Load...'
+    OnClick = BtnLoadClick
+    TabOrder = 9
+  end
+  object BtnSave: TButton
+    Left = 92
+    Height = 25
+    Top = 306
+    Width = 75
+    Caption = 'Save...'
+    OnClick = BtnSaveClick
+    TabOrder = 10
+  end
+end

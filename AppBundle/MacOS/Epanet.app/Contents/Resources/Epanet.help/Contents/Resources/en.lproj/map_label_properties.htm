@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Map Label Properties</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Map Labels,Map Labels Properties" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Map Label Properties</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="map_labels.htm">Previous</a>&nbsp;
+     <a href="curves.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="map_label_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Text</span></p>
+<p class="p_Normal"><span style="color: #010100;">The label&#39;s text.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">X-Coordinate</span></p>
+<p class="p_Normal"><span style="color: #010100;">The horizontal location of the upper left corner of the label on the map, measured in the map&#39;s distance units. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Y-Coordinate</span></p>
+<p class="p_Normal"><span style="color: #010100;">The vertical location of the upper left corner of the label on the map, measured in the map&#39;s distance units. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Anchor Node</span></p>
+<p class="p_Normal"><span style="color: #010100;">ID of node that serves as the label&#39;s anchor point (see Note 1 below). Leave blank if label will not be anchored.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Meter Type</span></p>
+<p class="p_Normal"><span style="color: #010100;">Type of object being metered by the label (see Note 2 below). Choices are </span><span style="font-weight: bold; color: #010100;">None,</span><span style="color: #010100;"> </span><span style="font-weight: bold; color: #010100;">Node,</span><span style="color: #010100;"> or </span><span style="font-weight: bold; color: #010100;">Link.</span><span style="color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Meter ID</span></p>
+<p class="p_Normal"><span style="color: #010100;">ID of the object (Node or Link) being metered.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Font</span></p>
+<p class="p_Normal"><span style="color: #010100;">Displays an ellipsis button that when clicked, will display a Font Dialog form that allows selection of the label&#39;s font, size, and style.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #ff0000;">Notes:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">1.</span></td><td style="border:none;padding:0"><span style="color: #010100;">A label&#39;s anchor node property is used to anchor the label relative to a given location on the map. When the map is zoomed in the label will appear the same distance from its anchor node as it did under the full extent view. This feature prevents labels from wandering too far away from the objects they were meant to describe when a map is zoomed.</span></td></tr></table></div><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.2396in"><span style="color: #010100;">2.</span></td><td style="border:none;padding:0"><span style="color: #010100;">The Meter Type and ID properties determine if the label will act as a meter. Meter labels display the value of the currently viewed parameter (chosen from the <a href="map_browser.htm" class="topiclink">Map Browser</a>) underneath the label text. The Meter Type and ID must refer to an existing node or link in the network. Otherwise, only the label text appears.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

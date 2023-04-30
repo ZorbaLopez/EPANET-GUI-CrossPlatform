@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Valve Properties</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Valves,Valves Properties" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Valve Properties</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="valve_types.htm">Previous</a>&nbsp;
+     <a href="map_labels.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="valve_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">ID Label</span></p>
+<p class="p_Normal"><span style="color: #010100;">A unique label used to identify the valve. It can consist of a combination of up to 31 numerals or characters. It cannot be the same as the ID for any other link. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Start Node</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID of the node on the nominal upstream or inflow side of the valve. (PRVs and PSVs maintain flow in only a single direction.) &nbsp;This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">End Node</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID of the node on the nominal downstream or discharge side of the valve. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Description</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string that describes other significant information about the valve.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Tag</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string (with no spaces) used to assign the valve to a category, perhaps based on type or location.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Diameter</span></p>
+<p class="p_Normal"><span style="color: #010100;">The valve diameter in inches (mm). This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Type</span></p>
+<p class="p_Normal"><span style="color: #010100;">The valve type (PRV, PSV, PBV, FCV, TCV, or GPV). See <a href="valves.htm" class="topiclink">Valves</a> for descriptions of the various types of valves. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Setting</span></p>
+<p class="p_Normal"><span style="color: #010100;">A required parameter that describes the valve&#39;s operational setting.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="font-style: italic; color: #010100; text-decoration: underline;">Valve Type</span><span style="color: #010100;">  &nbsp; &nbsp; </span><span style="font-style: italic; color: #010100; text-decoration: underline;">Setting Parameter</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">PRV&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pressure (psi or m)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">PSV&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pressure (psi or m)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">PBV&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pressure (psi or m)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">FCV&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Flow (flow units)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">TCV&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Loss Coeff. (unitless)</span></p>
+<p style="margin: 0 0 0 0.2500in;"><span style="color: #010100;">GPV&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID of head loss curve</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Loss Coefficient</span></p>
+<p class="p_Normal"><span style="color: #010100;">Unitless minor loss coefficient that applies when the valve is completely opened. Assumed 0 if left blank.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Fixed Status</span></p>
+<p class="p_Normal"><span style="color: #010100;">Valve status at the start of the simulation. If set to OPEN or CLOSED then the control setting of the valve is ignored and the valve behaves as an open or closed link, respectively. If set to NONE, then the valve will behave as intended.</span></p>
+<p style="text-indent: -0.4896in; margin: 0 0 0 0.5000in;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">NOTE</span><span style="color: #010100;">:</span></td><td style="border:none;padding:0"><span style="color: #010100;">A valve&#39;s fixed status and its setting can be made to vary throughout a simulation by the use of <a href="controls.htm" class="topiclink">control statements</a>. If a valve&#39;s status was fixed to OPEN/CLOSED, then it can be made active again using a control that assigns a new numerical setting to it.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

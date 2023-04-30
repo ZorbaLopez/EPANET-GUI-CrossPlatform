@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Opciones de Reacciones</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Opciones Cálculo,Opciones Cálculo Opciones Reacciones" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <p><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Opciones de Reacciones</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="analysis_options-quality.htm">Anterior</a>&nbsp;
+     <a href="analysis_options-times.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="analysis_options-reactions.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="color: #010100;">Las </span><span style="font-weight: bold; color: #010100;">Opciones de Reacciones</span><span style="color: #010100;"> establecen los modelos de reacción aplicables para analizar la evolución de la calidad del agua. Estas opciones son las siguientes:</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Orden Reacción en el Medio</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Potencia a la cual hay que elevar la concentración para determinar la velocidad de reacción en el medio. Un valor 1 corresponde a una reacción de primer orden, un 2 a una reacción de segundo orden, etc. Utilizar cualquier valor negativo para una cinética de Michaelis-Menton. Ver <a href="bulk_flow_reaction_rates.htm" class="topiclink">Velocidad de Reacción en el Seno del Agua</a>.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Orden Reacción en la Pared</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Potencia a la cual hay que elevar la concentración para determinar la velocidad de reacción en la pared. Las opciones son </span><span style="font-weight: bold; color: #010100;">Primero</span><span style="color: #010100;"> (1) para reacciones de primer orden, o </span><span style="font-weight: bold; color: #010100;">Cero</span><span style="color: #010100;">(0) para velocidades de reacción constante. Ver <a href="pipe_wall_reaction_rates.htm" class="topiclink">Velocidad de Reacción en las Paredes de las Tuberías</a>.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Coef. Global Reacc. Medio</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Coeficiente de velocidad de reacción en el medio (K</span><span style="font-size: 8pt; color: #010100;">b</span><span style="color: #010100;">) asignado por defecto a todas las tuberías. Este valor puede cambiarse para algunas tuberías, editándolo para ellas específicamente. Un valor positivo implica el crecimiento de la concentración, y un valor negativo su decrecimiento. Un valor 0 implica que no hay reacción. Las unidades serán las empleadas para expresar la concentración, elevadas a la potencia (1-n), y divididas por días, donde n expresa el orden de la reacción en el medio.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Coef. Global Reacc. Pared</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Coeficiente de velocidad de reacción en la pared (K</span><span style="font-size: 8pt; color: #010100;">w</span><span style="color: #010100;">) asignado por defecto a todas las tuberías. Este valor puede cambiarse para algunas tuberías, editándolo para ellas específicamente. Un valor positivo implica el crecimiento de la concentración, y un valor negativo su decrecimiento. Un valor 0 implica que no hay reacción. Las unidades serán m/día (SI) ó pies/día (US) para reacciones de primer orden y masa/m2/día (SI) ó masa/pies2/día (US) para reacciones de orden cero.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Concentración Límite</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p><span style="color: #010100;">Concentración máxima que puede alcanzar una sustancia cuyo contenido crece con el tiempo, o concentración mínima si ésta decrece. Las velocidades de reacción en el medio serán proporcionales a la diferencia entre la concentración actual y el valor límite. Introducir un 0 si no se aplica.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Coef. Correlación Pared</span></p>
+<p><span style="color: #010100;">Factor que correlaciona el coeficiente de reacción en la pared con la rugosidad de la tubería. Para más detalles ver <a href="wall_reaction-pipe_roughness.htm" class="topiclink">Correlación Rugosidad - Reacción en la Pared</a>. Introducir un 0 si no se aplica.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

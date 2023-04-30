@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":194558529,"name":"tcalibdataform.caption","sourcebytes":[67,97,108,105,98,114,97,116,105,111,110,32,68,97,116,97],"value":"Calibration Data"},
+{"hash":177827509,"name":"tcalibdataform.btnbrowse.caption","sourcebytes":[38,66,114,111,119,115,101],"value":"&Browse"},
+{"hash":2800388,"name":"tcalibdataform.btnedit.caption","sourcebytes":[38,69,100,105,116],"value":"&Edit"},
+{"hash":1339,"name":"tcalibdataform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tcalibdataform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tcalibdataform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"}
+]}

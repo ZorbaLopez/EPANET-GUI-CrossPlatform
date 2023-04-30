@@ -1,0 +1,525 @@
+object MapOptionsForm: TMapOptionsForm
+  Left = 465
+  Height = 305
+  Top = 216
+  Width = 364
+  BorderStyle = bsDialog
+  Caption = 'Map Options'
+  ClientHeight = 305
+  ClientWidth = 364
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object BtnOK: TButton
+    Left = 37
+    Height = 25
+    Top = 270
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object BtnCancel: TButton
+    Left = 144
+    Height = 25
+    Top = 270
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object BtnHelp: TButton
+    Left = 248
+    Height = 25
+    Top = 270
+    Width = 75
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 4
+  end
+  object Panel1: TPanel
+    Left = 130
+    Height = 249
+    Top = 8
+    Width = 222
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 247
+    ClientWidth = 220
+    TabOrder = 1
+    object Notebook1: TNotebook
+      Left = 0
+      Height = 247
+      Top = 0
+      Width = 220
+      PageIndex = 6
+      Align = alClient
+      TabOrder = 0
+      object Nodes: TPage
+        object NodesBySize: TCheckBox
+          Left = 30
+          Height = 18
+          Top = 78
+          Width = 145
+          Caption = 'Proportional to Value'
+          TabOrder = 1
+        end
+        object JuncSymbols: TCheckBox
+          Left = 30
+          Height = 18
+          Top = 161
+          Width = 126
+          Caption = 'Display Junctions'
+          TabOrder = 3
+        end
+        object NodeBorder: TCheckBox
+          Left = 30
+          Height = 18
+          Top = 119
+          Width = 109
+          Caption = 'Display Border'
+          OnClick = NodeBorderClick
+          TabOrder = 2
+        end
+        object GroupBox2: TGroupBox
+          Left = 30
+          Height = 57
+          Top = 8
+          Width = 146
+          Caption = 'Node Size'
+          ClientHeight = 28
+          ClientWidth = 136
+          TabOrder = 0
+          object NodeShape: TShape
+            Left = 95
+            Height = 6
+            Top = 15
+            Width = 7
+            Brush.Color = clRed
+            Pen.Style = psinsideFrame
+            Shape = stCircle
+          end
+          object NodeSpin: TSpinEdit
+            Left = 7
+            Height = 21
+            Top = 7
+            Width = 65
+            BorderSpacing.Around = 7
+            EditorEnabled = False
+            MaxValue = 9
+            MinValue = 1
+            OnChange = NodeSpinChange
+            TabOrder = 0
+            Value = 1
+          end
+        end
+      end
+      object Links: TPage
+        OnBeforeShow = LinksBeforeShow
+        object LinksBySize: TCheckBox
+          Left = 30
+          Height = 18
+          Top = 78
+          Width = 145
+          Caption = 'Proportional to Value'
+          TabOrder = 1
+        end
+        object GroupBox3: TGroupBox
+          Left = 30
+          Height = 57
+          Top = 8
+          Width = 147
+          Caption = 'Link Size'
+          ClientHeight = 28
+          ClientWidth = 137
+          TabOrder = 0
+          object LinkShape: TShape
+            Left = 80
+            Height = 2
+            Top = 16
+            Width = 39
+            Brush.Color = clRed
+            Pen.Color = clRed
+          end
+          object LinkSpin: TSpinEdit
+            Left = 7
+            Height = 21
+            Top = 7
+            Width = 65
+            BorderSpacing.Around = 7
+            EditorEnabled = False
+            MaxValue = 9
+            MinValue = 1
+            OnChange = LinkSpinChange
+            TabOrder = 0
+            Value = 1
+          end
+        end
+        object LinkBorder: TCheckBox
+          Left = 30
+          Height = 18
+          Top = 115
+          Width = 109
+          Caption = 'Display Border'
+          TabOrder = 2
+        end
+      end
+      object Labels: TPage
+        object Label4: TLabel
+          Left = 17
+          Height = 15
+          Top = 86
+          Width = 61
+          Caption = 'At zoom of'
+          ParentColor = False
+        end
+        object MapLabels: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 11
+          Width = 136
+          Caption = 'Display Map Labels'
+          TabOrder = 0
+        end
+        object SpinEdit1: TSpinEdit
+          Tag = 1
+          Left = 144
+          Height = 21
+          Top = 80
+          Width = 65
+          Increment = 100
+          MaxValue = 10000
+          MinValue = 100
+          OnChange = SpinEdit1Change
+          TabOrder = 2
+          Value = 100
+        end
+        object LabelsTransparent: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 47
+          Width = 147
+          Caption = 'Use Transparent Text'
+          TabOrder = 1
+        end
+      end
+      object Notation: TPage
+        object Label7: TLabel
+          Left = 17
+          Height = 15
+          Top = 162
+          Width = 61
+          Caption = 'At zoom of'
+          ParentColor = False
+        end
+        object Label1: TLabel
+          Left = 17
+          Height = 15
+          Top = 202
+          Width = 52
+          Caption = 'Font Size'
+          ParentColor = False
+        end
+        object NodeIDs: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 11
+          Width = 123
+          Caption = 'Display Node IDs'
+          TabOrder = 0
+        end
+        object NodeValues: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 39
+          Width = 142
+          Caption = 'Display Node Values'
+          TabOrder = 1
+        end
+        object LinkIDs: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 68
+          Width = 116
+          Caption = 'Display Link IDs'
+          TabOrder = 2
+        end
+        object LinkValues: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 97
+          Width = 135
+          Caption = 'Display Link Values'
+          TabOrder = 3
+        end
+        object SpinEdit4: TSpinEdit
+          Tag = 4
+          Left = 144
+          Height = 21
+          Top = 160
+          Width = 65
+          Increment = 100
+          MaxValue = 10000
+          MinValue = 100
+          OnChange = SpinEdit1Change
+          TabOrder = 5
+          Value = 100
+        end
+        object NotationTransparent: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 127
+          Width = 147
+          Caption = 'Use Transparent Text'
+          TabOrder = 4
+        end
+        object NotationFontSize: TSpinEdit
+          Left = 144
+          Height = 21
+          Top = 200
+          Width = 65
+          MaxValue = 16
+          MinValue = 4
+          TabOrder = 6
+          Value = 7
+        end
+      end
+      object Symbols: TPage
+        object Label3: TLabel
+          Left = 17
+          Height = 15
+          Top = 197
+          Width = 61
+          Caption = 'At zoom of'
+          ParentColor = False
+        end
+        object TankSymbols: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 11
+          Width = 104
+          Caption = 'Display Tanks'
+          TabOrder = 0
+        end
+        object PumpSymbols: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 47
+          Width = 110
+          Caption = 'Display Pumps'
+          TabOrder = 1
+        end
+        object ValveSymbols: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 84
+          Width = 108
+          Caption = 'Display Valves'
+          TabOrder = 2
+        end
+        object SpinEdit2: TSpinEdit
+          Tag = 2
+          Left = 144
+          Height = 21
+          Top = 192
+          Width = 65
+          Increment = 100
+          MaxValue = 10000
+          MinValue = 100
+          OnChange = SpinEdit1Change
+          TabOrder = 4
+          Value = 100
+        end
+        object SourceSymbols: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 158
+          Width = 117
+          Caption = 'Display Sources'
+          TabOrder = 3
+        end
+        object EmitterSymbols: TCheckBox
+          Left = 17
+          Height = 18
+          Top = 121
+          Width = 118
+          Caption = 'Display Emitters'
+          TabOrder = 5
+        end
+      end
+      object Arrows: TPage
+        object Label6: TLabel
+          Left = 27
+          Height = 15
+          Top = 194
+          Width = 61
+          Caption = 'At zoom of'
+          ParentColor = False
+        end
+        object Label8: TLabel
+          Left = 27
+          Height = 15
+          Top = 150
+          Width = 60
+          Caption = 'Arrow Size'
+          ParentColor = False
+        end
+        object SpinEdit3: TSpinEdit
+          Tag = 3
+          Left = 144
+          Height = 21
+          Top = 192
+          Width = 65
+          Increment = 100
+          MaxValue = 10000
+          MinValue = 100
+          OnChange = SpinEdit1Change
+          TabOrder = 2
+          Value = 100
+        end
+        object LinkArrows: TRadioGroup
+          Left = 27
+          Height = 120
+          Top = 9
+          Width = 180
+          AutoFill = True
+          Caption = 'Arrow Style'
+          ChildSizing.LeftRightSpacing = 6
+          ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+          ChildSizing.EnlargeVertical = crsHomogenousChildResize
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclLeftToRightThenTopToBottom
+          ChildSizing.ControlsPerLine = 1
+          ClientHeight = 91
+          ClientWidth = 170
+          Items.Strings = (
+            'None'
+            'Open'
+            'Filled'
+            'Fancy'
+          )
+          TabOrder = 0
+        end
+        object ArrowSpin: TSpinEdit
+          Left = 144
+          Height = 21
+          Top = 150
+          Width = 65
+          EditorEnabled = False
+          MaxValue = 15
+          MinValue = 5
+          TabOrder = 1
+          Value = 5
+        end
+      end
+      object Background: TPage
+        object Label5: TLabel
+          Left = 43
+          Height = 15
+          Top = 19
+          Width = 103
+          Caption = 'Background color:'
+          ParentColor = False
+        end
+        object Shape1: TShape
+          Tag = 1
+          Left = 73
+          Height = 23
+          Top = 51
+          Width = 44
+          OnMouseDown = Shape1MouseDown
+        end
+        object Shape2: TShape
+          Tag = 2
+          Left = 73
+          Height = 22
+          Top = 92
+          Width = 44
+          Brush.Color = clInfoBk
+          OnMouseDown = Shape1MouseDown
+        end
+        object Shape3: TShape
+          Tag = 3
+          Left = 73
+          Height = 22
+          Top = 131
+          Width = 44
+          Brush.Color = clBtnFace
+          OnMouseDown = Shape1MouseDown
+        end
+        object Shape4: TShape
+          Tag = 4
+          Left = 73
+          Height = 23
+          Top = 168
+          Width = 44
+          Brush.Color = clBlack
+          Pen.Color = clGray
+          OnMouseDown = Shape1MouseDown
+        end
+        object RadioButton1: TRadioButton
+          Left = 43
+          Height = 18
+          Top = 53
+          Width = 18
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioButton2: TRadioButton
+          Left = 43
+          Height = 18
+          Top = 93
+          Width = 18
+          TabOrder = 1
+          TabStop = True
+        end
+        object RadioButton3: TRadioButton
+          Left = 43
+          Height = 18
+          Top = 132
+          Width = 18
+          TabOrder = 2
+          TabStop = True
+        end
+        object RadioButton4: TRadioButton
+          Left = 43
+          Height = 18
+          Top = 170
+          Width = 18
+          TabOrder = 3
+          TabStop = True
+        end
+      end
+    end
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Height = 249
+    Top = 8
+    Width = 121
+    Color = clBtnFace
+    Items.Strings = (
+      '  Nodes'
+      '  Links'
+      '  Labels'
+      '  Notation'
+      '  Symbols'
+      '  Flow Arrows'
+      '  Background'
+    )
+    ItemHeight = 32
+    OnClick = ListBox1Click
+    OnDrawItem = ListBox1DrawItem
+    Style = lbOwnerDrawFixed
+    TabOrder = 0
+  end
+end

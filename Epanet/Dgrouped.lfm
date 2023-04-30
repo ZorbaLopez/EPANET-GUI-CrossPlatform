@@ -1,0 +1,169 @@
+object GroupEditForm: TGroupEditForm
+  Left = 774
+  Height = 200
+  Top = 208
+  Width = 450
+  HelpContext = 282
+  BorderStyle = bsDialog
+  Caption = 'Group Edit'
+  ClientHeight = 200
+  ClientWidth = 450
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Bevel1: TBevel
+    Left = 8
+    Height = 137
+    Top = 8
+    Width = 433
+    Shape = bsFrame
+  end
+  object EditLabel: TLabel
+    Left = 264
+    Height = 15
+    Top = 109
+    Width = 24
+    Alignment = taRightJustify
+    Caption = 'with'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 24
+    Width = 35
+    Caption = 'For all'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 248
+    Height = 15
+    Top = 24
+    Width = 132
+    Caption = 'within the outlined area'
+    ParentColor = False
+  end
+  object BtnOK: TButton
+    Left = 185
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'OK'
+    OnClick = BtnOKClick
+    TabOrder = 8
+  end
+  object BtnCancel: TButton
+    Left = 275
+    Height = 25
+    Top = 160
+    Width = 76
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 9
+  end
+  object BtnHelp: TButton
+    Left = 365
+    Height = 25
+    Top = 160
+    Width = 76
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 10
+  end
+  object FilterCheck: TCheckBox
+    Left = 24
+    Height = 18
+    Top = 64
+    Width = 50
+    Caption = 'with'
+    OnClick = FilterCheckClick
+    TabOrder = 1
+  end
+  object EditObjects: TComboBox
+    Left = 120
+    Height = 20
+    Top = 24
+    Width = 113
+    ItemHeight = 26
+    OnClick = EditObjectsClick
+    Style = csDropDownList
+    TabOrder = 0
+    Text = '0'
+  end
+  object FilterProperty: TComboBox
+    Left = 120
+    Height = 20
+    Top = 64
+    Width = 113
+    Enabled = False
+    ItemHeight = 26
+    OnChange = FilterPropertyChange
+    Style = csDropDownList
+    TabOrder = 2
+    Text = '0'
+  end
+  object EditAction: TComboBox
+    Left = 24
+    Height = 20
+    Top = 104
+    Width = 88
+    ItemHeight = 26
+    OnChange = EditActionChange
+    Style = csDropDownList
+    TabOrder = 5
+    Text = '0'
+  end
+  object EditProperty: TComboBox
+    Left = 120
+    Height = 20
+    Top = 104
+    Width = 113
+    ItemHeight = 26
+    OnChange = EditPropertyChange
+    Style = csDropDownList
+    TabOrder = 6
+    Text = '0'
+  end
+  object FilterValueTxt: TNumEdit
+    Left = 328
+    Height = 21
+    Top = 64
+    Width = 97
+    Enabled = False
+    OnEnter = FilterValueTxtEnter
+    TabOrder = 4
+    Style = esNone
+    Modified = False
+    SelLength = 0
+    SelStart = 0
+  end
+  object EditValueTxt: TNumEdit
+    Left = 328
+    Height = 21
+    Top = 104
+    Width = 97
+    OnEnter = EditValueTxtEnter
+    TabOrder = 7
+    Style = esNone
+    Modified = False
+    SelLength = 0
+    SelStart = 0
+  end
+  object FilterRelationList: TComboBox
+    Left = 240
+    Height = 20
+    Top = 64
+    Width = 81
+    Enabled = False
+    ItemHeight = 26
+    Style = csDropDownList
+    TabOrder = 3
+    Text = '0'
+  end
+end

@@ -1,0 +1,22 @@
+{"version":1,"strings":[
+{"hash":215859715,"name":"tpreferencesform.caption","sourcebytes":[80,114,101,102,101,114,101,110,99,101,115],"value":"Preferences"},
+{"hash":231000124,"name":"tpreferencesform.tabsheet1.caption","sourcebytes":[71,101,110,101,114,97,108],"value":"General"},
+{"hash":79008850,"name":"tpreferencesform.checkblinking.caption","sourcebytes":[66,108,105,110,107,105,110,103,32,77,97,112,32,72,105,108,105,116,101,114],"value":"Blinking Map Hiliter"},
+{"hash":112641015,"name":"tpreferencesform.checkflyovers.caption","sourcebytes":[70,108,121,111,118,101,114,32,77,97,112,32,76,97,98,101,108,105,110,103],"value":"Flyover Map Labeling"},
+{"hash":34567221,"name":"tpreferencesform.checkautobackup.caption","sourcebytes":[65,117,116,111,109,97,116,105,99,32,66,97,99,107,117,112,32,70,105,108,101],"value":"Automatic Backup File"},
+{"hash":34597923,"name":"tpreferencesform.checkconfirmdelete.caption","sourcebytes":[67,111,110,102,105,114,109,32,68,101,108,101,116,105,111,110,115],"value":"Confirm Deletions"},
+{"hash":166803012,"name":"tpreferencesform.checkclearfilelist.caption","sourcebytes":[67,108,101,97,114,32,70,105,108,101,32,76,105,115,116],"value":"Clear File List"},
+{"hash":48,"name":"tpreferencesform.langvarbox.text","sourcebytes":[48],"value":"0"},
+{"hash":139375349,"name":"tpreferencesform.label5.caption","sourcebytes":[76,97,110,103,117,97,103,101],"value":"Language"},
+{"hash":224999667,"name":"tpreferencesform.tabsheet2.caption","sourcebytes":[70,111,114,109,97,116,115],"value":"Formats"},
+{"hash":233085202,"name":"tpreferencesform.label1.caption","sourcebytes":[78,111,100,101,32,80,97,114,97,109,101,116,101,114],"value":"Node Parameter"},
+{"hash":195048595,"name":"tpreferencesform.label2.caption","sourcebytes":[68,101,99,105,109,97,108,115],"value":"Decimals"},
+{"hash":139368818,"name":"tpreferencesform.label3.caption","sourcebytes":[76,105,110,107,32,80,97,114,97,109,101,116,101,114],"value":"Link Parameter"},
+{"hash":195048595,"name":"tpreferencesform.label4.caption","sourcebytes":[68,101,99,105,109,97,108,115],"value":"Decimals"},
+{"hash":48,"name":"tpreferencesform.nodevarbox.text","sourcebytes":[48],"value":"0"},
+{"hash":48,"name":"tpreferencesform.linkvarbox.text","sourcebytes":[48],"value":"0"},
+{"hash":86477814,"name":"tpreferencesform.label6.caption","sourcebytes":[76,97,98,101,108,54],"value":"Label6"},
+{"hash":1339,"name":"tpreferencesform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tpreferencesform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tpreferencesform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"}
+]}

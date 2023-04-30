@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":203636338,"name":"tsourceform.caption","sourcebytes":[87,97,116,101,114,32,81,117,97,108,105,116,121,32,83,111,117,114,99,101,32,69,100,105,116,111,114],"value":"Water Quality Source Editor"},
+{"hash":243319369,"name":"tsourceform.label1.caption","sourcebytes":[83,111,117,114,99,101,32,81,117,97,108,105,116,121],"value":"Source Quality"},
+{"hash":54238174,"name":"tsourceform.label2.caption","sourcebytes":[84,105,109,101,32,80,97,116,116,101,114,110],"value":"Time Pattern"},
+{"hash":154135781,"name":"tsourceform.radiogroup1.caption","sourcebytes":[83,111,117,114,99,101,32,84,121,112,101],"value":"Source Type"},
+{"hash":1339,"name":"tsourceform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tsourceform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tsourceform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"}
+]}

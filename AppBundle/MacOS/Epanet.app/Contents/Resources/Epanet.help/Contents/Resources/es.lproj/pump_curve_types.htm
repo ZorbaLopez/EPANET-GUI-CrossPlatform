@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tipos de Curva Característica de una Bomba</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1" style="color: #0000ff;">Tipos de Curva Característica de una Bomba</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="pump_curve.htm">Anterior</a>&nbsp;
+     <a href="efficiency_curve.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pump_curve_types.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:2.2813in; padding:0; border:none"><p class="p_Normal"><img alt="_bm39" style="margin:0;width:1.8125in;height:2.1875in;border:none" src="_bm39.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.1354in; padding:0; border:none"><p style="text-indent: -0.1354in; line-height: 1.80; margin: 0 0 0 0.1354in;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: -0.1354in; line-height: 1.80; margin: 0 0 0 0.1354in;"><a name="pumpcurve1" class="hmanchor"></a></p>
+<p><span style="color: #010100;">Una curva de un solo punto queda definida por una única relación altura-caudal, que normalmente representará el punto de funcionamiento deseado o nominal de la bomba. EPANET añade dos puntos más a la curva asumiendo que:</span></p>
+<p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">la altura a caudal nulo es igual al 133% de la altura nominal</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">el caudal correspondiente al punto de altura cero es igual al doble del caudal nominal.</span></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.2813in; padding:0; border:none"><p class="p_Normal"><img alt="_bm41" style="margin:0;width:1.9063in;height:2.1875in;border:none" src="_bm41.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.1354in; padding:0; border:none"><p><span style="color: #000000;">&nbsp;</span></p>
+<p><a name="pumpcurve3" class="hmanchor"></a><span style="color: #010100;">Cuando la curva de una bomba se define mediante tres puntos, éstos se interpretan como:</span></p>
+<p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">un punto de funcionamiento a Caudal Bajo (altura a caudal nulo o a caudal mínimo)</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">un punto de funcionamiento al Caudal de Diseño (caudal y altura nominales de la bomba)</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">un punto de funcionamiento a Caudal Máximo (caudal y altura a caudal máximo).</span></p><p style="margin: 0.0521in 0 0 0;"><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">EPANET ajusta la curva a una función continua que pase por los tres puntos especificados.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.2813in; padding:0; border:none"><p><img alt="_bm42" style="margin:0;width:1.9896in;height:2.1875in;border:none" src="_bm42.gif"/></p>
+</td>
+<td style="vertical-align:top; width:5.1354in; padding:0; border:none"><p><span style="color: #000000;">&nbsp;</span></p>
+<p><a name="pumpcurven" class="hmanchor"></a><span style="color: #010100;">La curva de una bomba se interpreta como una curva multipunto si el número de pares de valores altura-caudal proporcionados es dos, cuatro o más de cuatro. EPANET completa en este caso la curva de la bomba uniendo los puntos proporcionados mediante tramos rectos.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:2.2813in; padding:0; border:none"><p class="p_Normal"><img alt="HpPumpCurve" style="margin:0;width:2.0833in;height:2.2188in;border:none" src="hppumpcurve.png"/></p>
+</td>
+<td style="vertical-align:top; width:5.1354in; padding:0; border:none"><p style="margin: 0.0521in 0 0 0;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0.0521in 0 0 0;"><a name="pumpcurvep" class="hmanchor"></a><span style="color: #010100;">Una curva a potencia constante asume una potencia constante en kW (caballos) a cualquier caudal. El usuario sólo debe definir la potencia nominal.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

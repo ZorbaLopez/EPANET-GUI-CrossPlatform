@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Velocidad de Reacción en las Paredes de las Tuberías</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Velocidad de Reacción en las Paredes de las Tuberías,Reacciones que afectan a la Calidad del Agua ,Reacciones que afectan a la Calidad del Agua Velocidad de Reacción en las Paredes de las Tuberías" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Velocidad de Reacción en las Paredes de las Tuberías</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="kinetic_models-michaelis-mento.htm">Anterior</a>&nbsp;
+     <a href="wall_reaction-pipe_roughness.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pipe_wall_reaction_rates.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Además de las reacciones en el seno del agua, EPANET puede modelar reacciones asociadas a la pared de las tuberías. La velocidad de reacción de las sustancias que reaccionan en, o cerca de, la pared de las tuberías, puede considerarse que depende de la concentración en el seno del agua del flujo principal mediante la expresión:</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="width:0.2500in;display:inline-block">&nbsp;</span><img alt="_bm62" style="margin:0;width:1.1667in;height:0.2500in;border:none" src="_bm62.gif"/></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">donde K</span><span style="font-size: 8pt; color: #010100;">w</span><span style="color: #010100;"> = coeficiente de reacción en la pared y </span><span style="font-size: 8pt; color: #010100;"> </span><span style="color: #010100;">(A / V) = superficie de contacto por unidad de volumen en el interior de la tubería (igual a 4 dividido por el diámetro). El último término convierte la velocidad de reacción por unidad de área en velocidad de reacción por unidad de volumen. EPANET limita las opciones para la velocidad de reacción en la pared a orden 0 u orden 1, con lo que las unidades de K</span><span style="font-size: 8pt; color: #010100;">w</span><span style="color: #010100;"> son masa/área/tiempo o bien longitud/tiempo, dependiendo del orden de la reacción.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">El coeficiente K</span><span style="font-size: 8pt; color: #010100;">w</span><span style="color: #010100;"> debe ajustarse para tener en cuenta cualquier limitación en la transferencia de masa que pueda afectar al movimiento de reactivos y productos de reacción entre la corriente principal y la pared. EPANET tiene esto en cuenta automáticamente, en base a la difusión molecular de la sustancia considerada y el número de Reynolds del flujo. (Si se pone la difusión molecular como cero, las limitaciones de transferencia de masa serán ignoradas).</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">El coeficiente de reacción en la pared puede depender de la temperatura y puede también correlacionarse con la edad de la tubería y el material. Ver <a href="wall_reaction-pipe_roughness.htm" class="topiclink">Correlación Rugosidad - Reacción en la Pared</a>.</span></p>
+<p style="text-indent: -0.4896in; margin: 0 0 0 0.5000in;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">Nota:</span><span style="color: #010100;"> </span></td><td style="border:none;padding:0"><span style="color: #010100;">EPANET requiere que el agua circule por las tuberías para que la reacción con las paredes tenga lugar. En consecuencia, la reacción con las paredes no será tenida en cuenta en las tuberías con flujo nulo.</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

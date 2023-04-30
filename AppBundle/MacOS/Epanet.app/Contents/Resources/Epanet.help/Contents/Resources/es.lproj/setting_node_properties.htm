@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+   <title>Introducir las Propiedades de los Nudos</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Introducir Propiedades de Nudos">
+
+   <style type="text/css">
+	a:link { color: #002682 }
+	a:hover { color: #FF0000; }
+	a:visited { color: #D63078 }
+   </style>
+
+<!-- This style sheet goes into compiled HTML HELP -->
+   <style type="text/css" media="screen">
+	#nsr
+	 {
+	 padding: 6px 6px 0px 6px;
+	 border-bottom: none;
+	 background: #649CCC;
+	 vertical-align: top;
+	 z-index: 2;
+	 visibility: visible;
+	 left: 0;
+	 top: 0;
+	 position: absolute;
+	 width: 100%;
+	 }
+	#mainbody
+	 {
+	 left: 0;
+	 top: 0px;
+	 margin: 0;
+	 position: absolute;
+	 padding: 10px;
+	 overflow: auto;
+	 height: 100%;
+	 z-index: 1;
+	 background-repeat: no-repeat;
+	 background-position: bottom right;
+	 background-attachment: fixed;
+	 }
+   </style>
+   <style type="text/css" media="print">
+	#nsr
+	 { visibility: none; }
+	#mainbody
+	 { overflow: visible; }
+   </style>
+   <script type="text/javascript" language="JavaScript" src="nonscroll.js"></script>
+
+
+
+</head>
+<body bgcolor="#FFFFFF" 
+ marginheight="0" marginwidth="0" leftmargin="0" topmargin="0"
+ scroll="no"
+>
+
+
+<div id="nsr">
+<table width="100%" border="0" cellspacing="0" cellpadding="2"
+ bgcolor="#649CCC">
+  <tr valign="top">
+    <td align="left">
+      
+<span style="font-family:Arial,Helvetica; font-size:12pt; color:#000000"><span style="font-family:Arial,Helvetica; font-size:12pt; color:#FFFFFF"><b>Introducir las Propiedades de los Nudos</b></span><span style="font-family:Arial,Helvetica; font-size:12pt; color:#000000"><b>
+<br>
+</b></span></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="epanet_tutorial.htm"
+        onmouseover="document.images.main.src='button_main_h.gif'" 
+  	onmouseout="document.images.main.src='button_main.gif'">
+        <img name=main src="button_main.gif" border=0 alt="Volver a la Introducción"></a>&nbsp;
+     <a href="setting_object_properties.htm"
+        onmouseover="document.images.prev.src='button_prev_h.gif'" 
+  	onmouseout="document.images.prev.src='button_prev.gif'"><img name=prev src="button_prev.gif" border=0 alt="Página Previa"></a>&nbsp;
+     
+
+     <a href="setting_link_properties.htm"
+        onmouseover="document.images.next.src='button_next_h.gif'" 
+  	onmouseout="document.images.next.src='button_next.gif'"><img name=next src="button_next.gif" border=0 alt="Página Siguiente"></a>
+     
+     </font>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+<div id="mainbody">
+
+<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">Supongamos que las propiedades de los nudos de la red de ejemplo son las siguientes:
+<br>
+<p align="center"><table border="0" cellpadding="0" cellspacing="0"><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><b>Nudo</b>
+<br>
+</span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><b>Cota </b><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000"><b>(m</b></span><span style="font-family:Arial,Helvetica; font-size:8pt; color:#000000"><b>)</b></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><b>Demanda </b><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000"><b>(l/s</b></span><span style="font-family:Arial,Helvetica; font-size:8pt; color:#000000"><b>)</b></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">1<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">210<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">0<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">2<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">210<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">0<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">3<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">215<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">10<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">4<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">210<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">10<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">5<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">200<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">15<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">6<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">210<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">10<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">7<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">210<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">0<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr><tr><td align="left" valign="top" width="116">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">8<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="112">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">250<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td><td align="left" valign="top" width="118">
+<p align="center"><span style="font-family:Arial,Helvetica; font-size:9pt; color:#000000">0<span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">
+<br>
+</span></span></span></p></td></tr></table>
+&nbsp;<br>
+</p>Vamos a comenzar la edici&#243;n seleccionando el nudo 2 sobre el Editor de Propiedades, tal como se ha descrito antes.
+<br>
+ 
+<br>
+Introduciremos ahora la <i>Cota</i> y la <i>Demanda Base</i> de este nudo en los campos apropiados. Para movernos de un campo a otro se pueden utilizar las flechas <span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>Arriba</b></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> y <span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>Abajo</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> del teclado o bien el rat&#243;n. Basta ahora pulsar sobre otro objeto (nudo o l&#237;nea) para que sus propiedades aparezcan en el Editor de Propiedades. (Tambi&#233;n es posible utilizar las teclas <span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>AvP&#225;g</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> y <span style="font-family:Arial,Helvetica; font-size:10pt; color:#800000"><b>ReP&#225;g</b></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> para pasar al objeto del mismo tipo inmediatamente anterior o posterior en la base de datos). De este modo nos iremos desplazando de un objeto a otro, rellenando los datos de la <i>Cota</i> y la <i>Demanda Base</i>. 
+<br>
+
+<br>
+Para la galer&#237;a de agua filtrada (Nudo1), habr&#225; que introducir su cota (210 m) en el campo <i>Altura Total</i>. Para el dep&#243;sito (Nudo 8) introduciremos como <i>Cota de Solera</i> 250 m, como <i>Nivel Inicial</i> 1 m, como <i>Nivel M&#237;nimo</i> 0 m, como <i>Nivel M&#225;ximo</i> 6 m y como <i>Di&#225;metro</i> 20 m.
+<br>
+
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="45"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"><span style="font-family:Arial,Helvetica; font-size:10pt; color:#FF0000"><b>Nota.</b></span></span></span></span></span></span><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"> </span></td><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000">Los datos del ejemplo de la versi&#243;n original han sido convertidos y redondeados a unidades SI. En consecuencia, algunos resultados pueden diferir ligeramente de los de la versi&#243;n inglesa
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td><span style="font-family:Arial,Helvetica; font-size:10pt; color:#000000"></span></span></span></td></tr></table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+object PageSetupForm: TPageSetupForm
+  Left = 465
+  Height = 341
+  Top = 225
+  Width = 394
+  BorderStyle = bsDialog
+  Caption = 'Page Setup'
+  ClientHeight = 341
+  ClientWidth = 394
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.2.4.0'
+  object BtnOK: TButton
+    Left = 224
+    Height = 25
+    Top = 304
+    Width = 73
+    Caption = 'OK'
+    OnClick = BtnOKClick
+    TabOrder = 1
+  end
+  object BtnCancel: TButton
+    Left = 312
+    Height = 25
+    Top = 304
+    Width = 73
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 281
+    Top = 8
+    Width = 377
+    TabStop = False
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Margins'
+      ClientHeight = 253
+      ClientWidth = 369
+      object PageShadowShape: TShape
+        Left = 178
+        Height = 120
+        Top = 12
+        Width = 120
+        Brush.Color = clGray
+        Pen.Color = clGray
+      end
+      object PageShape: TShape
+        Left = 174
+        Height = 120
+        Top = 8
+        Width = 120
+      end
+      object PrintAreaShape: TShape
+        Left = 224
+        Height = 41
+        Top = 24
+        Width = 57
+        Brush.Style = bsClear
+        Pen.Style = psDot
+      end
+      object SizeBox: TGroupBox
+        Left = 8
+        Height = 73
+        Top = 64
+        Width = 105
+        Caption = 'Paper Size'
+        ClientHeight = 53
+        ClientWidth = 101
+        TabOrder = 3
+        object WidthLabel: TLabel
+          Left = 8
+          Height = 15
+          Top = 8
+          Width = 35
+          Caption = 'Width:'
+          ParentColor = False
+        end
+        object HeightLabel: TLabel
+          Left = 8
+          Height = 15
+          Top = 32
+          Width = 36
+          Caption = 'Height'
+          ParentColor = False
+        end
+      end
+      object OrientBox: TRadioGroup
+        Left = 8
+        Height = 89
+        Top = 152
+        Width = 105
+        AutoFill = True
+        Caption = 'Orientation'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 69
+        ClientWidth = 101
+        Items.Strings = (
+          'Portrait'
+          'Landscape'
+        )
+        OnClick = OrientBoxClick
+        TabOrder = 1
+      end
+      object MarginsBox: TGroupBox
+        Left = 128
+        Height = 89
+        Top = 152
+        Width = 233
+        Caption = 'Margins'
+        ClientHeight = 69
+        ClientWidth = 229
+        TabOrder = 2
+        object Label1: TLabel
+          Left = 8
+          Height = 15
+          Top = 11
+          Width = 20
+          Caption = 'Left'
+          ParentColor = False
+        end
+        object Label2: TLabel
+          Left = 8
+          Height = 15
+          Top = 43
+          Width = 19
+          Caption = 'Top'
+          ParentColor = False
+        end
+        object Label3: TLabel
+          Left = 120
+          Height = 15
+          Top = 11
+          Width = 28
+          Caption = 'Right'
+          ParentColor = False
+        end
+        object Label4: TLabel
+          Left = 120
+          Height = 15
+          Top = 43
+          Width = 40
+          Caption = 'Bottom'
+          ParentColor = False
+        end
+        object EditLeft: TEdit
+          Left = 56
+          Height = 15
+          Top = 11
+          Width = 49
+          BorderStyle = bsNone
+          OnChange = EditChange
+          OnExit = EditLeftExit
+          OnKeyPress = EditKeyPress
+          TabOrder = 0
+        end
+        object EditTop: TEdit
+          Left = 56
+          Height = 15
+          Top = 43
+          Width = 49
+          BorderStyle = bsNone
+          OnChange = EditChange
+          OnExit = EditTopExit
+          OnKeyPress = EditKeyPress
+          TabOrder = 2
+        end
+        object EditRight: TEdit
+          Left = 168
+          Height = 15
+          Top = 11
+          Width = 49
+          BorderStyle = bsNone
+          OnChange = EditChange
+          OnExit = EditRightExit
+          OnKeyPress = EditKeyPress
+          TabOrder = 1
+        end
+        object EditBot: TEdit
+          Left = 168
+          Height = 15
+          Top = 43
+          Width = 49
+          BorderStyle = bsNone
+          OnChange = EditChange
+          OnExit = EditBotExit
+          OnKeyPress = EditKeyPress
+          TabOrder = 3
+        end
+      end
+      object PrinterSetup: TButton
+        Left = 8
+        Height = 25
+        Top = 20
+        Width = 105
+        Caption = 'Printer...'
+        OnClick = PrinterSetupClick
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Headers/Footers'
+      ClientHeight = 253
+      ClientWidth = 369
+      object Label7: TLabel
+        Left = 8
+        Height = 15
+        Top = 220
+        Width = 78
+        Alignment = taRightJustify
+        Caption = 'Page Numbers'
+        ParentColor = False
+      end
+      object GroupBox1: TGroupBox
+        Left = 8
+        Height = 89
+        Top = 8
+        Width = 353
+        Caption = 'Header'
+        ClientHeight = 69
+        ClientWidth = 349
+        TabOrder = 0
+        object EditHeader: TEdit
+          Left = 8
+          Height = 15
+          Top = 16
+          Width = 329
+          BorderStyle = bsNone
+          TabOrder = 0
+        end
+        object Label5: TLabel
+          Left = 8
+          Height = 15
+          Top = 44
+          Width = 31
+          Caption = 'Align:'
+          ParentColor = False
+        end
+        object RBHeaderLeft: TRadioButton
+          Left = 48
+          Height = 21
+          Top = 40
+          Width = 42
+          Caption = 'Left'
+          TabOrder = 1
+        end
+        object RBHeaderCenter: TRadioButton
+          Left = 112
+          Height = 21
+          Top = 40
+          Width = 57
+          Caption = 'Center'
+          TabOrder = 2
+        end
+        object RBHeaderRight: TRadioButton
+          Left = 184
+          Height = 21
+          Top = 40
+          Width = 50
+          Caption = 'Right'
+          TabOrder = 3
+        end
+        object CheckHeaderEnabled: TCheckBox
+          Left = 264
+          Height = 21
+          Top = 40
+          Width = 64
+          Alignment = taLeftJustify
+          Caption = 'Enabled'
+          TabOrder = 4
+        end
+      end
+      object GroupBox2: TGroupBox
+        Left = 8
+        Height = 89
+        Top = 112
+        Width = 353
+        Caption = 'Footer'
+        ClientHeight = 69
+        ClientWidth = 349
+        TabOrder = 1
+        object Label6: TLabel
+          Left = 8
+          Height = 15
+          Top = 44
+          Width = 31
+          Caption = 'Align:'
+          ParentColor = False
+        end
+        object EditFooter: TEdit
+          Left = 8
+          Height = 15
+          Top = 16
+          Width = 329
+          BorderStyle = bsNone
+          TabOrder = 0
+        end
+        object RBFooterLeft: TRadioButton
+          Left = 48
+          Height = 21
+          Top = 40
+          Width = 42
+          Caption = 'Left'
+          TabOrder = 1
+        end
+        object RBFooterCenter: TRadioButton
+          Left = 112
+          Height = 21
+          Top = 40
+          Width = 57
+          Caption = 'Center'
+          TabOrder = 2
+        end
+        object RBFooterRight: TRadioButton
+          Left = 184
+          Height = 21
+          Top = 40
+          Width = 50
+          Caption = 'Right'
+          TabOrder = 3
+        end
+        object CheckFooterEnabled: TCheckBox
+          Left = 264
+          Height = 21
+          Top = 40
+          Width = 64
+          Alignment = taLeftJustify
+          Caption = 'Enabled'
+          TabOrder = 4
+        end
+      end
+      object CBPageNumbers: TComboBox
+        Left = 112
+        Height = 23
+        Top = 216
+        Width = 113
+        ItemHeight = 15
+        Items.Strings = (
+          'None'
+          'Upper Left'
+          'Upper Center'
+          'Upper Right'
+          'Lower Left'
+          'Lower Center'
+          'Lower Right'
+        )
+        Style = csDropDownList
+        TabOrder = 2
+      end
+    end
+  end
+  object PrinterSetupDialog1: TPrinterSetupDialog
+    Left = 144
+    Top = 296
+  end
+end

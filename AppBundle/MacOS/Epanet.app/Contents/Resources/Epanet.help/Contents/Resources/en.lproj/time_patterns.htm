@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Time Patterns</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Time Patterns" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Time Patterns</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="head_loss_curve.htm">Previous</a>&nbsp;
+     <a href="controls.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="time_patterns.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">A </span><span style="font-weight: bold; color: #010100;">Time Pattern</span><span style="color: #010100;"> is a collection of multipliers that can be applied to a quantity to allow it to vary over time. Water demands, reservoir heads, pump schedules, and water quality source inputs can all have time patterns associated with them.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">The time interval used in all patterns is set with the project&#39;s <a href="analysis_options-times.htm" class="topiclink">Time Options</a>. Within this interval a quantity remains at a constant level, equal to the product of its nominal value and the pattern&#39;s multiplier for that interval. Although all time patterns must utilize the same time interval, each can have a different number of periods. When the simulation clock exceeds the number of periods in a pattern, the pattern wraps around to its first period again.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0.1042in 0;"><span style="color: #010100;">As an example of how time patterns work consider a junction node with an average demand of 10 GPM. Assume that the time pattern interval has been set to 4 hours and a pattern with the following multipliers has been specified for demand at this node:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0.0521in 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:0.9583in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace;">Period</span></p>
+</td>
+<td style="vertical-align:middle; width:0.3750in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">1</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4167in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">2</span></p>
+</td>
+<td style="vertical-align:middle; width:0.3542in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">3</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4167in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">4</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4063in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">5</span></p>
+</td>
+<td style="vertical-align:middle; width:0.3750in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">6</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9583in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace;">Multiplier</span></p>
+</td>
+<td style="vertical-align:middle; width:0.3750in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">0.5</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4167in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">0.8</span></p>
+</td>
+<td style="vertical-align:middle; width:0.3542in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">1.0</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4167in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">1.2</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4063in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">0.9</span></p>
+</td>
+<td style="vertical-align:middle; width:0.3750in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">0.7</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0.0521in 0 0.0521in 0;"><span style="color: #010100;">Then during the simulation the actual demand exerted at this node will be as follows:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0.0521in 0 0.0521in 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:0.9375in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace;">Hour</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4375in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">0-4</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4271in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">4-8</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4792in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">8-12</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4896in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">12-16</span></p>
+</td>
+<td style="vertical-align:middle; width:0.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">16-20</span></p>
+</td>
+<td style="vertical-align:middle; width:0.5625in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">20-24</span></p>
+</td>
+<td style="vertical-align:middle; width:0.5938in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">24-28</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:0.9375in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace;">Demand</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4375in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">5</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4271in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">8</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4792in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">10</span></p>
+</td>
+<td style="vertical-align:middle; width:0.4896in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">12</span></p>
+</td>
+<td style="vertical-align:middle; width:0.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">9</span></p>
+</td>
+<td style="vertical-align:middle; width:0.5625in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">7</span></p>
+</td>
+<td style="vertical-align:middle; width:0.5938in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-family: 'Courier New',Courier,monospace;">5</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #0000ff;">See Also:</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="adding_a_time_pattern.htm" class="topiclink">Adding a Time Pattern</a></span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="pattern_editor.htm" class="topiclink">Editing a Time Pattern</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

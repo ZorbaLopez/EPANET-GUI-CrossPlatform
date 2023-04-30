@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":214550873,"name":"tsummaryform.caption","sourcebytes":[80,114,111,106,101,99,116,32,83,117,109,109,97,114,121],"value":"Project Summary"},
+{"hash":5966629,"name":"tsummaryform.groupbox1.caption","sourcebytes":[84,105,116,108,101],"value":"Title"},
+{"hash":166905303,"name":"tsummaryform.checkheader.caption","sourcebytes":[85,115,101,32,97,115,32,104,101,97,100,101,114,32,102,111,114,32,112,114,105,110,116,105,110,103],"value":"Use as header for printing"},
+{"hash":5597891,"name":"tsummaryform.groupbox2.caption","sourcebytes":[78,111,116,101,115],"value":"Notes"},
+{"hash":185533731,"name":"tsummaryform.groupbox3.caption","sourcebytes":[83,116,97,116,105,115,116,105,99,115],"value":"Statistics"},
+{"hash":1339,"name":"tsummaryform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tsummaryform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"}
+]}

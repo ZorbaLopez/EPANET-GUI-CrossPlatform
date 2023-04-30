@@ -1,0 +1,506 @@
+object BrowserForm1: TBrowserForm1
+  Cursor = crArrow
+  Left = 0
+  Height = 300
+  Top = 0
+  Width = 120
+  AutoSize = True
+  ClientHeight = 300
+  ClientWidth = 120
+  Color = clWindow
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Segoe UI'
+  OnEnter = FormEnter
+  ParentBackground = False
+  ParentColor = False
+  ParentFont = False
+  ParentShowHint = False
+  ShowHint = True
+  TabOrder = 0
+  DesignLeft = 301
+  DesignTop = 304
+  object PageControl1: TPageControl
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Cursor = crArrow
+    Left = 2
+    Height = 296
+    Top = 2
+    Width = 116
+    ActivePage = TabSheet2
+    Align = alClient
+    BorderSpacing.Around = 2
+    TabIndex = 1
+    TabOrder = 0
+    OnChange = FormEnter
+    OnEnter = FormEnter
+    object TabSheet1: TTabSheet
+      Cursor = crArrow
+      HelpContext = 158
+      Caption = 'Data'
+      ClientHeight = 266
+      ClientWidth = 110
+      OnEnter = FormEnter
+      object BtnAdd: TSpeedButton
+        AnchorSideRight.Control = BtnDelete
+        AnchorSideBottom.Control = TabSheet1
+        AnchorSideBottom.Side = asrBottom
+        Cursor = crArrow
+        Left = 16
+        Height = 82
+        Hint = 'Add'
+        Top = 184
+        Width = 27
+        Anchors = [akTop, akRight, akBottom]
+        Flat = True
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -9
+        Font.Name = 'Small Fonts'
+        Font.Style = [fsBold]
+        Images = ImageList1
+        ImageIndex = 0
+        OnClick = BtnAddClick
+        ParentFont = False
+      end
+      object BtnDelete: TSpeedButton
+        AnchorSideLeft.Control = ItemListBox
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = BtnAdd
+        AnchorSideRight.Side = asrCenter
+        AnchorSideBottom.Control = BtnAdd
+        AnchorSideBottom.Side = asrBottom
+        Cursor = crArrow
+        Left = 43
+        Height = 82
+        Hint = 'Delete'
+        Top = 184
+        Width = 24
+        Anchors = [akTop, akLeft, akBottom]
+        Flat = True
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -9
+        Font.Name = 'Small Fonts'
+        Font.Style = [fsBold]
+        Images = ImageList1
+        ImageIndex = 1
+        OnClick = BtnDeleteClick
+        ParentFont = False
+      end
+      object BtnEdit: TSpeedButton
+        AnchorSideLeft.Control = BtnDelete
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet1
+        AnchorSideBottom.Side = asrBottom
+        Cursor = crArrow
+        Left = 67
+        Height = 82
+        Hint = 'Edit'
+        Top = 184
+        Width = 28
+        Anchors = [akTop, akLeft, akBottom]
+        Flat = True
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -9
+        Font.Name = 'Small Fonts'
+        Font.Style = [fsBold]
+        Images = ImageList1
+        ImageIndex = 2
+        OnClick = BtnEditClick
+        ParentFont = False
+      end
+      object ObjectListBox: TComboBox
+        AnchorSideRight.Side = asrBottom
+        Cursor = crArrow
+        Left = 6
+        Height = 20
+        Top = 0
+        Width = 98
+        Align = alTop
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        BorderSpacing.Bottom = 4
+        DropDownCount = 11
+        ItemHeight = 26
+        OnChange = ObjectListBoxChange
+        OnDropDown = FormEnter
+        OnEnter = FormEnter
+        Style = csDropDownList
+        TabOrder = 0
+        Text = '0'
+      end
+      object ItemListBox: TVirtualListBox
+        AnchorSideRight.Side = asrBottom
+        Cursor = crArrow
+        Left = 0
+        Height = 132
+        Top = 24
+        Width = 110
+        Count = 0
+        HorizScroll = False
+        ItemHeight = 17
+        ItemIndex = -1
+        OnGetItem = ItemListBoxGetItem
+        Align = alTop
+        Color = clWindow
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = ItemListBoxClick
+        OnDblClick = ItemListBoxDblClick
+        OnEnter = FormEnter
+        OnKeyDown = ItemListBoxKeyDown
+        OnKeyPress = ItemListBoxKeyPress
+        OnMouseDown = ItemListBoxMouseDown
+      end
+    end
+    object TabSheet2: TTabSheet
+      Cursor = crArrow
+      HelpContext = 304
+      Caption = 'Map'
+      ClientHeight = 266
+      ClientWidth = 110
+      OnEnter = FormEnter
+      object Label2: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        Cursor = crArrow
+        Left = 4
+        Height = 13
+        Top = 5
+        Width = 34
+        BorderSpacing.Left = 4
+        BorderSpacing.Right = 2
+        Caption = 'Nodes'
+        ParentColor = False
+        OnClick = FormEnter
+      end
+      object Label3: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        Cursor = crArrow
+        Left = 4
+        Height = 13
+        Top = 52
+        Width = 27
+        BorderSpacing.Left = 4
+        Caption = 'Links'
+        ParentColor = False
+        OnClick = FormEnter
+      end
+      object TimeLabel: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        Cursor = crArrow
+        Left = 4
+        Height = 13
+        Top = 98
+        Width = 26
+        BorderSpacing.Left = 4
+        Caption = 'Time'
+        ParentColor = False
+        OnClick = FormEnter
+      end
+      object VCRrewindBtn: TSpeedButton
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = VCRBackBtn
+        Cursor = crArrow
+        Left = 16
+        Height = 21
+        Hint = 'Rewind'
+        Top = 160
+        Width = 23
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 4
+        Flat = True
+        Images = ImageList1
+        ImageIndex = 3
+        OnClick = VCRrewindBtnClick
+      end
+      object VCRPauseBtn: TSpeedButton
+        AnchorSideLeft.Control = VCRBackBtn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Side = asrCenter
+        Cursor = crArrow
+        Left = 70
+        Height = 21
+        Hint = 'Stop'
+        Top = 160
+        Width = 21
+        BorderSpacing.Left = 4
+        Flat = True
+        Images = ImageList1
+        ImageIndex = 5
+        OnClick = VCRPauseBtnClick
+      end
+      object VCRFwdBtn: TSpeedButton
+        AnchorSideLeft.Control = VCRPauseBtn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Side = asrCenter
+        Cursor = crArrow
+        Left = 95
+        Height = 21
+        Hint = 'Forward'
+        Top = 160
+        Width = 21
+        AllowAllUp = True
+        BorderSpacing.Left = 4
+        Flat = True
+        GroupIndex = 1
+        Images = ImageList1
+        ImageIndex = 6
+        OnClick = VCRFwdBtnClick
+      end
+      object NodeViewBox: TComboBox
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Cursor = crArrow
+        Left = 4
+        Height = 20
+        Hint = 'Node View'
+        Top = 19
+        Width = 102
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 4
+        BorderSpacing.Right = 4
+        BorderStyle = bsSingle
+        ItemHeight = 26
+        OnChange = NodeViewBoxChange
+        OnDropDown = FormEnter
+        OnEnter = FormEnter
+        ParentShowHint = False
+        ShowHint = True
+        Style = csDropDownList
+        TabOrder = 0
+        Text = '0'
+      end
+      object LinkViewBox: TComboBox
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Cursor = crArrow
+        Left = 4
+        Height = 20
+        Hint = 'Link View'
+        Top = 66
+        Width = 102
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 4
+        BorderSpacing.Right = 4
+        BorderStyle = bsSingle
+        ItemHeight = 26
+        OnChange = LinkViewBoxChange
+        OnDropDown = FormEnter
+        OnEnter = FormEnter
+        ParentShowHint = False
+        ShowHint = True
+        Style = csDropDownList
+        TabOrder = 1
+        Text = '0'
+      end
+      object TimeListBox: TComboBox
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Cursor = crArrow
+        Left = 4
+        Height = 20
+        Hint = 'Time'
+        Top = 113
+        Width = 102
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 4
+        BorderSpacing.Right = 4
+        BorderStyle = bsSingle
+        ItemHeight = 26
+        OnClick = TimeListBoxClick
+        OnDropDown = FormEnter
+        OnEnter = FormEnter
+        ParentShowHint = False
+        ShowHint = True
+        Style = csDropDownList
+        TabOrder = 2
+        Text = '0'
+      end
+      object TimeScrollBar: TScrollBar
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = TimeListBox
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Cursor = crArrow
+        Left = 3
+        Height = 16
+        Top = 133
+        Width = 103
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 4
+        PageSize = 0
+        TabOrder = 3
+        OnChange = TimeScrollBarChange
+        OnEnter = FormEnter
+        OnScroll = TimeScrollBarScroll
+      end
+      object VCRSpeedBar: TTrackBar
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Cursor = crArrow
+        Left = 3
+        Height = 21
+        Hint = 'Animation Speed'
+        Top = 192
+        Width = 103
+        OnChange = VCRSpeedBarChange
+        Position = 5
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 4
+        Color = clBtnFace
+        OnEnter = FormEnter
+        ParentColor = False
+        TabOrder = 4
+      end
+      object VCRBackBtn: TSpeedButton
+        AnchorSideLeft.Control = TimeScrollBar
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Side = asrCenter
+        Cursor = crArrow
+        Left = 43
+        Height = 21
+        Hint = 'Back'
+        Top = 160
+        Width = 23
+        AllowAllUp = True
+        BorderSpacing.Top = 14
+        Flat = True
+        GroupIndex = 1
+        Images = ImageList1
+        ImageIndex = 4
+        Margin = 1
+        OnClick = VCRBackBtnClick
+      end
+    end
+  end
+  object VCRTimer: TTimer
+    Enabled = False
+    OnTimer = VCRTimerTimer
+    Left = 76
+    Top = 1
+  end
+  object ImageList1: TImageList
+    Left = 57
+    Top = 123
+    Bitmap = {
+      4C7A070000001000000010000000C30400000000000078DAED98DB6F54451CC7
+      CFD96D31162A8AB6E522E56235A2A8684D6D84A855140CD60705511ADC82B782
+      526342E23524023E90A8B1512121E101138D3C1922101FB40A252E4D4D9A0AD2
+      652914FE137F937C26F9659C73F6CCD90743C2249FEC9E3DFB9D33F39BDF6D37
+      8AA296288A36085B6BB0597820FAEF7855E815EE143A52E812DE156E73F483C2
+      3CA1C075ECC1DE7B4D58EAE8CD9C73F99E193385C784673DEC134AC25AE121E6
+      B57AF3BE491816CE0A650FA7853F793F257CE6E8BB85F3422BD7B15A57A4F667
+      EEAD132E38FA1E61CCD9B379DDC1DC76BEA270AF309DA077ED784CD8AED69455
+      6FC7CFC29BEABA963EE679BF0BBF09E7F87C98EB154AFFB6B0C4F3FC7B843E61
+      A330221CE0FD2BF890D59B73DD26BC28BC2F9C5176B3FBB5EBB776D5EB2FE2BB
+      9DF8F9A8B37FAB7F4B7DA6F57A3CA1D6DFC0F71A98FF56AE0D3384E51EBDD9F3
+      25F6696CF4600ABB85BF3CF1F801FE7B258569ECF474E41F66BD2FA7E4822DC2
+      0BC2CD1EDF36F9E41DF46B52788318D0DAD97CDE839DE2947CB0D4F1C91BC951
+      BDCACE05677D3A26170803EADE939CF12CBE67FCE116270E3BD99FABEFC28F5B
+      D5FA86845FB091F181559CED4AEE5BFDDDC4F712C7E79A859F8423682689A9C8
+      797E3FF62A78CEA2837CF4B7F083D0E8D9FF36F2BA2F4FDD201C17AE72A6B1E7
+      F92BD8FB7C670EE3E307855FA92F53C4A8FBFC98CF4BCE996FE6B99DD8EF13F6
+      B2D0B19F7D561FF3D8F836B960B59ACFECE55395F7B53EE6DCB7E09B49B93BF2
+      EC5F8F45C27BD8BDE8C1E684C6047D445E3035F161A13D8145F8795FC2FA9653
+      2B0761070C2A4AE4ED3C23467B28A7D69CC5E39C479412E72E360ED7E3974D2A
+      D736D66006DA65D4A35EE634F67C4E78BE068F32CF8FC27EF660FB9F1EE27B65
+      02AB880F93D72B4EBFD39F6003B706DDC7BA9F116E52F6EC4FB195D536924BBE
+      22A775ABFB255EBB39D385F85E13F5A1811CF107CF35BEF794477F921CF1B170
+      823D4FB3D76F98BFC0FC3EFD01EA81B1D117C4D009D6315FC564BBA3EFF7F42B
+      3E1B4409FA52069FD3F3B8EBDF1AE8FF77D027D861E6DA44BDACC546FC6D9E53
+      F76E675D5968736AC561FA85B3F4B72D19E2F72EE173F65EA18FAD52DFBA52F2
+      66846F8DA2FB07ADE5B2F04882DD4D1DFD563DCF87ABB7AF2FF1CC6A8AD6D5DB
+      FAF91DFBAAD4D06A7D81BA58CEA0D14C932FBECEF83C972A71783187D6EA47EA
+      D05F26579EC960EB247D37B57880755402F5FAFC8C9F7E9FE3FC62278F6CA2AF
+      AF06EA75DF793FFEE0CEA1D77549FDCEF3C5DD2C7AC029FAC12A7D9DD58F668C
+      5FD3737E29BC1E98BB8AF4A97BF9ED3114A05D2CEC12C6950D2A1974A64FFA28
+      257E93F668F2C54E746967E6EA5AE98FC633FAB01D2DF8ECE9C0F869E61C8673
+      C6CCD19CB16A3956A77E363E792AE7FAED68A3472D07CEE3EB4BCDB94FE4D0EB
+      79E6081F12F7A17A3DDAF1FBB100FF8D127ECBED615F21F1E3C66F07FF834DD0
+      C7AEC667270319A1872F731D7AEE93D4AA7A7CEFDC75FD75FD35AEAF377EEA8D
+      DF216AF95E6A7B3130A7E8FE7F9C5CB73840EFEB4147A9F90B72E82F38FDD04E
+      7A8138875EEF6B50FDBF17A2B75CE49C069C1E2D4F8F3E4CCFD05CA7FFFD1FBD
+      43955E613BBD4388AE4C8FD01668BF09FC606EE0F98DD103CC09F09F2ABA5DD4
+      FE90F899A0C677D4F80DADC77E74FBD4FF8E99C7BF625007D2
+    }
+  end
+  object ImageList1d: TImageList
+    Left = 56
+    Top = 80
+    Bitmap = {
+      4C7A0700000010000000100000001C0700000000000078DAED585B4C5447183E
+      E7B0D82014E90541452C746D7A45AB846E402BA29436D4466BE905825AB12D5E
+      A02121F642636C4B1F882DA9D86AD2D8074830AD0F92A6941052EC16A5B0B189
+      A195A28B620D2FBEF060427CF1C17EDFE69FCD78B2873D079A344D3CC9979933
+      67BE997FFEF96FBBC16030FDF6EDDB15C0CE38A80E06832B8A8B8B0D423D18DF
+      066C3A78F0E072C0EF04700B30EF5DF41FB4F1EB31B608DF2DB47C37D1DA6191
+      836F35E8E7B2CFB932C63533651EC792D13E0BBC6007E6B6609FEDE83F0FACE2
+      BA8A8F967BCC477B1AF813188A81B3C06FD2BF0C7CA6ED4FF90378FF0BEB2C94
+      F788FC3CA792599D07729463EE251B7F3DDECF718ED287C85887F70060CAB704
+      B44F60FC6A2C3EF7E35C351F63DDC01E4DA6B87C5D6E8CFD08BCADEE3EDEFEB2
+      E71EE017A01FB8C071D16D3FF82B35FE5EF473B06E942FBA7A1CFD2ACC7D0DED
+      19E098F4DFA00D697CDEEB6E602BF01E302CE7B7C46E4C4D7EA5FBA8FC184BC0
+      FB72F4578B9D87D4F9D57D09FF1DA5135D7FBA2DA22D96F3737F1FE7B1E5FAE8
+      3F20FB726C1EDA27C9577E207BF1CC57784EF4A9A3A79D80399F60EEEF8AAFE4
+      C0D8FB62BF7FCF00EA6D186B941ADA939F9F6F9497971BDDDDDDD4C7EB33C482
+      378197312F4DE7533FB5B5B58C27FB845F3603DE02CA75EEE6CD9B17C8F87AEA
+      A9BDBDDD7480D5D5D595CB3B55BA0B0402498C51128B125A5B5BA96B4BAD8FEF
+      06C62C40C59425985B5B575717E14F4D4D95F08EDBDADA52C80B87C3ABD1DE87
+      EF96EC1119C37B3AE646F9274F9E3446474719DBF6A2BF50F937DE0F03BDE8A7
+      013ECC59C3BBC59C22F19508BFBFBFFF51FAF7C0C0408EB2AF929212AE712FC6
+      BB80EF31A708ED18E6EC59BB76AD8136BA3FB043F465A5A6A646EFE2C68D1B26
+      CEEA673C02FE004EE07BA21653157F37CEB542EDAD9ECACA4ACEB907DF7F02AE
+      61CEBECECE4E13E386CE876C2B7976C8B458939F73E661FC1BE067CC617EB98C
+      395BD13775F99392924CF15DC6E584FDFBF747E4BB79F326EFF25A4B4B0BEFC1
+      87FE473C0BFA4B19AB159F77979393C3BDAAB88EE83681B10076B27162622262
+      3372968FD15FA5EB5FD91EEC2345ECBA8CDFCBCACACCA1A1218E47F4D1D0D060
+      608C3664F4F6F69A3ADFE7F3194D4D4D467373F3328C35DCBA75CB2F3224E01C
+      51609CE7609BA8F3F964656519353535C6F1E3C71917EA272727F3B17FB60396
+      E1FB269ED9C17FB9460DD711D409EA356CC7BC4C63168FDC3F73E6B75EB9A5A5
+      A591BB181C1C5CC7FBE0D8C8C888E906CA0FAF5FBFFE0AED322F2F6FFE962D5B
+      8CEAEA6A1F9018078CB9D6A953A71E633EC27A8C136647474736DE5F045E8A83
+      42CC4F44FB1D709467C0FEAAFE61DEA27F173960CDA14387164F4F4F337F5D44
+      7F918A4DF4DFC2C242A3B1B1D1B4418D19F86EF6F5F53D45B9A1B7E7D04F2547
+      F1E51C7650D7AA9E4A9458F225631ADA00FD46F8DBD9627E00C8049602F9B9B9
+      B9AC854AE97B78677E0DA29F0AD0C637D8F9687F95B8DF04F4E03BF57195B51D
+      DAAF207300B25BE2BFB1F8C7F0B026A28EBE60CD28EBCCC738638B859667C9B6
+      F177A83C8D3BA62D185A8C337847ECD34E64CCCE67DC89D8177545D8EC8EF649
+      FD44EC3486FC3B9393938D8C8C0C5700EF61708A35FE06A052F2653C5037DBA8
+      5375FFB863E6BD2C60A91BE01C19D425EE57EDDF2EF5027116DFD2956CF6A7A0
+      A0C0407E3491031FC1DCCF7B7A7A580B5C943A36CCFC066E813D97F05179767C
+      7C3C9F3596F04685AB308139CFE8FCAAAA2A756F69E07EADED170B77F0292BF7
+      0C8542AFCA9EE119B8513ECE65CA3969831D3C579C7DEFE0836B41D695F23BE1
+      92075C05AF0838E2723F3BC2E287E3B3E02AFE9939F02724560EBBD0B593FE18
+      9B52A43619F7A807FBFDD14E3BBDDE9FCD7E4CD84FA5FC7E097BE16B75BD85B5
+      F2C41EEC6BE8725D91F3DFE13F7EBF5FF9408AFCAEE26FCF3159EB84C60FB9F4
+      5FD69CADC02E37399B75256B1FA9AB73C06BE66F0FD6B8F1B8AC9FA4AE790835
+      F00170CE6B3AB8E8C4ABA8A888D45CD86F09EA9D0F9DFC37D67EE099E0A7A146
+      6A149EE39DE9F517758CFD1662BF7A9B9C8E204FE44CC7F96AE53F02D7FEC33A
+      1FFBED92DFC69E7D0675FE0FB3F455C5EF9E0B1F77BB00F2D326076623BFDC17
+      6D2403FAAB73F091B8F7471B95FBCB843CBCF7112F7CBBFD609DFB613F1F88DF
+      BBE6C7B0DF6CAC73C0297EB8F11F9E0BFEE3877E3E9573C5F59F19FC9739AD45
+      D6391A0C06378ACD8E79C41970D7C97D8DCDC276C624575D9A032EDCE5DFE5FF
+      CFF973F29F7FC17F0F4B2E6F666E678C60ACD0FF4B9AE9B1D5FFE799E399EB99
+      F3D57F2771F8B16AD010733E733F632863A907BE8E106B00D6028CE9B1E47159
+      139F674DC0DA80B19839DF035F8135C159D608AC15782EAE33CB1AFD346B06F9
+      8F702EB9FFBFA81D28FF006B06D60E1E7943AC11582B507FBC4F97DC11D604AC
+      0D787FBA6DC7E19D630DC05AC083FD84857780B9DF85FDEAFE33C21CCF5C2FFF
+      49BAF19FA392CB5B98DBBDFAEF3FAB131699
+    }
+  end
+end

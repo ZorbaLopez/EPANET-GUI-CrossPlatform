@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Velocidad de Reacción en el Seno del Agua</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Velocidad de Reacción en el Seno del Agua,Reacciones que afectan a la Calidad del Agua ,Reacciones que afectan a la Calidad del Agua Velocidad de Reacción en el Seno del Agua" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Velocidad de Reacción en el Seno del Agua</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="water_quality_reactions.htm">Anterior</a>&nbsp;
+     <a href="kinetic_models-simple_first_or.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="bulk_flow_reaction_rates.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">Reacciones en el seno del agua son aquellas que ocurren en el volumen de agua contenido en tuberías o depósitos, sin ser afectadas por cualquier otra que considere las paredes. EPANET simula las reacciones que ocurren en el seno del agua mediante una cinética de orden n, lo que significa que la velocidad instantánea de reacción R de una sustancia (expresada en unidades de masa/volumen/tiempo) depende en cada momento de la concentración actual de dicha sustancia, de acuerdo con la expresión:</span></p>
+<p class="p_Normal"><img alt="_bm60" style="margin:0;width:0.7083in;height:0.2500in;border:none" src="_bm60.gif"/></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">donde </span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="color: #010100;"> = coeficiente de reacción en el medio, </span><span style="font-style: italic; color: #010100;">C</span><span style="color: #010100;"> = concentración del reactivo (masa/volumen) y </span><span style="font-style: italic; color: #010100;">n</span><span style="color: #010100;"> = orden de la reacción. El coeficiente </span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="color: #010100;"> tiene unidades de concentración elevada a la potencia (1-n) y dividido por tiempo. Su signo será positivo si la cantidad de sustancia crece con el tiempo, y negativo si decrece.</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">EPANET es capaz de modelar también reacciones que tienden a una concentración límite, ya sea por crecimiento o decrecimiento de la sustancia. En este caso, la expresión de la velocidad de reacción para situaciones de crecimiento tiene la forma:</span></p>
+<p class="p_Normal"><img alt="_bm61" style="margin:0;width:1.5313in;height:0.2604in;border:none" src="_bm61.gif"/></p>
+<p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">donde </span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="color: #010100;"> = concentración límite. (Para reacciones de decrecimiento, con </span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="color: #010100;"> < 0, debe cambiarse (</span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> - C</span><span style="color: #010100;">) por (</span><span style="font-style: italic; color: #010100;">C - C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="color: #010100;">).)</span></p>
+<p class="p_Normal"><span style="color: #010100;">Por consiguiente, se dispone de hasta tres parámetros (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-size: 15pt; font-style: italic; color: #010100;">, </span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-size: 15pt; color: #010100;">, </span><span style="color: #010100;">y </span><span style="font-style: italic; color: #010100;">n</span><span style="color: #010100;">) para caracterizar las reacciones en el medio. Algunos modelos típicos de velocidad de reacción son:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;"><a href="kinetic_models-simple_first_or.htm" class="topiclink">Decrecimiento Simple de Primer Orden</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> &lt; 0, C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> = 0, n = 1</span><span style="color: #010100;">)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="kinetic_models_first-order_sat.htm" class="topiclink">Crecimiento de Primer Orden hasta la Saturación</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> &gt; 0, C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> &gt; 0, n = 1</span><span style="color: #010100;">)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="kinetic_models-two-component.htm" class="topiclink">Decrecimiento de Segundo Orden con 2 Componentes</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> &lt; 0, C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> </span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&ne;</span><span style="font-style: italic; color: #010100;"> 0, n = 2</span><span style="color: #010100;">)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="kinetic_models-michaelis-mento.htm" class="topiclink">Cinética de Decrecimiento de Michaelis-Menton</a> (</span><span style="font-style: italic; color: #010100;">K</span><span style="font-size: 8pt; font-style: italic; color: #010100;">b</span><span style="font-style: italic; color: #010100;"> </span><span style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans'; color: #010100;">&ne;</span><span style="font-style: italic; color: #010100;"> 0</span><span style="color: #010100;">, </span><span style="font-style: italic; color: #010100;">C</span><span style="font-size: 8pt; font-style: italic; color: #010100;">L</span><span style="font-style: italic; color: #010100;"> &gt; 0, n &lt; 0</span><span style="color: #010100;">) </span></p>
+</td></tr></table>
+
+</body>
+</html>

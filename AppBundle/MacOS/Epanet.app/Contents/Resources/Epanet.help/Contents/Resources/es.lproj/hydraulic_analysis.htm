@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>El Modelo de Simulación Hidráulica</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Simulación Hidráulica" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">El Modelo de Simulación Hidráulica</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="network_components.htm">Anterior</a>&nbsp;
+     <a href="demand_models.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="hydraulic_analysis.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">El modelo de simulación hidráulica de EPANET calcula las alturas piezométricas en los nudos y los caudales en las líneas, dados los niveles iniciales en los embalses y depósitos, y la sucesión en el tiempo de las demandas aplicadas en los nudos. De un instante al siguiente se actualizan los niveles en los depósitos conforme a los caudales calculados que entran o salen de los mismos, y las demandas en los nudos y niveles en los embalses conforme a sus curvas de modulación. Para obtener las alturas y caudales en un determinado instante se resuelven simultáneamente las ecuaciones de conservación del caudal en los nudos y las ecuaciones de pérdidas en todos los tramos de la red. Este proceso, conocido como "equilibrado hidráulico", requiere el uso de métodos iterativos para resolver las ecuaciones de tipo no lineal involucradas. EPANET emplea a tal fin el Algoritmo del Gradiente. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">El intervalo de cálculo hidráulico utilizado para llevar a cabo la simulación en periodo extendido (EPS) puede ser fijado por el usuario. El valor típico es de 1 hora. Sin embargo, en ocasiones el intervalo utilizado por EPANET internamente puede ser más corto, por alguna de las siguiente razones:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">un instante en el que se desean conocer los resultados</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">un instante obligado por las modulaciones</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">un depósito se llena o se vacía</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">se activa una ley de control simple o basada en reglas.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

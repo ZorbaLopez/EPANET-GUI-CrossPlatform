@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Opciones Hidráulicas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Opciones Cálculo,Opciones Cálculo Opciones Hidráulicas" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Opciones Hidráulicas</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="analysis_options.htm">Anterior</a>&nbsp;
+     <a href="analysis_options-quality.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="analysis_options-hydraulics.htm"></a>
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Las </span><span style="font-weight: bold; color: #010100;">Opciones Hidráulicas</span><span style="color: #010100;"> controlan el modo en que se van a llevar a cabo los cálculos hidráulicos. Estas son las siguientes:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Unidades de Caudal</span></p>
+<p class="p_Normal"><span style="color: #010100;">Unidades en las cuales serán expresados los caudales en los nudos y los caudales de paso por las líneas. Si se eligen litros o metros cúbicos, entonces las restantes magnitudes serán expresadas en unidades métricas. Si se eligen galones, pies cúbicos o pies·acres, entonces las restantes magnitudes se expresarán en unidades convencionales US. Hay que llevar cuidado al cambiar las unidades, porque ello puede afectar al resto de los datos del proyecto. (ver <a href="us_units.htm" class="topiclink">Unidades de Medida</a>).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Fórmula de Pérdidas</span></p>
+<p class="p_Normal"><span style="color: #010100;">Formula utilizada para calcular las pérdidas de carga en función del caudal de paso por la tubería. Las opciones son:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm" class="topiclink">Hazen-Williams</a></span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#d-w_formula" class="topiclink">Darcy-Weisbach</a></span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#c-w_formula" class="topiclink">Chezy-Manning</a></span></p><p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">Debido a que cada fórmula contempla la rugosidad de las tuberías de forma diferente, el cambio de fórmula puede requerir la actualización de todos los coeficientes de rugosidad de las tuberías.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Peso Específico Relat.</span></p>
+<p><span style="color: #010100;">Relación entre la densidad del fluido que circula por la red y la del agua a 4 ºC (adimensional).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Viscosidad Relativa</span></p>
+<p><span style="color: #010100;">Relación entre la viscosidad cinemática del fluido y la del agua a 20ºC (1,0 centistokes o bien 0,94 pies2 /día) (adimensional).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Máximo Iteraciones</span></p>
+<p><span style="color: #010100;">Número máximo de iteraciones permitido para resolver las ecuaciones no lineales que gobiernan el sistema hidráulico, en cualquier instante de la simulación. Se sugiere el valor 40 o mayor.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Precisión</span></p>
+<p><span style="color: #010100;">Criterio de convergencia utilizado para saber que se ha encontrado una solución para el conjunto de ecuaciones no lineales que gobiernan el sistema. Las iteraciones finalizan cuando la suma de todas las variaciones de caudales dividida por la suma de todos los caudales circulantes es menor que este número. Se sugiere el valor 0,001.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Caso de No Equilibrio</span></p>
+<p><span style="color: #010100;">Acción a aplicar si no se encuentra una solución en el número máximo de iteraciones permitido. Las opciones son </span><span style="font-weight: bold; color: #010100;">Parar</span><span style="color: #010100;"> para detener la simulación en este punto, o </span><span style="font-weight: bold; color: #010100;">Continuar</span><span style="color: #010100;"> para realizar 10 iteraciones más, durante las cuales no se permitirá el cambio de estado de las líneas en un intento de obtener la convergencia.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Modulación por Defecto</span></p>
+<p><span style="color: #010100;">Identificativo ID de la modulación aplicable a las demandas, en aquellos nudos en que ésta no se haya especificado. Si no se declara una curva de modulación por defecto, la demanda permanecerá constante en dichos nudos.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Factor de Demanda</span></p>
+<p><span style="color: #010100;">Factor global aplicable a todas las demandas en los nudos, con el fin de aumentar o disminuir el consumo total de la red. Por ejemplo, un factor 2,0 duplicaría todas las demandas, un factor 0,5 las dividiría por la mitad, y un factor 1,0 las dejaría igual.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Exponente de los Emisores</span></p>
+<p><span style="color: #010100;">Exponente al cual se elevará la presión, para calcular el caudal saliente por los <a href="emitters.htm" class="topiclink">Emisores</a>. El exponente recomendado en los manuales para toberas y rociadores es 0,5. En el caso de representar una fuga puede ser distinto.</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Informe de Estado</span></p>
+<p><span style="color: #010100;">Especifica el volumen de información a incluir en el informe emitido tras finalizar una simulación. Las opciones son:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">No</span><span style="color: #010100;"> (no se emite ningún informe)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Sí</span><span style="color: #010100;"> (informe normal - lista todos los cambios habidos en el estado de las líneas durante la simulación y, si se analiza la calidad del agua, reporta el balance de masas final)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Todo</span><span style="color: #010100;"> (informe completo - contiene lo mismo que el informe normal, más los errores de convergencia para cada iteración realizada, dentro de cada instante de la simulación)</span></p><p><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">El informe completo se utiliza únicamente para depuración.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Max. Error Altura</span></p>
+<p><span style="color: #010100;">Otro criterio de convergencia que requiere que la pérdida de carga calculada para cada línea comparada con la diferencia de alturas piezométricas en los nudos aguas arriba y abajo no supere el valor especificado (en metros o pies). Un valor de 0 indica que el criterio no se usará.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Max. Variación Caudal</span></p>
+<p><span style="color: #010100;">Un tercer criterio de convergencia que requiere que la mayor variación de caudal absoluta entre la solución actual y la previa sea menor que el valor especificado (en unidades de caudal). Un valor de 0 indica que el criterio no se usará. </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><a name="demandmodelanchor" class="hmanchor"></a></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;"><a href="demand_models.htm" class="topiclink">Modelo de Demanda</a></span></p>
+<p><span style="color: #010100;">Especifica si se usará un Cálculo Motivado por la Demanda (</span><span style="font-weight: bold; color: #010100;">DDA</span><span style="color: #010100;">) o un Cálculo Motivado por la Presión (</span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;">). Si se usa un </span><span style="font-weight: bold; color: #010100;">DDA</span><span style="color: #010100;"> siempre se aplica la demanda total en los nudos, incluso si resultan en presiones negativas. Si se usa un </span><span style="font-weight: bold; color: #010100;">PDA</span><span style="color: #010100;"> se asume que la demanda varía entre 0 y su valor total siguiendo una función exponencial de la presión en el nudo. El valor por defecto es </span><span style="font-weight: bold; color: #010100;">DDA</span><span style="color: #010100;">.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Presión Mínima</span></p>
+<p><span style="color: #010100;">Presión por debajo de la cual la demanda es nula en un Cálculo Motivado por la Presión. No tiene efecto si se usa un Cálculo Motivado por la Demanda. El valor por defecto es 0.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Presión Requerida</span></p>
+<p><span style="color: #010100;">Presión requerida, como mínimo,  para suministrar la demanda total en un Cálculo Motivado por la Presión. No tiene efecto si se usa un Cálculo Motivado por la Demanda. Para evitar problemas de inestabilidad de cálculo, debe de ser como mínimo 0,1 metros o psi mayor que la Presión Mínima. El valor por defecto es 0,1.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Exponente Presiones</span></p>
+<p><span style="color: #010100;">La potencia a la que se eleva la presión para calcular la demanda suministrada en los nudos en un Cálculo Motivado por la Presión. No tiene efecto si se usa un Cálculo Motivado por la Demanda. El valor por defecto es 0,5.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Frecuencia de Chequeo</span></p>
+<p><span style="color: #010100;">Establece el número de iteraciones hidráulicas a realizar antes de comprobar de nuevo el estado de bombas, válvulas de retencion, válvulas limitadoras de caudal y tuberías conectadas a depósitos. El valor por defecto es 2, lo que significa que la comprobación se realiza una vez sí y otra no. Un valor igual al máximo de iteraciones, significa que la comprobación no se realiza hasta que el sistema haya convergido. (cuando ocurre un cambio de estado las iteraciones continúan, ya que el sistema puede quedar desequilibrado). La frecuencia de chequeo de las válvulas reductoras (PRV) y sostenedoras (PSV) de presión es determinada por la opción Limite de Relajación (ver más abajo).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Máximo Iterac. con Chequeo</span></p>
+<p><span style="color: #010100;">Es el número de iteraciones a partir del cual deja de realizarse la verificación periódica del estado de bombas, válvulas de retención, válvulas limitadoras de caudal y tuberías conectadas a depósitos. Una vez superadas, la comprobación se realizará de nuevo solo cuando se alcance la convergencia. El valor por defecto es 10, lo que significa que después de 10 iteraciones, en lugar de comprobar el estado tras el número de iteraciones indicado por Frec. Chequeo de iteraciones, será comprobado únicamente cuando se alcance la convergencia.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #010100; text-decoration: underline;">Límite de Relajación</span></p>
+<p><span style="color: #010100;">Es la precisión a partir de la cual comenzarán a aplicarse técnicas de relajación y a verificarse el estado de las válvulas reductoras (PRV) y sostenedoras de presión (PSV). La relajación consiste en reducir los cambios de caudal propuestos en cada iteración al 60 % del valor que les correpondería en una iteración normal. El valor por defecto es 0, lo que presupone no aplicar técnicas de relajación y verificar el estado de las válvulas de control de la presión en cada iteración. La relajación puede ser necesaria en redes con problemas de convergencia, en cuyo caso se sugiere pone como valor límite 0,01.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0.0521in 0;"><span style="color: #010100;">A continuación se muestran algunos valores típicos que podrían utilizarse para los parámetros que controlan el proceso de convergencia:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:1.0000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold; text-decoration: underline;">Frec. Chequeo</span></p>
+</th>
+<th style="vertical-align:top; width:1.0000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold; text-decoration: underline;">Máx. Chequeo</span></p>
+</th>
+<th style="vertical-align:top; width:1.0000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold; text-decoration: underline;">Límite Relaj.</span></p>
+</th>
+<th style="vertical-align:top; width:2.5000in; background-color:#CCFFFF; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold; text-decoration: underline;">Comentarios</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">2</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">10</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">0</p>
+</td>
+<td style="vertical-align:top; width:2.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal">Verificación frecuente del estado; tiende a proporcionar soluciones con el mínimo número de iteraciones.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">10</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">100</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">0.01</p>
+</td>
+<td style="vertical-align:top; width:2.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal">Verificación poco frecuente del estado; puede ser necesario para redes con dificultades de convergencia.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">Máx. Iterac</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">Máx. Iterac</p>
+</td>
+<td style="vertical-align:top; width:1.0000in; padding:0.0208in; border:solid thin #000000;"><p style="text-align: center;">Precisión Convergencia</p>
+</td>
+<td style="vertical-align:top; width:2.5000in; padding:0.0208in; border:solid thin #000000;"><p class="p_Normal">La verificación del estado se efectúa solo una vez alcanzada la convergencia; podría conducir a la convergencia cuando otros procedimientos fallan.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

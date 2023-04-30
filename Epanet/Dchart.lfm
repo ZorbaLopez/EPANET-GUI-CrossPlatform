@@ -1,0 +1,962 @@
+object ChartOptionsDlg: TChartOptionsDlg
+  Left = 877
+  Height = 407
+  Top = 218
+  Width = 366
+  BorderStyle = bsDialog
+  BorderWidth = 1
+  Caption = 'Graph Options'
+  ClientHeight = 407
+  ClientWidth = 366
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object DefaultBox: TCheckBox
+    Left = 20
+    Height = 18
+    Top = 331
+    Width = 205
+    Caption = 'Make these the default options '
+    TabOrder = 1
+  end
+  object OkBtn: TButton
+    Left = 54
+    Height = 25
+    Top = 367
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object CancelBtn: TButton
+    Left = 147
+    Height = 25
+    Top = 367
+    Width = 74
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object HelpBtn: TButton
+    Left = 239
+    Height = 25
+    Top = 367
+    Width = 74
+    Caption = 'Help'
+    OnClick = HelpBtnClick
+    TabOrder = 4
+  end
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 312
+    Top = 4
+    Width = 351
+    ActivePage = LegendPage
+    TabIndex = 3
+    TabOrder = 0
+    OnChange = PageControl1Change
+    object GeneralPage: TTabSheet
+      Caption = 'General'
+      ClientHeight = 282
+      ClientWidth = 345
+      object Label1: TLabel
+        Left = 16
+        Height = 15
+        Top = 24
+        Width = 65
+        Caption = 'Panel Color'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 16
+        Height = 15
+        Top = 75
+        Width = 101
+        Caption = 'Background Color'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 16
+        Height = 15
+        Top = 160
+        Width = 100
+        Caption = '3D Effect Percent'
+        Enabled = False
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 16
+        Height = 15
+        Top = 203
+        Width = 55
+        Caption = 'Main Title'
+        ParentColor = False
+      end
+      object PanelColorBox: TColorBox
+        Left = 163
+        Height = 20
+        Top = 21
+        Width = 147
+        DefaultColorColor = clDefault
+        NoneColorColor = clNone
+        Selected = clDefault
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbPrettyNames]
+        ItemHeight = 20
+        TabOrder = 0
+      end
+      object BackColorBox1: TColorBox
+        Left = 163
+        Height = 20
+        Top = 72
+        Width = 147
+        DefaultColorColor = clDefault
+        NoneColorColor = clNone
+        Selected = clDefault
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbPrettyNames]
+        ItemHeight = 20
+        TabOrder = 1
+      end
+      object View3DBox: TCheckBox
+        Left = 16
+        Height = 18
+        Top = 117
+        Width = 92
+        Alignment = taLeftJustify
+        Caption = 'View in 3-D'
+        Enabled = False
+        TabOrder = 2
+      end
+      object GraphTitleBox: TEdit
+        Left = 16
+        Height = 25
+        Top = 223
+        Width = 313
+        BorderSpacing.InnerBorder = 2
+        TabOrder = 5
+      end
+      object Pct3DUpDown: TUpDown
+        Left = 212
+        Height = 21
+        Top = 157
+        Width = 16
+        Associate = Pct3DEdit
+        Enabled = False
+        Increment = 5
+        Min = 0
+        Position = 15
+        TabOrder = 4
+        TabStop = True
+      end
+      object Pct3DEdit: TEdit
+        Left = 163
+        Height = 21
+        Top = 157
+        Width = 49
+        Enabled = False
+        NumbersOnly = True
+        TabOrder = 3
+        Text = '15'
+      end
+      object GraphTitleFontLabel: TLabel
+        Cursor = crHandPoint
+        Left = 248
+        Height = 16
+        Top = 203
+        Width = 89
+        Caption = 'Change Font...'
+        Font.Color = clBlue
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = GraphTitleFontLabelLinkClick
+      end
+    end
+    object XaxisPage: TTabSheet
+      Caption = 'Horizontal Axis'
+      ClientHeight = 282
+      ClientWidth = 345
+      ImageIndex = 1
+      object XminLabel: TLabel
+        Left = 16
+        Height = 15
+        Top = 28
+        Width = 51
+        Caption = 'Minimum'
+        ParentColor = False
+      end
+      object XmaxLabel: TLabel
+        Left = 16
+        Height = 15
+        Top = 68
+        Width = 54
+        Caption = 'Maximum'
+        ParentColor = False
+      end
+      object XIncrementLabel: TLabel
+        Left = 16
+        Height = 15
+        Top = 108
+        Width = 57
+        Caption = 'Increment'
+        ParentColor = False
+      end
+      object Label11: TLabel
+        Left = 16
+        Height = 15
+        Top = 186
+        Width = 52
+        Caption = 'Axis Title'
+        ParentColor = False
+      end
+      object XDataMinLabel: TLabel
+        Left = 236
+        Height = 15
+        Top = 29
+        Width = 86
+        Caption = 'XDataMinLabel'
+        ParentColor = False
+      end
+      object XDataMaxLabel: TLabel
+        Left = 236
+        Height = 15
+        Top = 68
+        Width = 89
+        Caption = 'XDataMaxLabel'
+        ParentColor = False
+      end
+      object Xmin: TEdit
+        Left = 126
+        Height = 21
+        Top = 25
+        Width = 86
+        TabOrder = 0
+      end
+      object Xmax: TEdit
+        Left = 126
+        Height = 21
+        Top = 65
+        Width = 86
+        TabOrder = 1
+      end
+      object Xinc: TEdit
+        Left = 126
+        Height = 21
+        Top = 105
+        Width = 86
+        TabOrder = 2
+      end
+      object Xtitle: TEdit
+        Left = 16
+        Height = 25
+        Top = 205
+        Width = 313
+        BorderSpacing.InnerBorder = 2
+        TabOrder = 4
+      end
+      object Xgrid: TCheckBox
+        Left = 126
+        Height = 18
+        Top = 146
+        Width = 84
+        Caption = 'Grid Lines'
+        TabOrder = 3
+      end
+      object XaxisFontLabel: TLabel
+        Cursor = crHandPoint
+        Left = 236
+        Height = 16
+        Top = 186
+        Width = 89
+        Caption = 'Change Font...'
+        Font.Color = clBlue
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = XaxisFontLabelLinkClick
+      end
+      object XautoScale: TLabel
+        Cursor = crHandPoint
+        Left = 236
+        Height = 16
+        Top = 109
+        Width = 67
+        Caption = 'Auto-Scale'
+        Font.Color = clBlue
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = XautoScaleLinkClick
+      end
+    end
+    object YaxisPage: TTabSheet
+      Caption = 'Vertical Axis'
+      ClientHeight = 282
+      ClientWidth = 345
+      ImageIndex = 4
+      object Label6: TLabel
+        Left = 16
+        Height = 15
+        Top = 28
+        Width = 51
+        Caption = 'Minimum'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        Left = 16
+        Height = 15
+        Top = 68
+        Width = 54
+        Caption = 'Maximum'
+        ParentColor = False
+      end
+      object Label9: TLabel
+        Left = 16
+        Height = 15
+        Top = 108
+        Width = 57
+        Caption = 'Increment'
+        ParentColor = False
+      end
+      object YDataMaxLabel: TLabel
+        Left = 236
+        Height = 15
+        Top = 68
+        Width = 88
+        Caption = 'YDataMaxLabel'
+        ParentColor = False
+      end
+      object YDataMinLabel: TLabel
+        Left = 236
+        Height = 15
+        Top = 29
+        Width = 85
+        Caption = 'YDataMinLabel'
+        ParentColor = False
+      end
+      object Label10: TLabel
+        Left = 16
+        Height = 15
+        Top = 186
+        Width = 52
+        Caption = 'Axis Title'
+        ParentColor = False
+      end
+      object Ymin: TEdit
+        Left = 126
+        Height = 21
+        Top = 25
+        Width = 86
+        TabOrder = 0
+      end
+      object Ymax: TEdit
+        Left = 126
+        Height = 21
+        Top = 65
+        Width = 86
+        TabOrder = 1
+      end
+      object Yinc: TEdit
+        Left = 126
+        Height = 21
+        Top = 105
+        Width = 86
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Ygrid: TCheckBox
+        Left = 126
+        Height = 18
+        Top = 146
+        Width = 84
+        Caption = 'Grid Lines'
+        TabOrder = 3
+      end
+      object YaxisFontLabel: TLabel
+        Cursor = crHandPoint
+        Left = 236
+        Height = 16
+        Top = 186
+        Width = 89
+        Caption = 'Change Font...'
+        Font.Color = clBlue
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = YaxisFontLabelLinkClick
+      end
+      object Ytitle: TEdit
+        Left = 16
+        Height = 25
+        Top = 205
+        Width = 313
+        BorderSpacing.InnerBorder = 2
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        ParentFont = False
+        TabOrder = 4
+      end
+      object YautoScale: TLabel
+        Cursor = crHandPoint
+        Left = 236
+        Height = 16
+        Top = 109
+        Width = 67
+        Caption = 'Auto-Scale'
+        Font.Color = clBlue
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = YautoScaleLinkClick
+      end
+    end
+    object LegendPage: TTabSheet
+      Caption = 'Legend'
+      ClientHeight = 282
+      ClientWidth = 345
+      ImageIndex = 3
+      object Label18: TLabel
+        Left = 16
+        Height = 15
+        Top = 28
+        Width = 45
+        Caption = 'Position'
+        ParentColor = False
+      end
+      object Label19: TLabel
+        Left = 16
+        Height = 15
+        Top = 68
+        Width = 30
+        Caption = 'Color'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 16
+        Height = 15
+        Top = 115
+        Width = 188
+        Caption = 'Symbol Width (% of Label Width)'
+        ParentColor = False
+      end
+      object LegendFrameBox: TCheckBox
+        Left = 16
+        Height = 18
+        Top = 152
+        Width = 69
+        Alignment = taLeftJustify
+        Caption = 'Framed'
+        TabOrder = 4
+      end
+      object LegendVisibleBox: TCheckBox
+        Left = 16
+        Height = 18
+        Top = 187
+        Width = 64
+        Alignment = taLeftJustify
+        Caption = 'Visible'
+        TabOrder = 6
+      end
+      object LegendPosBox: TComboBox
+        Left = 124
+        Height = 20
+        Top = 25
+        Width = 146
+        ItemHeight = 26
+        Style = csDropDownList
+        TabOrder = 0
+        Text = '0'
+      end
+      object LegendColorBox: TColorBox
+        Left = 124
+        Height = 20
+        Top = 65
+        Width = 146
+        DefaultColorColor = clBtnFace
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbPrettyNames]
+        ItemHeight = 20
+        TabOrder = 1
+      end
+      object LegendCheckBox: TCheckBox
+        Left = 16
+        Height = 18
+        Top = 225
+        Width = 99
+        Alignment = taLeftJustify
+        Caption = 'Check Boxes'
+        Enabled = False
+        TabOrder = 8
+      end
+      object LegendShadowBox: TCheckBox
+        Left = 149
+        Height = 18
+        Top = 152
+        Width = 85
+        Alignment = taLeftJustify
+        Caption = 'Shadowed'
+        Enabled = False
+        TabOrder = 5
+      end
+      object LegendTransparentBox: TCheckBox
+        Left = 149
+        Height = 18
+        Top = 187
+        Width = 94
+        Alignment = taLeftJustify
+        Caption = 'Transparent'
+        TabOrder = 7
+      end
+      object LegendWidthUpDown: TUpDown
+        Left = 257
+        Height = 21
+        Top = 112
+        Width = 16
+        Associate = LegendWidthEdit
+        Increment = 5
+        Min = 5
+        Position = 5
+        TabOrder = 3
+      end
+      object LegendWidthEdit: TEdit
+        Left = 211
+        Height = 21
+        Top = 112
+        Width = 46
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '5'
+      end
+    end
+    object StylesPage: TTabSheet
+      Caption = 'Series'
+      ClientHeight = 282
+      ClientWidth = 345
+      ImageIndex = 4
+      OnExit = StylesPageExit
+      object Label21: TLabel
+        Left = 8
+        Height = 15
+        Top = 19
+        Width = 35
+        Caption = 'Series'
+        ParentColor = False
+      end
+      object Label22: TLabel
+        Left = 8
+        Height = 15
+        Top = 62
+        Width = 70
+        Caption = 'Legend Title'
+        ParentColor = False
+      end
+      object SeriesComboBox: TComboBox
+        Left = 120
+        Height = 20
+        Top = 16
+        Width = 120
+        ItemHeight = 26
+        OnClick = SeriesComboBoxClick
+        Style = csDropDownList
+        TabOrder = 0
+        Text = '0'
+      end
+      object SeriesTitle: TEdit
+        Left = 120
+        Height = 25
+        Top = 56
+        Width = 203
+        BorderSpacing.InnerBorder = 2
+        TabOrder = 1
+      end
+      object Panel6: TPanel
+        Left = 8
+        Height = 178
+        Top = 96
+        Width = 319
+        BevelOuter = bvNone
+        ClientHeight = 178
+        ClientWidth = 319
+        TabOrder = 2
+        object PageControl2: TPageControl
+          Left = 0
+          Height = 178
+          Top = 0
+          Width = 319
+          ActivePage = LineOptionsSheet
+          Align = alClient
+          TabIndex = 0
+          TabOrder = 0
+          object LineOptionsSheet: TTabSheet
+            Caption = 'Lines'
+            ClientHeight = 148
+            ClientWidth = 313
+            object Label23: TLabel
+              Left = 55
+              Height = 15
+              Top = 14
+              Width = 28
+              Caption = 'Style'
+              ParentColor = False
+            end
+            object Label24: TLabel
+              Left = 55
+              Height = 15
+              Top = 51
+              Width = 30
+              Caption = 'Color'
+              ParentColor = False
+            end
+            object Label25: TLabel
+              Left = 55
+              Height = 15
+              Top = 94
+              Width = 24
+              Caption = 'Size'
+              ParentColor = False
+            end
+            object LineStyleBox: TComboBox
+              Left = 111
+              Height = 20
+              Top = 11
+              Width = 146
+              ItemHeight = 26
+              Style = csDropDownList
+              TabOrder = 0
+              Text = '0'
+            end
+            object LineColorBox: TColorBox
+              Left = 111
+              Height = 20
+              Top = 48
+              Width = 146
+              Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbPrettyNames]
+              ItemHeight = 20
+              TabOrder = 1
+            end
+            object LineVisibleBox: TCheckBox
+              Left = 55
+              Height = 18
+              Top = 125
+              Width = 64
+              Alignment = taLeftJustify
+              Caption = 'Visible'
+              TabOrder = 4
+            end
+            object LineSizeEdit: TEdit
+              Left = 111
+              Height = 21
+              Top = 91
+              Width = 32
+              NumbersOnly = True
+              TabOrder = 2
+              Text = '1'
+            end
+            object LineSizeUpDown: TUpDown
+              Left = 143
+              Height = 21
+              Top = 91
+              Width = 16
+              Associate = LineSizeEdit
+              Max = 10
+              Min = 1
+              Position = 1
+              TabOrder = 3
+            end
+          end
+          object MarkOptionsSheet: TTabSheet
+            Caption = 'Markers'
+            ClientHeight = 148
+            ClientWidth = 313
+            ImageIndex = 1
+            object Label26: TLabel
+              Left = 55
+              Height = 15
+              Top = 14
+              Width = 28
+              Caption = 'Style'
+              ParentColor = False
+            end
+            object Label27: TLabel
+              Left = 55
+              Height = 15
+              Top = 51
+              Width = 30
+              Caption = 'Color'
+              ParentColor = False
+            end
+            object Label28: TLabel
+              Left = 55
+              Height = 15
+              Top = 94
+              Width = 24
+              Caption = 'Size'
+              ParentColor = False
+            end
+            object MarkVisibleBox: TCheckBox
+              Left = 55
+              Height = 18
+              Top = 125
+              Width = 64
+              Alignment = taLeftJustify
+              Caption = 'Visible'
+              TabOrder = 4
+            end
+            object MarkStyleBox: TComboBox
+              Left = 111
+              Height = 20
+              Top = 11
+              Width = 146
+              ItemHeight = 26
+              Style = csDropDownList
+              TabOrder = 0
+              Text = '0'
+            end
+            object MarkColorBox: TColorBox
+              Left = 111
+              Height = 20
+              Top = 48
+              Width = 146
+              Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbPrettyNames]
+              ItemHeight = 20
+              TabOrder = 1
+            end
+            object MarkSizeEdit: TEdit
+              Left = 111
+              Height = 21
+              Top = 91
+              Width = 32
+              NumbersOnly = True
+              TabOrder = 2
+              Text = '1'
+            end
+            object MarkSizeUpDown: TUpDown
+              Left = 143
+              Height = 21
+              Top = 91
+              Width = 16
+              Associate = MarkSizeEdit
+              Max = 10
+              Min = 1
+              Position = 1
+              TabOrder = 3
+            end
+          end
+          object AreaOptionsSheet: TTabSheet
+            Caption = 'Patterns'
+            ClientHeight = 148
+            ClientWidth = 313
+            ImageIndex = 2
+            object Label29: TLabel
+              Left = 47
+              Height = 15
+              Top = 14
+              Width = 45
+              AutoSize = False
+              Caption = 'Style'
+              ParentColor = False
+            end
+            object Label30: TLabel
+              Left = 47
+              Height = 15
+              Top = 51
+              Width = 30
+              Caption = 'Color'
+              ParentColor = False
+            end
+            object Label31: TLabel
+              Left = 47
+              Height = 15
+              Top = 90
+              Width = 57
+              AutoSize = False
+              Caption = 'Stacking'
+              ParentColor = False
+            end
+            object AreaFillStyleBox: TComboBox
+              Left = 118
+              Height = 20
+              Top = 11
+              Width = 147
+              ItemHeight = 26
+              Style = csDropDownList
+              TabOrder = 0
+              Text = '0'
+            end
+            object AreaColorBox: TColorBox
+              Left = 118
+              Height = 20
+              Top = 48
+              Width = 147
+              Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbPrettyNames]
+              ItemHeight = 20
+              TabOrder = 1
+            end
+            object StackStyleBox: TComboBox
+              Left = 118
+              Height = 20
+              Top = 87
+              Width = 147
+              ItemHeight = 26
+              Style = csDropDownList
+              TabOrder = 2
+              Text = '0'
+            end
+          end
+          object PieOptionsSheet: TTabSheet
+            Caption = 'Pie Options'
+            ClientHeight = 148
+            ClientWidth = 313
+            ImageIndex = 3
+            object Label32: TLabel
+              Left = 80
+              Height = 15
+              Top = 96
+              Width = 83
+              Caption = 'Rotation Angle'
+              ParentColor = False
+            end
+            object PieCircledBox: TCheckBox
+              Left = 80
+              Height = 18
+              Top = 24
+              Width = 70
+              Alignment = taLeftJustify
+              Caption = 'Circular'
+              TabOrder = 0
+            end
+            object PiePatternBox: TCheckBox
+              Left = 80
+              Height = 18
+              Top = 56
+              Width = 99
+              Alignment = taLeftJustify
+              Caption = 'Use Patterns'
+              TabOrder = 1
+            end
+            object PieRotateEdit: TEdit
+              Left = 185
+              Height = 21
+              Top = 91
+              Width = 32
+              NumbersOnly = True
+              TabOrder = 2
+              Text = '0'
+            end
+            object PieRotateUpDown: TUpDown
+              Left = 217
+              Height = 21
+              Top = 91
+              Width = 16
+              Associate = PieRotateEdit
+              Increment = 10
+              Max = 360
+              Min = 0
+              Position = 0
+              TabOrder = 3
+            end
+          end
+          object LabelsOptionsSheet: TTabSheet
+            Caption = 'Labels'
+            ClientHeight = 148
+            ClientWidth = 313
+            ImageIndex = 4
+            object Label33: TLabel
+              Left = 43
+              Height = 15
+              Top = 14
+              Width = 28
+              Caption = 'Style'
+              ParentColor = False
+            end
+            object Label34: TLabel
+              Left = 43
+              Height = 15
+              Top = 51
+              Width = 30
+              Caption = 'Color'
+              ParentColor = False
+            end
+            object LabelsStyleBox: TComboBox
+              Left = 122
+              Height = 20
+              Top = 11
+              Width = 147
+              ItemHeight = 26
+              Style = csDropDownList
+              TabOrder = 0
+              Text = '0'
+            end
+            object LabelsBackColorBox: TColorBox
+              Left = 122
+              Height = 20
+              Top = 48
+              Width = 147
+              Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbPrettyNames]
+              ItemHeight = 20
+              TabOrder = 1
+            end
+            object LabelsTransparentBox: TCheckBox
+              Left = 43
+              Height = 18
+              Top = 79
+              Width = 94
+              Alignment = taLeftJustify
+              Caption = 'Transparent'
+              TabOrder = 2
+            end
+            object LabelsArrowsBox: TCheckBox
+              Left = 43
+              Height = 18
+              Top = 104
+              Width = 100
+              Alignment = taLeftJustify
+              Caption = 'Show Arrows'
+              TabOrder = 3
+            end
+            object LabelsVisibleBox: TCheckBox
+              Left = 43
+              Height = 18
+              Top = 128
+              Width = 64
+              Alignment = taLeftJustify
+              Caption = 'Visible'
+              TabOrder = 4
+            end
+          end
+        end
+      end
+      object LegendFontLabel: TLabel
+        Cursor = crHandPoint
+        Left = 242
+        Height = 16
+        Top = 37
+        Width = 89
+        Caption = 'Change Font...'
+        Font.Color = clBlue
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = LegendFontLabelLinkClick
+      end
+    end
+  end
+  object FontDialog1: TFontDialog
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 440
+    Top = 432
+  end
+end

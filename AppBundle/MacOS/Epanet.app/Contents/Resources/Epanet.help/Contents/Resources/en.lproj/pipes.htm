@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Pipes</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Pipes" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Pipes</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="tank_mixing_models.htm">Previous</a>&nbsp;
+     <a href="pipe_properties.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pipes.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">Pipes convey water from one point in the network to another. EPANET assumes that all pipes are full at all times. Flow direction is from the end at higher hydraulic head (internal energy per weight of water) to that at lower head. The principal hydraulic input parameters for pipes are:</span></p>
+<p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">diameter</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">length</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">roughness coefficient</span></p><p style="text-indent: 0; padding-left: 0.1354in; margin: 0.0521in 0 0 0;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">initial status (open, closed, or contains a check valve).</span></p><p style="margin: 0.0521in 0 0 0;"><span style="color: #010100;">The status parameter allows pipes to implicitly contain shutoff valves and check valves (which allow flow in only one direction).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">The water quality inputs for pipes consist of</span></p>
+<p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">bulk reaction coefficient</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">wall reaction coefficient.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Computed outputs for pipes include</span></p>
+<p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">flow rate</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">velocity</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">head loss</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">friction factor</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">reaction rate</span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">water quality.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">The hydraulic head lost by water flowing in a pipe due to friction with the pipe walls can be computed using three different formulas:</span></p>
+<p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm" class="topiclink">Hazen-Williams Formula</a></span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#d-w_formula" class="topiclink">Darcy-Weisbach Formula</a></span></p><p style="text-indent: 0; padding-left: 0.1250in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.1354in;margin-left:-0.1354in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;"><a href="head_loss_formulas.htm#c-w_formula" class="topiclink">Chezy-Manning Formula</a></span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;"><a href="minor_losses.htm" class="topiclink">Minor losses</a> caused by bends and fittings can also be accounted for by assigning the pipe a minor loss coefficient.</span></p>
+<p><span style="font-size: 3pt; color: #010100;">&nbsp;</span></p>
+<p><span style="color: #010100;">Pipes can be set open or closed at preset times, when tank levels fall below or above certain set-points, or when nodal pressures fall below or above certain set-points by the use of <a href="controls.htm" class="topiclink">Controls</a>.</span><span style="font-size: 3pt; color: #010100;"> </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #0000ff;">See Also:</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="pipe_properties.htm" class="topiclink">Pipe Properties</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

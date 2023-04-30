@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Pipe Properties</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Pipes,Pipes Properties" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Pipe Properties</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="pipes.htm">Previous</a>&nbsp;
+     <a href="pumps.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pipe_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Pipe ID</span></p>
+<p class="p_Normal"><span style="color: #010100;">A unique label used to identify the pipe. It can consist of a combination of up to 15 numerals or characters. It cannot be the same as the ID for any other link. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Start Node</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID of the node where the pipe begins. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">End Node</span></p>
+<p class="p_Normal"><span style="color: #010100;">The ID of the node where the pipe ends. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Description</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string that describes other significant information about the pipe.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Tag</span></p>
+<p class="p_Normal"><span style="color: #010100;">An optional text string (with no spaces) &nbsp;used to assign the pipe to a category, perhaps one based on age or material.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Length</span></p>
+<p class="p_Normal"><span style="color: #010100;">The actual length of the pipe in feet (meters). This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Diameter</span></p>
+<p class="p_Normal"><span style="color: #010100;">The pipe diameter in inches (mm). This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Roughness</span></p>
+<p class="p_Normal"><span style="color: #010100;">The <a href="roughness_coefficient.htm" class="topiclink">roughness coefficient</a> of the pipe. It is unitless for Hazen-Williams or Chezy-Manning roughness and has units of millifeet (mm) for Darcy-Weisbach roughness. This is a required property.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Loss Coefficient</span></p>
+<p class="p_Normal"><span style="color: #010100;">Unitless <a href="minor_losses.htm" class="topiclink">minor loss coefficient</a> associated with bends, fittings, etc. Assumed 0 if left blank.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Initial Status</span></p>
+<p class="p_Normal"><span style="color: #010100;">Determines whether the pipe is initially open, closed, or contains a check valve. If a check valve is specified then any flow in the pipe must be from the Start node to the End node.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Bulk Coefficient</span></p>
+<p class="p_Normal"><span style="color: #010100;">The bulk reaction coefficient for the pipe. Use a positive value for growth and a negative value for decay. Time units are 1/days. Leave blank if the Global Bulk reaction coefficient will apply (see <a href="analysis_options-reactions.htm" class="topiclink">Reaction Options</a>). &nbsp;See <a href="bulk_flow_reaction_rates.htm" class="topiclink">Bulk Flow Reaction Rates</a> &nbsp;for further description of this parameter.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Wall Coefficient</span></p>
+<p class="p_Normal"><span style="color: #010100;">The wall reaction coefficient for the pipe. Use a positive value for growth and a negative value for decay. Time units are 1/days. Leave blank if the Global Wall reaction coefficient will apply (see <a href="analysis_options-reactions.htm" class="topiclink">Reaction Options</a>). See <a href="pipe_wall_reaction_rates.htm" class="topiclink">Pipe Wall Reaction Rates</a> for further description of this parameter.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

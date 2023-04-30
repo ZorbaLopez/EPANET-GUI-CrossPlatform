@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Propiedades de las Bombas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bombas,Propiedades de Bombas" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Propiedades de las Bombas</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="pumps.htm">Anterior</a>&nbsp;
+     <a href="valves.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pump_properties.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">ID Bomba</span></p>
+<p class="p_Normal"><span style="color: #010100;">Etiqueta que identifica unívocamente a cada bomba. Puede contener hasta 31 caracteres numéricos o alfanuméricos. No puede coincidir con el ID de ninguna otra línea. Esta propiedad es obligatoria.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Nudo Inicial</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID del nudo en el lado de aspiración de la bomba. Es una propiedad requerida.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Nudo Final</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID del nudo en el lado de descarga de la bomba. Es una propiedad requerida.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Descripción</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional que describe alguna información relevante de la bomba.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Etiqueta</span></p>
+<p class="p_Normal"><span style="color: #010100;">Cadena de texto opcional (sin espacios) utilizada para clasificar la bomba dentro de una categoría (p. ej. por edad, tamaño o localización).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Curva Característica</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID de la <a href="pump_curve.htm" class="topiclink">Curva Característica</a> que relaciona la altura proporcionada por la bomba con el caudal de paso, a la velocidad nominal de giro. Si la bomba va a trabajar a potencia constante (ver campo siguiente), dejar este campo en blanco.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Potencia Nominal</span></p>
+<p class="p_Normal"><span style="color: #010100;">Potencia suministrada por la bomba, en kW (caballos). Utilizar esta opción cuando no se disponga de la curva característica de la bomba. EPANET supone que en este caso la bomba trabaja a potencia constante, independientemente del caudal de paso. Dejar en blanco si se especifica una curva característica en su lugar. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Velocidad Relativa</span></p>
+<p class="p_Normal"><span style="color: #010100;">Velocidad relativa fijada para la bomba (adimensional). Por ejemplo, una velocidad relativa de 1,2 significa que la velocidad de rotación de la bomba es un 20 % mayor que su velocidad nominal. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Modulación</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID de la <a href="time_patterns.htm" class="topiclink">Modulación</a> empleada para controlar el modo de operación de la bomba. Los coeficientes de la curva se interpretan como valores de la velocidad relativa. Un coeficiente 0 indica que la bomba está parada durante el intervalo de tiempo correspondiente. Dejar en blanco si no se aplica.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Estado Inicial</span></p>
+<p class="p_Normal"><span style="color: #010100;">Estado de la bomba (Marcha o Parada) al comienzo de la simulación.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Curva Rendimiento</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID de la Curva de Rendimiento de la bomba, que especifica su rendimiento (en tanto por cien) en función del caudal de paso. Esta información se utiliza únicamente para calcular el consumo de energía. Dejar en blanco si no se aplica o si se va a utilizar el rendimiento global especificado en la sección <a href="analysis_options-energy.htm" class="topiclink">Opciones de Energía</a> para todo el proyecto.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Precio Energía</span></p>
+<p class="p_Normal"><span style="color: #010100;">Precio medio o nominal de la energía, por kWh. Se utiliza únicamente para calcular el coste del consumo energético. Dejar en blanco si no se aplica o si se va a utilizar el precio global especificado en la sección <a href="analysis_options-energy.htm" class="topiclink">Opciones de Energía</a> para todo el proyecto.</span><span style="font-size: 5pt; color: #010100;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold; color: #010100; text-decoration: underline;">Modulación Precios</span></p>
+<p class="p_Normal"><span style="color: #010100;">Identificativo ID de la modulación que describe la variación del precio de la energía a lo largo del día. Cada coeficiente de la curva representa el factor a aplicar sobre el Precio nominal de la Energía (ver campo anterior) para obtener el precio real de la energía en cada periodo. Dejar en blanco si no se aplica o si se va a utilizar la modulación global especificada en la sección <a href="analysis_options-energy.htm" class="topiclink">Opciones de Energía</a> para todo el proyecto.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

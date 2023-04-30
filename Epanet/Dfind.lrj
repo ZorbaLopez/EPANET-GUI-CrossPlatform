@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":80442082,"name":"tfindform.caption","sourcebytes":[77,97,112,32,70,105,110,100,101,114],"value":"Map Finder"},
+{"hash":315460,"name":"tfindform.radiogroup1.caption","sourcebytes":[70,105,110,100],"value":"Find"},
+{"hash":1236,"name":"tfindform.groupbox1.caption","sourcebytes":[73,68],"value":"ID"},
+{"hash":2805828,"name":"tfindform.button1.caption","sourcebytes":[38,70,105,110,100],"value":"&Find"},
+{"hash":223700227,"name":"tfindform.groupbox2.caption","sourcebytes":[65,100,106,97,99,101,110,116,32,76,105,110,107,115],"value":"Adjacent Links"}
+]}

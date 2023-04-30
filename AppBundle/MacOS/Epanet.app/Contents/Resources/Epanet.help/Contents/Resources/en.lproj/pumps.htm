@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Pumps</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Pumps" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Pumps</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Top</a>&nbsp;
+     <a href="pipe_properties.htm">Previous</a>&nbsp;
+     <a href="pump_properties.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="pumps.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="font-weight: bold; color: #010100;">Pumps</span><span style="color: #010100;"> are devices that impart energy to a fluid thereby raising its hydraulic head.</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="color: #010100;">The principal input parameter for a pump is its <a href="pump_curve.htm" class="topiclink">pump curve</a> (the combination of heads and flows that the pump can produce). </span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 5pt; color: #010100;"> </span><span style="color: #010100;">In lieu of a pump curve, the pump could be represented as a <a href="pump_curve_types.htm#pumpcurvep" class="topiclink">constant power device</a>.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 5pt; color: #010100;"> </span><span style="color: #010100;">The principal output parameters are flow and head gain.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 5pt; color: #010100;"> </span><span style="color: #010100;">Flow through a pump is unidirectional. If the system requires more head than the pump can produce, the pump is shut down. If it requires more flow, the pump curve is extrapolated to produce the flow even if a negative head results. In both cases a warning message is issued.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">Pumps can be turned on and off at preset times, when tank levels fall below or above certain set-points, or when nodal pressures fall below or above certain set-points through the use of <a href="controls.htm" class="topiclink">controls</a> and <a href="time_patterns.htm" class="topiclink">time patterns</a>.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 5pt; color: #010100;"> </span><span style="color: #010100;">Variable speed pumps can also be considered by specifying that their speed setting be changed under these same types of conditions. &nbsp;By definition, the original pump curve supplied to the program has a relative speed setting of 1. If the pump speed doubles, then the relative setting would be 2; if run at half speed, the relative setting is 0.5 and so on.</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-size: 3pt; color: #010100;"> </span><span style="color: #010100;">EPANET can also compute the energy consumption and cost of a pump. Either pump-specific <a href="efficiency_curve.htm" class="topiclink">efficiency curves</a> and energy pricing parameters can be supplied or <a href="analysis_options-energy.htm" class="topiclink">global energy options</a> will be used.</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #0000ff;">See Also:</span></p>
+<p style="margin: 0.0521in 0 0 0.2500in;"><span style="color: #010100;"><a href="pump_properties.htm" class="topiclink">Pump Properties</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

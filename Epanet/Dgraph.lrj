@@ -1,0 +1,19 @@
+{"version":1,"strings":[
+{"hash":181451038,"name":"tgraphselectform.caption","sourcebytes":[71,114,97,112,104,32,83,101,108,101,99,116,105,111,110],"value":"Graph Selection"},
+{"hash":1339,"name":"tgraphselectform.btnok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tgraphselectform.btncancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":2812976,"name":"tgraphselectform.btnhelp.caption","sourcebytes":[38,72,101,108,112],"value":"&Help"},
+{"hash":111241445,"name":"tgraphselectform.rggraphtype.caption","sourcebytes":[71,114,97,112,104,32,84,121,112,101],"value":"Graph Type"},
+{"hash":170930389,"name":"tgraphselectform.rgobjecttype.caption","sourcebytes":[79,98,106,101,99,116,32,84,121,112,101],"value":"Object Type"},
+{"hash":18340,"name":"tgraphselectform.btnadd.caption","sourcebytes":[65,100,100],"value":"Add"},
+{"hash":78392485,"name":"tgraphselectform.btndelete.caption","sourcebytes":[68,101,108,101,116,101],"value":"Delete"},
+{"hash":74216848,"name":"tgraphselectform.btnmoveup.caption","sourcebytes":[77,111,118,101,32,85,112],"value":"Move Up"},
+{"hash":208995006,"name":"tgraphselectform.btnmovedown.caption","sourcebytes":[77,111,118,101,32,68,111,119,110],"value":"Move Down"},
+{"hash":56062302,"name":"tgraphselectform.btnload.caption","sourcebytes":[76,111,97,100,46,46,46],"value":"Load..."},
+{"hash":160203102,"name":"tgraphselectform.btnsave.caption","sourcebytes":[83,97,118,101,46,46,46],"value":"Save..."},
+{"hash":142842946,"name":"tgraphselectform.gbvariable.caption","sourcebytes":[80,97,114,97,109,101,116,101,114],"value":"Parameter"},
+{"hash":48,"name":"tgraphselectform.cbvariable.text","sourcebytes":[48],"value":"0"},
+{"hash":87526692,"name":"tgraphselectform.gbtimeperiod.caption","sourcebytes":[84,105,109,101,32,80,101,114,105,111,100],"value":"Time Period"},
+{"hash":48,"name":"tgraphselectform.cbtimeperiod.text","sourcebytes":[48],"value":"0"},
+{"hash":193649368,"name":"tgraphselectform.gbitems.caption","sourcebytes":[73,116,101,109,115,32,116,111,32,71,114,97,112,104],"value":"Items to Graph"}
+]}

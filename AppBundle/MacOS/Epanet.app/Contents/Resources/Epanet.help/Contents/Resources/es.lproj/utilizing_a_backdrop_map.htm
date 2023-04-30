@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Utilizar un Mapa de Fondo</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Mapa de Fondo,Fondo Mapa" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+  <meta name="robots" content="index, anchors">
+    
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#00FFFF">
+  <tr valign="middle">
+    <td align="left">
+      <h1 class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #0000ff;">Utilizar un Mapa de Fondo</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="contents.htm">Inicio</a>&nbsp;
+     <a href="map_dimensions_dialog.htm">Anterior</a>&nbsp;
+     <a href="zooming_the_map.htm">Siguiente</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+<a name="utilizing_a_backdrop_map.htm"></a>
+    
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><span style="color: #010100;">EPANET puede mostrar un Mapa de Fondo superpuesto detrás del esquema de la red. El dibujo de fondo puede contener un mapa de calles o de otros servicios públicos, un mapa cartográfico, un plan de ordenación urbana, o cualquier otro dibujo o imagen que resulte útil. Por ejemplo, disponiendo en el fondo un mapa de calles se puede facilitar el proceso de añadir tuberías a la red, al permitir la digitalización directa de su trazado con referencia al fondo.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="Backdrop" style="margin:0;width:3.5000in;height:3.0313in;border:none" src="backdrop.gif"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="color: #010100;">El dibujo de fondo debe ser un meta-fichero mejorado de Windows o un fichero bitmap, creado en cualquier caso fuera del entorno de EPANET. Una vez importado, sus características no pueden ser editadas, aunque su parte visible variará conforme nos acerquemos, alejemos o desplacemos sobre el esquema de la red. Los meta-ficheros (vectoriales) se comportan mejor que los ficheros bitmaps (mapa de bits), ya que los primeros no pierden resolución al ser re-escalados. La mayoría de programas de CAD y GIS ofrecen la posibilidad de guardar los ficheros de dibujo y mapas como meta-ficheros (metafiles).</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-indent: -0.2396in; margin: 0 0 0 0.2500in;"><span style="color: #010100;">Si se selecciona la opción </span><span style="font-weight: bold; color: #010100;">Ver &gt;&gt; Mapa de Fondo</span><span style="color: #010100;"> de la Barra de Menús, se mostrará un submenú con los siguientes comandos:</span></p>
+<p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Cargar</span><span style="color: #010100;"> (carga un mapa de fondo en el proyecto)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Descargar</span><span style="color: #010100;"> (descarga el mapa de fondo del proyecto)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Alinear</span><span style="color: #010100;"> (alinea las tuberías de la red con el mapa de fondo)</span></p><p style="text-indent: 0; padding-left: 0.2396in; margin: 0.0521in 0 0 0.0104in;"><span style="display:inline-block;width:0.2396in;margin-left:-0.2396in;font-size:10pt;font-family:'Symbol';font-style:normal;color:#010100;text-decoration:none;">&#183;</span><span style="font-weight: bold; color: #010100;">Mostrar/Ocultar</span><span style="color: #010100;"> (muestra u oculta el mapa de fondo)</span></p><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #010100;">Cuando se carga por primera vez el mapa de fondo, la imagen se sitúa automáticamente haciendo coincidir su esquina superior izquierda con la del rectángulo que delimita el esquema de la red. El mapa de fondo puede reposicionarse con respecto al esquema de la red seleccionando la opción </span><span style="font-weight: bold; color: #010100;">Ver &gt;&gt; Mapa de Fondo &gt;&gt; Alinear</span><span style="color: #010100;">. Al seleccionarla, el esquema entero de la red, simplificado mediante trazos, podrá moverse libremente sobre el fondo (manteniendo el botón izquierdo del ratón pulsado) hasta hacerlo encajar con éste. Al guardar el proyecto, se guardará también el nombre del fichero del mapa de fondo y su alineación actual, junto con los restantes datos del mismo.</span></p>
+<p style="text-indent: -0.4896in; margin: 0 0 0 0.5000in;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0.0104in;"><table cellpadding="0" cellspacing="0" style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:0.4896in"><span style="font-weight: bold; color: #ff0000;">Nota:</span><span style="color: #010100;"> </span></td><td style="border:none;padding:0"><span style="color: #010100;">Para obtener buenos resultados cuando se superpone un mapa de fondo, utilizar meta-ficheros con preferencia a bitmaps, y dimensionar el esquema de la red de modo que el rectángulo que lo delimita tenga las mismas proporciones (razón ancho/alto) que el mapa de fondo (Ver <a href="setting_the_map_s_dimensions.htm" class="topiclink">Establecer las Dimensiones del Área de Dibujo</a>).</span></td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>
