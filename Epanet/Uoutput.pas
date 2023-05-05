@@ -111,7 +111,7 @@ procedure GetLinkLengths(var Value: PSingleArray);
 
 implementation
 
-uses Fmain, Fbrowser;
+uses Fmain, Fbrowser, ResourceStrings;
 
 const
 
@@ -666,14 +666,14 @@ begin
   IDStr := ' ' + ObjectLabel[ObjType] + ' ' + GetID(ObjType,ObjIndex) + ' ';
   if (ObjType in [JUNCS..TANKS]) and (CurrentNodeVar <> NOVIEW) then
     ValStr := GetNodeValStr(CurrentNodeVar, CurrentPeriod, ObjType, ObjIndex)
-              + ' ' + NodeUnits[CurrentNodeVar].Units
+              + ' ' + ConvertUnitText(NodeUnits[CurrentNodeVar].Units)
   else if (ObjType in [PIPES..VALVES]) and (CurrentLinkVar <> NOVIEW) then
   begin
     ValStr := GetLinkValStr(CurrentLinkVar, CurrentPeriod, ObjType, ObjIndex);
     if (ObjType in [PUMPS..VALVES]) and (CurrentLinkVar = HEADLOSS) then
-      ValStr := ValStr + ' ' + LinkUnits[LINKLENGTH].Units
+      ValStr := ValStr + ' ' + ConvertUnitText(LinkUnits[LINKLENGTH].Units)
     else
-      ValStr := ValStr + ' ' + LinkUnits[CurrentLinkVar].Units;
+      ValStr := ValStr + ' ' + ConvertUnitText(LinkUnits[CurrentLinkVar].Units);
   end
   else ValStr := '';
 end;

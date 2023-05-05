@@ -165,7 +165,7 @@ var
 begin
 // Include length of time period in X-axis title
   PatTstep := Network.Options.Data[PAT_TSTEP_INDEX];
-  Chart1.BottomAxis.Title.Caption := TXT_AXIS_TITLE + PatTstep + TXT_HRS;
+  Chart1.BottomAxis.Title.Caption := Format(TXT_AXIS_TITLE, [PatTstep]);
   Chart1.LeftAxis.Title.Caption := TXT_MULTIPLIER;
   DT := Uutils.StrHoursToFloat(PatTstep);
   if DT < 0 then DT := 1;
@@ -291,8 +291,7 @@ begin
   begin
     if PatternID.Text <> OldID then
     begin
-      msg := TXT_REPLACE_ALL + OldID +
-             TXT_REPLACE_WITH + PatternID.Text + '?';
+      msg := Format(TXT_REPLACE_ALL, [OldID, PatternID.Text]);
       if Uutils.MsgDlg(msg, mtConfirmation, [mbYes, mbNo]) = mrYes then
         UpdateIDs(PatternID.Text);
     end;

@@ -52,8 +52,8 @@ const
   StackStyleText: array[0..3] of string =
     (TXT_STACKSTYLE_NONE, TXT_STACKSTYLE_SIDE, TXT_STACKSTYLE_STAC,
      TXT_STACKSTYLE_FSTA);
-  LabelStyleText: array[0..9] of string =
-    (TXT_LABELSTYLE_NONE, TXT_LABELSTYLE_VALU, TXT_LABELSTYLE_PERC,
+  LabelStyleText: array[0..10] of string =
+    ('', TXT_LABELSTYLE_NONE, TXT_LABELSTYLE_VALU, TXT_LABELSTYLE_PERC,
      TXT_LABELSTYLE_LABL, TXT_LABELSTYLE_LBPC, TXT_LABELSTYLE_LBVL,
      TXT_LABELSTYLE_LEGD, TXT_LABELSTYLE_PTOT, TXT_LABELSTYLE_LBTO,
      TXT_LABELSTYLE_XVAL);
@@ -320,8 +320,9 @@ begin
 
   UseDefaultPanelColor := False;
   LegendColorBox.DefaultColorColor := PanelColorBox.DefaultColorColor;
-  {$IFDEF LINUX}
-  LegendTransparentBox.Enabled:= False;
+  {$IFNDEF WINDOWS}
+  LegendTransparentBox.Enabled := False;
+  LabelsTransparentBox.Enabled := False;
   {$ENDIF}
 
 { Create a stringlist to hold data series options }
@@ -349,7 +350,6 @@ procedure TChartOptionsDlg.MarkOptionsSheetContextPopup(Sender: TObject;
 begin
 
 end;
-
 
 {Change the font used for the chart's title.}
 procedure TChartOptionsDlg.GraphTitleFontLabelLinkClick(Sender: TObject;
@@ -424,7 +424,6 @@ begin
     end;
   end;
 end;
-
 
 {Change the font used for the chart's legend.}
 procedure TChartOptionsDlg.LegendFontLabelLinkClick(Sender: TObject;
@@ -502,7 +501,6 @@ begin
         if HorAxis.Marks.Source.ClassName = 'TDateTimeIntervalChartSource' then
            IsDateTime := True;}
 
-        {with Series[i], SeriesOptions do}
         with TChartSeries(Series[i]), SeriesOptions do
         begin
           LabelsVisible := Marks.Visible;
@@ -644,8 +642,8 @@ end;
 {Transfer otions from the dialog back to the chart.}
 procedure TChartOptionsDlg.UnloadOptions(theChart: TChart);
 var
-  i,j: Integer;
-  s  : String;
+  i,j, d: Integer;
+  s     : String;
   SeriesOptions: TSeriesOptions;
 begin
   with theChart do
@@ -740,7 +738,33 @@ begin
             Marks.Visible := LabelsVisible;
             Marks.Arrow.Visible := LabelsArrows;
             Marks.LabelBrush.Color := LabelsBackColor;
+            Marks.LabelFont.Color := InvertColor(LabelsBackColor);
             Marks.Style := TSeriesMarksStyle(LabelsStyle);
+            Marks.LinkPen.Color := Marks.Frame.Color;
+            with TGraphForm(Parent).Graph do
+            begin
+              if GraphType in  [TIMESERIESPLOT, PROFILEPLOT] then
+              begin
+
+                if ObjectType in [NODESERIES, NETNODES] then
+                  d := NodeUnits[VarType].Digits
+                else
+                  d := LinkUnits[VarType].Digits;
+
+                case LabelsStyle of
+                  Ord(smsCustom), Ord(smsNone): ;
+                  Ord(smsValue): Marks.Format := '%0:.'+IntToStr(d)+'f';
+                  Ord(smsPercent): Marks.Format := '%1:.1f%%';
+                  Ord(smsLabel): Marks.Format := '%2:s';
+                  Ord(smsLabelPercent): Marks.Format := '%2:s %1:.1f%%';
+                  Ord(smsLabelValue): Marks.Format := '%2:s %0:.'+IntToStr(d)+'f';
+                  //Ord(smsLegend): Marks.Format := ;
+                  Ord(smsPercentTotal): Marks.Format := '%1:.1f%% of %0:.'+IntToStr(d)+'f';
+                  Ord(smsLabelPercentTotal): Marks.Format := '%2:s %1:.1f%% of %0:.'+IntToStr(d)+'f';
+                  Ord(smsXValue): Marks.Format := '%4:.0f';
+                end;
+              end;
+            end;
           end;
 
           if Series[i] is TLineSeries then
@@ -753,6 +777,7 @@ begin
             Pointer.Visible := PointVisible;
             Pointer.Style := TSeriesPointerStyle(PointStyle);
             Pointer.Pen.Color := PointColor;
+            Pointer.Brush.Color := PointColor;
             Pointer.HorizSize := PointSize;
             Pointer.VertSize := PointSize;
             Brush.Style := TBrushStyle(AreaFillStyle);
@@ -804,7 +829,6 @@ begin
         end;
       end;
     end;
-    {AutoRepaint := True;}
     Refresh;
   end;
 end;
@@ -816,6 +840,7 @@ procedure TChartOptionsDlg.SetAxisScaling(theAxis: TChartAxis;
 --------------------------------------------------}
 var
   zMin, zMax, zInc : Double;
+  i : Integer;
 begin
   zMin := StrToFloatDef(Smin, 0);
   zMax := StrToFloatDef(Smax, 0);
@@ -841,6 +866,17 @@ begin
     end;
     Intervals.Options:=[aipUseCount];
     Intervals.Count := Trunc((zMax - zMin) / zInc);
+    if zInc > 1.0 then Marks.Format := '%0:.0f' else
+    begin
+      i := 0;
+      while zInc < 1.0 do
+      begin
+          zInc := zInc * 10;
+          Inc(i);
+       end;
+      if i < 3 then Marks.Format := '%0:.' + IntToStr(i) + 'f'
+      else Marks.Format := '%0:10.2e';
+    end;
   end;
 end;
 

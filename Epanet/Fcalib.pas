@@ -494,12 +494,12 @@ end;
 
 procedure TCalibReportForm.DisplayTitle(const Vname: String);
 begin
-  Caption := TXT_REPORT + Vname;
+  Caption := Format(TXT_REPORT, [Vname]);
   MainForm.FormActive:= Caption;
   MainForm.FormActivated(self);
   with Memo1.Lines do
   begin
-    Add(TXT_CAL_TITLE + Vname);
+    Add(Format(TXT_CAL_TITLE, [Vname]));
     Add('');
     Add(TXT_HEADING1);
     Add(TXT_HEADING2);
@@ -609,11 +609,7 @@ begin
   begin
 
   //Find coordinates of perfect correlation line
-    Title.Text[0] := TXT_CORPLOT_TITLE + Vname;
-    {x1 := MinXValue(BottomAxis);
-    x2 := MaxXValue(BottomAxis);
-    y1 := MinYValue(LeftAxis);
-    y2 := MaxYValue(LeftAxis);}
+    Title.Text[0] := Format(TXT_CORPLOT_TITLE, [Vname]);
     GetAllSeriesAxisLimits(BottomAxis, x1, x2);
     GetAllSeriesAxisLimits(LeftAxis, y1, y2);
     if (x1 < y1) then y1 := x1
@@ -623,28 +619,23 @@ begin
     z1 := 0.1*(x2-x1);
     z2 := 0.1*(y2-y1);
 
-  //Create FastLineSeries for perfect correlation line
-    {aSeries := TFastLineSeries.Create(self);}
+  //Create LineSeries for perfect correlation line
     aSeries := TLineSeries.Create(self);
     with aSeries do
     begin
-      {try}
-        {ParentChart := Chart1;}
-        Title := '';
-        ShowInLegend := False;
-        SeriesColor := clBlack;
-        AddXY((x1-z1),(y1-z2),'',clDefault);
-        AddXY((x2+z1),(y2+z2),'',clDefault);
-        AddSeries(aSeries);
-      {finally}
-        Visible := True;
-      {end}
+      Title := '';
+      ShowInLegend := False;
+      SeriesColor := clBlack;
+      AddXY((x1-z1),(y1-z2),'',clDefault);
+      AddXY((x2+z1),(y2+z2),'',clDefault);
+      AddSeries(aSeries);
+      Visible := True;
     end;
 
   end;
   with Chart2 do
   begin
-    Title.Text[0] := TXT_CALPLOT_TITLE + Vname;
+    Title.Text[0] := Format(TXT_CALPLOT_TITLE, [Vname]);
     BottomAxis.Marks.Source := Series3.Source;
     BottomAxis.Marks.Style:= smsLabel;
     Visible := True;

@@ -677,7 +677,6 @@ begin
     else if C = FCombo then
       S := Trim(FCombo.Text)
     else S := FGrid.Cells[1,FRow];
-
     // Validate text if it has changed
     GoValidate(S);
 
@@ -730,7 +729,7 @@ begin
   end;
 end;
 
-
+{$RANGECHECKS OFF}
 function TPropEdit.GoValidate(S: String): Boolean;
 //-----------------------------------------------------------------------------
 // Validates an edited property value and updates the value if its valid.
@@ -763,12 +762,11 @@ begin
     // and the StringList that holds the property values
     if (IsValid) then
     begin
-      if FCombo.Visible then FGrid.Cells[1,FRow] := ST
+      if (FProps^[FRow].Style in [esComboList, esComboEdit]) then FGrid.Cells[1,FRow] := ST
       else FGrid.Cells[1,FRow] := S;
       FValues[FRow] := S;
       FModified := True;
     end
-
     // If not valid then raise an exception
     else raise EInvalidProperty.Create('Invalid Property Value');
 
@@ -798,7 +796,6 @@ begin
   CanSelect := True;
 end;
 
-{$RANGECHECKS OFF}
 procedure TPropEdit.GridClick(Sender: TObject);
 //-----------------------------------------------------------------------------
 // OnClick event handler for grid control.
@@ -983,6 +980,9 @@ begin
       begin
         Brush.Color := clInfoBk;
         Font.Color := clInfoText;
+        {$IFDEF DARWIN}
+        if FCombo.Visible then Font.Color := clInfoBk;
+        {$ENDIF}
       end
       else Font.Color := FValueColor;
       FillRect(Rect);

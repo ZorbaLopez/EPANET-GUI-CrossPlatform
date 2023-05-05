@@ -1890,8 +1890,7 @@ begin
     begin
       if ErrCount <= 10 then
       begin
-        ErrList.Add(TXT_ERROR + IntToStr(Err) + TXT_AT_LINE +
-          IntToStr(Lcount) + ':');
+        ErrList.Add(Format(TXT_ERROR, [IntToStr(Err), IntToStr(Lcount)]));
         if Section >= 0 then ErrList.Add(SectionWords[Section] + ']');
         ErrList.Add(Line);
         ErrList.Add('');
@@ -1902,8 +1901,7 @@ begin
 
 // Determine demand count property for each junction.
   if (DemandFlag) or (FileType = ftInput) then SetDemandCounts;
-  if ErrCount > 10 then ErrList.Add(
-    IntToStr(ErrCount-10) + TXT_MORE_ERRORS);
+  if ErrCount > 10 then ErrList.Add(Format(TXT_MORE_ERRORS, [IntToStr(ErrCount-10)]));
 end;
 
 
@@ -1935,7 +1933,7 @@ begin
     else
     begin
       Screen.Cursor := crDefault;
-      Uutils.MsgDlg(MSG_NO_MAP_FILE + MapFile, mtWarning, [mbOK]);
+      Uutils.MsgDlg(Format(Msg_NO_MAP_FILE, [MapFile]), mtWarning, [mbOK]);
       Result := False
     end;
     CloseFile(F);
@@ -1943,7 +1941,7 @@ begin
   else
   begin
     Screen.Cursor := crDefault;
-    Uutils.MsgDlg(MSG_MAP_FILE + MapFile + TXT_DOES_NOT_EXIST, mtWarning, [mbOK]);
+    Uutils.MsgDlg(Format(MSG_MAP_FILE, [MapFile]), mtWarning, [mbOK]);
     Result := False;
   end;
 end;
@@ -1958,7 +1956,7 @@ procedure DisplayInpErrForm(const Fname: String);
 begin
   with TInpErrForm.Create(Application) do
   try
-    Memo1.Lines.Add(TXT_ERROR_REPORT + Fname);
+    Memo1.Lines.Add(Format(TXT_ERROR_REPORT, [Fname]));
     Memo1.Lines.Add('');
     Memo1.Lines.AddStrings(TStrings(ErrList));
     ShowModal;
@@ -2083,8 +2081,7 @@ begin
   CloseFile(F);
   Uinput.UpdateEditor(EditorObject,EditorIndex);
   MainForm.RefreshMapForm;
-  if not R then Uutils.MsgDlg(
-   Fname + MSG_INVALID_FILE, mtError, [mbOK])
+  if not R then Uutils.MsgDlg(Format(MSG_INVALID_FILE, [Fname]), mtError, [mbOK])
   else HasChanged := True;
 end;
 

@@ -547,9 +547,9 @@ begin
   begin
     S := ObjectIDBox.Text;
     if (NodeSeriesBtn.Checked) and (not FindNode(S,i,j))
-    then Uutils.MsgDlg(MSG_NO_NODE + S, mtError, [mbOK])  // NODESERIES
+    then Uutils.MsgDlg(Format(MSG_NO_NODE, [S]), mtError, [mbOK])  // NODESERIES
     else if (LinkSeriesBtn.Checked) and (not FindLink(S,i,j))
-    then Uutils.MsgDlg(MSG_NO_LINK + S, mtError, [mbOK]) // LINKSERIES
+    then Uutils.MsgDlg(Format(MSG_NO_LINK, [S]), mtError, [mbOK]) // LINKSERIES
     else ModalResult := mrOK;
   end
   else ModalResult := mrOK;

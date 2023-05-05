@@ -124,7 +124,7 @@ begin
   Xunits[HEADCURVE]  := ' (' + FlowUnits + ')';
   Xunits[EFFCURVE]   := Xunits[HEADCURVE];
   Xunits[HLOSSCURVE] := Xunits[HEADCURVE];
-  Yunits[VOLCURVE]   := TXT_CUBIC + LengthUnits + ')';
+  Yunits[VOLCURVE]   := Format(TXT_CUBIC, [LengthUnits]);
   Yunits[HEADCURVE]  := ' (' + LengthUnits + ')';
   Yunits[EFFCURVE]   := TXT_CUR_PERCENT;
   Yunits[HLOSSCURVE] := ' (' + LengthUnits + ')';
@@ -159,7 +159,7 @@ begin
     begin
       if X[I] <= Xprev then
       begin
-        Uutils.MsgDlg(CurveGrid.Cells[0,0] + MSG_OUT_OF_ORDER, mtError, [mbOK]);
+        Uutils.MsgDlg(Format(MSG_OUT_OF_ORDER, [CurveGrid.Cells[0,0]]), mtError, [mbOK]);
         exit;
       end;
       Xprev := X[I];

@@ -175,9 +175,9 @@ begin
       NodeVariable[HEAD].Name, NodeVariable[PRESSURE].Name,
         NodeVariable[NODEQUAL].Name]);
     Writeline(S);
-    S := Format('%-15s %10s%10s%10s%10s',[TXT_ID, NodeUnits[DEMAND].Units,
-      NodeUnits[HEAD].Units, NodeUnits[PRESSURE].Units,
-        NodeUnits[NODEQUAL].Units]);
+    S := Format('%-15s %10s%10s%10s%10s',[TXT_ID, ConvertUnitText(NodeUnits[DEMAND].Units),
+      ConvertUnitText(NodeUnits[HEAD].Units), ConvertUnitText(NodeUnits[PRESSURE].Units),
+        ConvertUnitText(NodeUnits[NODEQUAL].Units)]);
     Writeline(S);
     Writeline(ULINE);
   except
@@ -201,8 +201,8 @@ begin
       LinkVariable[VELOCITY].Name, LinkVariable[HEADLOSS].Name,
         LinkVariable[LINKSTAT].Name]);
     Writeline(S);
-    S := Format('%-15s %10s%10s%10s',[TXT_ID, LinkUnits[FLOW].Units,
-      LinkUnits[VELOCITY].Units, LinkUnits[HEADLOSS].Units]);
+    S := Format('%-15s %10s%10s%10s',[TXT_ID, ConvertUnitText(LinkUnits[FLOW].Units),
+      ConvertUnitText(LinkUnits[VELOCITY].Units), ConvertUnitText(LinkUnits[HEADLOSS].Units)]);
     Writeline(S);
     Writeline(ULINE);
   except
@@ -223,7 +223,7 @@ begin
       LinkVariable[LINKLENGTH].Name, LinkVariable[DIAMETER].Name]);
     Writeline(S);
     S := Format('%-15s%-15s%-15s%10s%10s',[TXT_ID, TXT_NODE, TXT_NODE,
-      LinkUnits[LINKLENGTH].Units, LinkUnits[DIAMETER].Units]);
+      ConvertUnitText(LinkUnits[LINKLENGTH].Units), ConvertUnitText(LinkUnits[DIAMETER].Units)]);
     Writeline(S);
     Writeline(ULINE);
   except
@@ -381,9 +381,8 @@ begin
 // Check for huge file size
   Size := (Nlinks + (Nnodes + Nlinks)*Nperiods)*60*1e-6;
   if Size > 10 then
-    if Uutils.MsgDlg(MSG_REPORT_SIZE1 + IntToStr(Trunc(Size)) +
-      MSG_REPORT_SIZE2, mtConfirmation, [mbYes,mbNo], MainForm) = mrNo
-        then Exit;
+    if Uutils.MsgDlg(Format(MSG_REPORT_SIZE1, [IntToStr(Trunc(Size))]),
+       mtConfirmation, [mbYes,mbNo], MainForm) = mrNo then Exit;
 
 // Get a report file name
   Fname := '';
@@ -404,7 +403,7 @@ begin
       R := WriteReport(Filename);
       Screen.Cursor := crDefault;
       if not R then
-        Uutils.MsgDlg(MSG_NO_WRITE + ExtractFileName(Filename),
+        Uutils.MsgDlg(Format(MSG_NO_WRITE, [ExtractFileName(Filename)]),
           mtError, [mbOK], MainForm);
     end;
   end;

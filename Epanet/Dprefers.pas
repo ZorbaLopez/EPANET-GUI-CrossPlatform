@@ -113,7 +113,7 @@ begin
   NodeVarSpin.Value := NodeDigits[DEMAND];
   LinkVarBox.ItemIndex := 0;
   LinkVarSpin.Value := LinkDigits[FLOW];
-  Label6.Caption := MSG_SELECT_NUMBER_OF + #13 + MSG_WHEN_DISPLAYING;
+  Label6.Caption := MSG_SELECT_NUMBER_OF;
   PageControl1.ActivePage := TabSheet1;
 
   // Assign items to language variable combo box

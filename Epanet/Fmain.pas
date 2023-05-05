@@ -873,7 +873,7 @@ begin
         MapForm.RedrawMap;
         OVMapForm.Rescale;
       end
-      else Uutils.MsgDlg(Msg_NO_MAP_FILE + Filename, mtError, [mbOK]);
+      else Uutils.MsgDlg(Format(Msg_NO_MAP_FILE, [Filename]), mtError, [mbOK]);
     end;
   end;
 end;
@@ -955,8 +955,8 @@ begin
       if ExtractFileExt(Filename) = '' then Filename := Filename + '.inp';
       if (CompareText(InputFileName,Filename) = 0)
       and ReadOnlyFlag
-      then Uutils.MsgDlg(ExtractFileName(InputFileName) +
-           MSG_READONLY, mtInformation, [mbOK])
+      then Uutils.MsgDlg(Format(MSG_READONLY, [ExtractFileName(InputFileName)]),
+                         mtInformation, [mbOK])
       else Uexport.ExportDataBase(Filename,True)
     end;
   end;
@@ -968,6 +968,7 @@ procedure TMainForm.MnuPageSetupClick(Sender: TObject);
 // Displays Page Setup dialog when File|Page Setup selected
 //----------------------------------------------------------
 begin
+
   with PageSetupDialog, PageLayout do
   begin
   // Transfer current margin settings from PageLayout to
@@ -1869,7 +1870,7 @@ end;
 procedure TMainForm.PopupMenu1Popup(Sender: TObject);
 begin
   with PopupAutoLength do
-    Caption := TXT_AUTOLENGTH + AutoLengthStatus[Ord(not AutoLength)];
+    Caption := Format(TXT_AUTOLENGTH, [AutoLengthStatus[Ord(not AutoLength)]]);
 end;
 
 
@@ -2185,7 +2186,7 @@ begin
   if  (Length(MapBackdrop.Filename) > 0)
   and (not FileExists(MapBackdrop.Filename))then
   begin
-    if Uutils.MsgDlg(MSG_NO_FIND_BACKDROP + MapBackdrop.Filename + MSG_FIND_BACKDROP,
+    if Uutils.MsgDlg(Format(MSG_FIND_BACKDROP, [MapBackdrop.Filename]),
     mtError, [mbYes,mbNo]) = mrYes then
     begin
       with OpenPictureDialog do
@@ -2225,8 +2226,8 @@ begin
 // Check if project file is read-only
   if ReadOnlyFlag
   and (CompareText(Fname,InputFileName) = 0)
-  then Uutils.MsgDlg(
-    ExtractFileName(InputFileName) + MSG_READONLY, mtInformation, [mbOK])
+  then Uutils.MsgDlg(Format(MSG_READONLY, [ExtractFileName(InputFileName)]),
+                     mtInformation, [mbOK])
 
 // Save project under new name
   else
@@ -2502,6 +2503,7 @@ var
   Y: Single;
   Justify: TJustify;
 begin
+
   if Printer.Printers.Count > 0 then with thePrinter do
   begin
   // Set printer orientation
@@ -2679,7 +2681,8 @@ procedure TMainForm.ShowAutoLengthStatus;
 // Displays cuurent value of AutoLength in StatusBar
 //--------------------------------------------------
 begin
-  StatusBarPanel5.Caption := TXT_AUTOLENGTH + AutoLengthStatus[Ord(AutoLength)];
+  StatusBarPanel5.Caption := Format(TXT_AUTOLENGTH,
+                                    [AutoLengthStatus[Ord(AutoLength)]]);
 end;
 
 

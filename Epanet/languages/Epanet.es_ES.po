@@ -13,28 +13,42 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: resourcestrings.file_err1a
-msgid "Calibration file "
-msgstr "Fichero de Calibración "
+#, object-pascal-format
+msgid "Calibration file %s does not exist."
+msgstr "El Fichero de Calibración %s no existe."
 
 #: resourcestrings.file_err2a
-msgid "Could not access calibration file "
-msgstr "No se pudo acceder al fichero de calibración "
-
-#: resourcestrings.file_err2b
-msgid "Check that file is not in use by another program."
-msgstr "Comprueba que otro programa no está usando el fichero."
+#, object-pascal-format
+msgid ""
+"Could not access calibration file %s.\n"
+"\n"
+"Check that file is not in use by another program."
+msgstr ""
+"No se pudo acceder al fichero de calibración %s.\n"
+"\n"
+"Comprueba que otro programa no lo está usando."
 
 #: resourcestrings.file_err3a
-msgid "Could not open file "
-msgstr "No se pudo abrir el fichero "
+#, object-pascal-format
+msgid ""
+"Could not open file %s.\n"
+"\n"
+"Check that file is not in use by another program."
+msgstr ""
+"No se pudo abrir el fichero %s.\n"
+"\n"
+"Comprueba que otro programa no lo está usando."
 
 #: resourcestrings.file_err4a
-msgid "Could not read file "
-msgstr "No se pudo guardar el fichero "
-
-#: resourcestrings.file_err4b
-msgid "File is probably not a valid EPANET project or input file."
-msgstr "Probablemente no es un fichero de proyecto de EPANET o un fichero de entrada válido."
+#, object-pascal-format
+msgid ""
+"Could not read file %s.\n"
+"\n"
+"File is probably not a valid EPANET project or input file."
+msgstr ""
+"No se pudo cargar el fichero %s.\n"
+"\n"
+"Probablemente no es un fichero de proyecto de EPANET o un fichero de entrada válido."
 
 #: resourcestrings.file_err5
 msgid "Data could not be saved to file."
@@ -99,16 +113,14 @@ msgid "Node %s already exists."
 msgstr "Nudo %s ya existe."
 
 #: resourcestrings.msg_1
-msgid "Unable to load more than "
-msgstr "No es posible cargar más de "
-
-#: resourcestrings.msg_2
-msgid " lines into Status Report."
-msgstr " líneas en el Informe de Estado."
+#, object-pascal-format
+msgid "Unable to load more than %s lines into Status Report."
+msgstr "No es posible cargar más de %s líneas en el Informe de Estado."
 
 #: resourcestrings.msg_already_have
-msgid "You already have a "
-msgstr "Ya tienes un/a "
+#, object-pascal-format
+msgid "You already have a %s named %s"
+msgstr "Ya tienes un/a %s llamado/a  %s"
 
 #: resourcestrings.msg_badmargins
 msgid "Page margins are too large for paper size."
@@ -127,8 +139,9 @@ msgid "Maximum number of filters has been reached."
 msgstr "Se alcanzó el máximo número de filtros."
 
 #: resourcestrings.msg_find_backdrop
-msgid ". Do you want to search for it?"
-msgstr ". ¿Quieres buscarlo?"
+#, object-pascal-format
+msgid "Could not find backdrop file %s. Do you want to search for it?"
+msgstr "No se encontró el fichero del Mapa de Fondo %s. ¿Quieres buscarlo?"
 
 #: resourcestrings.msg_illegal_map_limits
 msgid "Illegal map limits."
@@ -139,16 +152,18 @@ msgid "Importing network data..."
 msgstr "Importando datos de la red..."
 
 #: resourcestrings.msg_invalid_file
-msgid " is not a valid EPANET data file."
-msgstr " no es un fichero de proyecto de EPANET válido."
+#, object-pascal-format
+msgid "%s is not a valid EPANET data file."
+msgstr "%s no es un fichero de proyecto de EPANET válido."
 
 #: resourcestrings.msg_lang_restart
 msgid "Language will be updated next time you open EPANET"
 msgstr "El idioma se actualizará la próxima vez que abras EPANET"
 
 #: resourcestrings.msg_map_file
-msgid "Map file "
-msgstr "Fichero de Esquema de la Red "
+#, object-pascal-format
+msgid "Map file %s does not exist."
+msgstr "El Fichero de Esquema de la Red %s no existe."
 
 #: resourcestrings.msg_not_epanet_file
 msgid "Not an EPANET file."
@@ -163,8 +178,9 @@ msgid " - directory does not exist."
 msgstr " - directory does not exist."
 
 #: resourcestrings.msg_no_find_backdrop
-msgid "Could not find backdrop file "
-msgstr "No se encontró el fichero del Mapa de Fondo "
+#, object-pascal-format
+msgid "Could not find backdrop file %s"
+msgstr "No se encontró el fichero del Mapa de Fondo %s"
 
 #: resourcestrings.msg_no_input_file
 msgid "Input file no longer exists."
@@ -175,32 +191,38 @@ msgid "No intervals specified."
 msgstr "No se especificaron intervalos."
 
 #: resourcestrings.msg_no_link
-msgid "There is no Link "
-msgstr "No hay ninguna Línea "
+#, object-pascal-format
+msgid "There is no Link %s"
+msgstr "No hay ninguna Línea %s"
 
 #: resourcestrings.msg_no_map_file
-msgid "Could not read map file "
-msgstr "No puedo leer el fichero del esquema "
+#, object-pascal-format
+msgid "Could not read map file %s"
+msgstr "No puedo leer el Fichero del Esquema %s"
 
 #: resourcestrings.msg_no_node
-msgid "There is no Node "
-msgstr "No hay ningún Nudo "
+#, object-pascal-format
+msgid "There is no Node %s"
+msgstr "No hay ningún Nudo %s"
 
 #: resourcestrings.msg_no_pumps
 msgid "Cannot generate an Energy Report. Network contains no pumps."
 msgstr "No puedo generar el Informe Energético. La red no contiene bombas."
 
 #: resourcestrings.msg_no_read_backdrop
-msgid "Could not read backdrop file "
-msgstr "No se pudo cargar el Mapa de Fondo "
+#, object-pascal-format
+msgid "Could not read backdrop file %s"
+msgstr "No se pudo cargar el Mapa de Fondo %s"
 
 #: resourcestrings.msg_no_write
-msgid "Could not write full report to file "
-msgstr "No se pudo guardar el Informe Completo en el fichero "
+#, object-pascal-format
+msgid "Could not write full report to file %s"
+msgstr "No se pudo guardar el Informe Completo en el fichero %s"
 
 #: resourcestrings.msg_out_of_order
-msgid " values are not in ascending order."
-msgstr " no tiene valores en orden ascendente."
+#, object-pascal-format
+msgid "%s values are not in ascending order."
+msgstr "Los valores de %s no están en orden ascendente."
 
 #: resourcestrings.msg_range_too_small
 msgid "Range too small."
@@ -215,11 +237,12 @@ msgid "Reading map file..."
 msgstr "Leyendo el fichero de Esquema de la Red..."
 
 #: resourcestrings.msg_readonly
+#, object-pascal-format
 msgid ""
-" is read-only.\n"
+"%s is read-only.\n"
 "Use File >> Save As command to save it under a different name."
 msgstr ""
-" es sólo lectura.\n"
+"%s es sólo lectura.\n"
 "Usa el comando Archivo >> Guardar como... para guardarlo con otro nombre."
 
 #: resourcestrings.msg_read_err
@@ -227,24 +250,21 @@ msgid "Invalid file format."
 msgstr "Formato de fichero no válido."
 
 #: resourcestrings.msg_report_size1
-msgid "This full report will use over "
-msgstr "Este Informe Completo utilizará alrededor de  "
-
-#: resourcestrings.msg_report_size2
-msgid " Mbytes of disk space. Do you wish to proceed?"
-msgstr " Mbytes de espacio en disco ¿Quieres continuar?"
+#, object-pascal-format
+msgid "This full report will use over %s Mbytes of disk space. Do you wish to proceed?"
+msgstr "Este Informe Completo utilizará alrededor de %s Mbytes de espacio en disco ¿Quieres continuar?"
 
 #: resourcestrings.msg_select_number_of
-msgid "Select number of decimal places to "
-msgstr "Seleccionar el número de decimales a "
+msgid ""
+"Select number of decimal places to \n"
+"use when displaying computed results"
+msgstr ""
+"Seleccionar el número de decimales a \n"
+"utilizar en la presentación de resultados"
 
 #: resourcestrings.msg_too_few_nodes
 msgid "Too few nodes to contour."
 msgstr "Demasiados pocos nudos para generar Isolíneas."
-
-#: resourcestrings.msg_when_displaying
-msgid "use when displaying computed results"
-msgstr "utilizar en la presentación de resultados"
 
 #: resourcestrings.msg_writing_report
 msgid "Writing full report..."
@@ -313,17 +333,14 @@ msgstr "T.Residencia"
 msgid " at "
 msgstr " a las "
 
-#: resourcestrings.txt_at_line
-msgid " at line "
-msgstr " en la línea "
-
 #: resourcestrings.txt_at_nodes
 msgid "Measured at Nodes:"
 msgstr "Nudos de Medida:"
 
 #: resourcestrings.txt_autolength
-msgid "Auto-Length "
-msgstr "Longitud-Auto "
+#, object-pascal-format
+msgid "Auto-Length %s"
+msgstr "Longitud-Auto %s"
 
 #: resourcestrings.txt_autolength_off
 msgid "Off"
@@ -346,8 +363,9 @@ msgid "Average Reaction Rates (kg/day)"
 msgstr "Velocidades Medias de Reacción (kg/día)"
 
 #: resourcestrings.txt_axis_title
-msgid "Time (Time Period = "
-msgstr "Período (1 Período = "
+#, object-pascal-format
+msgid "Time (Time Period = %s hrs)"
+msgstr "Período (1 Período = %s h)"
 
 #: resourcestrings.txt_bad_connection
 msgid "Node cannot be connected to itself."
@@ -370,12 +388,14 @@ msgid "Bulk"
 msgstr "Medio"
 
 #: resourcestrings.txt_calplot_title
-msgid "Comparison of Mean Values for "
-msgstr "Comparación de Valores Medios para "
+#, object-pascal-format
+msgid "Comparison of Mean Values for %s"
+msgstr "Comparación de Valores Medios para %s"
 
 #: resourcestrings.txt_cal_title
-msgid " Calibration Statistics for "
-msgstr " Estadística de Calibración para "
+#, object-pascal-format
+msgid " Calibration Statistics for %s"
+msgstr " Estadística de Calibración para %s"
 
 #: resourcestrings.txt_caption1
 msgctxt "resourcestrings.txt_caption1"
@@ -454,8 +474,9 @@ msgid " (continued)"
 msgstr " (continued)"
 
 #: resourcestrings.txt_contour_plot
-msgid "Contour Plot - "
-msgstr "Mapa de Isolíneas - "
+#, object-pascal-format
+msgid "Contour Plot - %s%s%s"
+msgstr "Mapa de Isolíneas - %s%s%s"
 
 #: resourcestrings.txt_control
 msgid "Control"
@@ -471,12 +492,14 @@ msgid "Simple Controls Editor"
 msgstr "Editor de Leyes de Control Simples"
 
 #: resourcestrings.txt_copy
-msgid "Copy "
-msgstr "Copiar "
+#, object-pascal-format
+msgid "Copy %s"
+msgstr "Copiar %s"
 
 #: resourcestrings.txt_corplot_title
-msgid "Correlation Plot for "
-msgstr "Gráfico de Correlación para "
+#, object-pascal-format
+msgid "Correlation Plot for %s"
+msgstr "Gráfico de Correlación para %s"
 
 #: resourcestrings.txt_correlation
 msgid "  Correlation Between Means: "
@@ -491,8 +514,9 @@ msgid "Cost/day"
 msgstr "Coste/día"
 
 #: resourcestrings.txt_cubic
-msgid " (cubic "
-msgstr " (cubic "
+#, object-pascal-format
+msgid " (cubic %s)"
+msgstr " (%s cúbicos)"
 
 #: resourcestrings.txt_curve
 msgid "Curve"
@@ -567,8 +591,9 @@ msgid "Data (Text)"
 msgstr "Datos (Texto)"
 
 #: resourcestrings.txt_day
-msgid "Day "
-msgstr "Día "
+#, object-pascal-format
+msgid "Day %s, %s"
+msgstr "Día %s, %s"
 
 #: resourcestrings.txt_ddegree
 msgid "Degrees"
@@ -592,8 +617,9 @@ msgid "Demand Charge"
 msgstr "Término de potencia"
 
 #: resourcestrings.txt_demand_editor
-msgid "Demands for Junction "
-msgstr "Demandas en el Nudo de Caudal "
+#, object-pascal-format
+msgid "Demands for Junction %s"
+msgstr "Demandas en el Nudo de Caudal %s"
 
 #: resourcestrings.txt_dfeet
 msgid "Feet"
@@ -608,8 +634,9 @@ msgid "Distance"
 msgstr "Distancia"
 
 #: resourcestrings.txt_distribution
-msgid "Distribution of "
-msgstr "Distribución de "
+#, object-pascal-format
+msgid "Distribution of %s"
+msgstr "Distribución de %s"
 
 #: resourcestrings.txt_dmeter
 msgid "Meters"
@@ -652,17 +679,15 @@ msgstr "Final"
 msgid "Energy"
 msgstr "Energía"
 
-#: resourcestrings.txt_english
-msgid "English"
-msgstr "Inglés"
-
 #: resourcestrings.txt_error
-msgid "Error "
-msgstr "Error "
+#, object-pascal-format
+msgid "Error %s at line %s:"
+msgstr "Error %s en la línea %s:"
 
 #: resourcestrings.txt_error_report
-msgid "Error Report for File "
-msgstr "Informe de Errores para el Fichero "
+#, object-pascal-format
+msgid "Error Report for File %s"
+msgstr "Informe de Errores para el Fichero %s"
 
 #: resourcestrings.txt_fancy
 msgid "Fancy"
@@ -777,12 +802,14 @@ msgid " Flow Units              "
 msgstr " Unidades de Caudal      "
 
 #: resourcestrings.txt_for_link
-msgid "for Link "
-msgstr "en la Línea "
+#, object-pascal-format
+msgid "for Link %s"
+msgstr "en la Línea %s"
 
 #: resourcestrings.txt_for_node
-msgid "for Node "
-msgstr "en el Nudo "
+#, object-pascal-format
+msgid "for Node %s"
+msgstr "en el Nudo %s"
 
 #: resourcestrings.txt_for_selected_links
 msgid "for Selected Links"
@@ -797,8 +824,9 @@ msgid "Frequency"
 msgstr "Frecuencia"
 
 #: resourcestrings.txt_frequency_plot
-msgid " Frequency Plot - "
-msgstr " Curva de Distribución - "
+#, object-pascal-format
+msgid " Frequency Plot - %s"
+msgstr " Curva de Distribución - %s"
 
 #: resourcestrings.txt_full
 msgid "Full"
@@ -887,12 +915,9 @@ msgid "&Hide"
 msgstr "&Ocultar"
 
 #: resourcestrings.txt_hours
-msgid "Hrs"
-msgstr "Horas"
-
-#: resourcestrings.txt_hrs
-msgid " hrs)"
-msgstr " h)"
+#, object-pascal-format
+msgid "%sHrs"
+msgstr "%sHoras"
 
 #: resourcestrings.txt_hydraulics
 msgctxt "resourcestrings.txt_hydraulics"
@@ -933,12 +958,18 @@ msgid "Measured in Links:"
 msgstr "Líneas de Medida:"
 
 #: resourcestrings.txt_items_found
-msgid " items found"
-msgstr " elem. encontrados"
+#, object-pascal-format
+msgid "%s items found"
+msgstr "%s elem. encontrados"
 
 #: resourcestrings.txt_items_with
-msgid " items with"
-msgstr " elementos con"
+#, object-pascal-format
+msgid ""
+"%s items with\n"
+"%s"
+msgstr ""
+"%s elementos con\n"
+"%s"
 
 #: resourcestrings.txt_junction
 msgid "Junction"
@@ -1117,8 +1148,9 @@ msgid "Link Results"
 msgstr "Resultados en las Líneas"
 
 #: resourcestrings.txt_link_series
-msgid "Time Series Table - Link "
-msgstr "Evolución Temporal - Línea "
+#, object-pascal-format
+msgid "Time Series Table - Link %s"
+msgstr "Evolución Temporal - Línea %s"
 
 #: resourcestrings.txt_lpm
 msgid "LPM"
@@ -1306,8 +1338,9 @@ msgid "MLD"
 msgstr "MLD"
 
 #: resourcestrings.txt_more_errors
-msgid " more errors found in file."
-msgstr " más errores encontrados en el fichero."
+#, object-pascal-format
+msgid "%s more errors found in file."
+msgstr "%s errores más encontrados en el fichero."
 
 #: resourcestrings.txt_multiplier
 msgctxt "resourcestrings.txt_multiplier"
@@ -1375,8 +1408,9 @@ msgid "Node Results"
 msgstr "Resultados en los Nudos"
 
 #: resourcestrings.txt_node_series
-msgid "Time Series Table - Node "
-msgstr "Evolución Temporal - Nudo "
+#, object-pascal-format
+msgid "Time Series Table - Node %s"
+msgstr "Evolución Temporal - Nudo %s"
 
 #: resourcestrings.txt_none
 msgctxt "resourcestrings.txt_none"
@@ -1388,8 +1422,9 @@ msgid "NOTES:"
 msgstr "NOTES:"
 
 #: resourcestrings.txt_not_a_number
-msgid " is not a valid number."
-msgstr " no es un número válido."
+#, object-pascal-format
+msgid "-%s- is not a valid number."
+msgstr "-%s- no es un número válido."
 
 #: resourcestrings.txt_noview
 msgid "No View"
@@ -1408,16 +1443,18 @@ msgid " Number of Junctions     "
 msgstr " Nº de Nudos de Caudal   "
 
 #: resourcestrings.txt_no_link
-msgid "There is no link named "
-msgstr "No existe la línea con ID "
+#, object-pascal-format
+msgid "There is no link named %s"
+msgstr "No existe la línea con ID %s"
 
 #: resourcestrings.txt_no_link_selected
 msgid "Must select a link object from Browser"
 msgstr "Hay que seleccionar un objeto tipo Línea en el Visor"
 
 #: resourcestrings.txt_no_node
-msgid "There is no node named "
-msgstr "No existe el nudo con ID "
+#, object-pascal-format
+msgid "There is no node named %s"
+msgstr "No existe el nudo con ID %s"
 
 #: resourcestrings.txt_no_node_selected
 msgid "Must select a node object from Browser"
@@ -1519,8 +1556,9 @@ msgid "Options"
 msgstr "Opciones"
 
 #: resourcestrings.txt_options_editor
-msgid " Options"
-msgstr " Opciones"
+#, object-pascal-format
+msgid "%s Options"
+msgstr "Opciones %s"
 
 #: resourcestrings.txt_op_accuracy
 msgid "Accuracy"
@@ -1855,24 +1893,27 @@ msgid "Produced"
 msgstr "Producido"
 
 #: resourcestrings.txt_profile
-msgid "Profile of "
-msgstr "Perfil de "
+#, object-pascal-format
+msgid "Profile of %s"
+msgstr "Perfil de %s"
 
 #: resourcestrings.txt_profile_filter
 msgid "Profile files (*.PRO)|*.PRO;*.pro;*.[Pp][Rr][Oo]|All files|*.*"
 msgstr "Ficheros de Perfil (*.PRO)|*.PRO;*.pro;*.[Pp][Rr][Oo]|Todos los ficheros|*.*"
 
 #: resourcestrings.txt_profile_for
-msgid "Profile for "
-msgstr "Perfil para "
+#, object-pascal-format
+msgid "Profile for %s"
+msgstr "Perfil para %s"
 
 #: resourcestrings.txt_profile_id
 msgid "Profile identifier:"
 msgstr "Identificador del Perfil:"
 
 #: resourcestrings.txt_profile_plot
-msgid " Profile Plot - "
-msgstr " Perfil Longitudinal - "
+#, object-pascal-format
+msgid " Profile Plot - %s"
+msgstr " Perfil Longitudinal - %s"
 
 #: resourcestrings.txt_property
 msgid "Property"
@@ -2191,16 +2232,14 @@ msgid "Re-ordering network nodes..."
 msgstr "Reordenando los nudos de la red..."
 
 #: resourcestrings.txt_replace_all
-msgid "Replace all references to Pattern "
-msgstr "¿Reemplazar todas la referencias a la Modulación "
-
-#: resourcestrings.txt_replace_with
-msgid " with "
-msgstr " por "
+#, object-pascal-format
+msgid "Replace all references to Pattern %s with %s?"
+msgstr "¿Reemplazar todas la referencias a la Modulación %s por %s?"
 
 #: resourcestrings.txt_report
-msgid "Calibration Report - "
-msgstr "Informe de Calibración - "
+#, object-pascal-format
+msgid "Calibration Report - %s"
+msgstr "Informe de Calibración - %s"
 
 #: resourcestrings.txt_report_filter
 msgid "Report files (*.RPT)|*.RPT;*.rpt;*.[Rr][Pp][Tt]|All files|*.*"
@@ -2341,16 +2380,13 @@ msgid "Sources"
 msgstr "Fuente"
 
 #: resourcestrings.txt_source_editor
-msgid "Source Editor for Node "
-msgstr "Editor de Fuente de Sustancia en el Nudo "
+#, object-pascal-format
+msgid "Source Editor for Node %s"
+msgstr "Editor de Fuente de Sustancia en el Nudo %s"
 
 #: resourcestrings.txt_source_nodes
 msgid "Source Nodes"
 msgstr "Nudos Fuente"
-
-#: resourcestrings.txt_spanish
-msgid "Spanish"
-msgstr "Español"
 
 #: resourcestrings.txt_stackstyle_fsta
 msgid "Stacked 100%"
@@ -2374,8 +2410,9 @@ msgid "Start"
 msgstr "Inicial"
 
 #: resourcestrings.txt_statistic
-msgid " Statistic"
-msgstr " Estadística"
+#, object-pascal-format
+msgid "%s Statistic"
+msgstr " Estadística %s"
 
 #: resourcestrings.txt_status_cancelled
 msgid "Run cancelled by user."
@@ -2521,8 +2558,9 @@ msgid "Time Period"
 msgstr "Período"
 
 #: resourcestrings.txt_time_series_plot
-msgid " Time Series Plot - "
-msgstr " Gráfica de Evolución - "
+#, object-pascal-format
+msgid " Time Series Plot - %s %s"
+msgstr " Gráfica de Evolución - %s %s"
 
 #: resourcestrings.txt_title
 msgid "TITLE:"
@@ -2540,9 +2578,57 @@ msgstr "Coste Total"
 msgid "Trace"
 msgstr "Proced."
 
+#: resourcestrings.txt_ufeet
+msgid "ft"
+msgstr "pies"
+
+#: resourcestrings.txt_uftperkft
+msgid "ft/Kft"
+msgstr "pie/Kpie"
+
+#: resourcestrings.txt_uftpersec
+msgid "fps"
+msgstr "pie/s"
+
 #: resourcestrings.txt_ugl
 msgid "ug/L"
 msgstr "ug/L"
+
+#: resourcestrings.txt_uhours
+msgid "hours"
+msgstr "horas"
+
+#: resourcestrings.txt_uinches
+msgid "in"
+msgstr "pulgadas"
+
+#: resourcestrings.txt_umeter
+msgid "m"
+msgstr "m"
+
+#: resourcestrings.txt_umillifeet
+msgid "mft"
+msgstr "mpie"
+
+#: resourcestrings.txt_umillimeter
+msgid "mm"
+msgstr "mm"
+
+#: resourcestrings.txt_umtperkm
+msgid "m/km"
+msgstr "m/km"
+
+#: resourcestrings.txt_umtpersec
+msgid "m/s"
+msgstr "m/s"
+
+#: resourcestrings.txt_upercent
+msgid "percent"
+msgstr "porcentaje"
+
+#: resourcestrings.txt_upsi
+msgid "psi"
+msgstr "psi"
 
 #: resourcestrings.txt_utilization
 msgid "Utilization"
@@ -2570,8 +2656,9 @@ msgid "  WARNING:"
 msgstr "  WARNING:"
 
 #: resourcestrings.txt_were_updated
-msgid "s were updated."
-msgstr "s fueron actualizados."
+#, object-pascal-format
+msgid "%s %ss were updated."
+msgstr "%s %s actualizados."
 
 #: resourcestrings.txt_width
 #, object-pascal-format
@@ -5249,3 +5336,4 @@ msgstr "Impresión cancelada"
 msgctxt "xprinter.txt_pr_page"
 msgid "Printing page %d of %d"
 msgstr "Imprimiendo página %d de %d"
+

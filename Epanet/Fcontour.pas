@@ -143,16 +143,15 @@ var
   i: Integer;
 begin
 // Initialize plot parameters.
-  Caption := TXT_CONTOUR_PLOT;
   ContourFlag := False;
   ContourVar := GraphSelection.VarType;
   TimePeriod := GraphSelection.Period;
   if ContourVar = NODEQUAL then
     CVname := MainForm.BrowserForm.NodeViewBox.Items[NODEQUAL]
   else CVname := NodeVariable[ContourVar].Name;
-  Caption := Caption + CVname;
   if (NodeVariable[ContourVar].Source = vsOutput) and (Nperiods > 1) then
-    Caption := Caption + TXT_AT + MainForm.BrowserForm.TimeListBox.Items[TimePeriod];
+    Caption := Format(TXT_CONTOUR_PLOT, [CVname, TXT_AT, MainForm.BrowserForm.TimeListBox.Items[TimePeriod]]);
+
   MainForm.FormActive:= Caption;
   MainForm.FormActivated(self);
 

@@ -19,17 +19,16 @@ uses
 resourcestring
 
   // Strings from FMain.pas
-  MSG_NO_MAP_FILE = 'Could not read map file ';
+  MSG_NO_MAP_FILE = 'Could not read map file %s';
   MSG_NO_PUMPS = 'Cannot generate an Energy Report. Network contains no pumps.';
   MSG_NO_CALIB_DATA = 'No calibration data has been registered for this project.';
   MSG_NO_INPUT_FILE = 'Input file no longer exists.';
   MSG_NOT_EPANET_FILE = 'Not an EPANET file.';
-  MSG_READONLY = ' is read-only.'#10 + 'Use File >> Save As command to save it under a different name.';
-  //MSG_NO_BACKDROP = 'Could not find backdrop file ';
-  MSG_FIND_BACKDROP = '. Do you want to search for it?';
+  MSG_READONLY = '%s is read-only.'#10 + 'Use File >> Save As command to save it under a different name.';
+  MSG_FIND_BACKDROP = 'Could not find backdrop file %s. Do you want to search for it?';
 
   TXT_MAIN_CAPTION = 'EPANET 2.2';
-  TXT_AUTOLENGTH = 'Auto-Length ';
+  TXT_AUTOLENGTH = 'Auto-Length %s';
   TXT_STATUS_REPORT = 'Status Report';
   TXT_SAVE_CHANGES = 'Save changes made to current project?';
   TXT_WARNING = '  WARNING:';
@@ -58,17 +57,15 @@ resourcestring
 
   // Strings from FBrowser.pas
   TXT_SINGLE_PERIOD = 'Single Period';
-  TXT_STATISTIC = ' Statistic';
+  TXT_STATISTIC = '%s Statistic';
   TXT_QUALITY = 'Quality';
   TXT_DELETE_OBJECT = 'Delete selected object?';
-  TXT_DAY = 'Day ';
-  TXT_HOURS = 'Hrs';
+  TXT_DAY = 'Day %s, %s';
+  TXT_HOURS = '%sHrs';
   TXT_TIME = 'Time';
-  //TXT_PATTERN_ = 'Pattern ';
   TXT_PERIOD = 'Period';
   TXT_MULTIPLIER = 'Multiplier';
   TXT_CONTINUED = ' (continued)';
-  //TXT_CURVE_ = 'Curve ';
   TXT_XVALUES = 'X-Values';
   TXT_YVALUES = 'Y-Values';
   TXT_SIMPLE_CONTROLS = 'Simple Controls';
@@ -82,8 +79,8 @@ resourcestring
 
 
   // Strings from FMap.pas
-  MSG_NO_FIND_BACKDROP = 'Could not find backdrop file ';
-  MSG_NO_READ_BACKDROP = 'Could not read backdrop file ';
+  MSG_NO_FIND_BACKDROP = 'Could not find backdrop file %s';
+  MSG_NO_READ_BACKDROP = 'Could not read backdrop file %s';
   TXT_RESTORE_JUNCS = 'Restoring display of junctions on the map.';
   TXT_RESTORE_LABELS = 'Restoring display of labels on the map.';
   TXT_MAP_NODE = 'Node ';
@@ -93,59 +90,49 @@ resourcestring
   // Strings from Ufileio.pas
   MSG_READING_INPUT = 'Reading input file...';
   MSG_READ_ERR = 'Invalid file format.';
-  FILE_ERR1a = 'Calibration file ';
-  //FILE_ERR1b = ' does not exist.';
-  FILE_ERR2a = 'Could not access calibration file ';
-  FILE_ERR2b = 'Check that file is not in use by another program.';
-  FILE_ERR3a = 'Could not open file ';
-  FILE_ERR4a = 'Could not read file ';
-  FILE_ERR4b = 'File is probably not a valid EPANET project or input file.';
+  FILE_ERR1a = 'Calibration file %s does not exist.';
+  FILE_ERR2a = 'Could not access calibration file %s.'#10#10'Check that file is not in use by another program.';
+  FILE_ERR3a = 'Could not open file %s.'#10#10'Check that file is not in use by another program.';
+  FILE_ERR4a = 'Could not read file %s.'#10#10'File is probably not a valid EPANET project or input file.';
   FILE_ERR5  = 'Data could not be saved to file.';
 
 
   // Strings from Uimport.pas
-  MSG_INVALID_FILE = ' is not a valid EPANET data file.';
+  MSG_INVALID_FILE = '%s is not a valid EPANET data file.';
   MSG_IMPORTING_DATA = 'Importing network data...';
-  //MSG_NO_READ_MAP_FILE = 'Could not read map file ';
-  MSG_MAP_FILE = 'Map file ';
-  //MSG_NOT_EXIST = ' does not exist.';
+  MSG_MAP_FILE = 'Map file %s does not exist.';
   MSG_READING_MAP_FILE = 'Reading map file...';
-  TXT_ERROR = 'Error ';
-  TXT_AT_LINE = ' at line ';
-  TXT_MORE_ERRORS = ' more errors found in file.';
-  TXT_ERROR_REPORT = 'Error Report for File ';
+  TXT_ERROR = 'Error %s at line %s:';
+  TXT_MORE_ERRORS = '%s more errors found in file.';
+  TXT_ERROR_REPORT = 'Error Report for File %s';
 
 
   // Strings from Uinput.pas
   FMT_NODE_EXISTS = 'Node %s already exists.';
   FMT_LINK_EXISTS = 'Link %s already exists.';
-  MSG_ALREADY_HAVE = 'You already have a ';
+  MSG_ALREADY_HAVE = 'You already have a %s named %s';
   MSG_CONFIRM_DELETE = 'Are you sure that you want to delete all objects in the selected region?';
   TXT_INP_TIME = 'Hrs:Min';
   TXT_VALUE = 'Value';
   TXT_LABEL_EDITOR = 'Label Editor';
-  TXT_DEMAND_EDITOR = 'Demands for Junction ';
-  TXT_SOURCE_EDITOR = 'Source Editor for Node ';
-  TXT_OPTIONS_EDITOR = ' Options';
+  TXT_DEMAND_EDITOR = 'Demands for Junction %s';
+  TXT_SOURCE_EDITOR = 'Source Editor for Node %s';
+  TXT_OPTIONS_EDITOR = '%s Options';
   TXT_CONTROLS_EDITOR = 'Simple Controls Editor';
   TXT_RULES_EDITOR = 'Rule-Based Controls Editor';
-  TXT_WERE_UPDATED = 's were updated.';
-  TXT_NO_NODE = 'There is no node named ';
-  TXT_NO_LINK = 'There is no link named ';
+  TXT_WERE_UPDATED = '%s %ss were updated.';
+  TXT_NO_NODE = 'There is no node named %s';
+  TXT_NO_LINK = 'There is no link named %s';
   TXT_NAMED = ' named ';
-  TXT_NOT_A_NUMBER = ' is not a valid number.'; //Uutils duplicate
-  //TXT_NO_NODE_NAMED = 'There is no node named ';
+  TXT_NOT_A_NUMBER = '-%s- is not a valid number.';
   TXT_BAD_CONNECTION = 'Node cannot be connected to itself.';
 
 
   // Strings from Dpattern.pas
   FMT_LEFT_AXIS = 'Avg. = %.2f';
-  TXT_REPLACE_ALL = 'Replace all references to Pattern ';
-  TXT_REPLACE_WITH = ' with ';
+  TXT_REPLACE_ALL = 'Replace all references to Pattern %s with %s?';
   TXT_TIME_PERIOD = 'Time Period';
-  //TXT_MULTIPLIER = 'Multiplier';
-  TXT_AXIS_TITLE =  'Time (Time Period = ';
-  TXT_HRS = ' hrs)';
+  TXT_AXIS_TITLE =  'Time (Time Period = %s hrs)';
   TXT_OPEN_PATTERN_TITLE = 'Open a Pattern';
   TXT_SAVE_PATTERN_TITLE = 'Save Pattern As';
   TXT_PATTERN_FILTER = 'Pattern files (*.PAT)|*.PAT;*.pat;*.[Pp][Aa][Tt]|All files|*.*';
@@ -153,11 +140,11 @@ resourcestring
 
 
   // Strings from Dcurve.pas
-  MSG_OUT_OF_ORDER = ' values are not in ascending order.';
+  MSG_OUT_OF_ORDER = '%s values are not in ascending order.';
   MSG_BAD_CURVE = 'Illegal pump curve. Continue editing?';
   FMT_EQN = ' Head = %f%-.4g(Flow)^%f';
   TXT_CUR_PERCENT = ' (%)';
-  TXT_CUBIC = ' (cubic ';
+  TXT_CUBIC = ' (cubic %s)';
   TXT_CUR_PUMP = 'PUMP';
   TXT_BAD_CURVE = ' Illegal pump curve.';
   TXT_OPEN_CURVE_TITLE = 'Open a Curve';
@@ -185,7 +172,6 @@ resourcestring
 
   // Strings from Fproped.pas
   TXT_PROPERTY = 'Property';
-  //TXT_VALUE = 'Value';
 
 
   // Strings from Dlegend.pas
@@ -194,8 +180,7 @@ resourcestring
 
 
   // Strings from Fstatus.pas
-  MSG_1 = 'Unable to load more than ';
-  MSG_2 = ' lines into Status Report.';
+  MSG_1 = 'Unable to load more than %s lines into Status Report.';
 
 
   // Strings from Fgraph.pas
@@ -218,21 +203,21 @@ resourcestring
   TXT_TANKS = 'Tanks';
   TXT_PRODUCED = 'Produced';
   TXT_CONSUMED = 'Consumed';
-  TXT_TIME_SERIES_PLOT = ' Time Series Plot - ';
-  TXT_FREQUENCY_PLOT = ' Frequency Plot - ';
-  TXT_PROFILE_PLOT = ' Profile Plot - ';
+  TXT_TIME_SERIES_PLOT = ' Time Series Plot - %s %s';
+  TXT_FREQUENCY_PLOT = ' Frequency Plot - %s';
+  TXT_PROFILE_PLOT = ' Profile Plot - %s';
   TXT_REACT_REPORT = 'Reaction Report';
   TXT_SYSTEM_FLOW = ' System Flow Balance';
   TXT_DOES_NOT_EXIST = ' does not exist.';
-  TXT_DISTRIBUTION = 'Distribution of ';
+  TXT_DISTRIBUTION = 'Distribution of %s';
   TXT_PERCENT_LESS = 'Percent Less Than';
   TXT_PERCENT_NLESS = 'Percent of Nodes Less Than';
   TXT_PERCENT_LLESS = 'Percent of Links Less Than';
   TXT_FREQUENCY = 'Frequency';
-  TXT_PROFILE = 'Profile of ';
-  TXT_FOR_LINK = 'for Link ';
+  TXT_PROFILE = 'Profile of %s';
+  TXT_FOR_LINK = 'for Link %s';
   TXT_FOR_SELECTED_LINKS = 'for Selected Links';
-  TXT_FOR_NODE = 'for Node ';
+  TXT_FOR_NODE = 'for Node %s';
   TXT_FOR_SELECTED_NODES = 'for Selected Nodes';
   TXT_AT = ' at ';
   FMT_INFLOW = 'Inflow Rate = %.0f';
@@ -269,31 +254,30 @@ resourcestring
 
 
   // Strings from Fcalib.pas
-  TXT_REPORT = 'Calibration Report - ';
+  TXT_REPORT = 'Calibration Report - %s';
   TXT_NETWORK = 'Network';
   TXT_NO_DATA = ' *** No observed data during simulation period. ***';
   TXT_CORRELATION = '  Correlation Between Means: ';
-  TXT_CAL_TITLE = ' Calibration Statistics for '; // Conflict with FMain
+  TXT_CAL_TITLE = ' Calibration Statistics for %s';
   TXT_HEADING1 = '                Num    Observed    Computed    Mean     RMS';
   TXT_HEADING2 = '  Location      Obs        Mean        Mean   Error   Error';
   TXT_HEADING3 = '  ---------------------------------------------------------';
 
   //Others not included
-  TXT_CALPLOT_TITLE = 'Comparison of Mean Values for ';
-  TXT_CORPLOT_TITLE = 'Correlation Plot for ';
+  TXT_CALPLOT_TITLE = 'Comparison of Mean Values for %s';
+  TXT_CORPLOT_TITLE = 'Correlation Plot for %s';
 
 
   // Strings from Ftable.pas
   TXT_NETWORK_NODES = 'Network Table - Nodes';
   TXT_NETWORK_LINKS = 'Network Table - Links';
-  TXT_NODE_SERIES = 'Time Series Table - Node ';
-  TXT_LINK_SERIES = 'Time Series Table - Link ';
+  TXT_NODE_SERIES = 'Time Series Table - Node %s';
+  TXT_LINK_SERIES = 'Time Series Table - Link %s';
   TXT_NODE_ID = ' Node ID';
   TXT_LINK_ID = ' Link ID';
   TXT_TABLE_TIME = ' Time';
   TXT_TABLE_HOURS = ' Hours';
-  // TXT_AT = ' at ';
-  TXT_ITEMS_WITH = ' items with';
+  TXT_ITEMS_WITH = '%s items with'#10'%s';
 
   //Others not included
   TXT_TABLE_JUNC = 'Junc ';
@@ -324,31 +308,22 @@ resourcestring
 
   // Strings from Fcontour.pas
   MSG_TOO_FEW_NODES = 'Too few nodes to contour.';
-  TXT_CONTOUR_PLOT = 'Contour Plot - ';
-  //TXT_AT = ' at ';
-
-
-  // Strings from Ddataexp.pas
-  //TXT_SAVE_SCENARIO_TITLE = 'Save Scenario As';
-  //TXT_SAVE_SCENARIO_FILTER = 'Scenario files (*.SCN)|*.SCN|All files|*.*';
-
+  TXT_CONTOUR_PLOT = 'Contour Plot - %s%s%s';
 
   // Strings from Dtable.pas
-  MSG_NO_NODE = 'There is no Node ';
-  MSG_NO_LINK = 'There is no Link ';
+  MSG_NO_NODE = 'There is no Node %s';
+  MSG_NO_LINK = 'There is no Link %s';
   MSG_FILTER_LIMIT = 'Maximum number of filters has been reached.';
   TXT_CAPTION1 = 'Table Selection';
   TXT_CAPTION2 = 'Table Options';
   TXT_NODES = 'Network Nodes';
   TXT_LINKS = 'Network Links';
   TXT_SORTED_BY = 'Sorted by ';
-  //TXT_AT = ' at';
 
 
   // Strings from Ddefault.pas
   TXT_OBJECT = 'Object';
   TXT_ID_PREFIX = 'ID Prefix';
-  //TXT_PROPERTY = 'Property';
   TXT_DEF_VALUE = 'Default Value';
   TXT_OPTION = 'Option';
 
@@ -358,7 +333,6 @@ resourcestring
   TXT_TAB_HYDRAULICS = 'Hydraulics';
 
   TXT_RESERVOIRS = 'Reservoirs';
-  //TXT_TANKS = 'Tanks';
   TXT_PUMPS = 'Pumps';
   TXT_VALVES = 'Valves';
   TXT_PATTERNS = 'Patterns';
@@ -383,7 +357,7 @@ resourcestring
   TXT_OPEN_PROFILE_TITLE = 'Open Profile';
   TXT_SAVE_PROFILE_TITLE = 'Save Profile As';
   TXT_PROFILE_FILTER = 'Profile files (*.PRO)|*.PRO;*.pro;*.[Pp][Rr][Oo]|All files|*.*';
-  TXT_PROFILE_FOR = 'Profile for ';
+  TXT_PROFILE_FOR = 'Profile for %s';
   TXT_SAVE_PROFILE = 'Save Profile';
   TXT_PROFILE_ID = 'Profile identifier:';
   TXT_NODES_TO_GRAPH = 'Nodes to Graph';
@@ -431,7 +405,6 @@ resourcestring
 
   //Others not included
   TXT_PERCENT = 'Percent';
-  //TXT_AVERAGE = 'Average';
   TXT_KW_HR = 'kW-hr';
   TXT_PEAK = 'Peak';
   TXT_COST = 'Cost';
@@ -451,20 +424,17 @@ resourcestring
   // Strings from Dquery.pas
   TXT_NODES_WITH = 'Find Nodes with';
   TXT_LINKS_WITH = 'Find Links with';
-  TXT_ITEMS_FOUND = ' items found';
+  TXT_ITEMS_FOUND = '%s items found';
 
 
   // Strings from Dprefers.pas
   MSG_NO_DIRECTORY = ' - directory does not exist.';
-  MSG_SELECT_NUMBER_OF = 'Select number of decimal places to ';
-  MSG_WHEN_DISPLAYING = 'use when displaying computed results';
-  TXT_ENGLISH = 'English';
-  TXT_SPANISH = 'Spanish';
+  MSG_SELECT_NUMBER_OF = 'Select number of decimal places to '#10'use when displaying computed results';
   MSG_LANG_RESTART = 'Language will be updated next time you open EPANET';
 
 
   // Strings from Dcopy.pas
-  TXT_COPY = 'Copy ';
+  TXT_COPY = 'Copy %s';
   TXT_SAVE_AS = 'Save As';
 
   //Others not included
@@ -500,23 +470,16 @@ resourcestring
   FMT73  = 'Pump             Factor Effic.     %s        Kw        Kw      /day';
   FMT74  = '%45s Demand Charge: %9.2f';
   FMT75  = '%45s Total Cost:    %9.2f';
-  //TXT_perM3 = '/m3';
-  //TXT_perMGAL = '/Mgal';
-  //TXT_CONTINUED =  ' (continued)';
   TXT_INPUT_FILE = 'Input File: ';
   TXT_LINK_INFO = 'Link - Node Table:';
   TXT_NODE_RESULTS = 'Node Results';
   TXT_LINK_RESULTS = 'Link Results';
-  //TXT_AT = ' at ';
   TXT_ID = 'ID';
-  //TXT_NODE = 'Node';
-  //TXT_LINK = 'Link';
   TXT_START = 'Start';
   TXT_END = 'End';
-  MSG_REPORT_SIZE1 = 'This full report will use over ';
-  MSG_REPORT_SIZE2 = ' Mbytes of disk space. Do you wish to proceed?';
+  MSG_REPORT_SIZE1 = 'This full report will use over %s Mbytes of disk space. Do you wish to proceed?';
   MSG_WRITING_REPORT = 'Writing full report...';
-  MSG_NO_WRITE = 'Could not write full report to file ';
+  MSG_NO_WRITE = 'Could not write full report to file %s';
   TXT_REPORT_FILTER = 'Report files (*.RPT)|*.RPT;*.rpt;*.[Rr][Pp][Tt]|All files|*.*';
 
   // Strings from Dchart.pas
@@ -868,6 +831,18 @@ resourcestring
 
   TXT_MGL = 'mg/L';
   TXT_UGL = 'ug/L';
+  TXT_UPERCENT = 'percent';
+  TXT_UHOURS = 'hours';
+  TXT_UFEET = 'ft';
+  TXT_UMETER = 'm';
+  TXT_UPSI = 'psi';
+  TXT_UINCHES = 'in';
+  TXT_UMILLIMETER = 'mm';
+  TXT_UMILLIFEET = 'mft';
+  TXT_UFTPERSEC = 'fps';
+  TXT_UMTPERSEC = 'm/s';
+  TXT_UFTPERKFT = 'ft/Kft';
+  TXT_UMTPERKM = 'm/km';
 
   TXT_ZERO = 'Zero';
   TXT_FIRST = 'First';
@@ -914,6 +889,7 @@ resourcestring
 
 
 function ResourceListT(listID : string): string;
+function ConvertUnitText(aUnit: String): String;
 
 implementation
 
@@ -981,5 +957,34 @@ begin
   end;
   Result := List;
 end;
+
+function ConvertUnitText(aUnit: String): String;
+var
+  UnitList : TStringList;
+  List  : array [0..28] of AnsiString =  ('CFS','GPM','MGD','IMGD','AFD','LPS','LPM',
+                        'MLD','CMH','CMD','mg/L','ug/L','percent','hours','ft','m',
+                        'psi','in','mm','mft','fps','m/s','ft/Kft','m/km','Feet',
+                        'Meters','Degrees','None','');
+  ListT : array [0..28] of AnsiString = (TXT_CFS, TXT_GPM, TXT_MGD, TXT_IMGD, TXT_AFD,
+                        TXT_LPS, TXT_LPM, TXT_MLD, TXT_CMH, TXT_CMD, TXT_MGL, TXT_UGL,
+                        TXT_UPERCENT, TXT_UHOURS, TXT_UFEET, TXT_UMETER, TXT_UPSI,
+                        TXT_UINCHES, TXT_UMILLIMETER, TXT_UMILLIFEET, TXT_UFTPERSEC,
+                        TXT_UMTPERSEC, TXT_UFTPERKFT, TXT_UMTPERKM, TXT_DFEET, TXT_DMETER,
+                        TXT_DDEGREE, TXT_DNONE, '');
+begin
+
+  UnitList := TStringList.Create;
+  UnitList.AddStrings(List);
+
+  try
+    Result := ListT[UnitList.indexOf(aUnit)];
+  except
+    Result := aUnit;
+  end;
+
+  UnitList.Free;
+
+end;
+
 
 end.

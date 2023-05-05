@@ -726,9 +726,9 @@ begin
   if Length(MapBackdrop.Filename) = 0 then Exit;
   Opened := False;
   if not FileExists(MapBackdrop.Filename) then Uutils.MsgDlg(
-    MSG_NO_FIND_BACKDROP + MapBackdrop.Filename, mtError, [mbOK], MainForm)
+    Format(MSG_NO_FIND_BACKDROP, [MapBackdrop.Filename]), mtError, [mbOK], MainForm)
   else if not Map.RedrawBackdrop then Uutils.MsgDlg(
-    MSG_NO_READ_BACKDROP + MapBackdrop.Filename, mtError, [mbOK], MainForm)
+    Format(MSG_NO_READ_BACKDROP, [MapBackdrop.Filename]), mtError, [mbOK], MainForm)
   else Opened := True;
   if not Opened then
   begin

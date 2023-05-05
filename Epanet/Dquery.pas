@@ -262,7 +262,7 @@ begin
         for J := 0 to Network.Lists[I].Count-1 do
           if Link(I,J).ColorIndex > 0 then Inc(N);
   end;
-  Panel1.Caption := IntToStr(N) + TXT_ITEMS_FOUND;
+  Panel1.Caption := Format(TXT_ITEMS_FOUND, [IntToStr(N)]);
 end;
 
 end.

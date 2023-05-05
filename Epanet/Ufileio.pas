@@ -153,8 +153,7 @@ begin
     FileStream := TFileStream.Create(Fname,
       fmCreate or fmOpenWrite or fmShareDenyWrite);
   except
-    Uutils.MsgDlg(FILE_ERR3a + Fname + '.' + #10 + #10 + FILE_ERR2b,
-      mtError, [mbOK]);
+    Uutils.MsgDlg(Format(FILE_ERR3a, [Fname]), mtError, [mbOK]);
     Exit;
   end;
 
@@ -735,8 +734,7 @@ begin
 // File can't be opened
   if R = FILE_NO_OPEN then
   begin
-    Uutils.MsgDlg(FILE_ERR3a + Fname + '.' + #10 + #10 + FILE_ERR2b,
-      mtError, [mbOK]);
+    Uutils.MsgDlg(Format(FILE_ERR3a, [Fname]), mtError, [mbOK]);
   end
 
 // File not a .NET file;
@@ -744,8 +742,7 @@ begin
   else if R = FILE_NO_NET then
   begin
     if Uimport.ReadInpFile(Fname) then Result := iftINP
-    else Uutils.MsgDlg(FILE_ERR4a + Fname + '.' + #10 + #10 + FILE_ERR4b,
-      mtError, [mbOK]);
+    else Uutils.MsgDlg(Format(FILE_ERR4a, [Fname]), mtError, [mbOK]);
   end
 
 // File is a .NET file;
@@ -822,13 +819,12 @@ begin
     end
 
   // File access error
-    else Uutils.MsgDlg(FILE_ERR2a + Fname + '.' + #13 + #13 + FILE_ERR2b,
-           mtError, [mbOK]);
+    else Uutils.MsgDlg(Format(FILE_ERR2a, [Fname]), mtError, [mbOK]);
     CloseFile(F);
   end
 
 // File does not exist error
-  else Uutils.MsgDlg(FILE_ERR1a + Fname + TXT_DOES_NOT_EXIST, mtError, [mbOK]);
+  else Uutils.MsgDlg(Format(FILE_ERR1a, [Fname]), mtError, [mbOK]);
 end;
 
 procedure RegisterCalibData;

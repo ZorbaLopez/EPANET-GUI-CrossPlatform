@@ -90,7 +90,7 @@ begin
     n := Pos(' -',s);
     if n > 0 then s := Copy(s, 1, n-1);
   end;
-  Caption := TXT_COPY + s;
+  Caption := Format(TXT_COPY, [s]);
 end;
 
 

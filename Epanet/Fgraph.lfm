@@ -41,6 +41,7 @@ object GraphForm: TGraphForm
         Grid.Color = clSilver
         Grid.Style = psSolid
         Intervals.MaxLength = 100
+        Intervals.Tolerance = 2
         Marks.Distance = 2
         Marks.LabelFont.Height = -11
         Marks.Format = '%0:.0f'

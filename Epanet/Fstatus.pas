@@ -124,7 +124,7 @@ begin
     Items.LoadFromFile(TempReportFile);
   except
     On E: Exception do
-      Uutils.MsgDlg(MSG_1 + IntToStr(Items.Count) + MSG_2, mtWarning, [mbOK],
+      Uutils.MsgDlg(Format(MSG_1, [IntToStr(Items.Count)]), mtWarning, [mbOK],
       MainForm);
   end;
   if FileViewer.Items.Count >= 1 then FileViewer.ItemIndex := 0;

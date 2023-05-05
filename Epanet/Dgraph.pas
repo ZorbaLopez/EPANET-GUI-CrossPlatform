@@ -461,8 +461,7 @@ var
 
 begin
 // Use an InputQuery form to get an ID label for the items in the listbox
-  ProfileID := TXT_PROFILE_FOR +
-    ChangeFileExt(ExtractFileName(InputFileName),'');
+  ProfileID := Format(TXT_PROFILE_FOR, [ChangeFileExt(ExtractFileName(InputFileName),'')]);
   if InputQuery(TXT_SAVE_PROFILE,TXT_PROFILE_ID,ProfileID) then
 
 // Use the MainForm's SaveDialog form to get a name for the file

@@ -55,7 +55,6 @@ type
     procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
-    Graph: TGraphSelection;
     SeriesList: TStringlist;    //List of data series created
     ChartDlgPage: Integer;      //Starting page of chart options dialog
 
@@ -68,7 +67,6 @@ type
     ZoomDragTool: TZoomDragTool;
     PanDragTool: TPanDragTool;
 
-    {procedure AddObsTimeData(aSeries: TPointSeries; const aTime: String;}
     procedure AddObsTimeData(aSeries: TLineSeries; const aTime: String;
       const Ystr: String);
     procedure CalibDataPlot(const Fname, ID: String);
@@ -86,9 +84,7 @@ type
     function  CreateTimeSeriesPlot: Boolean;
     function  GetLinkData(const ID: String; const Vtype: Integer;
       const N1, N2: Integer; var Y: PSingleArray): Boolean;
-    procedure GetMarkText(Sender: TChartSeries; ValueIndex: LongInt;
-      var MarkText: String);
-    {procedure GetMarkText(out AFormattedMark: String; AIndex: Integer);}
+    procedure GetMarkText(out AFormattedMark: String; AIndex: Integer);
     function  GetNodeData(const ID: String; const Vtype: Integer;
       const N1, N2: Integer; var Y: PSingleArray): Boolean;
     procedure GetSysFlow(const Period: Integer; var SysFlow: array of Double);
@@ -101,9 +97,10 @@ type
     procedure SetAxisScale(theAxis: TChartAxis);  {--- Added 5/11/18 ---}
     procedure SetAxisOptions(Axis: TChartAxis);
     //Lazarus - View 3D adjustments
-    procedure SetView3D;
+    //procedure SetView3D;
   public
     { Public declarations }
+    Graph: TGraphSelection;
     procedure CopyTo;
     function  CreateGraph(GraphSelection: TGraphSelection): Boolean;
     procedure Print(Destination: TDestination);
@@ -173,9 +170,6 @@ begin
     Color := GraphOptions.PanelColor;
 
     BackColor := GraphOptions.BackColor;
-    { #todo : Implement LegendStyle in TASeries }
-    {Legend.ColorWidth := GraphOptions.LegendWidth;
-    Legend.LegendStyle :=lsSeries;}
     Legend.SymbolWidth := GraphOptions.LegendWidth;
     Legend.Alignment := laTopCenter;
     Legend.Visible := GraphOptions.LegendVisible;
@@ -301,7 +295,7 @@ function TGraphForm.CreateTimeSeriesPlot: Boolean;
 // Creates a time series graph.
 //------------------------------
 var
-  k          : Integer;
+  k, d       : Integer;
   prefix     : String;
   ytitle     : String;
   vtitle     : String;
@@ -318,11 +312,12 @@ begin
       ytitle := vtitle;
       prefix := TXT_NODE;
       if (Length(NodeUnits[VarType].Units) > 0) then
-      ytitle := ytitle + ' (' + NodeUnits[VarType].Units + ')';
+      ytitle := ytitle + ' (' + ConvertUnitText(NodeUnits[VarType].Units) + ')';
       if Items.Count > 1 then
         ltitle := TXT_FOR_SELECTED_NODES
       else
-        ltitle := TXT_FOR_NODE + Items[0];
+        ltitle := Format(TXT_FOR_NODE, [Items[0]]);
+      d := NodeUnits[Graph.VarType].Digits;
     end;
     if ObjectType = LINKSERIES then
     begin
@@ -330,13 +325,14 @@ begin
       ytitle := vtitle;
       prefix := TXT_LINK;
       if (Length(LinkUnits[VarType].Units) > 0) then
-        ytitle := ytitle + ' (' + LinkUnits[VarType].Units + ')';
+        ytitle := ytitle + ' (' + ConvertUnitText(LinkUnits[VarType].Units) + ')';
       if Items.Count > 1 then
         ltitle := TXT_FOR_SELECTED_LINKS
       else
-        ltitle := TXT_FOR_LINK + Items[0];
+        ltitle := Format(TXT_FOR_LINK, [Items[0]]);
+      d := LinkUnits[Graph.VarType].Digits;
     end;
-    Caption := TXT_TIME_SERIES_PLOT + vtitle + ' ' + ltitle;
+    Caption := Format(TXT_TIME_SERIES_PLOT, [vtitle, ltitle]);
     FormActivate(self);
 
     Chart1.LeftAxis.Title.Caption := ytitle;
@@ -351,8 +347,12 @@ begin
     begin
       if Items.Count > 1 then ltitle := prefix + ' ' + Items[k];
       CreateLineSeries(k,ltitle);
+      TChartSeries(Chart1.Series[k]).Marks.Format := '%0:.'+IntToStr(d)+'f';
+      TChartSeries(Chart1.Series[k]).Marks.Visible := False;
     end;
     CreatePointSeries(TXT_OBSERVED);
+    TChartSeries(Chart1.Series[k+1]).Marks.Format := '%0:.'+IntToStr(d)+'f';
+    TChartSeries(Chart1.Series[k+1]).Marks.Visible := False;
     RefreshTimeSeriesPlot;
   end;
 end;
@@ -389,9 +389,13 @@ begin
     //Get time series data
       ID := Items[k];
       if ObjectType = NODESERIES then
-        flag := GetNodeData(ID, VarType, n1, n2, y)
+      begin
+        flag := GetNodeData(ID, VarType, n1, n2, y);
+      end
       else
+      begin
         flag := GetLinkData(ID, VarType, n1, n2, y);
+      end;
 
     //Transfer data to chart series
       TChartSeries(Chart1.Series[k]).Clear;
@@ -438,7 +442,7 @@ begin
   SetAxisScale(Chart1.LeftAxis);
 
   //Lazarus - View 3D adjustments
-  SetView3D
+  //SetView3D
 end;
 
 function TGraphForm.GetNodeData(const ID: String; const Vtype: Integer;
@@ -582,7 +586,6 @@ begin
   end;
 end;
 
-{procedure TGraphForm.AddObsTimeData(aSeries: TPointSeries; const aTime: String;}
 procedure TGraphForm.AddObsTimeData(aSeries: TLineSeries; const aTime: String;
   const Ystr: String);
 //--------------------------------------------------------------------
@@ -603,7 +606,8 @@ begin
   x := Uutils.StrHoursToFloat(aTime);
   if (x >= 0) then
   begin
-    if Uutils.GetSingle(Ystr,y) then aSeries.AddXY(x,y,'',clDefault);
+    if Uutils.GetSingle(Ystr,y) then
+      aSeries.AddXY(x, y,'',clDefault);
   end;
 end;
 
@@ -631,7 +635,7 @@ begin
       vTitle := MainForm.BrowserForm.NodeViewBox.Items[VarType];
       xTitle := vTitle;
       if (Length(NodeUnits[VarType].Units) > 0) then
-        xTitle := xTitle + ' (' + NodeUnits[VarType].Units + ')';
+        xTitle := xTitle + ' (' + ConvertUnitText(NodeUnits[VarType].Units) + ')';
       with NodeVariable[VarType] do
       begin
         if (Source = vsOutput) and (Nperiods > 1) then
@@ -643,7 +647,7 @@ begin
       vTitle := MainForm.BrowserForm.LinkViewBox.Items[VarType];
       xTitle := vTitle;
       if (Length(LinkUnits[VarType].Units) > 0) then
-        xTitle := xTitle + ' (' + LinkUnits[VarType].Units + ')';
+        xTitle := xTitle + ' (' + ConvertUnitText(LinkUnits[VarType].Units) + ')';
       tTitle := '';
       with LinkVariable[VarType] do
       begin
@@ -655,12 +659,12 @@ begin
   sTitle := vTitle;
   if Length(tTitle) > 0 then
     sTitle := vTitle + TXT_AT + tTitle;
-  Caption := TXT_FREQUENCY_PLOT + sTitle;
+  Caption := Format(TXT_FREQUENCY_PLOT, [sTitle]);
   FormActivate(self);
 
   with Chart1 do
   begin
-    Title.Text.Add(TXT_DISTRIBUTION + sTitle);
+    Title.Text.Add(Format(TXT_DISTRIBUTION, [sTitle]));
     BottomAxis.Title.Caption := xTitle;
     if Graph.ObjectType in [JUNCS..TANKS]
     then sTitle := TXT_PERCENT_NLESS
@@ -727,7 +731,7 @@ begin
     end;
     SetAxisScale(Chart1.LeftAxis);
     //Lazarus - View 3D adjustments
-    SetView3D
+    //SetView3D
 
   finally
     aList.Free;
@@ -758,7 +762,7 @@ begin
     vTitle := MainForm.BrowserForm.NodeViewBox.Items[VarType];
     yTitle := vTitle;
     if (Length(NodeUnits[VarType].Units) > 0) then
-      yTitle := yTitle + ' (' + NodeUnits[VarType].Units + ')';
+      yTitle := yTitle + ' (' + ConvertUnitText(NodeUnits[VarType].Units) + ')';
     tTitle := '';
     if (NodeVariable[VarType].Source = vsOutput) and (Nperiods > 1) then
       tTitle := MainForm.BrowserForm.TimeListBox.Items[Period];
@@ -767,14 +771,14 @@ begin
     else
       sTitle := vTitle + TXT_AT + tTitle;
   end;
-  Caption := TXT_PROFILE_PLOT + sTitle;
+  Caption := Format(TXT_PROFILE_PLOT, [sTitle]);
   FormActivate(self);
 
 // Set chart titles
   with Chart1 do
   begin
     Title.Text.Clear;
-    Title.Text.Add(TXT_PROFILE + sTitle);
+    Title.Text.Add(Format(TXT_PROFILE, [sTitle]));
     sTitle := TXT_DISTANCE;
     if MapDimensions.Units = muFeet then sTitle := sTitle + TXT_FEET;
     if MapDimensions.Units = muMeters then sTitle := sTitle + TXT_METERS;
@@ -790,9 +794,9 @@ begin
     Marks.Visible := True;
     Marks.LabelBrush.Color := GraphOptions.LabelsBackColor;
     Marks.Clipped := False;
+    Marks.Style := smsLabel;
     SeriesColor := clMoneyGreen;
     AreaBrush.Color := clMoneyGreen;
-
   end;
   RefreshProfilePlot;
   Result := True;
@@ -812,7 +816,6 @@ var
   x1, y1   : Single;
   ID       : String;
 begin
-  {if Chart1.SeriesCount > 0 then with Graph, Chart1.Series[0] do}
   if Chart1.SeriesCount > 0 then with Graph, TChartSeries(Chart1.Series[0]) do
   begin
 
@@ -849,7 +852,8 @@ begin
           y0 := y1;
 
       // Get value for this node & add to chart
-          y := Uoutput.GetNodeValue(VarType,Period,objtype,objindex);
+          y := RoundTo(Uoutput.GetNodeValue(VarType,Period,objtype,objindex),
+                       -1 * NodeUnits[VarType].Digits);
           if (y <> MISSING) then
           begin
             TChartSeries(Chart1.Series[0]).AddXY(dist,y,'',clDefault);
@@ -866,7 +870,7 @@ begin
     SetAxisScale(Chart1.LeftAxis);
 
     //Lazarus - View 3D adjustments
-    SetView3D
+    //SetView3D
   end;
 end;
 
@@ -888,8 +892,6 @@ begin
     Foot.Text.Clear;
     Foot.Font.Assign(BottomAxis.Title.LabelFont);
     Foot.Font.Size := 10;
-    { #todo : Implement Legend Style in series }
-    {Legend.LegendStyle := lsValues;}
     Legend.SymbolWidth := 24;
   end;
   CreatePieSeries('Series1');
@@ -936,9 +938,9 @@ begin
     else
     begin
       Chart1.Title.Text.Add(TXT_AVG_RATES);
-      Add(rate[0],TXT_BULK,clBlue);
-      Add(rate[1],TXT_WALL,clRed);
-      Add(rate[2],TXT_TANKS,clGreen);
+      Add(RoundTo(rate[0], -3),TXT_BULK,clBlue);
+      Add(RoundTo(rate[1], -3),TXT_WALL,clRed);
+      Add(RoundTo(rate[2], -3),TXT_TANKS,clGreen);
       Active := True;
       Chart1.Foot.Text.Add(Format(FMT_INFLOW,[rate[3]]));
     end;
@@ -955,7 +957,7 @@ begin
   end;
 
   //Lazarus - View 3D adjustments
-  SetView3D
+  //SetView3D
 end;
 
 
@@ -973,7 +975,7 @@ begin
   FormActivate(self);
   Chart1.Title.Text.Add(TXT_SYSTEM_FLOW);
   Chart1.LeftAxis.Title.Caption := TXT_FLOW +
-    ' (' + NodeUnits[DEMAND].Units + ')';
+    ' (' + ConvertUnitText(NodeUnits[DEMAND].Units) + ')';
   Chart1.Legend.Visible := True;
   CreateLineSeries(0,TXT_PRODUCED);
   SeriesList.Add(TXT_PRODUCED);
@@ -1010,7 +1012,7 @@ begin
   begin
     GetSysFlow(j,sysflow);
     for k := PRODUCED to CONSUMED do
-      TChartSeries(Chart1.Series[k]).AddXY(x, sysflow[k], '', clDefault);
+      TChartSeries(Chart1.Series[k]).AddXY(x, RoundTo(sysflow[k], -1 * LinkUnits[FLOW].Digits), '', clDefault);
     x := x + dt;
   end;
   for k := PRODUCED to CONSUMED do Chart1.Series[k].Active := True;
@@ -1021,7 +1023,7 @@ begin
   SetAxisScale(Chart1.LeftAxis);
 
   //Lazarus - View 3D adjustments
-  SetView3D
+  //SetView3D
 end;
 
 procedure TGraphForm.GetSysFlow(const Period: Integer;
@@ -1088,6 +1090,7 @@ begin
     Pointer.Visible := GraphOptions.PointVisible[i];
     Pointer.Style := TSeriesPointerStyle(GraphOptions.PointStyle[i]);
     Pointer.Brush.Color := GraphOptions.PointColor[i];
+    Pointer.Pen.Color := GraphOptions.PointColor[i];
     Pointer.HorizSize := GraphOptions.PointSize[i];
     Pointer.VertSize := GraphOptions.PointSize[i];
     Chart1.AddSeries(aSeries);
@@ -1141,28 +1144,28 @@ begin
 
     SeriesColor := clSkyBlue;;
     AreaBrush.Color := clSkyBlue;
-    {$IFNDEF LINUX} Transparency := 25; {$ENDIF}
+    {$IFDEF WINDOWS} Transparency := 25; {$ENDIF}
     Marks.Visible := False;
     Marks.LabelBrush.Color := GraphOptions.LabelsBackColor;
+    Marks.LabelFont.Color := InvertColor(GraphOptions.LabelsBackColor);
     Marks.Clipped := False;
+    Marks.LinkPen.Color := Marks.Frame.Color;
     UseZeroLevel := True;
     Chart1.AddSeries(aSeries);
-    {OnGetMark := GetMarkText;}
+    Chart1.Legend.Visible := False;
+    OnGetMark := GetMarkText;
 
   finally
     Result := Assigned(aSeries);
   end;
 end;
 
-procedure TGraphForm.GetMarkText(Sender: TChartSeries; ValueIndex: LongInt;
-  var MarkText: String);
-{procedure TGraphForm.GetMarkText(out AFormattedMark: String; AIndex: Integer);}
+procedure TGraphForm.GetMarkText(out AFormattedMark: String; AIndex: Integer);
 //------------------------------------------------------------------
 // OnGetMarktext event handler used by Area series in profile plots.
 //------------------------------------------------------------------
 begin
-  if SeriesList.Count > ValueIndex then
-    MarkText := SeriesList[ValueIndex];
+    AFormattedMark := SeriesList[AIndex];
 end;
 
 function TGraphForm.CreatePieSeries(const Stitle: String): Boolean;
@@ -1182,8 +1185,12 @@ begin
     Marks.Visible := GraphOptions.LabelsVisible;
     Marks.Arrow.Visible := GraphOptions.LabelsArrows;
     Marks.LabelBrush.Color := GraphOptions.LabelsBackColor;
+    Marks.LabelFont.Color := InvertColor(GraphOptions.LabelsBackColor);
     Marks.Clipped := False;
+    Marks.LinkPen.Color := Marks.Frame.Color;
     Marks.Style := smsLabelPercent;
+    Legend.Multiplicity := lmPoint;
+    Legend.Format := '%0:.1f %2:s';
     Chart1.AddSeries(aSeries);
   finally
     Result := Assigned(aSeries);
@@ -1202,6 +1209,7 @@ procedure TGraphForm.SetAxisScale(theAxis: TChartAxis);
 //-----------------------------------------------------------------------------
 var
   zMin, zMax, zInc: Double;
+  i : Integer;
 begin
   { #todo : Implement detection of datetime series }
   {if theAxis.IsDateTime then Exit;}
@@ -1222,9 +1230,21 @@ begin
       Chart1.Extent.UseYMax := True;
       Chart1.Extent.YMin := zMin;
       Chart1.Extent.YMax := zMax;
+      Marks.LabelFont.Orientation := 0;
     end;
     Intervals.Options:=[aipUseCount];
     Intervals.Count := Trunc((zMax - zMin) / zInc);
+    if zInc > 1.0 then Marks.Format := '%0:.0f' else
+    begin
+      i := 0;
+      while zInc < 1.0 do
+      begin
+          zInc := zInc * 10;
+          Inc(i);
+       end;
+      if i < 3 then Marks.Format := '%0:.' + IntToStr(i) + 'f'
+      else Marks.Format := '%0:10.2e';
+    end;
   end;
 end;
 
@@ -1251,26 +1271,26 @@ begin
 end;
 
 
-procedure TGraphForm.SetView3D;
+//procedure TGraphForm.SetView3D;
 //-----------------------------------------------------------
 // Set the chart depth.
 //-----------------------------------------------------------
-var
-  I: integer;
-begin
-  with Chart1 do
-  begin
-    if GraphOptions.View3D = False then exit
-    else
-    begin
-      Depth := round(GraphOptions.Percent3D / 100 * 0.71 * BackWallHeight);
-      BottomAxis.ZPosition:= Depth;
-      LeftAxis.ZPosition:= Depth;
-      for I := 0 to SeriesCount - 1 do
-        Series[I].Depth:= round(Depth / SeriesCount);
-    end;
-  end;
-end;
+//var
+//  I: integer;
+//begin
+//  with Chart1 do
+//  begin
+//    if GraphOptions.View3D = False then exit
+//    else
+//    begin
+//      Depth := round(GraphOptions.Percent3D / 100 * 0.71 * BackWallHeight);
+//      BottomAxis.ZPosition:= Depth;
+//      LeftAxis.ZPosition:= Depth;
+//      for I := 0 to SeriesCount - 1 do
+//        Series[I].Depth:= round(Depth / SeriesCount);
+//    end;
+//  end;
+//end;
 
 
 procedure TGraphForm.SetGraphOptions;
@@ -1482,7 +1502,8 @@ begin
           begin
           // Get node labels for profile plot
             if Graph.GraphType = PROFILEPLOT then
-              GetMarkText(TChartSeries(Series[I]),J,S1);
+              //GetMarkText(TChartSeries(Series[I]),J,S1);
+              TChartSeries(Series[I]).OnGetMark(S1, J);
 
           // Build up tab-delimited string of X, Y values
             S := Format('%-16s'+#9+'%-16.4f'+#9+'%-16.4f',

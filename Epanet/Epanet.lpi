@@ -422,7 +422,9 @@
       <Unit>
         <Filename Value="Dcurve.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="CurveForm"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="Dmapdim.pas"/>

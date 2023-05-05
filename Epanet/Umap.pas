@@ -28,7 +28,7 @@ uses
   LCLIntf, LCLType, LMessages, FPVectorial, fpvutils, IntfGraphics,
 {$ENDIF}
      Graphics, SysUtils, Dialogs, Forms, Classes, ExtCtrls,
-     Controls, Math, Types, System.UITypes,
+     Controls, Math, Types, System.UITypes, ResourceStrings,
      Uglobals, Uutils, Uinput, Uoutput, Dlegend;
 
 const
@@ -1644,12 +1644,12 @@ begin
   // Determine units & decimal digits
     if Ltype = NETNODES then
     begin
-      units := NodeUnits[ViewVar].Units;
+      units := ConvertUnitText(NodeUnits[ViewVar].Units);
       digits := NodeUnits[ViewVar].Digits;
     end
     else
     begin
-      units := LinkUnits[ViewVar].Units;
+      units := ConvertUnitText(LinkUnits[ViewVar].Units);
       digits := LinkUnits[ViewVar].Digits;
     end;
 
@@ -1724,12 +1724,12 @@ begin
     if (Ltype = NETNODES) then
     begin
       Sname := NodeVariable[ViewVar].Name;
-      Sunits := NodeUnits[ViewVar].Units;
+      Sunits := ConvertUnitText(NodeUnits[ViewVar].Units);
     end
     else
     begin
       Sname := LinkVariable[ViewVar].Name;
-      Sunits := LinkUnits[ViewVar].Units;
+      Sunits := ConvertUnitText(LinkUnits[ViewVar].Units);
     end;
   end;
 
@@ -2797,12 +2797,12 @@ begin
   // Determine units & decimal digits
     if Ltype = NETNODES then
     begin
-      units := NodeUnits[ViewVar].Units;
+      units := ConvertUnitText(NodeUnits[ViewVar].Units);
       digits := NodeUnits[ViewVar].Digits;
     end
     else
     begin
-      units := LinkUnits[ViewVar].Units;
+      units := ConvertUnitText(LinkUnits[ViewVar].Units);
       digits := LinkUnits[ViewVar].Digits;
     end;
 

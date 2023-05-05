@@ -188,7 +188,7 @@ implementation
 
 uses
  Dcontrol, Dcurve, Ddemand, Dpattern, Dsource, Fmain, Fmap,
- Fbrowser, Umap, Uoutput;
+ Fbrowser, Umap, Uoutput, StrUtils;
 
 var
   ErrMsg: String;
@@ -528,7 +528,7 @@ procedure EditDemands(const Index: Integer);
 begin
   with TDemandsForm.Create(MainForm.PropEditForm) do
   try
-    Caption := TXT_DEMAND_EDITOR + GetID(JUNCS,Index);
+    Caption := Format(TXT_DEMAND_EDITOR, [GetID(JUNCS,Index)]);
     LoadDemands;
     if (ShowModal = mrOK) and (Modified = True) then
     begin
@@ -549,7 +549,7 @@ procedure EditSource(const Ntype: Integer; const Index: Integer);
 begin
   with TSourceForm.Create(Application) do
   try
-    Caption := TXT_SOURCE_EDITOR + GetID(Ntype,Index);
+    Caption := Format(TXT_SOURCE_EDITOR, [GetID(Ntype,Index)]);
     if (ShowModal = mrOK) and (Modified = True) then
     begin
       UpdateEditor(Ntype,Index);
@@ -626,7 +626,7 @@ begin
   begin
 
   // Set Property Editor caption
-    MainForm.PropEditHeader.Caption := GetID(OPTS,Index) + TXT_OPTIONS_EDITOR;
+    MainForm.PropEditHeader.Caption := Format(TXT_OPTIONS_EDITOR, [GetID(OPTS,Index)]);
 
   // Place current options into PropList
     PropList.Clear;
@@ -1141,8 +1141,7 @@ begin
   end;
   UpdateEditor(EditorObject, EditorIndex);
   if Count > 0 then MainForm.SetChangeFlags;
-  Uutils.MsgDlg(IntToStr(count) + ' ' + ObjectLabel[ObjType] +
-    TXT_WERE_UPDATED,mtInformation,[mbOK]);
+  Uutils.MsgDlg(Format(TXT_WERE_UPDATED, [IntToStr(count), ObjectLabel[ObjType]]),mtInformation,[mbOK]);
 end;
 
 
@@ -1631,7 +1630,7 @@ begin
   end
   else
   begin
-    Errmsg := '''' + S + '''' + TXT_NOT_A_NUMBER;
+    Errmsg := Format(TXT_NOT_A_NUMBER, [S]);
     Result := False;
   end;
 end;
@@ -1653,7 +1652,7 @@ begin
 // New node must be in database
   if not FindNode(S,ntype,index2) then
   begin
-    Errmsg := TXT_NO_NODE + S;
+    Errmsg := Format(TXT_NO_NODE, [S]);
     Result := False;
     Exit;
   end;
@@ -1710,7 +1709,7 @@ begin
   begin
     if not FindNode(S, ntype, index) then
     begin
-      ErrMsg := TXT_NO_NODE + S;
+      ErrMsg := Format(TXT_NO_NODE, [S]);
       Result := False;
     end
     else aMapLabel.Anchor := Node(ntype, index);
@@ -1736,12 +1735,12 @@ begin
     case aMapLabel.MeterType of
     NETNODES: if not FindNode(S, atype, index) then
               begin
-                ErrMsg := TXT_NO_NODE + S;
+                ErrMsg := Format(TXT_NO_NODE, [S]);
                 Result := False;
               end;
     NETLINKS: if not FindLink(S, atype, index) then
               begin
-                ErrMsg := TXT_NO_LINK + S;
+                ErrMsg := Format(TXT_NO_LINK, [S]);
                 Result := False;
               end;
     end;
@@ -1830,8 +1829,6 @@ procedure UpdateAllUnits;
 //-----------------------------------------------------
 var
   i: Integer;
-  flow : TStringList;
-  flowT: TStringList;
 
 begin
 // Determine which system of units being used
@@ -1856,13 +1853,9 @@ begin
   UpdateRoughnessUnits;
   UpdateQualUnits;
   UpdateMapUnits;
-  flow := TStringList.Create;
-  flowT := TStringList.Create;
-  flow.SetText(PChar(HydraulicProps[0].List));
-  flowT.AddCommaText(ResourceListT(HydraulicProps[0].List));
-  MainForm.StatusBarPanel1.Caption := flowT[flow.IndexOf(FlowUnits)];
-  flow.Destroy;
-  flowT.Destroy;
+  Mainform.BrowserForm.InitMapPage;
+  MainForm.StatusBarPanel1.Caption := ConvertUnitText(FlowUnits);
+
 end;
 
 
@@ -2000,7 +1993,8 @@ begin
 // Check that a new WQ parameter was selected
   oldqualparam := QualParam;
   QualParam := GetQualParam;
-  if oldqualparam <> QualParam then
+  if (oldqualparam <> QualParam) or not
+  (MatchStr(Network.Options.Data[QUAL_PARAM_INDEX],['None', 'Chemical', 'Trace', 'Age'])) then
   begin
 
   // Update WQ units
@@ -2288,8 +2282,7 @@ begin
 // If ID exists then restore current ID & exit.
   if Network.Lists[CurrentList].IndexOf(S) >= 0 then
   begin
-    Uutils.MsgDlg(MSG_ALREADY_HAVE + ObjectLabel[CurrentList] +
-      TXT_NAMED + S, mtError, [mbOK]);
+    Uutils.MsgDlg(Format(MSG_ALREADY_HAVE, [ObjectLabel[CurrentList], S]), mtError, [mbOK]);
     Network.Lists[CurrentList].Strings[i] := s1;
     Result := True;
     Exit;

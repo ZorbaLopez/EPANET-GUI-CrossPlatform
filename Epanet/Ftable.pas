@@ -451,8 +451,8 @@ begin
         if (RunFlag) and (Nperiods > 1) then Caption := Caption + TXT_AT +
                   MainForm.BrowserForm.TimeListBox.Items[TimePeriod];
       end;
-      NODESERIES: Caption := TXT_NODE_SERIES + ObjectID;
-      LINKSERIES: Caption := TXT_LINK_SERIES + ObjectID;
+      NODESERIES: Caption := Format(TXT_NODE_SERIES, [ObjectID]);
+      LINKSERIES: Caption := Format(TXT_LINK_SERIES, [ObjectID]);
     end;
 
 // Determine which variables will be displayed in table's columns
@@ -519,8 +519,8 @@ begin
   Splitter1.Visible := showfilters;
   ListBox1.Visible := showfilters;
   if showfilters then
-    ListBox1.Items.Text := IntToStr(Grid1.RowCount - 1) + TXT_ITEMS_WITH + #13
-      + TableOptions.FilterString;
+    ListBox1.Items.Text := Format(TXT_ITEMS_WITH,
+                        [IntToStr(Grid1.RowCount - 1), TableOptions.FilterString]);
 
 // Refresh table display in Grid control
   SetFont;
@@ -577,7 +577,7 @@ begin
             {$ELSE}
             s := NodeVariable[ColIndex[i]].Name;
             {$ENDIF}
-          ColLabel[i] := s + LineEnding + NodeUnits[ColIndex[i]].Units;
+          ColLabel[i] := s + LineEnding + ConvertUnitText(NodeUnits[ColIndex[i]].Units);
         end;
       end;
     end;
@@ -613,7 +613,7 @@ begin
             s := LinkVariable[ColIndex[i]].Name;
             {$ENDIF}
           if ColIndex[i] < 12 then
-            ColLabel[i] := s + LineEnding + LinkUnits[ColIndex[i]].Units
+            ColLabel[i] := s + LineEnding + ConvertUnitText(LinkUnits[ColIndex[i]].Units)
           else
             ColLabel[i] := s + LineEnding + '';
         end;
@@ -648,7 +648,7 @@ begin
           else
             s := NodeVariable[ColIndex[i]].Name;
             {$ENDIF}
-          ColLabel[i] := s + LineEnding + NodeUnits[ColIndex[i]].Units;
+          ColLabel[i] := s + LineEnding + ConvertUnitText(NodeUnits[ColIndex[i]].Units);
         end;
       end;
     end;
@@ -682,7 +682,7 @@ begin
             s := LinkVariable[ColIndex[i]].Name;
           {$ENDIF}
           if ColIndex[i] < 12 then
-            ColLabel[i] := s + LineEnding + LinkUnits[ColIndex[i]].Units
+            ColLabel[i] := s + LineEnding + ConvertUnitText(LinkUnits[ColIndex[i]].Units)
           else
             ColLabel[i] := s + LineEnding + '';
         end;

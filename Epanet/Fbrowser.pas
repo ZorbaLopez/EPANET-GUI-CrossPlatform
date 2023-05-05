@@ -642,7 +642,13 @@ var
 begin
 // Get name of quality parameter
   if QualParam = wqNone then s := TXT_QUALITY
-  else s := Network.Options.Data[QUAL_PARAM_INDEX];
+  else
+  begin
+    s := Network.Options.Data[QUAL_PARAM_INDEX];
+    if s = 'Trace' then s := TXT_TRACE
+    else if s = 'Age' then s := TXT_AGE
+    else if s = 'Chemical' then s:= TXT_CHEMICAL;
+  end;
   if QualParam = wqTrace then
     s := s + ' ' + Network.Options.Data[TRACE_NODE_INDEX];
 
@@ -765,7 +771,7 @@ begin
   else if TimeStatFlag > 0 then
   begin
     TimeListBox.Items.Add(TimeStat[TimeStatFlag]);
-    TimeLabel.Caption := TXT_TIME + TXT_STATISTIC;
+    TimeLabel.Caption := Format(TXT_STATISTIC, [TXT_TIME]);
   end
 
 // Update TimeListBox & TimeScrollBar controls if
@@ -778,7 +784,7 @@ begin
     begin
       BeginUpdate;
       for n := 0 to Nperiods-1 do
-        Add(Uutils.GetTimeString(Rstart + n*Rstep) + TXT_HOURS);
+        Add(Format(TXT_HOURS, [Uutils.GetTimeString(Rstart + n*Rstep)]));
       EndUpdate;
     end;
 
@@ -823,8 +829,8 @@ begin
     else stime := StartTime;
     aTime := StrToTime(stime) + days;
 
-    MainForm.MapForm.TimeLegendPanel.Caption := TXT_DAY + IntToStr(Trunc(days)+1) +
-      ', ' +  FormatDateTime('h:nn AM/PM',aTime);
+    MainForm.MapForm.TimeLegendPanel.Caption := Format(TXT_DAY,
+             [IntToStr(Trunc(days)+1), FormatDateTime('h:nn AM/PM',aTime)]);
   except
     MainForm.MapForm.TimeLegendPanel.Caption := '';
   end;
