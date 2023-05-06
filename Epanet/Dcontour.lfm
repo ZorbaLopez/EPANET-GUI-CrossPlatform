@@ -138,7 +138,7 @@ object ContourOptionsForm: TContourOptionsForm
       Left = 104
       Height = 21
       Top = 80
-      Width = 41
+      Width = 65
       MaxValue = 5
       MinValue = 1
       TabOrder = 0
@@ -194,7 +194,7 @@ object ContourOptionsForm: TContourOptionsForm
       Left = 108
       Height = 21
       Top = 70
-      Width = 41
+      Width = 44
       MaxValue = 10
       MinValue = 1
       TabOrder = 1
@@ -204,7 +204,7 @@ object ContourOptionsForm: TContourOptionsForm
       Left = 108
       Height = 21
       Top = 24
-      Width = 41
+      Width = 44
       MaxValue = 10
       MinValue = 1
       TabOrder = 0

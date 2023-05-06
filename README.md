@@ -38,6 +38,6 @@ This port is not affiliated with, nor endorsed by USEPA or OWA. For the last "of
 This port has been tested with Lazarus 2.2.6 and FPC 3.2.2 in the below combinations of OS - Architecture. Other combinations avaliable in Lazarus should work, but may require code modifications or disable some features.
 - Windows 10 22H2 - Intel 64 bits
 - MacOS "Ventura" (13.3.1) - Intel 64 bits
-- Linux Mint "Vera" (21.1) - Intel 64 bits
+- Linux Mint "Vera" (21.1) - Intel 64 bits GTK2
 
 

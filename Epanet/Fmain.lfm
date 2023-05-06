@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 319
+  Left = 348
   Height = 483
-  Top = 162
+  Top = 75
   Width = 840
   Caption = 'EPANET 2'
   ClientHeight = 483
@@ -499,7 +499,6 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   OnShow = FormShow
   LCLVersion = '2.2.6.0'
-  WindowState = wsMaximized
   object ProgressPanel: TPanel
     Cursor = crArrow
     Left = 0

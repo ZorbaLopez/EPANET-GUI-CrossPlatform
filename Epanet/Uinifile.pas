@@ -175,7 +175,7 @@ begin
     MainForm.Splitter1.Left := ReadInteger('Property Editor','Left',
                             MainForm.Splitter1.Left);
     MainForm.Splitter2.Top := ReadInteger('Property Editor','Top',
-                            MainForm.Splitter2.Top);
+                            MainForm.Splitter2.Top){$IFDEF LINUX}  + 25 {$ENDIF};
     MainForm.PropEditForm.Editor.HeaderSplit :=
       ReadInteger('Property Editor','HeaderSplit',
       MainForm.PropEditForm.Editor.HeaderSplit);

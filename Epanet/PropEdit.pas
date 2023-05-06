@@ -105,7 +105,7 @@ type
   TPropEdit = class(TCustomPanel)
   private
     { Private declarations }
-    FHeader        : TStringGrid;
+    FHeader        : THeaderControl;
     FGrid          : TStringGrid;         // StringGrid to display values
     FEdit          : TEdit;               // Edit control for editing values
     FCombo         : TComboBox;           // Combobox for selecting choices
@@ -144,7 +144,7 @@ type
     { Protected declarations }
     procedure Resize; override;
     procedure ResizeSection(Sender: TObject);
-    procedure HeaderSize(Sender: TObject; IsColumn: Boolean; Index: Integer);
+    procedure HeaderSize(HeaderControl: TCustomHeaderControl; Section: THeaderSection);
     procedure ResizeGrid(Sender: TObject);
     procedure EditKeyPress(Sender: TObject; var Key: Char);
     procedure EditKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -237,7 +237,7 @@ begin
   BevelInner := bvNone;
   BevelOuter := bvNone;
   BevelWidth := 1;
-  BorderStyle := bsNone; // bsSingle;
+  BorderStyle := bsNone;
   BorderWidth := 0;
   ReadOnlyColor := $0080FFFF;
   {$IFDEF DARWIN}
@@ -282,27 +282,16 @@ procedure TPropEdit.CreateComponents;
 //-----------------------------------------------------------------------------
 begin
   // FHeader displays column labels
-  FHeader := TStringGrid.Create(self);
+  FHeader := THeaderControl.Create(self);
   FHeader.Parent := self;
   with FHeader do
   begin
     Align := alTop;
-    AutoFillColumns := False;
-    Options := [goFixedVertLine,goFixedHorzLine,goVertLine,goHorzLine,
-                goColSizing,goFixedColSizing];
-    Visible := True;
-    Flat := True;
-    OnHeaderSized := HeaderSize;
-    OnResize := ResizeSection;
-    OnEnter := FormEnter;
-    FixedCols := 0;
-    FixedRows := 1;
-    ColCount := 2;
-    RowCount := 1;
-    ScrollBars := ssNone;
+    BorderWidth := 1;
     Color := clWindow;
-    TitleStyle := tsNative;
-    ColWidths[0] := (Width*FHeaderSplit) div 100;
+    Visible := True;
+    OnSectionResize := HeaderSize;
+    OnResize := ResizeSection;
   end;
 
   // FGrid displays properties & values
@@ -316,7 +305,7 @@ begin
     AnchorSideTop.Side := asrBottom;
     BorderStyle := bsSingle;
     ColCount := 2;
-    Color := clWindow;  //clBtnFace;
+    Color := clWindow;
     Options := Options - [goRangeSelect] + [goThumbTracking];
     FixedCols := 0;
     FixedRows := 0;
@@ -419,9 +408,9 @@ begin
     FColHeading1 := Value;
     if ComponentsCreated then with FHeader do
     begin
-      swidth := ColWidths[0];
-      Cells[0, 0] := Value;
-      ColWidths[0] := swidth;
+      swidth := Sections[0].Width;
+      Sections[0].Text := Value;
+      Sections[0].Width := swidth;
     end;
   end;
 end;
@@ -435,9 +424,9 @@ begin
     FColHeading2 := Value;
     if ComponentsCreated then with FHeader do
     begin
-      swidth := ColWidths[1];
-      Cells[1, 0] := Value;
-      ColWidths[1] := swidth;
+      swidth := Sections[1].Width;
+      Sections[1].Text := Value;
+      Sections[1].Width := swidth;
     end;
   end;
 end;
@@ -450,7 +439,7 @@ begin
     FHeaderSplit := Value;
     if ComponentsCreated then with FHeader do
     begin
-      ColWidths[0] := (Width*Value) div 100;
+      Sections[0].Width := (Width*Value) div 100;
     end;
   end;
 end;
@@ -474,15 +463,18 @@ begin
   inherited Resize;
   if ComponentsCreated then
   begin
-
-    //Initialize Header sections
     with FHeader do
     begin
+      if Sections.Count = 0 then
+      begin
+        Sections.Add;
+        Sections[0].Text := FColHeading1;
+        Sections.Add;
+        Sections[1].Text := FColHeading2;
+        Sections[0].Width := (Width*FHeaderSplit) div 100;
+        Sections[1].Width := ClientWidth - Sections[0].Width;
+      end;
       Height := RowHeight;
-      if ColCount = 0 then ColCount := 2;
-      Cells[0, 0] := FColHeading1;
-      Cells[1, 0] := FColHeading2;
-      ColWidths[0] := (Width*FHeaderSplit) div 100;
     end;
 
     //Resize Grid & reposition active edit control
@@ -496,18 +488,18 @@ begin
 end;
 
 
-procedure TPropEdit.HeaderSize(Sender: TObject; IsColumn: Boolean; Index: Integer);
+procedure TPropEdit.HeaderSize(HeaderControl: TCustomHeaderControl; Section: THeaderSection);
 begin
   // Save new HeaderSplit value
   {$IFNDEF WINDOWS}
-  if FHeader.ColWidths[0] < 20 then FHeader.ColWidths[0] := 20;
+  if FHeader.Sections[0].Width < 20 then FHeader.Sections[0].Width := 20;
   {$ENDIF}
-  FHeaderSplit := (FHeader.ColWidths[0]*100)  div FHeader.Width;
-  FHeader.ColWidths[1] := FHeader.ClientWidth - FHeader.ColWidths[0];
+  FHeaderSplit := (FHeader.Sections[0].Width*100)  div FHeader.Width;
+  FHeader.Sections[1].Width := FHeader.ClientWidth - FHeader.Sections[0].Width;
 
   //Resize Grid column widths
-  FGrid.ColWidths[0] := FHeader.ColWidths[0];
-  FGrid.ColWidths[1] := FHeader.ColWidths[1] - CXVScroll{ -1};
+  FGrid.ColWidths[0] := FHeader.Sections[0].Width;
+  FGrid.ColWidths[1] := FHeader.Sections[1].Width - CXVScroll;
 
   //Resize active edit control
   if (FEdit.Visible) then SetEditBounds(FEdit);
@@ -518,18 +510,18 @@ procedure TPropEdit.ResizeSection(Sender: TObject);
 begin
 
   // Save new HeaderSplit value
-  if FHeader.ColWidths[0] < 30 then FHeader.ColWidths[0] := 30;
-  FHeaderSplit := (FHeader.ColWidths[0]*100)  div FHeader.Width;
-  FHeader.ColWidths[1] := FHeader.ClientWidth - FHeader.ColWidths[0];
-  if FHeader.ColWidths[1] < 30 then
+  if FHeader.Sections[0].Width < 30 then FHeader.Sections[0].Width := 30;
+  FHeaderSplit := (FHeader.Sections[0].Width*100)  div FHeader.Width;
+  FHeader.Sections[1].Width := FHeader.ClientWidth - FHeader.Sections[0].Width;
+  if FHeader.Sections[1].Width < 30 then
   begin
-    FHeader.ColWidths[1] := 30;
-    FHeader.ColWidths[0] := FHeader.ClientWidth - FHeader.ColWidths[1];
+    FHeader.Sections[1].Width := 30;
+    FHeader.Sections[0].Width := FHeader.ClientWidth - FHeader.Sections[1].Width;
   end;
 
   //Resize Grid column widths
-  FGrid.ColWidths[0] := FHeader.ColWidths[0];
-  FGrid.ColWidths[1] := FHeader.ColWidths[1] - CXVScroll{ -1};
+  FGrid.ColWidths[0] := FHeader.Sections[0].Width;
+  FGrid.ColWidths[1] := FHeader.Sections[1].Width - CXVScroll;
 
   //Resize active edit control
   if Assigned(FEdit) then
@@ -551,7 +543,7 @@ begin
     //Determine number of visible rows
     DefaultRowheight := RowHeight;
     if VisibleRows > RowCount then VisibleRows := RowCount;
-    Height := VisibleRows*(RowHeight{ + 1});
+    Height := VisibleRows*(RowHeight);
 
     //Save width of scrollbar if one is needed
     if VisibleRows < RowCount then
@@ -560,13 +552,13 @@ begin
       CXVScroll := 0;
 
     //Establish column widths
-    DefaultColWidth := (ClientWidth - CXVScroll{ - 2}) div 2;
-    if FHeader.ColWidths[0] < ClientWidth then
+    DefaultColWidth := (ClientWidth - CXVScroll) div 2;
+    if FHeader.Sections[0].Width < ClientWidth then
     begin
-      ColWidths[0] := FHeader.ColWidths[0];
-      ColWidths[1] := ClientWidth - ColWidths[0]{ - 1};
+      ColWidths[0] := FHeader.Sections[0].Width;
+      ColWidths[1] := ClientWidth - ColWidths[0];
     end
-    else FHeader.ColWidths[0] := DefaultColWidth;
+    else FHeader.Sections[0].Width := DefaultColWidth;
   end;
 end;
 
