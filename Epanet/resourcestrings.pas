@@ -29,6 +29,7 @@ resourcestring
 
   TXT_MAIN_CAPTION = 'EPANET 2.2';
   TXT_AUTOLENGTH = 'Auto-Length %s';
+  TXT_AUTLENGTH = 'Auto-Length';
   TXT_STATUS_REPORT = 'Status Report';
   TXT_SAVE_CHANGES = 'Save changes made to current project?';
   TXT_WARNING = '  WARNING:';
@@ -53,6 +54,13 @@ resourcestring
 
   //Others not included
   TXT_PAGE = 'Page ';
+
+  // MacOS App Menu
+  TXT_APP_SERVICES = 'Services';
+  TXT_APP_HIDOTHER = 'Hide Others';
+  TXT_APP_SHOWALL = 'Show All';
+  TXT_APP_HIDE = 'Hide %s';
+  TXT_APP_QUIT = 'Quit %s';
 
 
   // Strings from FBrowser.pas
@@ -172,6 +180,7 @@ resourcestring
 
   // Strings from Fproped.pas
   TXT_PROPERTY = 'Property';
+  TXT_PROP_EDIT = 'Property Editor';
 
 
   // Strings from Dlegend.pas

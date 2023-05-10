@@ -305,12 +305,38 @@ msgstr ""
 msgid "Age"
 msgstr ""
 
+#: resourcestrings.txt_app_hide
+#, object-pascal-format
+msgid "Hide %s"
+msgstr ""
+
+#: resourcestrings.txt_app_hidother
+msgid "Hide Others"
+msgstr ""
+
+#: resourcestrings.txt_app_quit
+#, object-pascal-format
+msgid "Quit %s"
+msgstr ""
+
+#: resourcestrings.txt_app_services
+msgid "Services"
+msgstr ""
+
+#: resourcestrings.txt_app_showall
+msgid "Show All"
+msgstr ""
+
 #: resourcestrings.txt_at
 msgid " at "
 msgstr ""
 
 #: resourcestrings.txt_at_nodes
 msgid "Measured at Nodes:"
+msgstr ""
+
+#: resourcestrings.txt_autlength
+msgid "Auto-Length"
 msgstr ""
 
 #: resourcestrings.txt_autolength
@@ -1891,6 +1917,11 @@ msgstr ""
 
 #: resourcestrings.txt_property
 msgid "Property"
+msgstr ""
+
+#: resourcestrings.txt_prop_edit
+msgctxt "resourcestrings.txt_prop_edit"
+msgid "Property Editor"
 msgstr ""
 
 #: resourcestrings.txt_prv

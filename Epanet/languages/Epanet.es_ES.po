@@ -329,6 +329,28 @@ msgstr "AFD"
 msgid "Age"
 msgstr "T.Residencia"
 
+#: resourcestrings.txt_app_hide
+#, object-pascal-format
+msgid "Hide %s"
+msgstr "Ocultar %s"
+
+#: resourcestrings.txt_app_hidother
+msgid "Hide Others"
+msgstr "Ocultar otros"
+
+#: resourcestrings.txt_app_quit
+#, object-pascal-format
+msgid "Quit %s"
+msgstr "Salir de %s"
+
+#: resourcestrings.txt_app_services
+msgid "Services"
+msgstr "Servicios"
+
+#: resourcestrings.txt_app_showall
+msgid "Show All"
+msgstr "Mostrar todo"
+
 #: resourcestrings.txt_at
 msgid " at "
 msgstr " a las "
@@ -336,6 +358,10 @@ msgstr " a las "
 #: resourcestrings.txt_at_nodes
 msgid "Measured at Nodes:"
 msgstr "Nudos de Medida:"
+
+#: resourcestrings.txt_autlength
+msgid "Auto-Length"
+msgstr "Longitud-Auto"
 
 #: resourcestrings.txt_autolength
 #, object-pascal-format
@@ -1919,6 +1945,11 @@ msgstr " Perfil Longitudinal - %s"
 msgid "Property"
 msgstr "Propiedad"
 
+#: resourcestrings.txt_prop_edit
+msgctxt "resourcestrings.txt_prop_edit"
+msgid "Property Editor"
+msgstr "Editor de Propiedades"
+
 #: resourcestrings.txt_prv
 msgid "PRV"
 msgstr "Reductora"
@@ -2763,7 +2794,6 @@ msgid "Link View"
 msgstr "Propiedades de Líneas"
 
 #: tbrowserform1.linkviewbox.text
-#, fuzzy
 msgctxt "tbrowserform1.linkviewbox.text"
 msgid "0"
 msgstr "0"
@@ -2774,13 +2804,11 @@ msgid "Node View"
 msgstr "Propiedades de Nudos"
 
 #: tbrowserform1.nodeviewbox.text
-#, fuzzy
 msgctxt "tbrowserform1.nodeviewbox.text"
 msgid "0"
 msgstr "0"
 
 #: tbrowserform1.objectlistbox.text
-#, fuzzy
 msgctxt "tbrowserform1.objectlistbox.text"
 msgid "0"
 msgstr "0"
@@ -2806,7 +2834,6 @@ msgid "Time"
 msgstr "Instante"
 
 #: tbrowserform1.timelistbox.text
-#, fuzzy
 msgctxt "tbrowserform1.timelistbox.text"
 msgid "0"
 msgstr "0"
@@ -5336,4 +5363,3 @@ msgstr "Impresión cancelada"
 msgctxt "xprinter.txt_pr_page"
 msgid "Printing page %d of %d"
 msgstr "Imprimiendo página %d de %d"
-

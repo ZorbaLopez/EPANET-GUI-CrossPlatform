@@ -491,26 +491,19 @@ procedure TMapForm1.FormPaint(Sender: TObject);
 // object to form's canvas when form neds repainting.
 //----------------------------------------------------
 begin
-  {$IFDEF DARWIN}
+  //{$IFDEF DARWIN}
+  {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)}
   if Panning then Map.DrawOutline(Map.Options.LinkSize,MapGrayColor[Map.Options.ColorIndex]);
   {$ENDIF}
   Canvas.Draw(0,0,Map.Bitmap);
   DrawFenceline;
-  {$IFDEF DARWIN}
+  {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)}
   if Zooming then DrawZoomRect;
   if Moving and (HiliteObject = LABELS) then DrawDotRect(ScrollRect);
-
   if not Hilited then
     Canvas.CopyRect(HiliteRect,Map.Bitmap.Canvas,HiliteRect)
-  else if Timer1.Enabled then
-  begin
-    Canvas.CopyRect(HiliteRect,HiliteBitmap.Canvas,Rect(0,0,HiliteBitmap.Width,HiliteBitmap.Height));
-  end
   else
-  begin
-    HiliteOn;
     Canvas.CopyRect(HiliteRect,HiliteBitmap.Canvas,Rect(0,0,HiliteBitmap.Width,HiliteBitmap.Height));
-  end;
   DrawNodeLegend;
   DrawLinkLegend;
   {$ELSE}
@@ -532,7 +525,7 @@ begin
   Map.DrawMap;                     //Draw the map into aRect & copy
   Canvas.CopyRect(aRect,Map.Bitmap.Canvas,aRect);  //to form's canvas
   Map.Window.MapRect := FullRect;  //Restore map's original rectangle
-  {$IFDEF DARWIN} Repaint; {$ENDIF}
+  {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)} Repaint; {$ENDIF}
   OVMapForm.NeedsUpdating := True; //Mark Overview Map for updating
 end;
 
@@ -548,13 +541,13 @@ begin
   UpdateZoomFactor;
   HiliteOff;
   Map.DrawMap;
-  {$IFNDEF DARWIN}
+  //{$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)}
   Canvas.Draw(0,0,Map.Bitmap);
   DrawFenceline;
   HiliteOn;
-  {$ENDIF}
+  //{$ENDIF}
   Screen.Cursor := crDefault;
-  {$IFDEF DARWIN} Repaint; {$ENDIF}
+  {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)} Repaint; {$ENDIF}
 end;
 
 
@@ -597,7 +590,11 @@ begin
   Fenceline[3] := Point(ClientWidth-1,ClientHeight-1);
   Fenceline[4] := Point(ClientWidth-1,0);
   Fenceline[5] := Point(1,1);
+  {$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)}
   DrawFenceline;
+  {$ELSE}
+  Repaint;
+  {$ENDIF}
   MainForm.SelectorButtonClick;
 end;
 
@@ -631,7 +628,6 @@ begin
     Pen.Style := psSolid;
     Pen.Mode := pmCopy;
   end;
-  {$IFDEF DARWIN} Repaint; {$ENDIF}
 end;
 
 
@@ -652,7 +648,6 @@ begin
     Pen.Style := psSolid;
     Pen.Mode := pmCopy;
   end;
-  {$IFDEF DARWIN} Repaint; {$ENDIF}
 end;
 
 
@@ -677,7 +672,6 @@ begin
   DrawFenceline;
   NumFencePts := 0;
   Fencing := False;
-  //{$IFDEF DARWIN} Repaint; {$ENDIF}
 end;
 
 
@@ -927,6 +921,7 @@ begin
     DrawDotLink(Fenceline[NumFencePts-1],Fenceline[NumFencePts]);
     Fenceline[NumFencePts] := Point(X,Y);
     DrawDotLink(Fenceline[NumFencePts-1],Fenceline[NumFencePts]);
+    {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)} Repaint; {$ENDIF}
   end
 
 // Scroll map if panning in progress
@@ -937,7 +932,8 @@ begin
   begin
     DrawZoomRect;
     ZoomRect.BottomRight := Point(X,Y);
-    {$IFNDEF DARWIN} DrawZoomRect; {$ENDIF}
+    {$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)} DrawZoomRect; {$ENDIF}
+    {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)} Repaint; {$ENDIF}
   end
 
 // Move selected object if a move is in progress
@@ -1150,7 +1146,6 @@ var
 begin
 // Create a borderless LabelForm that contains an Edit control
   s := '';
-  //p := Point(X,{$IFNDEF DARWIN} Y {$ELSE} ClientHeight - Y {$ENDIF});
   p := Point(X, Y);
   with TLabelForm.Create(self) do
   try
@@ -1302,6 +1297,7 @@ begin
   DrawDotLink(Fenceline[NumFencePts],Fenceline[1]);
   Inc(NumFencePts);
   Fenceline[NumFencePts] := Fenceline[1];
+  {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)} Repaint; {$ENDIF}
 
 // Activate Selection tool on Mainform Toolbar
   MainForm.SelectorButtonClick;
@@ -1337,7 +1333,6 @@ begin
     PolyLine([Point(Left,Top),Point(Right,Top),Point(Right,Bottom)]);
     PolyLine([Point(Left,Top),Point(Left,Bottom),Point(Right,Bottom)]);
   end;
-  {$IFDEF DARWIN} Repaint; {$ENDIF}
 end;
 
 
@@ -1537,10 +1532,14 @@ begin
         if not Aligning then OffsetRect(ScrollRect, xScroll, yScroll);
         Bitmap.Canvas.CopyRect(ScrollRect,BackBM.Canvas,Window.MapRect);
       end;
-      {$IFNDEF DARWIN} DrawOutline(Options.LinkSize,MapGrayColor[Map.Options.ColorIndex]); {$ENDIF}
+      {$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)}
+      DrawOutline(Options.LinkSize,MapGrayColor[Map.Options.ColorIndex]);
+      {$ENDIF}
     end;
-    {$IFNDEF DARWIN} Canvas.Draw(0,0,Map.Bitmap); {$ENDIF}
-    {$IFDEF DARWIN} Repaint; {$ENDIF}
+    {$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)}
+    Canvas.Draw(0,0,Map.Bitmap);
+    {$ENDIF}
+    {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)} Repaint; {$ENDIF}
   end;
 end;
 
@@ -2107,7 +2106,8 @@ procedure TMapForm1.MoveLabelRect(const X,Y: Integer);
 begin
   DrawDotRect(ScrollRect);
   OffsetRect(ScrollRect,X-AnchorX,Y-AnchorY);
-  {$IFNDEF DARWIN} DrawDotRect(ScrollRect); {$ENDIF}
+  {$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)} DrawDotRect(ScrollRect); {$ENDIF}
+  {$IF DEFINED(DARWIN) OR DEFINED(LCLQT5)} Repaint; {$ENDIF}
   AnchorX := X;
   AnchorY := Y;
 end;
@@ -2214,14 +2214,15 @@ begin
 
 // Copy over highlighted rectangle with
 // corresponding area of Map's bitmap.
-  {$IFNDEF DARWIN}
+  {$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)}
   Canvas.CopyRect(HiliteRect,Map.Bitmap.Canvas,HiliteRect);
+  {$ELSE}
+  Repaint;
   {$ENDIF}
 
 // Zero the highlight rectangle
   HiliteRect := Rect(0,0,0,0);
   Hilited := False;
-  //Repaint;
 end;
 
 
@@ -2293,32 +2294,17 @@ procedure TMapForm1.Timer1Timer(Sender: TObject);
 begin
   with HiliteBitmap do
   begin
-      {$IFDEF WINDOWS}
-      InvertRect(Canvas.Handle, Rect(0,0,Width,Height));
-      {$ELSE}
-      Negative;
-      {$ENDIF}
-      {$IFDEF DARWIN}
-      Repaint;
-      {$ELSE}
-      self.Canvas.CopyRect(HiliteRect,Canvas,Rect(0,0,Width,Height));
-      {$ENDIF}
+    {$IFDEF WINDOWS}
+    InvertRect(Canvas.Handle, Rect(0,0,Width,Height));
+    {$ELSE}
+    Negative;
+    {$ENDIF}
+    {$IF DEFINED(WINDOWS) OR DEFINED(LCLGTK2)}
+    self.Canvas.CopyRect(HiliteRect,Canvas,Rect(0,0,Width,Height));
+    {$ELSE}
+    Repaint;
+    {$ENDIF}
   end;
-  //{$IFDEF WINDOWS}
-  //with HiliteBitmap do
-  //begin
-  //    InvertRect(Canvas.Handle, Rect(0,0,Width,Height));
-  //    self.Canvas.CopyRect(HiliteRect,Canvas,Rect(0,0,Width,Height));
-  //end;
-  //{$ELSE}
-  //HiliteBitmap.Negative;
-  //{$IFDEF DARWIN}
-  //Repaint;
-  //{$ELSE}
-  //with HiliteBitmap do
-  //             self.Canvas.CopyRect(HiliteRect,Canvas,Rect(0,0,Width,Height));
-  //{$ENDIF}
-  //{$ENDIF}
 end;
 
 
@@ -2369,7 +2355,6 @@ begin
   PIPES..VALVES: Uinput.PasteLink(CurrentList, CurrentItem[CurrentList]);
   LABELS:        Uinput.PasteLabel(CurrentItem[LABELS]);
   end;
-  //Hilite turned back on in Paste... procedures
 end;
 
 
@@ -2569,10 +2554,10 @@ begin
   with MainForm.MnuLinkLegend do
   begin
     Checked := not Checked;
-    {$IFNDEF DARWIN} DrawLinkLegend; {$ENDIF}
+    DraggedLink := False;
+    DrawLinkLegend;
     LinkLegendPanel.Visible := Checked;
     PopupLinkLegend.Checked := Checked;
-    {$IFDEF DARWIN} Repaint; {$ENDIF}
   end;
 end;
 
@@ -2585,10 +2570,10 @@ begin
   with MainForm.MnuNodeLegend do
   begin
     Checked := not Checked;
-    {$IFNDEF DARWIN} DrawNodeLegend; {$ENDIF}
+    DraggedNode := False;
+    DrawNodeLegend;
     NodeLegendPanel.Visible := Checked;
     PopupNodeLegend.Checked := Checked;
-    {$IFDEF DARWIN} Repaint; {$ENDIF}
   end;
 end;
 
@@ -2643,22 +2628,22 @@ begin
 // Pressing left button begins a drag event.
   if Button = mbLeft then
   begin
-    if Sender = NodeLegendBox then
+    if (Sender = NodeLegendBox) and (NodeLegendPanel.Visible = True) then
       DraggedNode := True
-    else if Sender = LinkLegendBox then
+    else if (Sender = LinkLegendBox) and (LinkLegendPanel.Visible = True) then
       DraggedLink := True
-    else if Sender = TimeLegendPanel then
+    else if (Sender = TimeLegendPanel) and (TimeLegendPanel.Visible = True) then
       DraggedTime := True;
     OldPos.X := X;
     OldPos.Y := Y;
   end
 
 // Pressing right button modifies the map legend.
-  else
+  else if Button = mbRight then
   begin
-    if Sender = NodeLegendBox then
+    if (Sender = NodeLegendBox) and (NodeLegendPanel.Visible = True) then
       ModifyNodeLegend
-    else if Sender = LinkLegendBox then
+    else if (Sender = LinkLegendBox) and (LinkLegendPanel.Visible = True) then
       ModifyLinkLegend;
   end;
 end;
@@ -2670,6 +2655,8 @@ procedure TMapForm1.MoveLegend(Sender: TObject; Shift: TShiftState;
 // the LinkLegendBox and TimeLegendPanel. Left button
 // drags legend tone a new position.
 //-------------------------------------------------------
+//var
+//  aRect : TRect;
 begin
   if (Sender = NodeLegendBox) and DraggedNode then
     with NodeLegendPanel do
@@ -2682,6 +2669,8 @@ begin
       if (Top + Height) > self.Height then Top := self.Height - Height
       else if Top < 0 then Top := 0;
       NodeLegendPanel.Repaint;
+      //aRect.Create(Left, Top, Left + Width, Top + Height);
+      //InvalidateMap(aRect);
     end
   else if (Sender = LinkLegendBox) and DraggedLink then
     with LinkLegendPanel do
@@ -2694,6 +2683,8 @@ begin
       if (Top + Height) > self.Height then Top := self.Height - Height
       else if Top < 0 then Top := 0;
       LinkLegendPanel.Repaint;
+      //aRect.Create(Left, Top, Left + Width, Top + Height);
+      //InvalidateMap(aRect);
     end
   else if (Sender = TimeLegendPanel) and DraggedTime then
     with TimeLegendPanel do
@@ -2705,6 +2696,8 @@ begin
       if (Top + Height) > self.Height then Top := self.Height - Height
       else if Top < 0 then Top := 0;
       TimeLegendPanel.Repaint;
+      //aRect.Create(Left, Top, Left + Width, Top + Height);
+      //InvalidateMap(aRect);
     end;
 end;
 
@@ -2856,6 +2849,7 @@ begin
   with MainForm.MnuTimeLegend do
   begin
     Checked := not Checked;
+    DraggedTime := False;
     TimeLegendPanel.Visible := Checked;
     PopupTimeLegend.Checked := Checked;
   end;

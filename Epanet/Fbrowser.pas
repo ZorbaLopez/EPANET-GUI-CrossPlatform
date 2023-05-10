@@ -535,7 +535,11 @@ begin
   end;
 
 // Hide Property Editor if no item selected
-  if Index < 0 then MainForm.PropEditForm.Hide;
+  if Index < 0 then
+  begin
+    MainForm.PropEditForm.Hide;
+    Mainform.PropEditHeader.Caption := TXT_PROP_EDIT;
+  end;
 
 // Update property editor and highlight map if visual object selected
   if ObjType in [JUNCS..LABELS] then

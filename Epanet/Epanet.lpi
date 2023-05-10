@@ -439,7 +439,9 @@
       <Unit>
         <Filename Value="Fproped.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="PropEditForm1"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
       </Unit>
       <Unit>
         <Filename Value="Dmap.pas"/>

@@ -1,6 +1,8 @@
 BUILDING
 ======
 
+First of all ... **Clone this repo!!!**
+
 ## INSTALL THE LAZARUS RAD-IDE
 
 - Follow the [Installing Lazarus](https://wiki.freepascal.org/Installing_Lazarus) instructions and install the dependencies required for your Operating System.
@@ -54,11 +56,11 @@ The project is configured for Debug and Release versions for the three OS versio
 - The current setting is for minimum MacOS "Big Sur" (11). If you want to compile for older versions ensure your SDK allows for it by executing in terminal the command `xcrun --show-sdk-version`. The minimum version can be changed in the project options. Go to the `Custom Options` and change the `-WM11.0` option by `-WM{yourSDKversion}`
 - If your Mac has the M1 processor go to the `Config and Target` and change the `Target CPU family (-P)` to `aarch64`
 #### Linux
-- If you want to use the Qt5 widgetset go to `Additions and Overrides` and change the `LCLWidgetType` from `gtk2` to `qt5`. This will require to ensure you have the Qt5 widgetset installed and the pascal bindings. Follow the instructions [here](https://wiki.lazarus.freepascal.org/Qt5_Interface). Note that changing the widgetset may require modifications in the code.
+- If you want to use the Qt5 widgetset go to `Additions and Overrides` and change the `LCLWidgetType` from `gtk2` to `qt5`. This will require to ensure you have the Qt5 widgetset installed and the pascal bindings. Follow the instructions [here](https://wiki.lazarus.freepascal.org/Qt5_Interface). The program requires the package libqt5pas to run. In Ubuntu-based distros you can install the package by executing in terminal/shell the command `sudo apt install libqt5pas1`.
 
 ## PREPARE THE APP BUNDLE
 
-For the compiled binary work as expected all the executables must be placed in the right location on an app bundle. You can find these bundles in this repo, folder `./AppBundle`. The binaries have been replaced by alias to assist you on the rigth place to copy each binary.
+For the compiled binary work as expected all the executables must be placed in the right location on an app bundle. You can find these bundles in this repo, folder `AppBundle`. The binaries have been replaced by alias to assist you on the rigth place to copy each binary.
 ### Windows
 Place the compiled GUI executable and the Toolkit binary into the bundle's root.
 ### MacOS

@@ -402,7 +402,7 @@ implementation
 uses
   {$IFDEF DARWIN}
   CocoaAll,
-  {$endif}
+  {$ENDIF}
   Fcalib, Fcontour, Fenergy, Fgraph, Fovmap,
   Fsimul, Fstatus, Fsummary, Ftable, Dabout, Dcalib1, Dcalib2, Ddefault,
   Ddataexp, Dfind, Dgraph, Dgrouped, Dmapexp, Dprefers, Dquery,
@@ -440,13 +440,9 @@ begin
   IniFileDir := Uutils.GetAppDataDir('EPANET', EpanetDir);
   RenameFile(EpanetDir+INIFILE, IniFileDir+INIFILE);
 
-{$IFDEF WINDOWS}
-  Application.HelpFile := EpanetDir + 'Help\' + 'en_US\' + HLPFILE;
-  Tutorial := EpanetDir + 'Help\' + 'en_US\' + TUTORFILE;
-{$ENDIF}
-{$IFDEF LINUX}
-  Application.HelpFile := EpanetDir + 'Help/' + 'en_US/'  + HLPFILE;
-  Tutorial := EpanetDir + 'Help/' + 'en_US/' + TUTORFILE;
+{$IFNDEF DARWIN}
+  Application.HelpFile := EpanetDir + 'Help' + DirectorySeparator + 'en_US' + DirectorySeparator + HLPFILE;
+  Tutorial := EpanetDir + 'Help'+ DirectorySeparator + 'en_US' + DirectorySeparator + TUTORFILE;
 {$ENDIF}
 
   TempDir := GetTempDir;
@@ -696,18 +692,18 @@ begin
     begin
       MapHeader.Color := clInactiveCaption;
       MapCaption.Color := clInactiveCaption;
-      MapCaption.Font.Color := clInactiveCaptionText;
+      MapCaption.Font.Color := {$IFDEF LCLQT5}InvertColor(clCaptionText){$ELSE}clInactiveCaptionText{$ENDIF};
     end;
     if not Sender.ClassNameIs('TBrowserForm1') then
     begin
       BrowserHeader.Color := clInactiveCaption;
       BrowserCaption.Color := clInactiveCaption;
-      BrowserCaption.Font.Color := clInactiveCaptionText;
+      BrowserCaption.Font.Color := {$IFDEF LCLQT5}InvertColor(clCaptionText){$ELSE}clInactiveCaptionText{$ENDIF};
     end;
     if not Sender.ClassNameIs('TPropEditForm1') then
     begin
       PropEditHeader.Color := clInactiveCaption;
-      PropEditHeader.Font.Color := clInactiveCaptionText;
+      PropEditHeader.Font.Color := {$IFDEF LCLQT5}InvertColor(clCaptionText){$ELSE}clInactiveCaptionText{$ENDIF};
     end;
 end;
 
@@ -2793,23 +2789,16 @@ begin
     end;
     1 :
     begin
-      {$IFDEF WINDOWS}
-      SetDefaultLang('es_ES');
-      Application.HelpFile := EpanetDir + 'Help\' + 'es_ES\' + HLPFILE;
-      Tutorial := EpanetDir + 'Help\' + 'es_ES\' + TUTORFILE;
-      {$ENDIF}
       {$IFDEF DARWIN}
       SetDefaultLang('es_ES',
                     ExtractFilePath(ExcludeTrailingPathDelimiter(EpanetDir)) +
                     'Resources/es.lproj/');
-      //Application.HelpFile := ExtractFilePath(ExcludeTrailingPathDelimiter(EpanetDir)) +
-      //'Resources/epanet2w.help/Contents/Resources/es.lproj/';
-      //Tutorial := Application.HelpFile + 'Tutorial/';
-      {$ENDIF}
-      {$IFDEF LINUX}
+      {$ELSE}
       SetDefaultLang('es_ES');
-      Application.HelpFile := EpanetDir + 'Help/' + 'es_ES/' + HLPFILE;
-      Tutorial := EpanetDir + 'Help/' + 'es_ES/' + TUTORFILE;
+      Application.HelpFile := EpanetDir + 'Help' + DirectorySeparator +
+                              'es_ES' + DirectorySeparator + HLPFILE;
+      Tutorial := EpanetDir + 'Help'+ DirectorySeparator + 'es_ES' +
+                  DirectorySeparator + TUTORFILE;
       {$ENDIF}
     end;
   end;
@@ -2821,6 +2810,49 @@ begin
   PropEditForm.Editor.ColHeading2 := TXT_VALUE;
 end;
 
+{$IFDEF DARWIN}
+procedure TMainForm.MnuAppClick(Sender: TObject);
+var
+  mnMain: NSMenu;
+  mnApp : NSMenu;
+  mnItem: NSMenuItem;
+  i     : integer;
+
+begin
+
+  if Language = 0 then Exit;
+
+  mnMain := NSApplication(NSApp).Mainmenu;
+  mnItem := NSMenuItem (mnMain.itemArray.objectAtIndex(0));
+
+  if (mnItem.hasSubmenu) then
+  begin
+    mnApp := mnItem.submenu;
+    for i:=0 to mnApp.itemArray.count-1 do
+    begin
+      mnItem := NSMenuItem(mnApp.itemArray.objectAtIndex(i));
+      if (not mnItem.isSeparatorItem) then
+      begin
+        if (mnItem.title.UTF8String = 'Services') then
+          mnItem.setTitle (NSString.stringWithUTF8string(PChar(TXT_APP_SERVICES)));
+        if (mnItem.title.UTF8String = 'Hide Others') then
+          mnItem.setTitle (NSString.stringWithUTF8string(PChar(TXT_APP_HIDOTHER)));
+        if (mnItem.title.UTF8String = 'Show All') then
+          mnItem.setTitle (NSString.stringWithUTF8string(PChar(TXT_APP_SHOWALL)));
+        if (mnItem.title.UTF8String = 'Hide ' + Application.Title) then
+          mnItem.setTitle (NSString.stringWithUTF8string(PChar(Format (TXT_APP_HIDE, [Application.Title]))));
+        if (mnItem.title.UTF8String = 'Quit ' + Application.Title) then
+          mnItem.setTitle (NSString.stringWithUTF8string(PChar(Format (TXT_APP_QUIT, [Application.Title]))));
+      end;
+    end;
+  end;
+end;
+{$ENDIF}
+
+
+//===================================================================
+//                     Lazarus Porting Assist Procedures
+//===================================================================
 function TMainForm.GetActiveChildForm: Integer;
 var
   i : integer;
@@ -2849,54 +2881,5 @@ begin
 
   thePrinter:= TPrintControl.Create(self);
 end;
-
-{$IFDEF DARWIN}
-procedure TMainForm.MnuAppClick(Sender: TObject);
-var
-  mnMain: NSMenu;
-  mnApp : NSMenu;
-  mnItem: NSMenuItem;
-  i     : integer;
-  s1, s2, s3, s4, s5 : String;
-
-begin
-  Case Language of
-    0 : Exit;
-    1 :
-    begin
-      s1 := 'Servicios';
-      s2 := 'Ocultar otros';
-      s3 := 'Mostrar todo';
-      s4 := 'Ocultar ' + Application.Title;
-      s5 := 'Salir de ' + Application.Title;
-    end;
-  end;
-
-  mnMain := NSApplication(NSApp).Mainmenu;
-  mnItem := NSMenuItem (mnMain.itemArray.objectAtIndex(0));
-
-  if (mnItem.hasSubmenu) then
-  begin
-    mnApp := mnItem.submenu;
-    for i:=0 to mnApp.itemArray.count-1 do
-    begin
-      mnItem := NSMenuItem(mnApp.itemArray.objectAtIndex(i));
-      if (NOT mnItem.isSeparatorItem) then
-      begin
-        if (mnItem.title.UTF8String = 'Services') then
-          mnItem.setTitle (NSString.stringWithUTF8string(PChar(s1)));
-        if (mnItem.title.UTF8String = 'Hide Others') then
-          mnItem.setTitle (NSString.stringWithUTF8string(PChar(s2)));
-        if (mnItem.title.UTF8String = 'Show All') then
-          mnItem.setTitle (NSString.stringWithUTF8string(PChar(s3)));
-        if (mnItem.title.UTF8String = 'Hide ' + Application.Title) then
-          mnItem.setTitle (NSString.stringWithUTF8string(PChar(s4)));
-        if (mnItem.title.UTF8String = 'Quit ' + Application.Title) then
-          mnItem.setTitle (NSString.stringWithUTF8string(PChar(s5)));
-      end;
-    end;
-  end;
-end;
-{$ENDIF}
 
 end.

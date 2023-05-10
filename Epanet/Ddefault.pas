@@ -50,7 +50,7 @@ const
     (Name: TXT_TANK_DIAMETER;  Style:esEdit;      Mask:emPosNumber; Length:0;  List:''),
     (Name: TXT_TANK_HEIGHT;    Style:esEdit;      Mask:emPosNumber; Length:0;  List:''),
     (Name: TXT_PIPE_LENGTH;    Style:esEdit;      Mask:emPosNumber; Length:0;  List:''),
-    (Name: TXT_AUTOLENGTH;     Style:esComboList; Mask:emNone;  Length:0;
+    (Name: TXT_AUTLENGTH;      Style:esComboList; Mask:emNone;  Length:0;
      List:'Off'#13'On'),
     (Name: TXT_PIPE_DIAMETER;  Style:esEdit;      Mask:emPosNumber; Length:0;  List:''),
     (Name: TXT_PIPE_ROUGHNESS; Style:esEdit;      Mask:emPosNumber; Length:0;  List:''));
